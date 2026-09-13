@@ -5518,377 +5518,380 @@
     {
       "day_number": 15,
       "date": "2027-02-23",
-      "day_title": "東京都會陸遊・新宿涉谷潮流探訪・雪具戶外服飾採買・名店巡禮",
+      "day_title": "富士急樂園全日極限挑戰・4大世界級過山車・麗莎與卡斯柏小鎮・富士山壯景 (新宿當日往返)",
       "stay": "新宿角屋飯店 (Kadoya Hotel 新宿)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Kadoya%20Hotel%20Shinjuku",
       "ski_resort": null,
       "transit": {
-        "summary": "東京市區 JR 山手線 ＆ 東京地鐵一日券漫遊 (新宿 ➔ 澀谷/表參道 ➔ 銀座/神田雪具街 ➔ 新宿)",
+        "summary": "新宿 ➔ Busta新宿直達高速巴士 / JR特急富士回遊直達 ➔ 富士急樂園 (約100分鐘，提供2組直達銜接方案)",
         "details": [
-          "【路線選項 A（神田雪具街 ＆ 銀座採買路線）】：09:30 新宿站搭乘 JR 中央線快速至神田站（每人精算花費：¥180），探訪御茶之水/神田小川町世界最大雪具街（Victoria Surf&Snow、Murasaki Sports），午後搭地鐵銀座線至銀座（每人精算花費：¥180），傍晚返回新宿。",
-          "【路線選項 B（新宿 ＆ 澀谷潮流採買路線）】：上午於新宿（Alpen TOKYO 旗艦館、Bic Camera、伊勢丹），午後搭乘 JR 山手線至澀谷（每人精算花費：¥170）逛宮下公園 (Miyashita Park)、Shibuya Sky 觀景台與表參道。",
-          "【全日交通費用精算】：使用 Suica/IC 卡搭乘，每人整日交通預算約 ¥800 - ¥1,000。17:30 前返回新宿角屋飯店整理戰利品，18:00 前進駐享用晚餐！"
+          "飯店鄰近新宿西口與 Busta 新宿（步行僅 4 分鐘），早晨出發直達富士急樂園開園暢玩。",
+          "【交通選項 A（中央高速巴士直達首選・09:55 抵樂園）】：08:15 於「Busta 新宿 (バスタ新宿)」4F 搭乘中央高速巴士富士五湖線 ➔ 09:55 免換車直達「富士急樂園」正門（每人精算花費：¥2,200）。入園直攻 FUJIYAMA、高飛車、Eejanaika 與全新 ZOKKON！",
+          "【交通選項 B（JR 特急富士回遊直達次班・10:18 抵樂園）】：08:30 於 JR 新宿站 9/10 號月台搭乘特急「富士回遊 7 號 (Fuji Excursion)」➔ 10:18 免換車直達「富士急ハイランド站」（每人精算花費：¥4,130：乘車券 ¥2,510 + 指定席特急券 ¥1,620）。",
+          "【回程選項 A（高速巴士・19:15 返抵新宿）】：17:18 富士急樂園巴士站搭乘中央高速巴士 ➔ 19:15 返抵 Busta 新宿（每人精算花費：¥2,200）。步行 4 分回角屋飯店整理戰利品並享用新宿晚餐！",
+          "【回程選項 B（JR 特急富士回遊・18:43 返抵新宿）】：16:51 富士急ハイランド站搭乘特急「富士回遊 44 號」➔ 18:43 返抵新宿站（每人精算花費：¥4,130）。",
+          "【計程車精算對比】：新宿至富士急樂園約 105 公里高速公路，單程計程車約 ¥38,000~¥42,000（1 人搭乘每人花費：¥40,000；2 人共乘每人花費：¥20,000）。"
         ]
       },
       "recommendations": {
         "restaurant": [
           {
-            "name": "敘敘苑 新宿 Opera City 53F",
+            "name": "フードスタジアム (Food Stadium 富士急樂園美食街)",
+            "rating": "★★★★☆",
+            "distance": "📍 富士急樂園內",
+            "highlights": "樂園招牌！超逼真「藍色富士山咖哩飯」、大盛特濃味噌拉麵與絕叫炸雞排丼",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%BC%E3%83%89%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A0%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
+          },
+          {
+            "name": "ほうとう不動 (Hoto Fudo 富士吉田名物餺飥)",
             "rating": "★★★★★",
-            "distance": "📍 初台站直結車程 5 分",
-            "highlights": "53 樓 200 米高空雲端燒肉！招牌特選和牛牛五花、薄切牛舌與秘傳麻油生菜沙拉",
+            "distance": "📍 車程 6 分",
+            "highlights": "富士山麓第一名產！手工揉製粗扁麵條，融入熟成味噌與南瓜、山菜慢熬之滾燙鐵鍋餺飥",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%BB%E3%81%86%E3%81%A8%E3%81%86%E4%B8%8D%E5%8B%95%20%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0"
+          },
+          {
+            "name": "麺許皆伝 (Menkyo Kaiden 吉田烏龍麵名門)",
+            "rating": "★★★★★",
+            "distance": "📍 富士吉田市內車程 5 分",
+            "highlights": "全日本最具嚼勁硬度之「吉田烏龍麵」排隊第一老舖！手撕生高麗菜與現炸特大天婦羅",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E8%A8%B1%E7%9A%86%E4%BC%9D%20%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0"
+          },
+          {
+            "name": "麗莎與卡斯柏小鎮 巴黎咖啡館 (Les Rêves)",
+            "rating": "★★★★☆",
+            "distance": "📍 樂園正門旁街區",
+            "highlights": "浪漫歐風沙龍！現烤酥皮濃湯、法式紅酒燉牛肉與新鮮草莓水果塔",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%20%E3%83%AC%E3%83%BC%E3%83%B4%20%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%89%E3%83%BB%E3%83%86%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
+          },
+          {
+            "name": "みうらうどん (Miura Udon 吉田肉烏龍)",
+            "rating": "★★★★☆",
+            "distance": "📍 富士吉田車程 8 分",
+            "highlights": "在地人最推烏龍麵！柴魚昆布雙底高湯加入特製辣油「摺りだね (Suridane)」，香辣過癮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%BF%E3%81%86%E3%82%89%E3%81%86%E3%81%A9%E3%82%93%20%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0"
+          },
+          {
+            "name": "甲州名物 ほうとう 小作 (Kosaku 經典餺飥)",
+            "rating": "★★★★★",
+            "distance": "📍 車程 7 分",
+            "highlights": "四十年經典老舖！炭火大鐵鍋燉煮南瓜、椎茸、里芋與粗麵，暖胃濃郁十足",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%94%B2%E5%B7%9E%E3%81%BB%E3%81%86%E3%81%A8%E3%81%86%20%E5%B0%8F%E4%BD%9C%20%E6%B2%B3%E5%8F%A3%E6%B9%96"
+          },
+          {
+            "name": "ハイランドリゾート リゾートダイニング (景觀Buffet)",
+            "rating": "★★★★☆",
+            "distance": "📍 樂園旁高原飯店 1F",
+            "highlights": "全景落地窗直面雄偉富士山！現煎黑毛和牛牛排、季節松葉蟹與和洋總匯料理",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%20%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3"
+          },
+          {
+            "name": "風雲兒 (Fuunji 新宿沾麵 回程晚餐)",
+            "rating": "★★★★★",
+            "distance": "📍 新宿角屋步行 5 分",
+            "highlights": "返抵新宿晚餐首選！濃厚魚介雞白湯慢熬八小時，特粗彈牙麵條沾濃郁魚粉鮮美無比",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%A2%A8%E9%9B%B2%E5%85%90%20%E6%96%B0%E5%AE%BF"
+          },
+          {
+            "name": "敘敘苑 新宿 Opera City 53F (回程雲端燒肉)",
+            "rating": "★★★★★",
+            "distance": "📍 新宿車程 5 分",
+            "highlights": "200 米高空俯瞰東京璀璨夜景！特選黑毛和牛牛五花與薄切蔥花牛舌",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8F%99%E3%80%85%E8%8B%91%20%E6%9D%B1%E4%BA%AC%E3%82%AA%E3%83%9A%E3%83%A9%E3%82%B7%E3%83%86%E3%82%A353"
           },
           {
-            "name": "銀座 篝 本店 (雞白湯拉麵)",
-            "rating": "★★★★★",
-            "distance": "📍 銀座站步行 3 分",
-            "highlights": "米其林推薦！金黃色濃醇如法式濃湯般濃厚純雞白湯拉麵，搭配低溫舒肥雞肉叉燒與季節旬蔬",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%20%E7%AF%9D%20%E6%9C%AC%E5%BA%97"
-          },
-          {
-            "name": "挽肉と米 澀谷店 (Hikiniku to Kome)",
-            "rating": "★★★★★",
-            "distance": "📍 澀谷道玄坂步行 5 分",
-            "highlights": "炭火現烤純黑毛和牛漢堡排！搭配羽釜鍋現煮熱騰騰白米飯與生食級蛋黃，極致銷魂",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%8C%BD%E8%82%89%E3%81%A8%E7%B1%B3%20%E6%B8%8B%E8%B0%B7"
-          },
-          {
-            "name": "とんかつ まい泉 青山本店",
+            "name": "麵屋 武藏 新宿總店 (回程特厚角煮叉燒)",
             "rating": "★★★★☆",
-            "distance": "📍 表參道站步行 4 分",
-            "highlights": "昭和舊大浴場改裝旗艦店！號稱「用筷子就能切斷」之極致軟嫩黑豚里肌炸豬排定食",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%84%E6%B3%89%20%E9%9D%92%E5%B1%B1%E6%9C%AC%E5%BA%97"
-          },
-          {
-            "name": "六厘舍 (東京站一番街店)",
-            "rating": "★★★★☆",
-            "distance": "📍 東京站 B1 拉麵街",
-            "highlights": "超濃厚豚骨魚介濃湯沾麵始祖！海苔上盛滿特製鰹魚粉，粗麵富嚼勁",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AD%E5%8E%98%E8%88%8E%20%E6%9D%B1%E4%BA%AC%E9%A7%85"
-          },
-          {
-            "name": "銀座 久兵衛 本店 (Kyubey 壽司)",
-            "rating": "★★★★★",
-            "distance": "📍 銀座 8 丁目",
-            "highlights": "江戶前握壽司最高峰老舖，海膽軍艦卷與炙燒鮪魚中腹一絕",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%20%E4%B9%85%E5%85%B5%E8%A1%9B%20%E6%9C%AC%E5%BA%97"
-          },
-          {
-            "name": "うどん 慎 (Udon Shin 新宿手打烏龍)",
-            "rating": "★★★★★",
-            "distance": "📍 新宿南口步行 6 分",
-            "highlights": "現切現煮透亮彈牙純手工烏龍，沾生蛋黃與酥脆奶油炸牛肉天婦羅",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%86%E3%81%A9%E3%82%93%20%E6%85%8E%20%E6%96%B0%E5%AE%BF"
-          },
-          {
-            "name": "神田 炸牛排 もと村 (Motomura)",
-            "rating": "★★★★☆",
-            "distance": "📍 神田小川町步行 3 分",
-            "highlights": "雪具街逛街午餐首選！石板微煎半熟黑毛炸牛排，外酥內嫩多汁",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E3%81%8B%E3%81%A4%20%E3%82%82%E3%81%A8%E6%9D%91%20%E7%A5%9E%E7%94%B0"
-          },
-          {
-            "name": "澀谷 魚真 (Uoshin 澀谷店)",
-            "rating": "★★★★☆",
-            "distance": "📍 澀谷神泉步行 5 分",
-            "highlights": "當日築地/豐洲直送生魚片拼盤、烤真鯛魚頭配清酒",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%AD%9A%E7%9C%9F%20%E6%B8%8B%E8%B0%B7"
-          },
-          {
-            "name": "銀座 煉瓦亭 (元祖日式洋食始祖)",
-            "rating": "★★★★☆",
-            "distance": "📍 銀座 3 丁目",
-            "highlights": "明治時期創始！元祖炸豬排、蛋包飯與燉牛肉蛋包飯發祥地",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%85%89%E7%93%A6%E4%BA%AD%20%E9%8A%80%E5%BA%A7"
+            "distance": "📍 飯店步行 4 分",
+            "highlights": "角屋飯店旁！炙燒大塊塊狀角煮叉燒配香濃柴魚豚骨雙湯頭拉麵",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%B1%8B%E6%AD%A6%E8%94%B5%20%E6%96%B0%E5%AE%BF%E7%B7%8F%E6%9C%AC%E5%BA%97"
           }
         ],
         "dessert_pastry": [
           {
-            "name": "HARBS 澀谷 Hikarie 店",
+            "name": "桔梗屋 桔梗信玄餅 冰淇淋 (Shingen Soft)",
             "rating": "★★★★★",
-            "distance": "📍 澀谷 Hikarie 4F",
-            "highlights": "新鮮蜜瓜與草莓層層爆漿！大份量手工切片蛋糕佐熱大吉嶺紅茶",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=HARBS%20%E6%B8%8B%E8%B0%B7%E3%83%92%E3%82%AB%E3%83%AA%E3%82%A8"
+            "distance": "📍 樂園入口與伴手禮街",
+            "highlights": "山梨甜點之皇！濃厚生乳霜淇淋插入整條Ｑ彈信玄餅，淋上香濃黑糖蜜與現磨熟黃豆粉",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%A1%94%E6%A2%97%E5%B1%8B%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
           },
           {
-            "name": "NUMBER SUGAR 表參道本店",
+            "name": "麗莎與卡斯柏 巴黎烘焙坊 (Boulangerie)",
+            "rating": "★★★★☆",
+            "distance": "📍 小鎮廣場步行 1 分",
+            "highlights": "每日現烤出爐之法式發酵黃油可頌、巧克力丹麥酥與卡通造型蘋果塔",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%20%E3%83%96%E3%83%AA%E3%82%AA%E3%83%83%E3%82%B7%E3%83%A5%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
+          },
+          {
+            "name": "富士山布丁 (Fujisan Pudding 雙色生乳布丁)",
             "rating": "★★★★★",
-            "distance": "📍 表參道步行 6 分",
-            "highlights": "純手工天然原料慢熬焦糖牛奶糖，以數字 1-12 標註香草、海鹽、肉桂、覆盆子等經典風味",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=NUMBER%20SUGAR%20%E8%A1%A8%E5%8F%82%E9%81%93"
+            "distance": "📍 富士吉田伴手禮店",
+            "highlights": "天然蝶豆花藍色果凍凝層搭配下層特濃生乳布丁，完美呈現富士山積雪景致",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%E3%83%97%E3%83%AA%E3%83%B3%20%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0"
           },
           {
-            "name": "GARIGUETTE 表參道 (千層酥派)",
+            "name": "FUJIYAMA 富士山特濃雪頂霜淇淋",
+            "rating": "★★★★☆",
+            "distance": "📍 FUJIYAMA 售票處旁",
+            "highlights": "8.5% 乳脂肪鮮奶冰淇淋，頂端灑落雪白糖霜，挑戰過山車後必吃",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%20%E3%82%BD%E3%83%95%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0"
+          },
+          {
+            "name": "金鳥居 富士山雪白生乳捲",
+            "rating": "★★★★☆",
+            "distance": "📍 富士吉田市內",
+            "highlights": "山梨在地放牧鮮乳打發輕盈生乳奶油，戚風蛋糕濕潤鬆軟",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%20%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%B1%E3%83%BC%E3%82%AD"
+          },
+          {
+            "name": "富士急限定 絕叫黑芝麻冰棒",
+            "rating": "★★★★☆",
+            "distance": "📍 樂園各點心亭",
+            "highlights": "全黑竹炭與特濃研磨黑芝麻製成，冰涼醇厚微甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%20%E3%82%A2%E3%82%A4%E3%82%B9"
+          },
+          {
+            "name": "富士急高原飯店 頂級草莓千層酥",
             "rating": "★★★★★",
-            "distance": "📍 表參道站步行 2 分",
-            "highlights": "巴黎傳統法式 Mille-pressé！現烤極薄香脆千層派皮夾入草莓特調卡士達醬",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=GARIGUETTE%20%E8%A1%A8%E5%8F%82%E9%81%93"
+            "distance": "📍 飯店甜點沙龍",
+            "highlights": "法式工法現烘千層酥皮夾入山梨產紅顏草莓與大溪地香草卡士達",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%20%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84"
           },
           {
-            "name": "資生堂 Parlour 銀座本店",
-            "rating": "★★★★☆",
-            "distance": "📍 銀座 8 丁目步行 5 分",
-            "highlights": "明治三十五年創立之銀座洋食甜點地標，招牌草莓冰淇淋聖代與花椿餅乾",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%B3%87%E7%94%9F%E5%A0%82%E3%83%91%E3%83%BC%E3%83%A9%E3%83%BC%20%E9%8A%80%E5%BA%A7%E6%9C%AC%E5%BA%97"
-          },
-          {
-            "name": "木村屋總本店 銀座本店",
-            "rating": "★★★★☆",
-            "distance": "📍 銀座 4 丁目步行 1 分",
-            "highlights": "明治天皇御用點心！日本第一代以清酒米麴天然發酵麵糰現烤之酒種櫻花紅豆麵包",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%E6%9C%A8%E6%9D%91%E5%AE%B6%20%E6%9C%AC%E5%BA%97"
-          },
-          {
-            "name": "HIGASHIYA GINZA (現代頂級和菓子茶房)",
+            "name": "HARBS 新宿 Lumine Est 店 (回程甜點)",
             "rating": "★★★★★",
-            "distance": "📍 銀座 1 丁目",
-            "highlights": "將傳統和菓子昇華為現代極簡藝術品之高級茶房，特製棗椰一口菓子",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=HIGASHIYA%20GINZA"
+            "distance": "📍 新宿東口直結",
+            "highlights": "六層新鮮當季草莓、哈密瓜、香蕉與輕盈鮮奶油交疊，入口即化",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=HARBS%20%E6%96%B0%E5%AE%BF%E3%83%AB%E3%83%9F%E3%83%8D%E3%82%A8%E3%82%B9%E3%83%88%E5%BA%97"
           },
           {
-            "name": "Cafe Kitsune Aoyama (狐狸咖啡)",
-            "rating": "★★★★☆",
-            "distance": "📍 表參道南青山",
-            "highlights": "巴黎時尚品牌 Maison Kitsuné 概念店，招牌狐狸餅乾配現萃熱拿鐵",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=Cafe%20Kitsune%20Aoyama"
-          },
-          {
-            "name": "Henri Charpentier (銀座本店)",
+            "name": "Cafe AALIYA 新宿傳奇法式吐司",
             "rating": "★★★★★",
-            "distance": "📍 銀座 2 丁目",
-            "highlights": "世界金氏紀錄費南雪名店！法式桌邊現點烈火炙燒橘皮可麗餅 (Crepe Suzette)",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%B3%E3%83%AA%E3%83%BB%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%91%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A8%20%E9%8A%80%E5%BA%A7%E6%9C%AC%E5%BA%97"
+            "distance": "📍 新宿三丁目",
+            "highlights": "特厚切吐司浸透香草蛋奶液慢煎，如舒芙蕾般爆汁軟嫩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Cafe%20AALIYA%20%E6%96%B0%E5%AE%BF"
           },
           {
-            "name": "FLIPPER'S 澀谷店 (奇蹟舒芙蕾鬆餅)",
+            "name": "追分だんご本舗 新宿醬油烤糰子",
             "rating": "★★★★☆",
-            "distance": "📍 澀谷神南步行 5 分",
-            "highlights": "入口即化的極致蓬鬆舒芙蕾鬆餅，搭配發酵黃油與當季草莓",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=FLIPPER%27S%20%E6%B8%8B%E8%B0%B7"
-          },
-          {
-            "name": "銀座 若松 (元祖餡蜜發祥店)",
-            "rating": "★★★★☆",
-            "distance": "📍 銀座 5 丁目",
-            "highlights": "明治二十七年發明「餡蜜 (Anmitsu)」之老店，黑蜜、寒天與紅豆泥",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%20%E8%8B%A5%E6%9D%BE"
+            "distance": "📍 新宿三丁目步行 8 分",
+            "highlights": "江戶創業三百年名舖！炭烤軟糯糰子刷上微甜生醬油與濃抹茶白玉",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%BF%BD%E5%88%86%E3%81%A0%E3%82%93%E3%81%94%E6%9C%AC%E8%88%97%20%E6%96%B0%E5%AE%BF"
           }
         ],
         "beverage": [
           {
-            "name": "Bar High Five (銀座頂級調酒)",
+            "name": "富士櫻高原麥酒 (Fujizakura Heights Beer)",
             "rating": "★★★★★",
-            "distance": "📍 銀座 5 丁目步行 4 分",
-            "highlights": "調酒教父上野秀嗣先生主持！鑽石純手工鑿切冰球與極致細膩 White Lady 調酒",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar%20High%20Five%20%E9%8A%80%E5%BA%A7"
+            "distance": "📍 樂園餐飲區與賣店",
+            "highlights": "世界啤酒大賽冠軍！引富士山深層伏流水釀造，Pilsner 麥香厚實、Weizen 丁香果香迷人",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E6%A1%9C%E9%AB%98%E5%8E%9F%E9%BA%A6%E9%85%92%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
           },
           {
-            "name": "Starbucks Reserve Roastery Tokyo",
+            "name": "甲州甲斐 純米大吟釀 (山梨地酒)",
             "rating": "★★★★★",
-            "distance": "📍 中目黑步行 10 分",
-            "highlights": "隈研吾大師設計 4 層樓烘焙工坊！巨大銅製櫻花烘豆機、特調咖啡雞尾酒與現烤 Princi 麵包",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%20%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%96%20%E3%83%AD%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%AA%E3%83%BC%20%E6%9D%B1%E4%BA%AC"
+            "distance": "📍 伴手禮旗艦館",
+            "highlights": "山梨名水與特選酒米低溫發酵，水蜜桃般優雅吟釀香與清澈俐落尾韻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%94%B2%E5%B7%9E%20%E6%97%A5%E6%9C%AC%E9%85%92%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
           },
           {
-            "name": "FUGLEN TOKYO (挪威精品咖啡)",
+            "name": "富士山深層伏流水 手沖滴濾黑咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 麗莎小鎮咖啡廳",
+            "highlights": "天然火山玄武岩層過濾軟水手沖，去除雜味，咖啡甘醇回甘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%20%E6%B9%A7%E6%B0%B4%20%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC"
+          },
+          {
+            "name": "富士山麓 樽熟原酒 50° 威士忌",
             "rating": "★★★★★",
-            "distance": "📍 澀谷代代木步行 7 分",
-            "highlights": "來自奧斯陸的世界級淺焙咖啡館！北歐復古家具氛圍，手沖肯亞明亮果酸迷人",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=FUGLEN%20TOKYO%20%E6%B8%8B%E8%B0%B7"
+            "distance": "📍 特產部",
+            "highlights": "麒麟富士御殿場蒸餾所代表作，非冷凝過濾，橡木桶焦糖與乾果香氣濃烈",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%E9%BA%93%20%E3%82%A6%E3%82%A4%E3%82%B9%E3%82%AD%E3%83%BC"
           },
           {
-            "name": "KATE Rose Bar (神田雪具街酒吧)",
+            "name": "山梨產 勝沼白葡萄酒 (Koshu Dry)",
             "rating": "★★★★☆",
-            "distance": "📍 神田小川町步行 3 分",
-            "highlights": "雪友逛街交流必訪！提供各國精釀生啤酒與溫熱波本威士忌",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E7%94%B0%20%E5%B0%8F%E5%B7%9D%E7%94%BA%20%E3%83%90%E3%83%BC"
+            "distance": "📍 飯店酒吧",
+            "highlights": "日本國產葡萄酒發祥地！甲州原生葡萄釀造，柑橘清香搭配和食極佳",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8B%9D%E6%B2%BC%E3%83%AF%E3%82%A4%E3%83%B3%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
           },
           {
-            "name": "The SG Club (澀谷世界級調酒)",
+            "name": "富士急限定 絕叫辛口薑汁汽水",
+            "rating": "★★★★☆",
+            "distance": "📍 樂園飲料販賣部",
+            "highlights": "超強氣泡感與辛辣生薑萃取原汁，搭完過山車一飲而盡瞬間甦醒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E6%80%A5%20%E3%82%B8%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%A8%E3%83%BC%E3%83%AB"
+          },
+          {
+            "name": "富士山天然釩礦泉水 (Vanadium Water)",
+            "rating": "★★★★☆",
+            "distance": "📍 園區自動販賣機",
+            "highlights": "富含天然釩微量元素之清涼礦泉水，解渴甘冽",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%20%E3%83%90%E3%83%8A%E3%82%B8%E3%82%A6%E3%83%A0%E5%A4%A9%E7%84%B6%E6%B0%B4"
+          },
+          {
+            "name": "Bar Ben Fiddich 新宿草本調酒 (回程小酌)",
             "rating": "★★★★★",
-            "distance": "📍 澀谷神南步行 8 分",
-            "highlights": "世界頂尖調酒大師後藤後治力作，融合江戶時期黑幫與現代紐約風格調酒",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=The%20SG%20Club%20%E6%B8%8B%E8%B0%B7"
+            "distance": "📍 新宿角屋步行 4 分",
+            "highlights": "世界 50 大酒吧！鹿山博康先生以自種天然草本與香料現場調配魔幻雞尾酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar%20BenFiddich%20%E6%96%B0%E5%AE%BF"
           },
           {
-            "name": "Bar Lupin (銀座傳奇無賴派文學酒吧)",
-            "rating": "★★★★★",
-            "distance": "📍 銀座 5 丁目",
-            "highlights": "太宰治、坂口安吾鍾愛之昭和老酒吧，完整保留八十年木造吧台與經典威士忌調酒",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%90%E3%83%BC%20%E3%83%AB%E3%83%91%E3%83%B3%20%E9%8A%80%E5%BA%A7"
-          },
-          {
-            "name": "Coffee Elementary School (澀谷手沖咖啡)",
+            "name": "YONA YONA BEER WORKS 新宿店",
             "rating": "★★★★☆",
-            "distance": "📍 澀谷櫻丘",
-            "highlights": "以咖啡學校為概念之極簡小店，精選埃塞俄比亞微批次精品手沖",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%8F%88%E7%90%B2%E5%B0%8F%E5%AD%A6%E6%A0%A1%20%E6%B8%8B%E8%B0%B7"
+            "distance": "📍 新宿東口",
+            "highlights": "輕井澤 Yo-Ho Brewery 直營生啤酒，印度青鬼 IPA 苦韻香氣飽滿",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%88%E3%81%AA%E3%82%88%E3%81%AA%E3%83%93%E3%82%A2%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%20%E6%96%B0%E5%AE%BF"
           },
           {
-            "name": "Spring Valley Brewery Tokyo (代官山)",
+            "name": "樂園熱呼呼 蜜漬柚子生薑茶",
             "rating": "★★★★☆",
-            "distance": "📍 代官山步行 4 分",
-            "highlights": "麒麟直營精釀啤酒釀造餐廳，提供 6 款生啤 Tasting Set 與窯烤披薩",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%90%E3%83%AC%E3%83%BC%E3%83%96%E3%83%AB%E3%83%AF%E3%83%AA%E3%83%BC%20%E6%9D%B1%E4%BA%AC"
-          },
-          {
-            "name": "Ginza Brewery (銀座在地精釀啤酒)",
-            "rating": "★★★★☆",
-            "distance": "📍 銀座 6 丁目",
-            "highlights": "都市地下微型酒廠，現釀皮爾森與 IPA 鮮度滿分",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%20%E3%83%96%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%91%E3%83%96"
-          },
-          {
-            "name": "虎之門蒸留所 (Tokyo Craft Gin)",
-            "rating": "★★★★☆",
-            "distance": "📍 虎之門 Hills",
-            "highlights": "東京在地蒸餾琴酒，加入八丈島檸檬與島胡椒釀造之高球調酒",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%99%8E%E3%83%8E%E9%96%80%E8%92%B8%E7%95%99%E6%89%80"
+            "distance": "📍 園內熱飲吧",
+            "highlights": "冬日排隊保暖必備！新鮮柚子皮搭配薑汁蜂蜜，暖胃驅寒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E6%80%A5%20%E3%83%9B%E3%83%83%E3%83%88%E3%82%86%E3%81%9A%E8%8C%B6"
           }
         ],
         "souvenir": [
           {
-            "name": "Echire Maison du Beurre (艾許黃油)",
+            "name": "桔梗信玄餅 經典布包 8入禮盒",
             "rating": "★★★★★",
-            "distance": "📍 丸之內 Brick Square 1F",
-            "highlights": "法國頂級 Echire 奶油專賣店！香氣爆發之藍罐 Sablé 餅乾與特厚焦糖可麗露",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%A8%E3%82%B7%E3%83%AC%E3%83%BB%E3%83%A1%E3%82%BE%E3%83%B3%20%E3%83%87%E3%83%A5%20%E3%83%96%E3%83%BC%E3%83%AB%20%E4%B8%B8%E3%81%AE%E5%86%85"
+            "distance": "📍 樂園伴手禮旗艦館",
+            "highlights": "山梨代表名物第一名！傳統和風花巾包裹，淋上香濃黑蜜與炒黃豆粉，送禮體面",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%A1%94%E6%A2%97%E4%BF%A1%E7%8E%84%E9%A4%85%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
           },
           {
-            "name": "AUDREY (草莓花束餅乾)",
+            "name": "富士山俱樂部 雪白巧克力薄餅禮盒",
             "rating": "★★★★★",
-            "distance": "📍 澀谷站 / 銀座三越 B2",
-            "highlights": "超級人氣排隊名產！甜筒造型薄餅包覆濃醇鮮奶油與凍乾草莓，如同一束小花",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%AA%E3%83%BC%E3%83%89%E3%83%AA%E3%83%BC%20%E3%81%8A%E8%8F%93%E5%AD%90%20%E6%9D%B1%E4%BA%AC"
+            "distance": "📍 特產部",
+            "highlights": "富士山形狀香脆酥餅，峰頂披覆白巧克力如冬雪，精緻唯美",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%82%B8%E3%83%A4%E3%83%9E%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
           },
           {
-            "name": "銀座松崎煎餅 (彩繪三味胴)",
+            "name": "富士急樂園 4大過山車官方金屬徽章",
+            "rating": "★★★★★",
+            "distance": "📍 樂園紀念品店",
+            "highlights": "FUJIYAMA、Eejanaika、Takabisha、ZOKKON 四大過山車原創金屬質感紀念章",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%20%E3%83%90%E3%83%83%E3%82%B8"
+          },
+          {
+            "name": "戰慄迷宮 禁忌處方箋與除魔符咒造型巧克力",
             "rating": "★★★★☆",
-            "distance": "📍 銀座 4 丁目",
-            "highlights": "江戶創業二百年！純手工以糖霜彩繪四季雪景花鳥之瓦煎餅禮盒",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%20%E6%9D%BE%E5%B4%8E%E7%85%8E%E9%A4%85"
+            "distance": "📍 慈急綜合病院出口賣店",
+            "highlights": "世界最長鬼屋原創惡搞伴手禮！藥袋包裝與避邪符造型巧克力，話題十足",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%88%A6%E6%85%84%E8%BF%B7%E5%AE%AE%20%E3%81%8A%E5%9C%9F%E7%94%A3"
           },
           {
-            "name": "Alpen TOKYO 原創滑雪配件",
-            "rating": "★★★★★",
-            "distance": "📍 新宿東口步行 2 分",
-            "highlights": "全日本最大級運動用品旗艦館！最新款雪鏡防霧噴霧、雪板蠟與機能發熱襪",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=Alpen%20TOKYO%20%E6%96%B0%E5%AE%BF"
-          },
-          {
-            "name": "銀座篝 濃厚雞白湯生拉麵禮盒",
+            "name": "富士櫻高原麥酒 4 入冠軍精釀禮盒",
             "rating": "★★★★☆",
-            "distance": "📍 銀座篝店內",
-            "highlights": "常溫保存濃縮純雞白湯高湯包與特製小麥麵條，送禮極受歡迎",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%20%E7%AF%9D%20%E3%81%8A%E5%9C%9F%E7%94%A3"
+            "distance": "📍 伴手禮店",
+            "highlights": "包含 Pilsner、Weizen、Rauch 等世界啤酒大賞金牌款式之精緻盒裝",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E6%A1%9C%E9%AB%98%E5%8E%9F%E9%BA%A6%E9%85%92%20%E3%82%AE%E3%83%95%E3%83%88"
           },
           {
-            "name": "Ginza Six 辻利 濃抹茶法蘭酥禮盒",
+            "name": "FUJIYAMA 絕叫防寒刺繡毛巾與T恤",
             "rating": "★★★★☆",
-            "distance": "📍 Ginza Six B2",
-            "highlights": "宇治茶老舖精心烘焙薄脆餅夾入微苦高濃抹茶夾心",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%BE%BB%E5%88%A9%20%E9%8A%80%E5%BA%A7%E3%82%B7%E3%83%83%E3%82%AF%E3%82%B9"
+            "distance": "📍 官方周邊專門店",
+            "highlights": "印有標高 79m、時速 130km/h 之過山車之王挑戰認證吸汗毛巾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=FUJIYAMA%20%E3%82%BF%E3%82%AA%E3%83%AB%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
           },
           {
-            "name": "SHIBUYA SKY 官方限定星空紀念貼紙與徽章",
+            "name": "甲州印傳 (Inden-ya) 鹿皮漆器名片夾",
             "rating": "★★★★★",
-            "distance": "📍 46F 觀景台賣店",
-            "highlights": "極簡線條描繪東京天際線與高空夜景之原創文創紀念品",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=SHIBUYA%20SKY%20%E3%81%8A%E5%9C%9F%E7%94%A3"
+            "distance": "📍 傳統工藝專櫃",
+            "highlights": "山梨四百年國家級傳統工藝，天然鹿皮點綴黑生漆富士山波紋，典雅耐用",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%94%B2%E5%B7%9E%E5%8D%B0%E4%BC%9D%20%E5%AF%8C%E5%A3%AB%E5%B1%B1"
           },
           {
-            "name": "Itoya (銀座伊東屋 百年高級文具)",
-            "rating": "★★★★★",
-            "distance": "📍 銀座 2 丁目",
-            "highlights": "整棟 12 層樓世界文具殿堂！日本頂級手帳、鋼筆與原創皮革配件",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%20%E4%BC%8A%E6%9D%B1%E5%B1%8B"
-          },
-          {
-            "name": "Victoria Surf&Snow 神田店 原創雪板護板套",
-            "rating": "★★★★★",
-            "distance": "📍 神田小川町",
-            "highlights": "專業厚磅氯丁橡膠雪板邊刃保護套，雪友保護愛板必買",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%B4%E3%82%A3%E3%82%AF%E3%83%88%E3%83%AA%E3%82%A2%20%E5%BE%A1%E8%8C%B6%E3%83%8E%E6%B0%B4"
-          },
-          {
-            "name": "Murasaki Sports 神田店 滑雪戶外機能襪",
+            "name": "富士山四季羊羹 精緻小木盒裝",
             "rating": "★★★★☆",
-            "distance": "📍 神田小川町",
-            "highlights": "單板專用防磨加厚分段加壓滑雪襪，耐用支撐度佳",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%20%E7%A5%9E%E7%94%B0"
+            "distance": "📍 特產館",
+            "highlights": "切片即展現出山頂白雪與山脈輪廓之藝術和菓子",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%20%E7%BE%8A%E7%BE%B9"
+          },
+          {
+            "name": "NEWYORK PERFECT CHEESE (新宿站西口)",
+            "rating": "★★★★★",
+            "distance": "📍 回程新宿站內",
+            "highlights": "東京排隊名產！薄脆貓舌餅包裹白巧克力與丹麥切達起司棒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E3%83%81%E3%83%BC%E3%82%BA%20%E4%BA%AC%E7%8E%8B%E6%96%B0%E5%AE%BF"
+          },
+          {
+            "name": "Butter Butler 瑞士發酵黃油費南雪",
+            "rating": "★★★★★",
+            "distance": "📍 新宿 NEWoMan 2F",
+            "highlights": "JR 東日本伴手禮金賞！外層酥脆內裡爆汁奶油香氣",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%90%E3%82%BF%E3%83%BC%E3%83%90%E3%83%88%E3%83%A9%E3%83%BC%20%E6%96%B0%E5%AE%BF"
           }
         ],
         "attractions": [
           {
-            "name": "神田小川町雪具街 (Snowboard Street)",
+            "name": "富士急樂園 FUJIYAMA (過山車之王)",
             "rating": "★★★★★",
-            "distance": "📍 神田小川町站步行 2 分",
-            "highlights": "全球最密集單板與雙板滑雪裝備專賣街！聚集數十家雪具老店、Victoria、Murasaki，雪具採買挖寶殿堂",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E7%94%B0%E5%B0%8F%E5%B7%9D%E7%94%BA%20%E3%82%B9%E3%82%AD%E3%83%BC%E8%A1%97"
+            "distance": "📍 樂園核心區",
+            "highlights": "最高時速 130km/h、最大落差 70m、最高點 79m！俯瞰富士山絕景後瞬間俯衝之傳奇雲霄飛車",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=FUJIYAMA%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
           },
           {
-            "name": "SHIBUYA SKY (高空露天展望台)",
+            "name": "富士急樂園 ええじゃないか (Eejanaika 4次元過山車)",
             "rating": "★★★★★",
-            "distance": "📍 澀谷 Scramble Square 46F",
-            "highlights": "高達 229 公尺露天全景平台！俯瞰世界最繁忙的澀谷十字路口與東京鐵塔/富士山無遮蔽全景",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=SHIBUYA%20SKY"
+            "distance": "📍 園區東側",
+            "highlights": "總旋轉數 14 次金氏世界紀錄！座椅自轉、車體公轉、軌道翻滾，雙腳懸空極限瘋狂翻轉",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%88%E3%81%88%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%8B%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
           },
           {
-            "name": "宮下公園 (MIYASHITA PARK)",
-            "rating": "★★★★☆",
-            "distance": "📍 澀谷站步行 3 分",
-            "highlights": "結合屋頂綠地滑板場、流行潮流旗艦店、特色橫丁餐廳街的新世代澀谷地標",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%9F%E3%83%A4%E3%82%B7%E3%82%BF%E3%83%91%E3%83%BC%E3%82%AF%20%E6%B8%8B%E8%B0%B7"
-          },
-          {
-            "name": "銀座中央通 (Ginza Chuo-dori)",
-            "rating": "★★★★☆",
-            "distance": "📍 銀座站出站即達",
-            "highlights": "世界頂級名店與百年文具老舖伊東屋 (Itoya)、Ginza Six 林立的奢華漫步大道",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%E4%B8%AD%E5%A4%AE%E9%80%9A%E3%82%8A"
-          },
-          {
-            "name": "Alpen TOKYO 新宿旗艦館",
+            "name": "富士急樂園 高飛車 (Takabisha 121° 垂直下落)",
             "rating": "★★★★★",
-            "distance": "📍 新宿東口步行 2 分",
-            "highlights": "B2 到 8F 整棟超巨型運動旗艦店！全日本最齊全滑雪器材、露營戶外用品集中展示",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=Alpen%20TOKYO%20%E6%96%B0%E5%AE%BF"
+            "distance": "📍 園區中央",
+            "highlights": "最大下落角度 121 度世界紀錄！90 度垂直爬升直面天空後向內急墜，失重感震撼無比",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E9%A3%9B%E8%BB%8A%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
           },
           {
-            "name": "澀谷 Scramble 交叉路口",
+            "name": "富士急樂園 ZOKKON (新世代摩托過山車)",
             "rating": "★★★★★",
-            "distance": "📍 澀谷八公口前",
-            "highlights": "全球最著名十字路口，每次綠燈數千人穿梭交會的東京脈動景觀",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%B8%8B%E8%B0%B7%20%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E4%BA%A4%E5%B7%AE%E7%82%B9"
+            "distance": "📍 2023 全新設施區",
+            "highlights": "騎乘帥氣重機造型座艙高速彈射加速！包含室內聲光隧道、急速倒退衝刺與過彎壓車",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=ZOKKON%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
           },
           {
-            "name": "明治神宮 (Meiji Jingu 森之神域)",
+            "name": "戰慄迷宮 ～慈急綜合病院～ (世界最長恐怖鬼屋)",
             "rating": "★★★★★",
-            "distance": "📍 原宿站步行 2 分",
-            "highlights": "七十公頃人工原始森林環抱之肅穆神社，雪後參道古木參天氣場非凡",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%98%8E%E6%B2%BB%E7%A5%9E%E5%AE%AE"
+            "distance": "📍 園區後方",
+            "highlights": "步行全長 900 米、體驗時間逾 50 分鐘！完整廢棄隔離醫院造景、逼真消毒水氣味與極限驚悚",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%88%A6%E6%85%84%E8%BF%B7%E5%AE%AE%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
           },
           {
-            "name": "表參道之丘 (Omotesando Hills)",
+            "name": "麗莎與卡斯柏小鎮 (La Ville de Gaspard et Lisa)",
             "rating": "★★★★☆",
-            "distance": "📍 表參道站步行 3 分",
-            "highlights": "安藤忠雄大師操刀設計之斜坡回旋式建築，精品與生活美學旗艦店集中",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%A1%A8%E5%8F%82%E9%81%93%E3%83%92%E3%83%AB%E3%82%BA"
+            "distance": "📍 樂園第一入園口旁",
+            "highlights": "免門票重現巴黎街景！艾菲爾鐵塔、復古旋轉木馬、噴水池與繪本主題商店，拍照極美",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AA%E3%82%B5%E3%81%A8%E3%82%AC%E3%82%B9%E3%83%91%E3%83%BC%E3%83%AB%20%E3%82%BF%E3%82%A6%E3%83%B3"
           },
           {
-            "name": "銀座 歌舞伎座 (Kabuki-za)",
-            "rating": "★★★★☆",
-            "distance": "📍 東銀座站直結",
-            "highlights": "日本傳統演劇殿堂，桃山時代風格瓦頂雄偉華麗，B1 設有木挽町廣場特產街",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%AD%8C%E8%88%9E%E4%BC%8E%E5%BA%A7%20%E9%8A%80%E5%BA%A7"
+            "name": "FUJIYAMA TOWER (55米富士山高空展望露台)",
+            "rating": "★★★★★",
+            "distance": "📍 FUJIYAMA 軌道旁",
+            "highlights": "登上 55 米高空觀景台，毫無遮蔽直面雪白壯麗富士山！附設高空滑梯與懸空步道",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=FUJIYAMA%E3%82%BF%E3%83%AF%E3%83%BC"
           },
           {
-            "name": "秋葉原 萬世橋 mAAch ecute",
+            "name": "富士飛行社 (Fuji Airways 4D 飛行影院)",
             "rating": "★★★★☆",
-            "distance": "📍 秋葉原/神田步行 6 分",
-            "highlights": "紅磚鐵道高架橋改建之文創商場，近距離感受中央線列車兩側穿梭呼嘯",
-            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%BC%E3%83%81%E3%82%A8%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%88%20%E7%A5%9E%E7%94%B0%E4%B8%87%E4%B8%96%E6%A9%8B"
+            "distance": "📍 園區入口旁",
+            "highlights": "懸吊式飛行座椅搭配直徑 20 米巨大半球螢幕，迎著清風與花香俯瞰富士山四季壯麗航拍",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E9%A3%9B%E8%A1%8C%E7%A4%BE%20%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89"
+          },
+          {
+            "name": "富士山溫泉 (Fujiyama Onsen 天然名湯)",
+            "rating": "★★★★★",
+            "distance": "📍 樂園旁步行 3 分",
+            "highlights": "全日本最大純木造町屋建築溫泉館！弱鹼性天然名湯，玩完刺激遊樂設施後徹底舒緩肌肉",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%B5%E3%81%98%E3%82%84%E3%81%BE%E6%B8%A9%E6%B3%89"
+          },
+          {
+            "name": "東京都廳展望室 (回程新宿高空夜景)",
+            "rating": "★★★★★",
+            "distance": "📍 角屋飯店步行 8 分",
+            "highlights": "免費登上 45 樓 202 米展望台，360 度俯瞰東京繁華璀璨萬家燈火與新宿天際線",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%BA%81%E5%B1%95%E6%9C%9B%E5%AE%A4"
           }
         ]
       }
