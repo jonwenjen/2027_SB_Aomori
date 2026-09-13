@@ -1,0 +1,3461 @@
+{
+  "trip_title": "2027 東北滑雪・極致粉雪與冬奧入瀨秘境行",
+  "github_meta": {
+    "owner": "jonwenjen",
+    "repo": "2027_SB_Aomori",
+    "branch": "main"
+  },
+  "flights": [
+    {
+      "type": "arrival",
+      "date": "2027-02-09",
+      "flight_number": "BR122",
+      "airline": "長榮航空 (EVA Air)",
+      "departure": {
+        "airport": "TPE (台北桃園 T2)",
+        "time": "10:00"
+      },
+      "arrival": {
+        "airport": "AOJ (青森機場)",
+        "time": "14:30"
+      }
+    },
+    {
+      "type": "departure",
+      "date": "2027-02-24",
+      "flight_number": "UA837",
+      "airline": "聯合航空 (United Airlines)",
+      "departure": {
+        "airport": "NRT (成田第 1 航廈南翼)",
+        "time": "17:30"
+      },
+      "arrival": {
+        "airport": "KHH (高雄小港)",
+        "time": "21:00"
+      }
+    }
+  ],
+  "ski_resorts_overview": [
+    {
+      "name": "Moya Hills モヤヒルズ",
+      "elevation": "120m - 550m",
+      "official_website": "http://www.moyahills.jp/",
+      "course_map_url": "http://www.moyahills.jp/ski/course/",
+      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Moya-Hills/6day/mid",
+      "map_image_url": "http://www.moyahills.jp/ski/course/img/coursemap.png"
+    },
+    {
+      "name": "八甲田纜車 ＆ 滑雪場 (Hakkoda Ropeway)",
+      "elevation": "670m - 1,324m",
+      "official_website": "http://www.hakkoda-ropeway.jp/",
+      "course_map_url": "http://www.hakkoda-ropeway.jp/nature/ski",
+      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Hakkoda/6day/mid",
+      "map_image_url": "http://www.hakkoda-ropeway.jp/wp-content/themes/hakkoda/images/ski_map.png"
+    },
+    {
+      "name": "網張溫泉滑雪場 (Amihari Onsen)",
+      "elevation": "770m - 1,350m",
+      "official_website": "https://www.qkamura.or.jp/iwate/ski/",
+      "course_map_url": "https://www.qkamura.or.jp/iwate/ski/",
+      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Amihari-Onsen/6day/mid",
+      "map_image_url": "https://www.qkamura.or.jp/iwate/ski/images/map.png"
+    },
+    {
+      "name": "岩手高原戲雪公園 (Iwate Kogen Snow Park)",
+      "elevation": "630m - 1,213m",
+      "official_website": "https://iwatekogen.jp/",
+      "course_map_url": "https://iwatekogen.jp/gelande/",
+      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Iwate-Kogen-Snow-Park/6day/mid",
+      "map_image_url": "https://iwatekogen.jp/gelande/img/map.jpg"
+    },
+    {
+      "name": "奧中山高原滑雪場 (Okunakayamakogen)",
+      "elevation": "580m - 1,018m",
+      "official_website": "https://www.okunakayama.jp/",
+      "course_map_url": "https://www.okunakayama.jp/gelande/",
+      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
+      "map_image_url": "https://www.okunakayama.jp/wp-content/themes/okunakayama/images/gelande_map.png"
+    }
+  ],
+  "contingency_plans": [
+    {
+      "title": "備案 1：暴風雪與強風纜車停駛應變 (Blizzard & Lift Suspension)",
+      "icon": "🌪️",
+      "scenario": "八甲田纜車、岩手山頂纜車或各雪場因強烈暴風雪停駛",
+      "actions": [
+        "八甲田停駛應變：立即改往低海拔且避風的 Moya Hills（車程 40 分），或轉訪青森市內室內景點（睡魔之家 Wa Rasse、青森縣立美術館、三內丸山遺跡），並前往淺蟲溫泉或三內溫泉泡湯。",
+        "網張溫泉/岩手高原停駛應變：若網張溫泉高空吊椅停駛，轉往岩手高原全罩式箱型纜車（Gondola 抗風能力強）；若全面停運，搭乘巴士或計程車至盛岡市區（盛岡城跡公園、啄木新婚之居、繋溫泉）。",
+        "奧中山高原停駛應變：改為享受飯店館內「朝陽之湯」與「煌星之湯」琥珀色天然溫泉巡禮，或搭車前往一戶町御所野繩文世界遺產公園博物館。"
+      ]
+    },
+    {
+      "title": "備案 2：低溫降雪不足或雨雪混雜應變 (Low Snow & Wet Conditions)",
+      "icon": "🌧️",
+      "scenario": "遭遇暖冬雨雪混雜或低海拔雪道雪況不佳",
+      "actions": [
+        "策略轉移至高海拔雪場：直攻八甲田山頂（1,324m）或網張溫泉上部（1,350m），高海拔維持零下超低溫與乾燥粉雪狀態。",
+        "裝備切換：準備雨雪全天候雪鏡黃色/增光鏡片，塗抹低溫濕雪專用氟素蠟或全天候水蠟，維持板底撥水排水性。",
+        "室內文化手作替換：若全日降雨，啟動盛岡市手工藝村（盛岡手づくり村）南部鐵器製作體驗、蕎麥麵手作工坊與八食中心海鮮盛宴。"
+      ]
+    },
+    {
+      "title": "備案 3：鐵路或巴士交通延誤與雪崩封閉應變 (Transit Delay & Road Closures)",
+      "icon": "⚠️",
+      "scenario": "青之森鐵路、IGR 銀河鐵道或冬奧入瀨號巴士因大雪延誤或中斷",
+      "actions": [
+        "地方鐵道受阻備案：青森至八戶、盛岡至奧中山高原若在來線受阻，立即改搭「東北新幹線」（新青森 ➔ 八戶 ➔ 二戶 ➔ 盛岡），新幹線配備高規格融雪防凍設施，運轉穩定度最高。",
+        "冬奧入瀨號道路封閉：若國道 102 號/103 號封路，JR 巴士將繞行國道 104 號；若完全封閉，由 Hotel Towadaso 啟動緊急備用接駁車或協調退費改住八戶/盛岡市區飯店。",
+        "計程車應急專案：各重要節點均已備妥 4WD 雪地計程車電話（青森三和交通 017-742-2225 / 八戶中央計程車 0178-44-1111 / 盛岡タクシー 019-651-2090）。"
+      ]
+    },
+    {
+      "title": "備案 4：機場航班與返國動線暴雪應變 (Flight Delay & Narita Transit)",
+      "icon": "✈️",
+      "scenario": "2/9 青森降雪盤旋延誤 或 2/24 新宿往成田特快停駛",
+      "actions": [
+        "2/9 BR122 去程若轉降仙台或羽田：由仙台站直接搭乘東北新幹線 Hayabusa（約 1.5 小時）直達新青森站，轉乘奧羽本線 1 站即達青森站前。",
+        "2/21 提前宅急便直寄成田：於奧中山高原提前將主力雪具交寄黑貓空港便，直達 2/24 成田 T1 GPA 櫃台，避免人車扛運風險。",
+        "2/24 回程若 JR 成田特快 N'EX 停駛：立即於新宿搭乘 JR 山手線（20 分）至日暮里站，轉乘每 20 分一班之京成 Skyliner（車程 36 分直達機場第 1 航廈），Skyliner 走專用高架路廊抗風雨能力最佳。"
+      ]
+    }
+  ],
+  "days": [
+    {
+      "day_number": 1,
+      "date": "2027-02-09",
+      "day_title": "抵達青森・進駐青森站前・裝備檢查與在地旬味",
+      "stay": "Hotel Route-Inn Aomori Ekimae (ホテルルートイン青森駅前)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel+Route-Inn+Aomori+Ekimae",
+      "ski_resort": null,
+      "transit": {
+        "summary": "青森機場 (AOJ) ➔ JR 巴士東北・青森機場線直達青森站前 (車程約 35 分，提供 2 組班次選項)",
+        "details": [
+          "14:30 BR122 降落青森機場 (AOJ)，預留 45 分鐘入境查驗、提領行李與雪具裝備。",
+          "【交通選項 A（配合航班首選・15:45 抵達）】：青森機場 2 號站牌搭乘 15:10 發車之 JR 巴士東北（青森機場線）➔ 15:45 直達青森站前 9 號站牌（每人精算花費：¥860）。距離 18:00 飯店 Check-in 截止時間足足有 2 小時 15 分超充裕餘裕！",
+          "【交通選項 B（彈性次班・16:35 抵達）】：若出關領取雪具耗時，改搭 16:00 發車之 JR 巴士東北 ➔ 16:35 抵達青森站前（每人精算花費：¥860）。距 18:00 仍有近 1.5 小時充足時間。",
+          "【計程車精算對比】：青森機場至飯店約 14 公里，車程 25 分。小型計程車單程約 ¥5,000（1 人搭乘每人花費：¥5,000；2 人共乘每人花費：¥2,500）。",
+          "下車步行 1 分鐘即達 Hotel Route-Inn Aomori Ekimae 入住，大廳設有雪具放置空間與頂樓天然人工溫泉大浴場。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "味之札幌 大西 (味の札幌 大西)",
+            "rating": "★★★★★",
+            "distance": "📍 步行 7 分",
+            "highlights": "青森靈魂美食「味噌咖哩牛奶拉麵」創始名店！味噌香濃、咖哩微辛、牛奶溫潤，搭配大塊北海道奶油與爽脆筍乾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Aji+no+Sapporo+Onishi+Aomori"
+          },
+          {
+            "name": "青森帆立小屋 (帆立小屋)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站前步行 2 分",
+            "highlights": "超人氣現釣扇貝體驗店！500 圓限時釣扇貝，可現場現開刺身、炭烤或握壽司，鮮甜多汁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hotate-goya+Aomori"
+          },
+          {
+            "name": "おさない 食堂 (Osanai 食堂)",
+            "rating": "★★★★☆",
+            "distance": "📍 青森站前步行 3 分",
+            "highlights": "青森市民與旅人最推海鮮定食老店！招牌活扇貝奶油燒定食、陸奧灣生魚片與海膽丼，平價美味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Osanai+Shokudo+Aomori"
+          },
+          {
+            "name": "一八壽司 (Ippachi Sushi)",
+            "rating": "★★★★☆",
+            "distance": "📍 青森站東口步行 8 分",
+            "highlights": "在地六十年江戶前老壽司店，當日陸奧灣近海直送黑鮪魚、甜蝦、活干貝握壽司套餐極具性價比",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ippachi+Sushi+Aomori"
+          },
+          {
+            "name": "長尾中華拉麵 青森站前店",
+            "rating": "★★★★☆",
+            "distance": "📍 青森站前步行 1 分",
+            "highlights": "津輕煮干拉麵名門！「濃口煮干」以特量小魚乾慢火熬煮濃郁魚介豚骨湯頭，搭配特粗手揉麵條驅寒過癮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nagao+Chuka+Soba+Aomori+Ekimae"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "赤い林檎 本店 (Akai Ringo)",
+            "rating": "★★★★★",
+            "distance": "📍 新町通步行 9 分",
+            "highlights": "青森洋菓子老店！招牌手工心型蘋果派 (Heart Apple Pie)，嚴選紅玉蘋果酸甜脆口、派皮酥脆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Akai+Ringo+Honten+Aomori"
+          },
+          {
+            "name": "Sweets Factory PAM-PAM (A-FACTORY 1F)",
+            "rating": "★★★★★",
+            "distance": "📍 步行 3 分",
+            "highlights": "A-FACTORY 內超人氣現烤千層蘋果派，黃金酥脆外皮包覆整塊蜜煮富士蘋果",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=PAM-PAM+A-FACTORY+Aomori"
+          },
+          {
+            "name": "甘精堂 本店 (Kanseido)",
+            "rating": "★★★★☆",
+            "distance": "📍 新町通步行 8 分",
+            "highlights": "萬延元年創立之青森老字號和菓子店，招牌昆布羊羹與栗最中，甜度優雅細膩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kanseido+Honten+Aomori"
+          },
+          {
+            "name": "Macaron et Chocolat (Aomori)",
+            "rating": "★★★★☆",
+            "distance": "📍 柳町通步行 10 分",
+            "highlights": "法式精品馬卡龍與青森黑加侖 (Cassis) 生巧克力，冬季限定雪季禮盒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Macaron+et+Chocolat+Aomori"
+          },
+          {
+            "name": "喫茶マロン (Coffee Shop Maron)",
+            "rating": "★★★★☆",
+            "distance": "📍 步行 11 分",
+            "highlights": "昭和風復古喫茶館！手沖炭焙咖啡佐招牌手工香蕉巧克力戚風蛋糕與自製焦糖布丁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kissaten+Maron+Aomori"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "A-FACTORY 西打酒工房 (Aomori Cidre)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站西口步行 3 分",
+            "highlights": "館內全透明玻璃蘋果西打酒造，設有自動試飲機（可購卡體驗 Sweet、Standard、Dry 與限定款 Cidre）",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=A-FACTORY+Aomori+Cidre"
+          },
+          {
+            "name": "地酒屋 鳴海 (Narumi 地酒專賣)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站東口步行 6 分",
+            "highlights": "青森地酒指標專賣！齊備「田酒」、「八仙」、「豊盃」等青森夢幻名酒生原酒與純米大吟釀",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Narumi+Sake+Shop+Aomori"
+          },
+          {
+            "name": "津輕酒場 じょっぱり (Joppari)",
+            "rating": "★★★★☆",
+            "distance": "📍 本町居酒屋街步行 12 分",
+            "highlights": "地酒狂熱者必訪居酒屋，提供六十種津輕地酒單杯品飲與青森鄉土刺身",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsugaru+Sakaba+Joppari+Aomori"
+          },
+          {
+            "name": "Bar Mimosa (青森水準酒吧)",
+            "rating": "★★★★☆",
+            "distance": "📍 新町步行 8 分",
+            "highlights": "資深調酒師調製青森新鮮蘋果白蘭地特調 (Calvados Cocktail) 與冬季熱香料酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar+Mimosa+Aomori"
+          },
+          {
+            "name": "Aomori Brewery Taproom",
+            "rating": "★★★★☆",
+            "distance": "📍 港町步行 10 分",
+            "highlights": "青森在地精釀啤酒吧，招牌奧入瀨水系釀造 IPA 與十和田湖小麥生啤酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Aomori+Craft+Beer+Taproom"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "RAGUENEAU 富士蘋果派 (パティシエのりんごスティック)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站 Lovina 1F",
+            "highlights": "青森最知名長條狀蘋果派！酥皮包裹大塊糖漬蘋果與海綿蛋糕，便於攜帶分享",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ragueneau+Aomori+Lovina"
+          },
+          {
+            "name": "八戶酒造 陸奧八仙 純米大吟釀禮盒",
+            "rating": "★★★★★",
+            "distance": "📍 A-FACTORY 特產館",
+            "highlights": "華麗瓜果香氣與清冽尾韻，青森縣海外得獎無數的頂級純米吟釀名酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Mutsu+Hassen+Sake+Aomori"
+          },
+          {
+            "name": "Komise 津輕海峽產天日鹽干貝柱",
+            "rating": "★★★★☆",
+            "distance": "📍 青森站 Lovina 1F",
+            "highlights": "陸奧灣產優質天然乾燥扇貝柱，熬湯或當作下酒零嘴極富濃郁鮮味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Aomori+Hotate+Dried+Lovina"
+          },
+          {
+            "name": "青天の霹靂 特 A 級米餅禮盒",
+            "rating": "★★★★☆",
+            "distance": "📍 A-FACTORY 1F",
+            "highlights": "青森頂級特 A 米品牌製作之淡鹽烘焙仙貝，米香純粹酥脆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Seiten+no+Hekireki+Rice+Crackers+Aomori"
+          },
+          {
+            "name": "津輕塗 (Tsugaru Nuri) 手作漆器筷子禮盒",
+            "rating": "★★★★☆",
+            "distance": "📍 青森縣產物館 ASPAM 1F",
+            "highlights": "日本國家指定傳統工藝品，數十道研磨漆層交織出唐塗紋樣，堅固典雅耐用",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsugaru+Nuri+ASPAM+Aomori"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "睡魔之家 Wa Rasse (ねぶたの家 ワ・ラッセ)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站西口步行 1 分",
+            "highlights": "館內常態展示巨型得獎睡魔燈籠，近距離感受津輕祭典震撼張力與工藝精髓",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nebuta+Museum+Wa+Rasse+Aomori"
+          },
+          {
+            "name": "A-FACTORY 青森港灣工坊",
+            "rating": "★★★★★",
+            "distance": "📍 青森站西口步行 2 分",
+            "highlights": "臨海時尚紅磚商場，結合西打酒釀造、免稅青森名產、職人手作與景觀露台",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=A-FACTORY+Aomori"
+          },
+          {
+            "name": "青森縣觀光物產館 ASPAM (金字塔地標)",
+            "rating": "★★★★☆",
+            "distance": "📍 步行 8 分",
+            "highlights": "象徵 Aomori 的巨大三角正三角形建築，13F 設有展望台可俯瞰陸奧灣海景與雪景",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=ASPAM+Aomori"
+          },
+          {
+            "name": "青森港灣大橋 (Aomori Bay Bridge)",
+            "rating": "★★★★☆",
+            "distance": "📍 步行 3 分",
+            "highlights": "斜張橋夜間點燈與港灣雪景相映成趣，設有人行展望步道可遠眺停泊的八甲田丸",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Aomori+Bay+Bridge"
+          },
+          {
+            "name": "青函連絡船紀念船 八甲田丸",
+            "rating": "★★★★☆",
+            "distance": "📍 步行 5 分",
+            "highlights": "停泊於港邊的實體青函渡輪博物館，完整保留昭和時期連絡船駕駛台與鐵道車輛甲板",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkodamaru+Memorial+Ship+Aomori"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 2,
+      "date": "2027-02-10",
+      "day_title": "Moya Hills モヤヒルズ 滑雪暖身・青森灣景觀巡航・夜間暖湯",
+      "stay": "Hotel Route-Inn Aomori Ekimae",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel+Route-Inn+Aomori+Ekimae",
+      "ski_resort": {
+        "name": "Moya Hills モヤヒルズ (Moya Hills Ski Area)",
+        "elevation": "120m - 550m (落差 430m)",
+        "highlights": "青森市區近郊景觀雪場，可遠眺陸奧灣與青森市街！雪道寬廣平緩，配備夜間照明與完整單板 Park 設施，為東北雪季暖身適應首選",
+        "course_map_url": "http://www.moyahills.jp/ski/course/",
+        "official_website": "http://www.moyahills.jp/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Moya-Hills/6day/mid",
+        "map_image_url": "http://www.moyahills.jp/ski/course/img/coursemap.png"
+      },
+      "transit": {
+        "summary": "JR 青森站東口 ➔ 青森市營巴士直達モヤヒルズ (車程約 40 分，提供 2 組往返選項)",
+        "details": [
+          "【去程選項 A（晨間早班首選・09:12 抵雪場）】：青森站東口 3 號站牌搭乘 08:30 青森市營巴士（雲谷線）➔ 09:12 直達モヤヒルズ雪場門口（每人精算花費：¥680）。購票租借整裝後 09:30 準時開滑！",
+          "【去程選項 B（上午彈性次班・10:22 抵雪場）】：09:40 青森站東口搭乘市營巴士 ➔ 10:22 抵達雪場門口（每人精算花費：¥680）。",
+          "【回程選項 A（傍晚首選・17:20 抵飯店）】：16:30 雪場收板整裝，搭乘 16:40 市營巴士 ➔ 17:20 返抵青森站前（每人精算花費：¥680）。在 18:00 前充裕抵達飯店休息！",
+          "【回程選項 B（夜滑次班・18:40 抵飯店）】：若體驗夜滑至 17:30，搭乘 17:50 市營巴士 ➔ 18:30 返抵青森站前（每人精算花費：¥680）。",
+          "【計程車精算對比】：青森站至雪場約 13 公里，單程車資約 ¥4,600（1 人搭乘每人花費：¥4,600；2 人共乘每人花費：¥2,300）。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "モヤヒルズ 展望花壇木屋餐廳",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 Center House 2F",
+            "highlights": "滑雪中繼站熱食！青森黑蒜豬排咖哩飯、熱騰騰生姜味噌黑豚拉麵與炸薯條",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Moya+Hills+Restaurant"
+          },
+          {
+            "name": "青森魚菜中心 (古川市場 のっけ丼)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站東口步行 5 分",
+            "highlights": "買食券自選海鮮料的元祖「自選海鮮丼 (Nokke-don)」！陸奧灣活干貝、黑鮪魚中腹、海膽堆滿滿",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Furukawa+Fish+Market+Nokkedon+Aomori"
+          },
+          {
+            "name": "三內溫泉 昭和食堂",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 10 分",
+            "highlights": "高濃度硫磺溫泉附設食堂，滑雪泡湯後品嚐大盛鍋燒烏龍與山菜天婦羅",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sannai+Onsen+Shokudo+Aomori"
+          },
+          {
+            "name": "辻井餅店 (辻井の煮干し中華)",
+            "rating": "★★★★☆",
+            "distance": "📍 浪打步行約 12 分",
+            "highlights": "青森傳奇兼賣和菓子與小魚乾拉麵的老舖！清透醇厚小魚乾湯頭搭配軟糯紅豆麻糬",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsujii+Mochiten+Aomori"
+          },
+          {
+            "name": "津輕居酒屋 甚六 (Jinroku)",
+            "rating": "★★★★☆",
+            "distance": "📍 本町步行 10 分",
+            "highlights": "在地人極推的炭烤居酒屋，現烤八甲田牛串燒、蒜香炒墨魚與津輕鄉土生薑味噌關東煮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Izakaya+Jinroku+Aomori"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "工藤麵包 (Kudo Pan) 英國吐司",
+            "rating": "★★★★☆",
+            "distance": "📍 青森市內各超市便利店",
+            "highlights": "青森縣民靈魂點心！「イギリストースト」夾入厚顆粒砂糖與發酵奶油霜，酥沙香甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kudo+Pan+Aomori"
+          },
+          {
+            "name": "ZiPangu 蘋果塔專門店",
+            "rating": "★★★★☆",
+            "distance": "📍 柳町通步行 9 分",
+            "highlights": "整顆青森紅玉蜜漬蘋果現烤烘焙的法式厚塔，肉桂香氣濃郁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=ZiPangu+Apple+Tart+Aomori"
+          },
+          {
+            "name": "赤い林檎 經典窯烤蘋果起司派",
+            "rating": "★★★★★",
+            "distance": "📍 新町通步行 9 分",
+            "highlights": "外皮香脆卡士達內餡濃郁，熱騰騰出爐即化",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Akai+Ringo+Honten+Aomori"
+          },
+          {
+            "name": "大竹菓子鋪 (青森烘焙坊)",
+            "rating": "★★★★☆",
+            "distance": "📍 站前商場內",
+            "highlights": "南部太鼓饅頭與濃郁香草生乳捲，適合當雪場能量補給",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ootake+Confectionery+Aomori"
+          },
+          {
+            "name": "甘精堂 白玉紅豆湯 (善哉)",
+            "rating": "★★★★☆",
+            "distance": "📍 新町通步行 8 分",
+            "highlights": "寒冬滑雪後暖胃聖品！十勝產大粒紅豆慢熬熱甜湯佐手揉白玉糰子",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kanseido+Honten+Aomori"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "西田酒造店 田酒 (Denshu) 專櫃",
+            "rating": "★★★★★",
+            "distance": "📍 青森站 Lovina B1",
+            "highlights": "全日本最具代表性純米地酒！完全不使用釀造酒精，「特別純米酒」米旨味深厚回甘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Denshu+Sake+Aomori+Lovina"
+          },
+          {
+            "name": "三浦酒造 豊盃 (Houhai) 特選品",
+            "rating": "★★★★★",
+            "distance": "📍 地酒屋 鳴海 (步行 6 分)",
+            "highlights": "弘前三浦酒造獨家「豊盃米」釀造，花果香氣悠揚柔順，青森在地居酒屋必點",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Houhai+Sake+Narumi+Aomori"
+          },
+          {
+            "name": "青森津輕蘋果 100% 直榨純果汁",
+            "rating": "★★★★☆",
+            "distance": "📍 青森站各自動販賣機",
+            "highlights": "Acure 青森蘋果自動販賣機，分品種（王林、富士、土岐）純果汁無添加，鮮甜無比",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Aomori+Ringo+Juice+Vending+Machine"
+          },
+          {
+            "name": "Galopin 自然派小酒館",
+            "rating": "★★★★☆",
+            "distance": "📍 本町步行 12 分",
+            "highlights": "主打自然派葡萄酒與青森地酒搭餐的小酒館，氛圍溫馨自在",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Galopin+Aomori"
+          },
+          {
+            "name": "Bar Hops 精釀啤酒吧",
+            "rating": "★★★★☆",
+            "distance": "📍 新町通步行 8 分",
+            "highlights": "供應東北 8 種當季生啤酒 Tap，搭配現炸蒜味薯塊與炙烤起司",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar+Hops+Aomori"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "朝之八甲田 起司蛋糕 (朝の八甲田)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站 Lovina 1F",
+            "highlights": "阿部煎餅店旗下的傳奇舒芙蕾起司蛋糕！口感如同生乳酪般入口即化，4入禮盒包裝精緻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Asa+no+Hakkoda+Cheesecake+Aomori"
+          },
+          {
+            "name": "上北農產加工 スタミナ源たれ (源醬 燒肉醬)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站前超市",
+            "highlights": "青森家家戶戶常備神級燒肉沾醬！使用青森產生蒜、富士蘋果與大豆純釀醬油，料理神物",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Stamina+Gen+Tare+Aomori"
+          },
+          {
+            "name": "津輕海峽 燒海苔與磯之昆布",
+            "rating": "★★★★☆",
+            "distance": "📍 ASPAM 1F",
+            "highlights": "下北半島產特級天然岩海苔，香氣極濃，加入拉麵或白飯絕配",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsugaru+Kaiso+Seaweed+ASPAM"
+          },
+          {
+            "name": "八甲田山麓 刺槐生蜂蜜",
+            "rating": "★★★★☆",
+            "distance": "📍 A-FACTORY 1F",
+            "highlights": "八甲田山純淨森林採集之天然洋槐蜂蜜，色澤透明澄澈，甜美溫潤",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkoda+Honey+A-FACTORY"
+          },
+          {
+            "name": "青森睡魔祭 彩繪鈴鐺吊飾",
+            "rating": "★★★★☆",
+            "distance": "📍 Wa Rasse 紀念品店",
+            "highlights": "職人純手繪睡魔武者圖騰小鈴鐺，清脆響亮，具避邪保平安寓意",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nebuta+Suzu+Bell+Souvenir"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "三內丸山遺跡 (Sannai-Maruyama Site)",
+            "rating": "★★★★★",
+            "distance": "📍 車程/巴士 20 分",
+            "highlights": "世界文化遺產！日本最大規模繩文時代聚落遺跡，巨大六柱木構建築與立坑住居重現五千年前古文明",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sannai-Maruyama+Site+Aomori"
+          },
+          {
+            "name": "青森縣立美術館 (Aomori Museum of Art)",
+            "rating": "★★★★★",
+            "distance": "📍 緊鄰三內丸山遺跡",
+            "highlights": "由建築大師青木淳操刀設計，必看奈良美智代表作「青森犬 (Aomori Dog)」巨大雕塑與夏卡爾芭蕾背景畫",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Aomori+Museum+of+Art"
+          },
+          {
+            "name": "善知鳥神社 (Utou Shrine)",
+            "rating": "★★★★☆",
+            "distance": "📍 青森站東口步行 10 分",
+            "highlights": "青森市開府發祥地之千年古神社，雪中朱紅鳥居與池塘景致清幽寧靜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Utou+Shrine+Aomori"
+          },
+          {
+            "name": "青森市森林博物館",
+            "rating": "★★★★☆",
+            "distance": "📍 柳川步行 15 分",
+            "highlights": "以津輕檜木建造的文藝復興式木造洋館，展示日本三大美林之青森絲柏生態與林業歷史",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Aomori+City+Forest+Museum"
+          },
+          {
+            "name": "雲谷峠 (Moya Pass) 觀景台",
+            "rating": "★★★★☆",
+            "distance": "📍 Moya Hills 雪場頂部",
+            "highlights": "登高俯瞰青森平野與陸奧灣之雪白大地，傍晚可觀賞壯觀晚霞與市區萬家燈火",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Moya+Hills+Observatory"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 3,
+      "date": "2027-02-11",
+      "day_title": "八甲田山頂纜車・壯闊樹冰群與極致深粉雪挑戰",
+      "stay": "Hotel Route-Inn Aomori Ekimae",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel+Route-Inn+Aomori+Ekimae",
+      "ski_resort": {
+        "name": "八甲田滑雪場 ＆ 八甲田纜車 (Hakkoda Ropeway)",
+        "elevation": "670m - 1,324m (田茂萢岳頂)",
+        "highlights": "世界級豪雪極致深粉雪與壯麗天然「雪怪」樹冰群 (Juhyo)！101人座大型纜車直攻 1,324m，擁有 5km 超長未壓雪天然野雪道，單板粉雪探險殿堂",
+        "course_map_url": "http://www.hakkoda-ropeway.jp/nature/ski",
+        "official_website": "http://www.hakkoda-ropeway.jp/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Hakkoda/6day/mid",
+        "map_image_url": "http://www.hakkoda-ropeway.jp/wp-content/themes/hakkoda/images/ski_map.png"
+      },
+      "transit": {
+        "summary": "青森站東口 ➔ JR 巴士東北（冬季八甲田纜車線）直達八甲田纜車站前 (車程約 60 分)",
+        "details": [
+          "【去程選項 A（衝粉雪早班首選・09:10 抵纜車站）】：青森站東口 11 號站牌搭乘 08:10 發車之 JR 巴士東北（みずうみ号冬季運行）➔ 09:10 直達「八甲田ロープウェー駅前」（每人精算花費：¥1,200）。購票搭乘纜車搶攻第一波樹冰粉雪！",
+          "【去程選項 B（悠閒上午次班・10:30 抵纜車站）】：09:30 青森站東口搭乘 JR 巴士東北 ➔ 10:30 抵達八甲田纜車站（每人精算花費：¥1,200）。",
+          "【回程選項 A（標準下山首選・16:45 抵飯店）】：15:30 收板整裝，搭乘 15:45 發車之回程 JR 巴士 ➔ 16:45 返抵青森站前（每人精算花費：¥1,200）。距離 18:00 餘裕充足 1 小時 15 分！",
+          "【回程選項 B（最後班次底線・17:45 抵飯店）】：16:30 纜車站搭乘 16:45 末班 JR 巴士 ➔ 17:45 返抵青森站前（每人精算花費：¥1,200），準時於 18:00 前返回房間！",
+          "【計程車精算對比】：青森站至八甲田纜車站約 23 公里雪路，單程車資約 ¥8,500（1 人搭乘每人花費：¥8,500；2 人共乘每人花費：¥4,250）。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "八甲田山麓 木屋餐廳",
+            "rating": "★★★★☆",
+            "distance": "📍 纜車山麓站內",
+            "highlights": "滑雪攻頂前必吃！青森生薑燒肉定食、八甲田山菜蕎麥熱湯與溫熱甘酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkoda+Ropeway+Sanroku+Restaurant"
+          },
+          {
+            "name": "酸湯溫泉 鬼面庵 (Sukayu Onsen)",
+            "rating": "★★★★★",
+            "distance": "📍 距纜車站車程 8 分",
+            "highlights": "三百年秘湯名店！品嚐名物「酸湯手打蕎麥麵」與「生姜味噌筍乾溫泉蛋」，湯頭清澈微甘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sukayu+Onsen+Kimenan"
+          },
+          {
+            "name": "青森鄉土料理 樽 (Taru)",
+            "rating": "★★★★★",
+            "distance": "📍 本町步行 11 分",
+            "highlights": "在巨型杉木酒桶包廂內品嚐陸奧灣產鮮烤活扇貝、津輕香烤櫻花肉 (馬肉刺身) 與田酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kyodo+Ryori+Taru+Aomori"
+          },
+          {
+            "name": "六兵衛 (Rokubee 居酒屋)",
+            "rating": "★★★★☆",
+            "distance": "📍 古川步行 6 分",
+            "highlights": "炭火直烤在地川魚鹽烤、烤津輕大蔥與暖胃的青森鱈魚白子鍋 (タラキク)",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Rokubee+Aomori"
+          },
+          {
+            "name": "津輕煮干拉麵 高長 (Takacho)",
+            "rating": "★★★★☆",
+            "distance": "📍 站前商圈步行 7 分",
+            "highlights": "老饕私房小魚乾拉麵！湯頭微苦回甘，手作叉燒厚實軟嫩，充滿濃濃昭和鄉土情懷",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Takacho+Chuka+Soba+Aomori"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "八甲田山頂ヒュッテ 特製熱紅豆湯",
+            "rating": "★★★★☆",
+            "distance": "📍 標高 1,324m 山頂站內",
+            "highlights": "在 -10°C 樹冰群中暖身第一名！手作熱烘紅豆湯附現烤糯米麻糬，甜香四溢",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkoda+Summit+Station+Cafe"
+          },
+          {
+            "name": "酸湯溫泉 黑胡麻溫泉饅頭",
+            "rating": "★★★★☆",
+            "distance": "📍 酸湯溫泉賣店",
+            "highlights": "利用強酸性天然硫磺地熱現炊的手工黑芝麻紅豆溫泉饅頭",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sukayu+Onsen+Manju"
+          },
+          {
+            "name": "赤い林檎 蜜桃與蘋果法式薄餅",
+            "rating": "★★★★★",
+            "distance": "📍 新町通步行 9 分",
+            "highlights": "現烤法式可麗餅包裹蜜漬蘋果片與香草冰淇淋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Akai+Ringo+Honten+Aomori"
+          },
+          {
+            "name": "A-FACTORY Gelato Nature",
+            "rating": "★★★★☆",
+            "distance": "📍 A-FACTORY 2F",
+            "highlights": "100% 青森產牛乳與各品種蘋果（富士、玉林）製成之義式低脂冰淇淋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Gelato+Nature+A-FACTORY+Aomori"
+          },
+          {
+            "name": "甘精堂 蘋果羊羹 (Ringo Yokan)",
+            "rating": "★★★★☆",
+            "distance": "📍 新町通步行 8 分",
+            "highlights": "將青森產蘋果果肉微粒融入白豆沙羊羹中，酸甜透明晶瑩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kanseido+Honten+Aomori"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "八甲田伏流水 純米吟釀生酒",
+            "rating": "★★★★★",
+            "distance": "📍 纜車山麓站賣店",
+            "highlights": "八甲田千年積雪融雪湧水慢火低溫釀造，酒質如同雪融般清澈爽口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkoda+Sake+Ropeway"
+          },
+          {
+            "name": "鳩正宗 十和田地酒專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 青森站 Lovina B1",
+            "highlights": "八甲田水系十和田名酒，純米酒口感厚實，極度適合熱燗品飲",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hatomamune+Sake+Aomori"
+          },
+          {
+            "name": "八甲田山麓 熱研磨滴濾黑咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 纜車站山麓木屋",
+            "highlights": "嚴選深焙咖啡豆與八甲田伏流水沖煮，香氣濃醇深厚",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkoda+Ropeway+Cafe"
+          },
+          {
+            "name": "酸湯溫泉 ぶな林 地酒處",
+            "rating": "★★★★☆",
+            "distance": "📍 酸湯溫泉內",
+            "highlights": "提供青森在地生原酒品飲三杯組，搭配鹽漬山菜小品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sukayu+Onsen+Bunabayashi"
+          },
+          {
+            "name": "奧入瀨 Pilsner 精釀啤酒",
+            "rating": "★★★★☆",
+            "distance": "📍 各特產賣店",
+            "highlights": "捷克皮爾森傳統工法釀製，麥芽香氣濃郁，苦味細緻回甘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Oirase+Beer+Pilsner+Aomori"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "八甲田樹冰 限定金屬雪山徽章",
+            "rating": "★★★★★",
+            "distance": "📍 八甲田纜車山頂站",
+            "highlights": "標高 1,324m 田茂萢岳登頂紀念！雕刻有天然樹冰與滑雪者之金屬紀念章",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkoda+Juhyo+Badge"
+          },
+          {
+            "name": "酸湯溫泉 檜木千人風呂 硫磺入浴粉",
+            "rating": "★★★★★",
+            "distance": "📍 酸湯溫泉賣店",
+            "highlights": "採集自三百年名湯千人風呂天然源泉沈澱礦物結晶，在家重現純白濁硫磺湯泉",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sukayu+Onsen+Yunohana"
+          },
+          {
+            "name": "八甲田山麓 刺繡滑雪毛巾貼紙",
+            "rating": "★★★★☆",
+            "distance": "📍 八甲田纜車售票處",
+            "highlights": "八甲田標誌樹冰剪影設計，雪板與行李箱專用抗 UV 防水貼紙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkoda+Ropeway+Sticker"
+          },
+          {
+            "name": "津輕びいどろ 手作雪景玻璃杯",
+            "rating": "★★★★★",
+            "distance": "📍 A-FACTORY 1F",
+            "highlights": "青森傳統玻璃工藝！以白色雪花與八甲田山藍為意象手工吹製的精緻清酒杯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsugaru+Vidro+A-FACTORY"
+          },
+          {
+            "name": "青森蘋果乾 (Ringo Chip 禮盒)",
+            "rating": "★★★★☆",
+            "distance": "📍 青森站 Lovina 1F",
+            "highlights": "不加糖低溫真空乾燥製成，保留青森蘋果最原始濃縮酸甜美味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Aomori+Apple+Chips+Lovina"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "八甲田山頂樹冰觀景步道",
+            "rating": "★★★★★",
+            "distance": "📍 纜車山頂站出站即達",
+            "highlights": "全日本最壯觀樹冰群！巨大雪怪 (Snow Monster) 環繞在步道兩側，晴天時遠眺岩木山與陸奧灣",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hakkoda+Juhyo+Snow+Monsters"
+          },
+          {
+            "name": "酸湯溫泉 千人風呂 (Sukayu Onsen)",
+            "rating": "★★★★★",
+            "distance": "📍 車程 8 分",
+            "highlights": "國民保養溫泉地第一號！以 160 坪全純青森檜木打造之巨大混浴白濁酸性硫磺溫泉「ヒバ千人風呂」",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sukayu+Onsen+Hiba+Senninburo"
+          },
+          {
+            "name": "城倉大橋 (Jogakura Bridge)",
+            "rating": "★★★★☆",
+            "distance": "📍 距纜車站車程 12 分",
+            "highlights": "日本最長無橋墩上路式拱橋，跨越深邃的城倉溪谷，冬季俯瞰白雪皚皚深谷銀白絕景",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Jogakura+Ohashi+Bridge"
+          },
+          {
+            "name": "睡蓮沼 (冬季雪景觀覽點)",
+            "rating": "★★★★☆",
+            "distance": "📍 八甲田山系南側",
+            "highlights": "被八甲田連峰環抱的高原沼澤，雪季積雪數米，為登山滑雪者之夢幻白色秘境",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Suirennuma+Hakkoda"
+          },
+          {
+            "name": "萱野高原 長生茶屋",
+            "rating": "★★★★☆",
+            "distance": "📍 八甲田山麓巴士中繼站",
+            "highlights": "傳說中「喝一杯延壽三年、喝兩杯延壽六年」之免費長生茶，高原雪景壯麗遼闊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kayano+Chaya+Hakkoda"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 4,
+      "date": "2027-02-12",
+      "day_title": "青森退房 ➔ 移動至八戶 ➔ 八食中心七輪村炭烤海鮮",
+      "stay": "Comfort Hotel Hachinohe (コンフォートホテル八戸)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Comfort+Hotel+Hachinohe",
+      "ski_resort": null,
+      "transit": {
+        "summary": "青森站 ➔ 新幹線/鐵路至八戶站 ➔ 八食 100 圓巴士 (提供 2 組移動方案)",
+        "details": [
+          "青森飯店退房，攜帶行李出發至青森站。",
+          "【選項 A（新幹線極速首選・11:57 抵八食中心）】：10:40 青森站搭 JR 奧羽本線 ➔ 10:46 抵新青森（轉乘緩衝 20 分） ➔ 11:06 東北新幹線 Hayabusa 18 號 ➔ 11:34 抵八戶站（每人精算花費：¥3,560）。八戶站東口 4 號站牌搭乘 11:45 八食 100 圓巴士 ➔ 11:57 抵達八食中心（每人精算花費：¥100）。",
+          "【選項 B（青之森鐵道景觀次班・12:27 抵八食中心）】：10:18 青森站搭乘青之森鐵道快速列車 ➔ 11:48 直達八戶站（每人精算花費：¥2,320）。轉乘 12:15 八食 100 圓巴士 ➔ 12:27 抵達八食中心（每人精算花費：¥100）。",
+          "【八食中心返回飯店】：八食中心搭乘 16:30 巴士 ➔ 16:42 返抵八戶站東口（每人精算花費：¥100）。步行 2 分入住 Comfort Hotel Hachinohe，17:00 前從容進房（距 18:00 截止提早 1 小時）！",
+          "【八食中心計程車精算】：八戶站至八食中心約 3.5 公里，單程約 ¥1,400（1 人搭乘每人花費：¥1,400；2 人共乘每人花費：¥700）。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "八食中心 七輪村 (Shichirin-mura)",
+            "rating": "★★★★★",
+            "distance": "📍 八食中心內",
+            "highlights": "必玩美食體驗！於市場海鮮攤自選活干貝、帝王蟹腳、活鮑魚、厚切牛舌，租借炭火七輪現場現烤，鮮美無比",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shichirinmura+Hasshoku+Center+Hachinohe"
+          },
+          {
+            "name": "勢登鮨 (Setozushi 八食店)",
+            "rating": "★★★★☆",
+            "distance": "📍 八食中心 1F",
+            "highlights": "平價大份量！八戶前沖產黑鮪魚中腹丼、海膽干貝握壽司與現煮八戶仙貝湯定食",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Setozushi+Hasshoku+Center"
+          },
+          {
+            "name": "みろく橫丁 (Miroku Yokocho 屋台村)",
+            "rating": "★★★★★",
+            "distance": "📍 八戶市中心車程 15 分",
+            "highlights": "八戶最著名昭和復古屋台村！聚集 26 攤特色路邊居酒屋，品嚐現烤青花魚、八戶仙貝汁與在地地酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Miroku+Yokocho+Hachinohe"
+          },
+          {
+            "name": "三春屋 みなと食堂 (Minato Shokudo)",
+            "rating": "★★★★★",
+            "distance": "📍 陸奧湊站步行 2 分",
+            "highlights": "日本全國丼飯金賞！招牌「平目丼 (比目魚漬丼)」特調蛋黃醬汁拌飯，魚肉晶瑩彈牙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Minato+Shokudo+Hachinohe"
+          },
+          {
+            "name": "いと重 (Itoju 割烹料理)",
+            "rating": "★★★★☆",
+            "distance": "📍 八戶市番町步行約 15 分",
+            "highlights": "八戶百年傳統料亭，提供正統「いちご煮 (海膽鮑魚潮汁)」與前沖青花魚鄉土宴席",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Itoju+Kappo+Hachinohe"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "大竹菓子鋪 魔女の生起司蛋糕卷",
+            "rating": "★★★★★",
+            "distance": "📍 八食中心 1F",
+            "highlights": "全日本甜點大賽金牌！「魔女の生チーズロール」，北海道生乳奶油與微酸起司內餡輕盈濃郁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ootake+Kashinoho+Hasshoku"
+          },
+          {
+            "name": "南部煎餅 小松製菓 (八戶店)",
+            "rating": "★★★★☆",
+            "distance": "📍 八戶站剪票口前",
+            "highlights": "現烤薄脆花生芝麻南部仙貝，熱騰騰出爐香氣撲鼻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Komatsu+Seika+Hachinohe"
+          },
+          {
+            "name": "アルパジョン 八戶下長本店",
+            "rating": "★★★★☆",
+            "distance": "📍 下長車程 10 分",
+            "highlights": "招牌「朝の八甲田」起司蛋糕總部，陳列多達十餘種起司甜點與草莓塔",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Arpajon+Hachinohe"
+          },
+          {
+            "name": "八食中心 豆乳義式冰淇淋",
+            "rating": "★★★★☆",
+            "distance": "📍 八食中心 1F",
+            "highlights": "使用青森產大豆現磨豆乳製作，低糖高纖，豆香滑潤濃郁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hasshoku+Center+Ice+Cream"
+          },
+          {
+            "name": "和菓子 萬榮堂 (鶴子饅頭)",
+            "rating": "★★★★☆",
+            "distance": "📍 八戶市中心步行 12 分",
+            "highlights": "百年傳統銘菓，以八戶名物「鶴子饅頭」聞名，外裹厚雪白糖霜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Baneido+Hachinohe"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "八戶酒造 陸奧八仙 純米吟釀 槽酒",
+            "rating": "★★★★★",
+            "distance": "📍 八食中心 地酒賣店",
+            "highlights": "冬季限定微氣泡生原酒「槽酒」，青蘋果甜香與清爽酸度，搭配七輪炭烤海鮮絕配",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Mutsu+Hassen+Sake+Hasshoku"
+          },
+          {
+            "name": "桃川酒造 純米大吟釀專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 八戶站內特產店",
+            "highlights": "奧入瀨川水系釀造，連續多年獲日本全國新酒鑑評會金賞",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Momokawa+Shuzo+Hachinohe"
+          },
+          {
+            "name": "カネク醸造 八戶精釀啤酒",
+            "rating": "★★★★☆",
+            "distance": "📍 八食中心專櫃",
+            "highlights": "八戶在地微型啤酒廠釀造之 IPA 與 Stout 黑啤酒，果香濃郁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kaneku+Brewing+Hachinohe"
+          },
+          {
+            "name": "Bar Prince (八戶著名調酒酒吧)",
+            "rating": "★★★★☆",
+            "distance": "📍 六日町步行 15 分",
+            "highlights": "昭和風情老牌酒吧，品嚐原創雞尾酒「鮫角」與單一麥芽威士忌",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar+Prince+Hachinohe"
+          },
+          {
+            "name": "八食中心 蘋果西打生飲",
+            "rating": "★★★★☆",
+            "distance": "📍 八食中心 飲品吧",
+            "highlights": "低酒精蘋果氣泡酒鮮榨生飲，解膩消暑爽脆口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hasshoku+Center+Cidre"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "味の加久の屋 元祖いちご煮",
+            "rating": "★★★★★",
+            "distance": "📍 八食中心 加久の屋",
+            "highlights": "八戶最頂級鄉土海鮮罐頭！鮮甜海膽與嚴選鮑魚熬煮之清澄高湯，煮炊飯鮮香撲鼻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichigoni+Ajino+Kakunoya+Hachinohe"
+          },
+          {
+            "name": "八戶前沖鯖魚 真空烤青花魚片",
+            "rating": "★★★★★",
+            "distance": "📍 八食中心 海產區",
+            "highlights": "日本油脂最肥美「前沖青花魚」鹽烤真空包裝，油花豐潤香氣十足",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hachinohe+Maeoki+Saba"
+          },
+          {
+            "name": "南部煎餅 チョコ南部 (Choco Nanbu)",
+            "rating": "★★★★☆",
+            "distance": "📍 八戶站特產館",
+            "highlights": "壓碎酥脆芝麻煎餅裹上比利時濃醇牛奶巧克力，甜鹹交織現代人氣名物",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Choco+Nanbu+Komatsu"
+          },
+          {
+            "name": "八戶仙貝湯料理即食包",
+            "rating": "★★★★☆",
+            "distance": "📍 八食中心 乾貨區",
+            "highlights": "包含專用高湯包與耐煮火鍋專用南部煎餅，在家即可重現 B 級美食冠軍料理",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hachinohe+Senbeijiru+Kit"
+          },
+          {
+            "name": "八戶八幡馬 (Yawata-uma) 彩繪木雕",
+            "rating": "★★★★☆",
+            "distance": "📍 八戶市物產專櫃",
+            "highlights": "日本三大駒之一，八戶傳統吉祥工藝木馬，華麗手工彩繪具有開運祈福寓意",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Yawata-uma+Hachinohe"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "八食中心 (Hasshoku Center 巨型海鮮市場)",
+            "rating": "★★★★★",
+            "distance": "📍 車站搭巴士 12 分",
+            "highlights": "全長 170 公尺聚集 60 間生鮮攤商！青森海鮮、南部伴手禮與七輪炭烤體驗大本營",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hasshoku+Center+Hachinohe"
+          },
+          {
+            "name": "八戶屋台村 みろく橫丁",
+            "rating": "★★★★★",
+            "distance": "📍 八戶市中心車程 15 分",
+            "highlights": "瀰漫濃郁昭和人情味的美食小巷，夜間各攤燈火溫暖，與在地人並肩品酒嚐鮮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Miroku+Yokocho+Hachinohe"
+          },
+          {
+            "name": "蕪嶋神社 (Kabushima Shrine)",
+            "rating": "★★★★☆",
+            "distance": "📍 JR 鮫站步行 15 分",
+            "highlights": "國家天然紀念物黑尾鷗繁殖地，矗立於海岸高地的朱紅神社，雪景浩瀚壯觀",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kabushima+Shrine+Hachinohe"
+          },
+          {
+            "name": "種差海岸 (Tanesashi Coast 雪壁海岸)",
+            "rating": "★★★★☆",
+            "distance": "📍 JR 種差海岸站步行 3 分",
+            "highlights": "綿延白雪直接覆蓋至蔚藍太平洋海浪邊際，國家指定名勝天然草生地",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tanesashi+Coast+Hachinohe"
+          },
+          {
+            "name": "八戶市美術館 (Hachinohe Art Museum)",
+            "rating": "★★★★☆",
+            "distance": "📍 市中心步行 10 分",
+            "highlights": "榮獲多項建築大獎之全新當代美術館，挑高巨大「巨木廳」融合展覽與市民公共藝文活動",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hachinohe+Art+Museum"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 5,
+      "date": "2027-02-13",
+      "day_title": "搭乘冬奧入瀨號巴士 ➔ 奧入瀨冰瀑奇景 ➔ 十和田湖冬物語夜間慶典",
+      "stay": "Hotel Towadaso (ホテル十和田荘)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel+Towadaso",
+      "ski_resort": null,
+      "transit": {
+        "summary": "八戶站西口 ➔ JR 巴士東北「冬のおいらせ号」經奧入瀨溪流直達十和田湖休屋 (車程約 2.5 小時)",
+        "details": [
+          "配合冬季限定觀光巴士「冬のおいらせ号」時刻表（全預約制/專用車次，中途停留冰瀑導覽）。",
+          "【選項 A（早班完整導覽首選・12:10 抵十和田湖）】：八戶站西口搭乘 09:35 發車之「冬のおいらせ号」 ➔ 沿途停靠奧入瀨溪流燒山 (10:45)、銚子大瀧 (11:40 冰瀑下車導覽拍照) ➔ 12:10 抵達十和田湖（休屋）總站（每人精算花費：¥3,150）。出站步行 5 分進駐 Hotel Towadaso 先行寄放行李！",
+          "【選項 B（午後次班・15:55 抵十和田湖）】：若上午在八戶採買，搭乘 13:20 發車之「冬のおいらせ号」 ➔ 15:55 抵達十和田湖（休屋）（每人精算花費：¥3,150）。16:10 辦理 Check-in，完全符合 18:00 前進駐原則！",
+          "【包車/計程車精算對比】：八戶站至十和田湖約 60 公里冬季山路，冬季預約 4WD 包車單程約 ¥26,000（1 人搭乘每人花費：¥26,000；2 人共乘每人花費：¥13,000）。",
+          "傍晚 17:30 步行前往「十和田湖冬物語」活動會場，欣賞雪洞酒吧、夜間點燈藝術與 20:00 盛大雪上冬花火。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "Hotel Towadaso 旬彩會席 (晚餐)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店內餐廳",
+            "highlights": "飯店招牌會席！十和田湖名物姬鱒魚 (ヒメマス) 姿燒、十和田牛陶板燒與青森山菜小鍋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hotel+Towadaso+Restaurant"
+          },
+          {
+            "name": "十和田食堂 (Towada Shokudo 休屋)",
+            "rating": "★★★★☆",
+            "distance": "📍 湖畔休屋步行 4 分",
+            "highlights": "湖畔代表性食堂！現炸十和田湖產西太公魚天婦羅 (ワカサギ) 與十和田十割蕎麥",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Towada+Shokudo+Towadako"
+          },
+          {
+            "name": "十和田湖冬物語 雪洞拉麵屋台",
+            "rating": "★★★★☆",
+            "distance": "📍 冬物語慶典會場內",
+            "highlights": "在巨型雪洞 (Kamakura) 內品嚐熱騰騰十和田烤牛肉拉麵與青森大蔥豚汁熱湯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Lake+Towada+Winter+Story+Food"
+          },
+          {
+            "name": "湖畔茶屋 御前之濱",
+            "rating": "★★★★☆",
+            "distance": "📍 休屋御前之濱步行 6 分",
+            "highlights": "炭烤鹽味野生姬鱒魚串與在地鄉土烤飯糰 (味噌烤米棒)",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Towadako+Gozen+no+hama"
+          },
+          {
+            "name": "奧入瀨溪流 燒山木屋餐廳",
+            "rating": "★★★★☆",
+            "distance": "📍 燒山巴士站旁",
+            "highlights": "冬奧入瀨號中途停靠站，熱騰騰的十和田名物烤牛五花鐵板定食 (牛バラ焼き)",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Yakeyama+Oirase+Restaurant"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "十和田湖冬物語 雪洞冰杯 Bar",
+            "rating": "★★★★★",
+            "distance": "📍 慶典會場內",
+            "highlights": "使用純淨冰塊雕刻之天然冰晶酒杯，品嚐特調熱可可、青森熱蘋果酒與甘酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Lake+Towada+Winter+Story+Kamakura+Bar"
+          },
+          {
+            "name": "信濃屋 湖畔烘焙 (Shinanoya)",
+            "rating": "★★★★☆",
+            "distance": "📍 休屋步行 5 分",
+            "highlights": "十和田湖傳統烘焙坊，手作現烤富士蘋果丹麥酥與十和田生乳捲",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shinanoya+Towadako"
+          },
+          {
+            "name": "十和田莊 特製手作蘋果大福",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店大廳伴手禮處",
+            "highlights": "糯米麻糬皮包覆微酸蜜煮蘋果丁與特製白豆沙，口感軟糯酸甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hotel+Towadaso+Sweets"
+          },
+          {
+            "name": "湖畔 櫻之茶屋 霜淇淋",
+            "rating": "★★★★☆",
+            "distance": "📍 乙女之像旁步行 3 分",
+            "highlights": "十和田高原濃厚生乳霜淇淋佐十和田湖藍果醬",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Towadako+Otome+Statue+Cafe"
+          },
+          {
+            "name": "燒山 奧入瀨涌水熱蘋果派",
+            "rating": "★★★★☆",
+            "distance": "📍 奧入瀨溪流館",
+            "highlights": "使用奧入瀨純淨湧水揉製派皮，層層酥脆香甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Oirase+Keiryu-kan+Apple+Pie"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "雪洞冰杯 青森純米地酒體驗",
+            "rating": "★★★★★",
+            "distance": "📍 冬物語慶典會場",
+            "highlights": "將十和田地酒「鳩正宗」倒入零下冰晶雕刻杯中品嚐，低溫帶出純米甘醇微甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Lake+Towada+Winter+Story+Ice+Cup+Sake"
+          },
+          {
+            "name": "鳩正宗 十和田湖限定純米酒",
+            "rating": "★★★★★",
+            "distance": "📍 Hotel Towadaso 賣店",
+            "highlights": "十和田市在地酒造精心釀造，十和田湖冬季限定藍瓶裝，口感清澄順口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hatomamune+Sake+Towada"
+          },
+          {
+            "name": "奧入瀨源流水 手沖滴濾熱咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 奧入瀨溪流館",
+            "highlights": "引奧入瀨溪流森林天然湧泉沖煮，水質極軟，烘焙香氣完美釋放",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Oirase+Spring+Water+Coffee"
+          },
+          {
+            "name": "十和田湖 冬物語熱肉桂紅酒",
+            "rating": "★★★★☆",
+            "distance": "📍 冬物語會場服務站",
+            "highlights": "在雪地中捧著熱騰騰辛香熱紅酒，欣賞夜間雪上煙火的最佳暖身飲品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Lake+Towada+Winter+Mulled+Wine"
+          },
+          {
+            "name": "十和田高原鮮乳 (Towada Milk)",
+            "rating": "★★★★☆",
+            "distance": "📍 休屋商店",
+            "highlights": "在地牧場低溫殺菌鮮奶，泡完十和田莊大浴場後飲用濃醇過癮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Towada+Milk"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "十和田湖 姬鱒魚甘露煮真空包",
+            "rating": "★★★★★",
+            "distance": "📍 Hotel Towadaso 賣店",
+            "highlights": "十和田湖特產高山冷水姬鱒魚，醬油與麥芽糖慢火煨煮至骨酥肉嫩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Towadako+Himemasu+Kanroni"
+          },
+          {
+            "name": "十和田湖冬物語 紀念款雪花徽章",
+            "rating": "★★★★☆",
+            "distance": "📍 冬物語活動本部",
+            "highlights": "每年冬季限定設計之 LED 雪花發光徽章與雪地紀念明信片",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Lake+Towada+Winter+Story+Badge"
+          },
+          {
+            "name": "奧入瀨溪流苔蘚球手作工藝 (Kokedama)",
+            "rating": "★★★★☆",
+            "distance": "📍 奧入瀨溪流館",
+            "highlights": "奧入瀨綠意意象縮影之微型乾燥天然苔蘚球擺飾，綠意療癒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Oirase+Moss+Ball+Kokedama"
+          },
+          {
+            "name": "十和田烤牛五花專用醬",
+            "rating": "★★★★☆",
+            "distance": "📍 休屋特產店",
+            "highlights": "十和田名物「牛バラ焼き」經典調味醬汁，甜鹹醬油蒜香十足",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Towada+Barayaki+Sauce"
+          },
+          {
+            "name": "十和田神社 開運「十和田之水」御守",
+            "rating": "★★★★☆",
+            "distance": "📍 十和田神社 授與所",
+            "highlights": "古老山嶽信仰靈場十和田神社之湖神守護水滴御守與占卜紙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Towada+Shrine+Omamori"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "十和田湖冬物語 (Lake Towada Winter Story 2027)",
+            "rating": "★★★★★",
+            "distance": "📍 步行 6 分",
+            "highlights": "北東北冬季盛大雪祭！雪雕、巨型雪洞酒吧、幻想燈光隧道與每晚 20:00 施放的冬季湖畔花火",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Lake+Towada+Winter+Story"
+          },
+          {
+            "name": "奧入瀨溪流 銚子大瀧 (Choshi Otaki 巨大冰瀑)",
+            "rating": "★★★★★",
+            "distance": "📍 巴士中途停靠下車點",
+            "highlights": "奧入瀨溪流最大瀑布，冬季磅礡水流瞬間凝結為壯觀藍白冰柱與天然冰簾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Choshi+Otaki+Frozen+Waterfall"
+          },
+          {
+            "name": "十和田神社 (Towada Shrine)",
+            "rating": "★★★★★",
+            "distance": "📍 休屋步行 10 分",
+            "highlights": "隱身在百年參天杉木雪林中的莊嚴古神社，為東北著名水神龍神開運能量靈場",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Towada+Shrine"
+          },
+          {
+            "name": "乙女之像 (Statue of Maidens)",
+            "rating": "★★★★☆",
+            "distance": "📍 湖畔休屋步行 8 分",
+            "highlights": "雕刻大師高村光太郎最後遺作，兩位少女對立雕像矗立於雪白湖畔，十和田湖經典地標",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Otome+no+Zo+Statue+Towada"
+          },
+          {
+            "name": "御前之濱 (Gozen no Hama 雪景湖畔散策)",
+            "rating": "★★★★☆",
+            "distance": "📍 步行 5 分",
+            "highlights": "十和田湖休屋最開闊的湖岸砂濱，冬季白雪倒映平靜深藍湖水與周圍火山口山巒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Gozen+no+Hama+Lake+Towada"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 6,
+      "date": "2027-02-14",
+      "day_title": "十和田湖退房 ➔ 冬奧入瀨號回八戶 ➔ 東北新幹線至盛岡 ➔ 接駁進駐網張溫泉",
+      "stay": "休暇村岩手網張温泉 (Kyukamura Iwate Amihari Onsen, 連住 4 晚)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Kyukamura+Iwate+Amihari+Onsen",
+      "ski_resort": null,
+      "transit": {
+        "summary": "十和田湖 ➔ 冬奧入瀨號至八戶 ➔ 東北新幹線至盛岡 ➔ 盛岡站搭乘休暇村免費預約接駁巴士 (提供 2 組轉乘銜接)",
+        "details": [
+          "十和田莊退房，搭乘冬季專車跨縣位移至岩手縣盛岡與網張溫泉。",
+          "【轉乘選項 A（首選無縫銜接・15:30 抵飯店）】：十和田湖（休屋）搭乘 09:30「冬のおいらせ号」 ➔ 11:55 返抵八戶站西口（每人精算花費：¥3,150，轉乘緩衝 40 分午餐） ➔ 12:35 八戶站搭東北新幹線 Hayabusa 22 號 ➔ 13:03 抵盛岡站（每人精算花費：¥3,560，轉乘緩衝 1 小時 25 分於盛岡站前採買） ➔ 盛岡站西口 28 號搭乘 14:30 休暇村網張溫泉預約接駁巴士 ➔ 15:30 直達飯店大廳（免費接駁！每人花費：¥0）。15:30 順利入住，距 18:00 大幅提早 2.5 小時！",
+          "【轉乘選項 B（次班彈性銜接・16:35 抵飯店）】：若在盛岡市區停留，搭乘 15:30 岩手縣交通公車（網張溫泉線）自盛岡站東口出發 ➔ 16:35 抵達飯店大廳（每人精算花費：¥1,180），依然確保 18:00 前進駐！",
+          "【計程車精算對比】：盛岡站至網張溫泉約 28 公里雪路，單程車資約 ¥9,500（1 人搭乘每人花費：¥9,500；2 人共乘每人花費：¥4,750）。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "休暇村岩手網張温泉 雫石鄉土會席 (晚餐)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店內餐廳",
+            "highlights": "網張名物！前澤牛/岩手牛陶板燒、白濁溫泉蒸時蔬、雫石芥菜炊飯與南部手打蕎麥",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kyukamura+Iwate+Amihari+Onsen+Dining"
+          },
+          {
+            "name": "盛岡冷麵 ぴょんぴょん舎 盛岡站前店",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡站前步行 2 分",
+            "highlights": "盛岡三大麵之首！馬鈴薯澱粉揉製超彈牙麵條、大骨熬煮清澈冰爽湯底、自選辣度泡菜與牛骨厚叉燒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Pyonpyonsha+Morioka+Ekimae"
+          },
+          {
+            "name": "盛岡炸醬麵 白龍 (Pai-ryu FESAN店)",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡站地下街 FESAN 內",
+            "highlights": "盛岡炸醬麵 (Jajamen) 創始發祥名店！特調黑肉醬拌入扁烏龍麵，完食前打入雞蛋加入滾燙煮麵水做成「雞蛋湯 (Chiitantan)」",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Pairon+Jajamen+Morioka+FESAN"
+          },
+          {
+            "name": "東家 (Azumaya 盛岡站前店 碗子蕎麥)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站前步行 2 分",
+            "highlights": "名聞全日本的「一口碗子蕎麥麵 (Wanko Soba)」挑戰！服務員一邊喊著節奏一邊倒麵，體驗滿滿岩手熱情",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Azumaya+Morioka+Ekimae"
+          },
+          {
+            "name": "南部藩長屋酒場 (盛岡站前店)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站東口步行 3 分",
+            "highlights": "古民家風格居酒屋，現烤三陸牡蠣、岩手短角牛炭烤與地酒品嚐",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nambuhan+Nagaya+Sakaba+Morioka"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "福田麵包 盛岡站店 (Fukuda Pan)",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡站 FESAN 1F",
+            "highlights": "岩手傳奇靈魂點心！巨大鬆軟紡錘麵包，現場客製現抹「紅豆餡配鮮奶油 (An-butter)」，排隊名店",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Fukuda+Pan+Morioka+Station"
+          },
+          {
+            "name": "松榮堂 盛岡店 (胡麻ごま摺り団子)",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡站 FESAN おでんせ館",
+            "highlights": "一口咬下濃黑爆漿！香濃黑芝麻內餡瞬間爆發之急速冷凍芝麻糰子",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shoeido+Morioka+FESAN"
+          },
+          {
+            "name": "網張溫泉 手工生乳起司霜淇淋",
+            "rating": "★★★★☆",
+            "distance": "📍 休暇村網張大廳",
+            "highlights": "使用鄰近小岩井農場鮮乳製作之特濃起司冰淇淋，乳香細緻厚實",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Onsen+Ice+Cream"
+          },
+          {
+            "name": "タルトタタン (Tarte Tatin 盛岡店)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站 FESAN 1F",
+            "highlights": "岩手頂級蘋果甜點烘焙坊，濃縮焦糖蘋果磅蛋糕與厚切年輪蛋糕",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tarte+Tatin+Morioka+FESAN"
+          },
+          {
+            "name": "岩泉農場 生乳優格杯",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站各便利店",
+            "highlights": "低溫長時間低速發酵，質地極度黏稠拉絲如同起司般綿密無比",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwaizumi+Yogurt+Morioka"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "南部美人 特別純米酒",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡站 FESAN 地酒專區",
+            "highlights": "岩手二戶代表名酒！IWC 世界冠軍日本酒，水蜜桃般優雅吟釀香與清澈微辛尾韻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Bijin+Sake+Morioka"
+          },
+          {
+            "name": "赤武 (AKABU) 純米酒 F",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡地酒專賣店",
+            "highlights": "全日本新生代最炙手可熱地酒！盛岡在地年輕杜氏釀造，果香奔放活潑酸甜多汁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=AKABU+Sake+Morioka"
+          },
+          {
+            "name": "Baeren Brewery (ベアレン釀造所)",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡站 Beer Bar",
+            "highlights": "德國傳統百年銅鍋釀造工法，Classic 拉格啤酒與百年黑啤酒醇厚麥香十足",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Baeren+Brewery+Morioka"
+          },
+          {
+            "name": "鷲之尾 雫石在地地酒",
+            "rating": "★★★★☆",
+            "distance": "📍 網張溫泉大廳",
+            "highlights": "八幡平岩手山名水釀造，岩手老一輩農家最愛的醇厚本釀造辛口酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Washinoo+Sake+Iwate"
+          },
+          {
+            "name": "小岩井農場 瓶裝黃金牛乳",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站/休暇村賣店",
+            "highlights": "小岩井農場限定頂級低溫殺菌生乳，奶香濃郁回甘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Farm+Milk"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "小岩井農場 純發酵黃油特選禮盒",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡站 FESAN 特產店",
+            "highlights": "岩手雫石百三十年農場傳承工法木桶發酵純牛油，香氣細緻深邃，抹土司絕品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Farm+Butter+Morioka"
+          },
+          {
+            "name": "かもめの玉子 (海鷗之蛋 迷你禮盒)",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡站 FESAN おでんせ館",
+            "highlights": "三陸大船渡百年銘菓！白巧克力外層包裹蛋糕與黃味豆沙餡，外型精緻可愛",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kamome+no+Tamago+Morioka"
+          },
+          {
+            "name": "南部鐵器 (Iwachu) 迷你手作風鈴",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站工藝專櫃",
+            "highlights": "岩手四百年鑄鐵傳統工藝，造型古樸厚重，聲音清脆悠遠",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nambu+Tekki+Iwachu+Morioka"
+          },
+          {
+            "name": "ぴょんぴょん舎 盛岡冷麵生麵禮盒",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站剪票口前",
+            "highlights": "附專用牛骨濃縮高湯包、泡菜與熟白芝麻，在家輕鬆重現道地冷麵",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Pyonpyonsha+Cold+Noodles+Gift"
+          },
+          {
+            "name": "網張溫泉 藥用硫磺源泉浴劑",
+            "rating": "★★★★★",
+            "distance": "📍 休暇村網張賣店",
+            "highlights": "開湯 1,300 年白濁硫磺天然溫泉精華濃縮浴劑，徹底舒緩滑雪肌肉疲勞",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Onsen+Bath+Powder"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "網張溫泉 仙女之湯 (天然野溪野湯)",
+            "rating": "★★★★★",
+            "distance": "📍 休暇村本館後方山徑",
+            "highlights": "開湯千三百年傳奇野湯！隱身在森林溪谷中的白濁天然露天混浴溫泉，雪景迷人",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Onsen+Sennyo+no+yu"
+          },
+          {
+            "name": "盛岡城跡公園 (岩手公園)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站東口步行 15 分",
+            "highlights": "盛岡藩南部氏二十萬石居城遺址，雄偉的花崗岩疊石城牆覆蓋白雪，為宮澤賢治鍾愛漫步之地",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Morioka+Castle+Ruins+Park"
+          },
+          {
+            "name": "岩手銀行赤磚館 (中之橋本店)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡市中之橋通步行 18 分",
+            "highlights": "東京車站設計師辰野金吾操刀設計之國家重要文化財，紅磚白花崗岩洋風建築典雅壯麗",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bank+of+Iwate+Red+Brick+Building"
+          },
+          {
+            "name": "開運橋 (Kaiun-bashi 眺望雪山)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站前步行 3 分",
+            "highlights": "跨越北上川之白鋼桁架橋，橋上可眺望壯觀雪白岩手山（南部富士）雄姿",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kaiunbashi+Bridge+Morioka"
+          },
+          {
+            "name": "盛岡手づくり村 (盛岡手作工藝村)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡往網張途中車程 15 分",
+            "highlights": "聚集南部鐵器、藍染、陶藝與現烤南部煎餅現場體驗之傳統工藝聚落",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Morioka+Tezukuri-mura"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 7,
+      "date": "2027-02-15",
+      "day_title": "網張溫泉滑雪場首日・千三百年秘湯 ＆ 岩手山深粉雪",
+      "stay": "休暇村岩手網張温泉",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Kyukamura+Iwate+Amihari+Onsen",
+      "ski_resort": {
+        "name": "網張溫泉滑雪場 (Amihari Onsen Ski Area)",
+        "elevation": "770m - 1,350m (落差 580m)",
+        "highlights": "門口直接 Ski-in / Ski-out！岩手山南麓極乾深粉雪，非壓雪黑線林間道刺激過癮。滑雪後直奔開湯 1,300 年白濁硫磺天然野湯「仙女之湯」，極致舒壓",
+        "course_map_url": "https://www.qkamura.or.jp/iwate/ski/",
+        "official_website": "https://www.qkamura.or.jp/iwate/ski/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Amihari-Onsen/6day/mid",
+        "map_image_url": "https://www.qkamura.or.jp/iwate/ski/images/map.png"
+      },
+      "transit": {
+        "summary": "飯店門口 Ski-in / Ski-out，零交通耗時！出房門步行 1 分即達第 1 雙人纜車站",
+        "details": [
+          "【開滑選項 A（晨間壓雪巡航・08:30 開滑）】：08:30 於雪具乾燥室著裝出發，搭乘第 1 纜車轉第 2 纜車直攻山頂 1,350m，搶攻初晨平整壓雪與朝陽景色（交通花費：¥0）。",
+          "【開滑選項 B（悠閒粉雪進攻・09:30 開滑）】：飯店享用岩手在地鄉土早餐後，直奔上部非壓雪高級道挑戰天然深粉雪（交通花費：¥0）。",
+          "全天零車程，隨時可回房更換裝備或休息。",
+          "16:00 滑雪結束，直接滑回休暇村本館享用白濁硫磺名湯與前澤牛/南部食材料理，18:00 前完全放鬆享用晚餐。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "網張溫泉 滑雪木屋 (Center House)",
+            "rating": "★★★★☆",
+            "distance": "📍 第 1 纜車站旁",
+            "highlights": "滑雪中繼熱食！熱騰騰雫石豬排拉麵、特濃咖哩飯與香脆日式唐揚炸雞",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Onsen+Ski+Center+House"
+          },
+          {
+            "name": "休暇村岩手網張温泉 溫泉御膳",
+            "rating": "★★★★★",
+            "distance": "📍 飯店 1F 餐廳",
+            "highlights": "新鮮岩手短角牛壽喜燒、南部小麥麵疙瘩湯 (Hittsumi) 與三陸鮭魚卵炊飯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kyukamura+Iwate+Amihari+Onsen"
+          },
+          {
+            "name": "玄武洞 茶屋 (雫石鄉土料理)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 8 分",
+            "highlights": "名勝玄武洞旁古樸茶屋，手打蕎麥麵與現烤味噌烤飯糰",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Genbudo+Chaya+Shizukuishi"
+          },
+          {
+            "name": "小岩井農場 山之木屋燒烤",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 15 分",
+            "highlights": "小岩井自家產羊肉鐵板燒 (成吉思汗烤肉) 與新鮮烤鮮蔬",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Farm+Sanroku+BBQ"
+          },
+          {
+            "name": "雫石 麵房 松良 (Matsura)",
+            "rating": "★★★★☆",
+            "distance": "📍 雫石町內車程 15 分",
+            "highlights": "在地手打粗蕎麥麵名店，天婦羅包含整條新鮮炸穴子魚與舞茸",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Soba+Matsura+Shizukuishi"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "網張名物 溫泉硫磺黑糖饅頭",
+            "rating": "★★★★★",
+            "distance": "📍 休暇村賣店",
+            "highlights": "使用高溫硫磺蒸氣現蒸之黑糖紅豆饅頭，皮薄餡香暖胃",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Onsen+Manju"
+          },
+          {
+            "name": "小岩井農場 重乳酪起司條",
+            "rating": "★★★★★",
+            "distance": "📍 休暇村伴手禮區",
+            "highlights": "100% 農場乳酪製作，濃稠醇厚不甜膩，滑雪必備高熱量點心",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Cheesecake+Bar"
+          },
+          {
+            "name": "雫石松ぼっくり 手工冰淇淋",
+            "rating": "★★★★★",
+            "distance": "📍 車程 12 分",
+            "highlights": "岩手超人氣排隊冰淇淋名店！自家牧場新鮮生乳現做「玄米、藍莓、卡士達」義式 Gelato",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Matsubokkuri+Gelato+Shizukuishi"
+          },
+          {
+            "name": "網張高原 手作焦糖烤布丁",
+            "rating": "★★★★☆",
+            "distance": "📍 休暇村咖啡吧",
+            "highlights": "使用在地放牧雞蛋與低溫生乳手工慢火烘焙，焦糖微苦回甘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Caramel+Pudding"
+          },
+          {
+            "name": "岩手藍莓酥餅 (Blueberry Biscuit)",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "岩手山麓自產野生藍莓熬煮成果醬夾心，酸甜果香迷人",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Blueberry+Sweets"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "岩手川 生貯藏辛口清酒",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店晚餐吧",
+            "highlights": "清爽淡麗辛口酒，低溫冰鎮後搭配溫泉會席海鮮與前澤牛極搭",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwatagawa+Sake+Iwate"
+          },
+          {
+            "name": "Baeren Classic (瓶裝生啤酒)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店伴手禮處",
+            "highlights": "榮獲世界評比第一的多特蒙德風格拉格生啤酒，麥芽厚度飽滿",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Baeren+Classic+Beer"
+          },
+          {
+            "name": "網張特選 暖身甘酒",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場服務台旁",
+            "highlights": "純米米麴天然糖化發酵熱飲，驅寒暖身迅速補充體力",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Amazake"
+          },
+          {
+            "name": "雫石 深烘焙雪山手沖咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 休暇村大廳咖啡閣",
+            "highlights": "高海拔純淨軟水沖泡，入口滑順回甘帶堅果黑巧克力尾韻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shizukuishi+Coffee"
+          },
+          {
+            "name": "岩手山麓 純鮮榨蘋果汁",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店大廳自動販賣部",
+            "highlights": "無添加防腐劑與糖分，原汁原味甘甜爽口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Apple+Juice"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "網張滑雪場 限定雪板貼紙與徽章",
+            "rating": "★★★★★",
+            "distance": "📍 網張滑雪售票處",
+            "highlights": "網張 1,350m 雪道與硫磺溫泉標誌原創金屬刺繡徽章",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Ski+Badge"
+          },
+          {
+            "name": "小岩井農場 發酵奶油薄烤酥餅",
+            "rating": "★★★★★",
+            "distance": "📍 休暇村賣店",
+            "highlights": "經典圓鐵盒包裝，純奶油比例高達 30%，酥脆濃郁化口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Farm+Sable"
+          },
+          {
+            "name": "雫石產 純天然椴樹生蜂蜜",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店特產店",
+            "highlights": "岩手森林野蜂採集，香氣清幽，泡茶調酒極佳",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shizukuishi+Honey"
+          },
+          {
+            "name": "網張溫泉 保濕泉水噴霧",
+            "rating": "★★★★☆",
+            "distance": "📍 休暇村大浴場入口",
+            "highlights": "100% 網張源泉高保濕礦物精華，滑雪後乾燥肌膚保濕聖品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Onsen+Mist"
+          },
+          {
+            "name": "南部茜染 (Akane-zome) 手帕",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡工藝展示櫃",
+            "highlights": "岩手紫草根與茜草根傳統植物染，茜紅色澤溫潤高雅",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Akanezome"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "網張五湯巡禮 (大浴場・白樺之湯)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店館內直結",
+            "highlights": "開湯千三百年的五處不同泉眼！包含大釋之湯、白樺之湯、青根之湯，乳白硫磺泉徹底放鬆肌肉",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Onsen+Five+Baths"
+          },
+          {
+            "name": "岩手山展望台 (山頂 1,350m)",
+            "rating": "★★★★★",
+            "distance": "📍 第 2 纜車頂部",
+            "highlights": "晴朗時可眺望「南部富士」岩手山西側火山錐與早池峰山雄壯連峰",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Mountain+View+Amihari"
+          },
+          {
+            "name": "網張 藥師岳雪地林間漫步",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店後方步道",
+            "highlights": "穿戴雪鞋 (Snowshoe) 穿梭於被白雪覆蓋的日本山毛櫸原始林中，尋覓野生動物足跡",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Snowshoe+Trail"
+          },
+          {
+            "name": "玄武洞 柱狀節理 (Genbudo)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 8 分",
+            "highlights": "岩手山火山熔岩冷卻形成的巨大六角形柱狀岩壁，冬季被垂掛冰柱與白雪妝點",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Genbudo+Shizukuishi"
+          },
+          {
+            "name": "小岩井農場 冬季雪原一本櫻",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 16 分",
+            "highlights": "廣袤無垠的銀白雪原中央孤傲佇立之百年江戶彼岸櫻，背靠白雪皚皚岩手山，如詩如畫",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Ippon-zakura+Winter"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 8,
+      "date": "2027-02-16",
+      "day_title": "岩手高原戲雪公園・全山長型箱型纜車高速巡航",
+      "stay": "休暇村岩手網張温泉",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Kyukamura+Iwate+Amihari+Onsen",
+      "ski_resort": {
+        "name": "岩手高原戲雪公園 (Iwate Kogen Snow Park)",
+        "elevation": "630m - 1,213m (落差 583m)",
+        "highlights": "配備全長 2,000m 大型箱型纜車 (Gondola) 直攻山頂，無須吹寒風換吊椅！雪道寬達 100m，最長滑行距離 3,000m，極致單板高速 Carving 走刃刻滑首選",
+        "course_map_url": "https://iwatekogen.jp/gelande/",
+        "official_website": "https://iwatekogen.jp/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Iwate-Kogen-Snow-Park/6day/mid",
+        "map_image_url": "https://iwatekogen.jp/gelande/img/map.jpg"
+      },
+      "transit": {
+        "summary": "休暇村網張溫泉 ➔ 岩手高原戲雪公園 (車程僅 6-8 分，提供 2 組接駁選項)",
+        "details": [
+          "【接駁選項 A（短程預約計程車首選・08:38 抵雪場）】：08:30 飯店門口搭乘預約短程接駁/雪地計程車 ➔ 08:38 直達岩手高原 Gondola 山麓站（車資約 ¥1,600：1 人搭乘每人花費：¥1,600；2 人共乘每人花費：¥800）。08:45 即可搭 Gondola 直衝山頂！",
+          "【接駁選項 B（上午次班・09:23 抵雪場）】：09:15 飯店出發 ➔ 09:23 抵達岩手高原 Center House（車資約 ¥1,600：1 人花費：¥1,600；2 人共乘每人花費：¥800）。",
+          "【回程選項 A（16:10 抵飯店首選）】：16:00 收板整裝，搭短程計程車 ➔ 16:10 返回休暇村網張溫泉（車資約 ¥1,600：1 人每人 ¥1,600；2 人每人 ¥800）。在 18:00 前充裕休息泡湯！",
+          "【回程選項 B（夜滑前下山・17:10 抵飯店）】：17:00 收板搭車 ➔ 17:10 返回飯店，依然確保 18:00 前進駐享用晚餐。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "岩手高原 Gondola 山頂咖啡屋",
+            "rating": "★★★★☆",
+            "distance": "📍 Gondola 山頂站 2F",
+            "highlights": "標高 1,213m 眺望景觀！現烤熱壓火腿起司三明治、熱拿鐵與信州蘋果派",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Kogen+Gondola+Cafe"
+          },
+          {
+            "name": "岩手高原 Center House 大食堂",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場山麓 Center House 1F",
+            "highlights": "滑雪大盛料理！厚切岩手三元豚炸豬排咖哩飯、辣味噌拉麵定食",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Kogen+Restaurant"
+          },
+          {
+            "name": "休暇村岩手網張温泉 自助晚宴",
+            "rating": "★★★★★",
+            "distance": "📍 飯店 1F",
+            "highlights": "多達 40 道盛岡與雫石特色料理：現煎前澤牛牛排、三陸生干貝與南部雜煮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kyukamura+Iwate+Amihari+Buffet"
+          },
+          {
+            "name": "雫石 山葡萄亭 (Yamabudo-tei)",
+            "rating": "★★★★☆",
+            "distance": "📍 雫石町車程 10 分",
+            "highlights": "山產名店！炭火燒烤岩手產野豬肉鍋、天然蜂蛹飯與烤山女魚",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Yamabudotei+Shizukuishi"
+          },
+          {
+            "name": "味工房 雫石 (道の駅 あねっこ)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 18 分",
+            "highlights": "雫石牛漢堡排套餐與香濃雫石黑醋栗烏龍冷麵",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Michi+no+Eki+Shizukuishi+Anekko"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "岩手高原 雪山窯烤可頌",
+            "rating": "★★★★☆",
+            "distance": "📍 山麓麵包工房",
+            "highlights": "每日現烤出爐之發酵黃油可頌，外層千層酥化，內裡鬆軟奶油香濃",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Kogen+Bakery"
+          },
+          {
+            "name": "雫石松ぼっくり 雙球冰淇淋",
+            "rating": "★★★★★",
+            "distance": "📍 車程 12 分",
+            "highlights": "純天然食材手作！滑雪過後品嚐在地濃香胡桃與烤芝麻雙拼冰淇淋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Matsubokkuri+Gelato+Shizukuishi"
+          },
+          {
+            "name": "小岩井農場 起司千層蛋糕",
+            "rating": "★★★★☆",
+            "distance": "📍 小岩井賣店",
+            "highlights": "薄煎餅皮交疊輕乳酪鮮奶油，層次豐盈細緻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Farm+Crepe+Cake"
+          },
+          {
+            "name": "網張溫泉 水羊羹",
+            "rating": "★★★★☆",
+            "distance": "📍 休暇村伴手禮區",
+            "highlights": "岩手山清冽名水熬煮紅豆，冰涼清甜微甜不膩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Mizu+Yokan"
+          },
+          {
+            "name": "南部仙貝 蜂蜜花生薄片",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場售票部",
+            "highlights": "香脆堅果顆粒與天然百花蜜烘焙，單板口袋快速熱量補給",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Honey+Senbei"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "あさ開 (Asabiraki) 純米大吟釀 結の香",
+            "rating": "★★★★★",
+            "distance": "📍 休暇村地酒處",
+            "highlights": "岩手代表酒造名門！採用岩手最高級酒造好適米「結の香」釀造，果香高雅細緻如白桃",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Asabiraki+Yui+no+Ko+Morioka"
+          },
+          {
+            "name": "Baeren Schwarz (黑啤酒)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店伴手禮處",
+            "highlights": "深烘焙麥芽帶來黑巧克力與焦糖香氣，泡沫綿密絲滑",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Baeren+Schwarz+Beer"
+          },
+          {
+            "name": "岩手高原 山頂特調愛爾蘭熱咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 Gondola 山頂咖啡吧",
+            "highlights": "熱手沖咖啡注入少許威士忌與鮮奶油，在山頂雪地中極致享受",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Kogen+Coffee"
+          },
+          {
+            "name": "雫石山葡萄 100% 原汁純汁",
+            "rating": "★★★★☆",
+            "distance": "📍 道之驛 雫石",
+            "highlights": "岩手深山採集野生山葡萄鮮榨，富含多酚，酸勁深沉果香濃郁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shizukuishi+Wild+Grape+Juice"
+          },
+          {
+            "name": "七時雨 (Nanashigure) 純米酒",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店居酒屋閣",
+            "highlights": "南部杜氏傳統手造辛口純米，入喉爽冽乾淨",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanashigure+Sake+Iwate"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "岩手高原 原創抗風雪板貼紙",
+            "rating": "★★★★★",
+            "distance": "📍 雪場售票中心",
+            "highlights": "以 2,000m Gondola 為主視覺之高質感金屬反光防水貼紙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Kogen+Ski+Sticker"
+          },
+          {
+            "name": "小岩井農場 手工羊毛氈飾品",
+            "rating": "★★★★☆",
+            "distance": "📍 小岩井藝品店",
+            "highlights": "農場自家純羊毛手工針氈小羊與雪人吊飾，溫暖可愛",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Farm+Wool+Craft"
+          },
+          {
+            "name": "雫石牛 熟成牛肉乾禮盒",
+            "rating": "★★★★☆",
+            "distance": "📍 道之驛 雫石",
+            "highlights": "嚴選岩手雫石黑毛和牛肉慢火煙燻乾燥，肉汁濃郁嚼勁十足",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shizukuishi+Beef+Jerky"
+          },
+          {
+            "name": "岩手南部鐵器 迷你生鐵鈴鐺",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "手工鑄造生鐵小鈴鐺，清脆音色悠長悅耳",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Tekki+Bell+Keyring"
+          },
+          {
+            "name": "網張溫泉 硫磺泉草本香皂",
+            "rating": "★★★★☆",
+            "distance": "📍 休暇村大浴場賣店",
+            "highlights": "天然冷壓橄欖油調和網張溫泉硫磺精華，洗淨溫和保濕",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Onsen+Soap"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "岩手高原 2,000m 纜車空中全景",
+            "rating": "★★★★★",
+            "distance": "📍 雪場內搭乘",
+            "highlights": "搭乘全封閉暖氣箱型纜車直上 1,213m，沿途俯瞰盛岡平野與覆雪南麓山脈全景",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Kogen+Gondola+View"
+          },
+          {
+            "name": "小岩井農場 (冬之小岩井雪祭)",
+            "rating": "★★★★★",
+            "distance": "📍 車程 15 分",
+            "highlights": "日本最大民間綜合農場，冬季設有巨大雪雕、雪屋點燈與銀白林蔭大道",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Farm+Winter+Festival"
+          },
+          {
+            "name": "鶯宿溫泉街 (Oshuku Onsen)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 20 分",
+            "highlights": "四百五十年歷史溫泉老街，沿川而建的木造日歸名湯與免費足湯亭",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Oshuku+Onsen+Street"
+          },
+          {
+            "name": "御所湖 (冬季天鵝過冬地)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 18 分",
+            "highlights": "北上川水系大型人工湖，冬季常有數百隻西伯利亞大天鵝棲息，雪山倒影幽美",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Gosho+Lake+Morioka"
+          },
+          {
+            "name": "繋溫泉 (Tsunagi Onsen 足湯公園)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 22 分",
+            "highlights": "源義家曾將愛馬繫於石上泡湯而得名之古老名湯，湖畔露天足湯溫暖愜意",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsunagi+Onsen+Footbath"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 9,
+      "date": "2027-02-17",
+      "day_title": "網張溫泉/岩手高原 二擇自由滑行・秘境白濁溫泉深層修復",
+      "stay": "休暇村岩手網張温泉",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Kyukamura+Iwate+Amihari+Onsen",
+      "ski_resort": {
+        "name": "網張溫泉滑雪場 / 岩手高原戲雪公園 雙星自由選",
+        "elevation": "630m - 1,350m",
+        "highlights": "依當日天候風向動態選擇：無風深雪首選網張溫泉樹林野雪；若山頂風勢較大則前往岩手高原搭乘全封閉箱型纜車舒適刷道",
+        "course_map_url": "https://www.qkamura.or.jp/iwate/ski/",
+        "official_website": "https://www.qkamura.or.jp/iwate/ski/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Amihari-Onsen/6day/mid",
+        "map_image_url": "https://www.qkamura.or.jp/iwate/ski/images/map.png"
+      },
+      "transit": {
+        "summary": "網張溫泉門口 Ski-in / Ski-out 或預約 7 分鐘短程計程車至岩手高原",
+        "details": [
+          "【選項 A（網張溫泉門口開滑・¥0）】：08:45 著裝自飯店出發，全天暢滑網張第 1-3 吊椅，午後 15:30 直接滑回門口享受仙女之湯（交通花費：¥0）。",
+          "【選項 B（岩手高原 Gondola 巡航）】：08:45 搭計程車至岩手高原（單程 ¥1,600，2 人共乘每人花費：¥800），16:00 原車接回。",
+          "全日交通以 17:00 前返回房間泡湯為準，確保 18:00 晚餐前身體完全暖和放鬆。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "網張溫泉 森林木屋輕食",
+            "rating": "★★★★☆",
+            "distance": "📍 網張雪道中段",
+            "highlights": "滑雪小歇補給！現烤肉包、熱番茄蔬菜濃湯與熱紅豆年糕湯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Forest+Hutte"
+          },
+          {
+            "name": "休暇村 雫石蕎麥宴 (午餐)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店 1F",
+            "highlights": "手打十割寒蕎麥佐香脆在地舞茸與天婦羅盛合",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kyukamura+Iwate+Amihari+Soba"
+          },
+          {
+            "name": "岩手高原 烤起司漢堡",
+            "rating": "★★★★☆",
+            "distance": "📍 岩手高原山麓",
+            "highlights": "厚切 100% 岩手牛漢堡排夾入融化高達起司與焦糖洋蔥",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Kogen+Burger"
+          },
+          {
+            "name": "居酒屋 赤提燈 (鶯宿溫泉街)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 20 分",
+            "highlights": "傳統日式居酒屋，現烤地雞串燒、清燉牛筋與岩手地酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Izakaya+Oshuku+Onsen"
+          },
+          {
+            "name": "山之驛 雫石 特產食堂",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 15 分",
+            "highlights": "雫石產黑豚生薑燒定食與熱呼呼南部小麥麵疙瘩汁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Yamanoeki+Shizukuishi"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "小岩井農場 手作起司蛋糕",
+            "rating": "★★★★★",
+            "distance": "📍 休暇村賣店",
+            "highlights": "玻璃小罐裝之雙層低溫烘焙起司蛋糕，入口綿密濃香",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Jar+Cheesecake"
+          },
+          {
+            "name": "松ぼっくり 草莓牛奶 Gelato",
+            "rating": "★★★★★",
+            "distance": "📍 車程 12 分",
+            "highlights": "新鮮盛岡草莓果肉揉入在地牧場生乳，酸甜清新爽口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Matsubokkuri+Strawberry+Gelato"
+          },
+          {
+            "name": "網張溫泉 手工核桃麻糬",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店大廳伴手禮處",
+            "highlights": "純手工搗製糯米麻糬拌入現磨香濃核桃糖泥",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Kurumi+Mochi"
+          },
+          {
+            "name": "南部薄片煎餅 抹茶黑糖",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "宇治抹茶融入香脆米餅，外裹沖繩黑糖蜜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Matcha+Nanbu+Senbei"
+          },
+          {
+            "name": "岩手蘋果 肉桂酥派",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 Center House",
+            "highlights": "出爐熱騰騰酥皮派包裹蜜漬蘋果片，滑雪中繼甜點首選",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Apple+Pie+Kogen"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "南部美人 心白 (Shimpaku) 純米大吟釀",
+            "rating": "★★★★★",
+            "distance": "📍 飯店地酒閣",
+            "highlights": "二戶南部美人頂級限量版！精米步合 40%，如水般清瑩澄澈無瑕",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Bijin+Shimpaku"
+          },
+          {
+            "name": "Baeren Saison (季節啤酒)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店賣店",
+            "highlights": "比利時農夫農莊季節啤酒風格，果香辛香料層次豐富，解渴順口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Baeren+Saison+Beer"
+          },
+          {
+            "name": "網張 硫磺溫泉地熱煎茶",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店茶寮",
+            "highlights": "引山麓天然甘冽泉水沖泡靜岡產深蒸煎茶，清香回甘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Green+Tea"
+          },
+          {
+            "name": "小岩井農場 無糖優酪乳",
+            "rating": "★★★★☆",
+            "distance": "📍 各自動販賣機",
+            "highlights": "原味濃郁無添加，富含活性益生菌，滑雪腸胃保養",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Drinking+Yogurt"
+          },
+          {
+            "name": "月之輪 (Tsukinowa) 純米生酒",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店酒吧",
+            "highlights": "岩手女性杜氏精心手造，米旨味濃郁芳醇，入喉回甘悠長",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsukinowa+Sake+Iwate"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "小岩井農場 奶油磅蛋糕禮盒",
+            "rating": "★★★★★",
+            "distance": "📍 飯店伴手禮專櫃",
+            "highlights": "高密度純黃油慢烤磅蛋糕，熟成數日後香氣更顯深邃",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Koiwai+Butter+Cake"
+          },
+          {
+            "name": "網張 仙女之湯 紀念木桶",
+            "rating": "★★★★☆",
+            "distance": "📍 休暇村櫃台",
+            "highlights": "天然秋田杉純手工製作，刻印有網張溫泉千三百年字樣",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Wooden+Bucket"
+          },
+          {
+            "name": "雫石產 乾香菇與山菜乾貨包",
+            "rating": "★★★★☆",
+            "distance": "📍 道之驛 雫石",
+            "highlights": "原木栽培天然肉厚香菇，香氣遠勝一般溫室栽培",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shizukuishi+Shiitake"
+          },
+          {
+            "name": "南部鐵器 風鈴 (花卉造型)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡工藝展售區",
+            "highlights": "精緻生鐵鑄造鈴鐺，微風吹拂發出如泉水般空靈回音",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nambu+Tekki+Windchime"
+          },
+          {
+            "name": "岩手短角牛 熟成肉辣醬",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "短角牛絞肉與熟成味噌慢火熬煮，拌飯拌麵極香",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Beef+Miso"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "白樺之湯 露天風呂",
+            "rating": "★★★★★",
+            "distance": "📍 休暇村館外步行 2 分",
+            "highlights": "白樺林環抱的木造天然露天溫泉池，四周積雪皚皚，享受極致雪見風呂",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Amihari+Shirakaba+no+yu"
+          },
+          {
+            "name": "岩手高原 展望大廳景觀",
+            "rating": "★★★★☆",
+            "distance": "📍 岩手高原山麓站",
+            "highlights": "全景落地玻璃窗飽覽整個雫石盆地與遠方早池峰山日落晚霞",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Kogen+Observatory"
+          },
+          {
+            "name": "逢之澤溪谷 (冰瀑觀賞)",
+            "rating": "★★★★☆",
+            "distance": "📍 網張登山道入口",
+            "highlights": "溪谷兩側山壁凝結成巨大天然冰壁，雪景壯麗安靜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ainosawa+Valley+Iwate"
+          },
+          {
+            "name": "玄武溫泉 (Genbu Onsen)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 10 分",
+            "highlights": "雫石十湯之一，岩手山熔岩石堆砌之古樸石造溫泉池",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Genbu+Onsen+Iwate"
+          },
+          {
+            "name": "野生鳥獸保護中心 (岩手山麓)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 12 分",
+            "highlights": "展示岩手山生態系與救傷之金雕、大天鵝，適合大自然生態愛好者",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Morioka+Wildlife+Center"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 10,
+      "date": "2027-02-18",
+      "day_title": "網張退房 ➔ 盛岡 ➔ IGR銀河鐵道至奧中山高原 ➔ 進駐高原飯店開滑",
+      "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Hotel",
+      "ski_resort": {
+        "name": "奧中山高原滑雪場 (Okunakayamakogen Ski Area)",
+        "elevation": "580m - 1,018m (落差 438m)",
+        "highlights": "岩手北部內陸極低溫所淬鍊之「絲綢粉雪 (Silk Powder)」！11 條多樣雪道、5 座纜車，夜間滑雪開放至 20:00，滑雪場直結溫泉飯店",
+        "course_map_url": "https://www.okunakayama.jp/gelande/",
+        "official_website": "https://www.okunakayama.jp/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
+        "map_image_url": "https://www.okunakayama.jp/wp-content/themes/okunakayama/images/gelande_map.png"
+      },
+      "transit": {
+        "summary": "休暇村接駁車至盛岡站 ➔ IGR 銀河鐵道至奧中山高原站 ➔ 飯店接駁車至雪場 (提供 2 組車次選項)",
+        "details": [
+          "網張溫泉退房，攜帶雪具行李展開東北北部內陸滑雪行程。",
+          "【選項 A（晨間移動首選・12:12 抵飯店開滑）】：09:30 搭乘休暇村免費預約接駁巴士 ➔ 10:20 抵盛岡站西口（轉乘緩衝 35 分於盛岡站買土產午餐） ➔ 盛岡站搭乘 10:55 發車之 IGR いわて銀河鉄道（往八戶方向）➔ 11:43 抵「奧中山高原站」（每人精算花費：¥1,080，轉乘緩衝 17 分） ➔ 站前搭乘 12:00 飯店免費預約接駁巴士（或一戶町營巴士）➔ 12:12 直達奧中山高原飯店大廳（每人精算花費：¥0~¥200）。登記入住後 13:00 即可開滑！",
+          "【選項 B（午後從容次班・14:52 抵飯店）】：盛岡站享用午餐後搭乘 13:38 發車之 IGR 銀河鐵道 ➔ 14:26 抵奧中山高原站 ➔ 14:40 飯店接駁車 ➔ 14:52 抵達飯店（每人精算花費：¥1,080），完全在 18:00 前進駐！",
+          "【計程車精算對比】：奧中山高原站至雪場約 7 公里，車資約 ¥2,200（1 人搭乘每人花費：¥2,200；2 人共乘每人花費：¥1,100）。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "奧中山高原 餐廳 こもれび (Komorebi)",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店朝陽館內",
+            "highlights": "奧中山高原產黑毛和牛陶板燒定食、高原新鮮蔬菜鍋與現炸豬排咖哩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Restaurant+Komorebi"
+          },
+          {
+            "name": "奧中山高原 雪あかり (雪道食堂)",
+            "rating": "★★★★☆",
+            "distance": "📍 第 1 纜車站旁",
+            "highlights": "滑雪必吃！熱騰騰高原味噌拉麵、特大炸雞塊定食與溫暖熱湯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Yukiakari+Restaurant"
+          },
+          {
+            "name": "一戶町 手打蕎麥 雅 (Miyabi)",
+            "rating": "★★★★☆",
+            "distance": "📍 奧中山站前步行 3 分",
+            "highlights": "車站旁手打蕎麥小店，蕎麥香氣純正，搭配現炸野草天婦羅",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Soba+Miyabi+Ichinohe"
+          },
+          {
+            "name": "奧中山高原 煌星之膳 (晚餐會席)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店煌星館",
+            "highlights": "岩手北部鄉土料理宴席：二戶佐助豚涮涮鍋、八戶近海鮭魚卵與雜穀炊飯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Hotel+Dinner"
+          },
+          {
+            "name": "一戶町 燒肉 南大門 (Nandaimon)",
+            "rating": "★★★★☆",
+            "distance": "📍 一戶站前車程 15 分",
+            "highlights": "在地優質短角和牛燒肉，肉質鮮甜多汁，價格親民實惠",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Yakiniku+Nandaimon+Ichinohe"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "奧中山高原 義式冰淇淋工房 雪あかり Gelato",
+            "rating": "★★★★★",
+            "distance": "📍 飯店賣店旁",
+            "highlights": "奧中山高原牧場直送 100% 鮮乳製作！金牌義式冰淇淋，推薦「極上牛奶」與「鹽味焦糖」",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Gelato"
+          },
+          {
+            "name": "奧中山高原 牧場濃縮優酪乳",
+            "rating": "★★★★★",
+            "distance": "📍 飯店朝陽館 1F",
+            "highlights": "無添加人工膠質，天然發酵濃郁生乳優格，口感如同鮮奶油般厚實",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Farm+Yogurt"
+          },
+          {
+            "name": "一戶町 傳統三色糰子",
+            "rating": "★★★★☆",
+            "distance": "📍 車站前商店",
+            "highlights": "純糯米搗製醬油、芝麻、紅豆三色烤糰子，軟糯彈牙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+Dango"
+          },
+          {
+            "name": "奧中山高原 焦糖烤乳酪蛋糕",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店咖啡廳",
+            "highlights": "使用高原天然乳酪低溫烘焙，焦香濃郁滑順",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Cheesecake"
+          },
+          {
+            "name": "岩手北部 蘋果蜂蜜脆米餅",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店伴手禮處",
+            "highlights": "酥脆爽口，帶有些許蜂蜜清甜，單板休息零嘴首選",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Honey+Rice+Cake"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "南部美人 特別純米 槽場生原酒",
+            "rating": "★★★★★",
+            "distance": "📍 飯店賣店專櫃",
+            "highlights": "鄰近二戶市之世界名酒！冬季現榨槽場生酒，微氣泡感與豐滿米旨味完美融合",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Bijin+Shubaso+Sake"
+          },
+          {
+            "name": "奧中山高原 瓶裝低溫殺菌鮮乳",
+            "rating": "★★★★★",
+            "distance": "📍 飯店大浴場前自動販賣機",
+            "highlights": "高海拔純淨牧草飼育乳牛鮮乳，泡完琥珀溫泉後必喝一瓶，濃醇甘甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Farm+Milk"
+          },
+          {
+            "name": "南部美人 微氣泡清酒 (Awa Sake)",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店晚餐吧",
+            "highlights": "瓶內二次發酵香檳工法釀製，氣泡綿密高雅，搭餐頂級體驗",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Bijin+Awa+Sake"
+          },
+          {
+            "name": "奧中山山麓 伏流水手沖咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店 Komorebi 咖啡閣",
+            "highlights": "低溫山泉水慢滴手沖，香氣醇厚柔順不酸澀",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Coffee"
+          },
+          {
+            "name": "一戶町 焙茶熱甘露 (Hojicha)",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店大廳熱飲機",
+            "highlights": "深烘焙香氣濃烈，驅寒暖身第一名",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+Hojicha"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "奧中山高原 熟成高達起司禮盒",
+            "rating": "★★★★★",
+            "distance": "📍 飯店賣店專櫃",
+            "highlights": "榮獲多項農業大賞之高達起司，窖藏熟成 6 個月，濃縮深厚堅果奶香",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Cheese+Gift"
+          },
+          {
+            "name": "奧中山高原滑雪場 原創金屬徽章",
+            "rating": "★★★★★",
+            "distance": "📍 雪場售票中心",
+            "highlights": "刻印標高 1,018m 與 Silk Powder 象徵之雪板專用金屬紀念章",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Ski+Badge"
+          },
+          {
+            "name": "御所野繩文 世界遺產土偶吊飾",
+            "rating": "★★★★☆",
+            "distance": "📍 奧中山站前賣店",
+            "highlights": "一戶町世界遺產御所野遺跡出土之「鼻曲土偶」造型陶藝筷架與吊飾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Goshono+Jomon+Souvenir"
+          },
+          {
+            "name": "二戶佐助豚 熟成黑豚香腸",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店伴手禮處",
+            "highlights": "岩手折爪岳純淨山水飼育名豬，肉質鮮美多汁油脂甘甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sasuke+Pork+Sausage"
+          },
+          {
+            "name": "奧中山高原 溫泉琥珀浴鹽",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店大浴場入口",
+            "highlights": "植物性腐植質天然琥珀弱鹼泉提煉結晶，極致美肌保濕",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Bath+Salts"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "奧中山高原雙溫泉 (朝陽之湯・煌星之湯)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店直結 (出房門即達)",
+            "highlights": "罕見「琥珀色植物性弱鹼溫泉」！具有天然保濕因子 (Metasilicic acid)，泡完肌膚滑順如絲",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Onsen"
+          },
+          {
+            "name": "御所野繩文公園 (世界遺產博物館)",
+            "rating": "★★★★★",
+            "distance": "📍 車程 18 分",
+            "highlights": "北海道・北東北繩文遺跡群世界遺產！完整重現五千年前繩文土屋聚落與土偶博物館",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Goshono+Jomon+Park+Ichinohe"
+          },
+          {
+            "name": "奧中山天文台 (銀河聯邦天文台)",
+            "rating": "★★★★☆",
+            "distance": "📍 緊鄰滑雪場頂部",
+            "highlights": "內陸無光害環境，配備大型光學望遠鏡，冬季晴朗夜空星河璀璨震撼",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Observatory"
+          },
+          {
+            "name": "奧中山高原釣魚公園 (雪景湖泊)",
+            "rating": "★★★★☆",
+            "distance": "📍 滑雪場山麓旁",
+            "highlights": "群山環繞的幽靜高原湖泊，冬季覆雪平整，景致寧靜如北歐童話",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Fishing+Park"
+          },
+          {
+            "name": "IGR 奧中山高原站 (最高海拔鐵道站)",
+            "rating": "★★★★☆",
+            "distance": "📍 車站本體",
+            "highlights": "標高 444 公尺，為東北舊東北本線海拔最高之木造懷舊車站，充滿鐵道旅情",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Station"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 11,
+      "date": "2027-02-19",
+      "day_title": "奧中山高原滑雪首日・絲綢粉雪衝刺・夜間滑雪巡航",
+      "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Hotel",
+      "ski_resort": {
+        "name": "奧中山高原滑雪場 (Okunakayamakogen Ski Area)",
+        "elevation": "580m - 1,018m",
+        "highlights": "內陸超乾燥超細微顆粒「絲綢粉雪」！11 條滑道全開，西岳山麓黑線刻滑走刃極致流暢",
+        "course_map_url": "https://www.okunakayama.jp/gelande/",
+        "official_website": "https://www.okunakayama.jp/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
+        "map_image_url": "https://www.okunakayama.jp/wp-content/themes/okunakayama/images/gelande_map.png"
+      },
+      "transit": {
+        "summary": "飯店門口 Ski-in / Ski-out，第 1、第 2 高速吊椅直連 (全日交通費 ¥0)",
+        "details": [
+          "【滑雪時程選項 A（晨間壓雪・08:30 出發）】：08:30 自朝陽館/煌星館出發，搭乘第 1 纜車直攻山頂 1,018m，享受西岳斜面晨間絲綢粉雪（交通花費：¥0）。",
+          "【滑雪時程選項 B（午後充沛次選・含夜滑）】：10:00 出發，滑行至 16:30，休息泡湯後 18:00 再戰夜滑（夜滑至 20:00，夜間照明良好，交通花費：¥0）。",
+          "全天零車程，飯店下榻即雪場核心。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "雪あかり 招牌豬排味噌拉麵",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 Center House 1F",
+            "highlights": "滑雪中繼人氣第一！大塊現炸酥脆豬排浸入辛香味噌湯底，厚實暖身",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Yukiakari+Ramen"
+          },
+          {
+            "name": "こもれび 高原生姜黑豚鐵板燒",
+            "rating": "★★★★☆",
+            "distance": "📍 朝陽館內",
+            "highlights": "一戶町產佐助黑豚肉質多汁鮮嫩，搭配濃郁薑汁與高麗菜絲極下飯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Restaurant+Komorebi"
+          },
+          {
+            "name": "奧中山溫泉 旬魚和風膳",
+            "rating": "★★★★★",
+            "distance": "📍 煌星館餐廳",
+            "highlights": "新鮮三陸鮭魚、烤扇貝與高山山菜炊飯之精緻溫泉套餐",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Hotel+Dinner"
+          },
+          {
+            "name": "一戶 站前食堂 はやし",
+            "rating": "★★★★☆",
+            "distance": "📍 奧中山站前",
+            "highlights": "鄉村手作煎餃定食與清湯小魚乾烏龍麵，在地樸實美味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shokudo+Hayashi+Ichinohe"
+          },
+          {
+            "name": "高原手打蕎麥 山彥 (Yamabiko)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 10 分",
+            "highlights": "二戶產玄蕎麥現磨手打，附炸牛蒡與野菜天婦羅",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Soba+Yamabiko+Ichinohe"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "雪あかり 頂級生乳霜淇淋",
+            "rating": "★★★★★",
+            "distance": "📍 雪場 1F 點心吧",
+            "highlights": "純生乳乳脂肪含量 8.5%，濃郁如直接喝鮮奶般香甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Softcream"
+          },
+          {
+            "name": "奧中山高原 烤乳酪布朗尼",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店大廳咖啡座",
+            "highlights": "比利時黑巧克力融合高原重乳酪，雙重厚重甜美滋味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Brownie"
+          },
+          {
+            "name": "一戶產 紅豆草餅 (Kusa Mochi)",
+            "rating": "★★★★☆",
+            "distance": "📍 賣店展示櫃",
+            "highlights": "天然艾草揉入糯米糰中，包裹粒粒分明北海道紅豆餡",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+Kusa+Mochi"
+          },
+          {
+            "name": "奧中山 鮮乳義式手工奶酪",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店晚餐甜點區",
+            "highlights": "滑順細緻，淋上一戶產覆盆子果醬，酸甜解膩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Panna+Cotta"
+          },
+          {
+            "name": "高原蜜糖花生煎餅",
+            "rating": "★★★★☆",
+            "distance": "📍 伴手禮櫃台",
+            "highlights": "酥香花生與焦糖薄脆，口袋型滑雪補給點心",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Peanut+Senbei+Okunakayama"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "南部美人 雄町 (Omachi) 純米吟釀",
+            "rating": "★★★★★",
+            "distance": "📍 飯店地酒閣",
+            "highlights": "酒米之祖「雄町」釀造，酒體圓潤飽滿帶有熟成哈密瓜香氣",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Bijin+Omachi+Sake"
+          },
+          {
+            "name": "奧中山低溫殺菌 咖啡牛乳",
+            "rating": "★★★★★",
+            "distance": "📍 大浴場自動販賣機",
+            "highlights": "老派日式經典玻璃瓶！濃香咖啡微苦與純鮮乳完美調和",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Coffee+Milk"
+          },
+          {
+            "name": "二戶產 蘋果氣泡酒 (Cidre)",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店伴手禮處",
+            "highlights": "酸甜平衡極佳之在地微氣泡酒，清爽解膩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ninohe+Apple+Cidre"
+          },
+          {
+            "name": "高山深焙濾掛熱咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場休息室",
+            "highlights": "熱騰騰濃縮深焙黑咖啡，滑雪中繼驅寒首選",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Coffee"
+          },
+          {
+            "name": "鷲之尾 北斗隨想 純米大吟釀",
+            "rating": "★★★★☆",
+            "distance": "📍 晚餐品酒組",
+            "highlights": "八幡平雪水釀製，入喉清洌甘甜，優雅純淨",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Washinoo+Hokuto+Sake"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "奧中山高原 莫札瑞拉手撕起司",
+            "rating": "★★★★★",
+            "distance": "📍 飯店賣店",
+            "highlights": "新鮮生乳手工凝乳拉絲，奶香清純，稍微加熱牽絲誘人",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Mozzarella"
+          },
+          {
+            "name": "奧中山滑雪場 原創保暖毛巾",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場售票部",
+            "highlights": "吸水速乾超細纖維，印有奧中山雪山全景圖案",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Towel"
+          },
+          {
+            "name": "一戶町 鳥越竹細工 手編小茶托",
+            "rating": "★★★★☆",
+            "distance": "📍 車站前工藝社",
+            "highlights": "岩手一戶百年傳統鳥越竹細工，手感溫潤質樸耐用",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+Takezaiku+Bamboo"
+          },
+          {
+            "name": "南部仙貝 蘋果片厚燒",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "厚片仙貝鑲嵌整片脫水青森蘋果乾，果香酥脆兼具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Apple+Nanbu+Senbei"
+          },
+          {
+            "name": "奧中山高原 琥珀溫泉皂",
+            "rating": "★★★★☆",
+            "distance": "📍 大浴場販售處",
+            "highlights": "天然植物性溫泉精華手工皂，溫和潤澤美肌",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Onsen+Soap"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "奧中山高原 西岳山頂展望台",
+            "rating": "★★★★★",
+            "distance": "📍 第 3 纜車山頂站",
+            "highlights": "登頂飽覽岩手山、八幡平與青森八甲田山系三方 360 度壯麗雪白連峰全景",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nishidake+Okunakayama+Summit"
+          },
+          {
+            "name": "煌星之湯 (天然琥珀大浴場)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店煌星館 1F",
+            "highlights": "全落地玻璃窗景觀，夜間一邊泡著滑潤琥珀泉一邊欣賞窗外夜滑燈火",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kiraboshi+no+Yu+Okunakayama"
+          },
+          {
+            "name": "奧中山高原 夜間雪場照明景觀",
+            "rating": "★★★★☆",
+            "distance": "📍 雪道主坡",
+            "highlights": "夜間巨大照明燈投射在雪白斜坡上，雪粒晶瑩反光，別具浪漫運動情懷",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Night+Skiing"
+          },
+          {
+            "name": "一戶町 實相寺 (爺櫻雪景)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 15 分",
+            "highlights": "境內擁有六百年巨木爺櫻，冬季披覆積雪古木蒼勁挺拔",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Jissoji+Temple+Ichinohe"
+          },
+          {
+            "name": "馬仙峽 (男神岩・女神岩)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 25 分",
+            "highlights": "二戶市名勝巨岩，馬淵川侵蝕形成的百米絕壁雪景震撼",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Basenkyo+Ninohe"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 12,
+      "date": "2027-02-20",
+      "day_title": "奧中山高原滑雪次日・林間非壓雪探險・高原手作義式冰淇淋",
+      "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Hotel",
+      "ski_resort": {
+        "name": "奧中山高原滑雪場 (Okunakayamakogen Ski Area)",
+        "elevation": "580m - 1,018m",
+        "highlights": "進攻燕澤未壓雪黑線、森林粉雪蘑菇道！天然鬆雪回彈力絕佳，單板 Carving 刻滑與粉雪暢行無阻",
+        "course_map_url": "https://www.okunakayama.jp/gelande/",
+        "official_website": "https://www.okunakayama.jp/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
+        "map_image_url": "https://www.okunakayama.jp/wp-content/themes/okunakayama/images/gelande_map.png"
+      },
+      "transit": {
+        "summary": "飯店門口 Ski-in / Ski-out (全日交通費 ¥0)",
+        "details": [
+          "【時程規劃 A（早晨進攻粉雪）】：08:45 全面進攻燕澤未壓雪黑線與林間粉雪蘑菇道（交通花費：¥0）。",
+          "【時程規劃 B（午後休閒與甜點）】：13:30 中場休息至「雪あかり」品嚐奧中山高原牧場鮮乳義式手工 Gelato（交通花費：¥0）。",
+          "16:30 收板，享受飯店「煌星の湯」天然弱鹼性琥珀名湯消除肌肉疲勞，18:00 從容進餐。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "雪あかり 手打牛肉漢堡排飯",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 Center House 1F",
+            "highlights": "高原牛絞肉鐵板香煎，淋上特調法式多蜜醬與半熟太陽蛋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Yukiakari+Hamburg"
+          },
+          {
+            "name": "こもれび 奧中山味噌豚骨拉麵",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店朝陽館內",
+            "highlights": "在地熟成赤味噌與濃縮豚骨高湯，粗捲麵條吸附滿滿湯汁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Ramen"
+          },
+          {
+            "name": "奧中山高原 鐵板和牛壽喜燒",
+            "rating": "★★★★★",
+            "distance": "📍 飯店煌星館",
+            "highlights": "嚴選岩手短角和牛薄片，醬汁甜美，蘸生生食級雞蛋滑嫩化口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Sukiyaki"
+          },
+          {
+            "name": "一戶町 麵屋 樂 (Raku)",
+            "rating": "★★★★☆",
+            "distance": "📍 奧中山站前車程 5 分",
+            "highlights": "小魚乾與豚骨雙湯頭煮干拉麵，叉燒厚切炙燒香氣逼人",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Menya+Raku+Ichinohe"
+          },
+          {
+            "name": "三好食堂 (二戶名店)",
+            "rating": "★★★★☆",
+            "distance": "📍 二戶市車程 20 分",
+            "highlights": "二戶傳奇老牌食堂！以特大炸豬排丼與濃郁鍋燒烏龍聞名",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Miyoshi+Shokudo+Ninohe"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "雪あかり 藍莓起司 Gelato",
+            "rating": "★★★★★",
+            "distance": "📍 雪場 1F",
+            "highlights": "奧中山牧場新鮮原乳融合岩手野藍莓果醬與生乳酪，果香乳香爆發",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Blueberry+Gelato"
+          },
+          {
+            "name": "奧中山高原 生巧克力塔",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "法國黑巧克力融合高原鮮奶油，低溫冷藏口感絲滑",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Chocolate+Tart"
+          },
+          {
+            "name": "一戶町 豆大福 (Mame Daifuku)",
+            "rating": "★★★★☆",
+            "distance": "📍 車站前和菓子舖",
+            "highlights": "微鹹赤豌豆鑲嵌於軟糯外皮中，襯托紅豆餡之純粹甜味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+Mame+Daifuku"
+          },
+          {
+            "name": "高原 焦糖泡芙",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店咖啡座",
+            "highlights": "酥脆泡芙外皮現擠滿滿香草卡士達生乳醬",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Cream+Puff"
+          },
+          {
+            "name": "岩手產 蜜蘋果乾片",
+            "rating": "★★★★☆",
+            "distance": "📍 伴手禮處",
+            "highlights": "保留果膠與纖維，酸甜濃縮的天然健行滑雪零食",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Apple+Chips"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "南部美人 純米大吟釀 原酒 結之香",
+            "rating": "★★★★★",
+            "distance": "📍 飯店地酒專櫃",
+            "highlights": "岩手頂級極品大吟釀！無濾過原酒裝瓶，奔放香氣與澎湃旨味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Bijin+Yui+no+Ko"
+          },
+          {
+            "name": "奧中山高原 特濃無糖生酪乳",
+            "rating": "★★★★★",
+            "distance": "📍 飯店早餐吧",
+            "highlights": "口感極為濃郁，滑雪能量滿分之天然乳酸飲品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Buttermilk"
+          },
+          {
+            "name": "二戶產 完熟白桃果汁",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店自動販賣機",
+            "highlights": "100% 桃原汁鮮榨，蜜桃香氣濃稠香甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ninohe+Peach+Juice"
+          },
+          {
+            "name": "雪山熱摩卡咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 雪あかり 咖啡吧",
+            "highlights": "深焙濃縮咖啡混合濃醇可可與高原熱鮮奶",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Mocha"
+          },
+          {
+            "name": "岩手地酒 辛口生一本",
+            "rating": "★★★★☆",
+            "distance": "📍 居酒屋吧台",
+            "highlights": "傳統南部杜氏純米乾型酒，佐和牛壽喜燒極合拍",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Karakuchi+Sake"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "奧中山高原 煙燻起司條",
+            "rating": "★★★★★",
+            "distance": "📍 飯店賣店",
+            "highlights": "櫻花木低溫冷燻熟成，外皮金黃焦香，搭配紅酒與威士忌絕配",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Smoked+Cheese"
+          },
+          {
+            "name": "奧中山滑雪場 原創針織毛帽",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 Pro Shop",
+            "highlights": "雙層保暖加厚羊毛混紡，刺繡奧中山雪山標章",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Beanie"
+          },
+          {
+            "name": "二戶佐助豚 煙燻黑胡椒培根",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "油脂溶點極低之頂級豬肉，煎烤香氣撲鼻，真空冷凍包裝",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sasuke+Pork+Bacon"
+          },
+          {
+            "name": "南部鐵器 手造迷你幾何杯墊",
+            "rating": "★★★★☆",
+            "distance": "📍 工藝展示處",
+            "highlights": "經典幾何雪花圖騰鑄鐵墊，兼具實用與陳列藝術美感",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Tekki+Coaster"
+          },
+          {
+            "name": "御所野 繩文彩繪陶馬克杯",
+            "rating": "★★★★☆",
+            "distance": "📍 車站前特產店",
+            "highlights": "一戶町傳統陶藝家手工拉胚，仿古繩文繩紋雕刻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Goshono+Jomon+Mug"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "朝陽之湯 (天然景觀溫泉)",
+            "rating": "★★★★★",
+            "distance": "📍 朝陽館 1F 直結",
+            "highlights": "朝東方位之天然植物性弱鹼溫泉，晨間泡湯可欣賞白雪覆蓋的高原朝陽旭日",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Choyo+no+Yu+Okunakayama"
+          },
+          {
+            "name": "奧中山高原 雪鞋林間巡禮",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店外林道",
+            "highlights": "穿戴雪鞋漫遊未開發之雪白山毛櫸原始林，觀察雪兔與飛鼠足跡",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Snowshoe"
+          },
+          {
+            "name": "一戶町 根反之千本桂",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 20 分",
+            "highlights": "國家指定天然紀念物！巨大桂木樹齡數百年，冬季雪中千枝參天神秘壯麗",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+Katsura+Tree"
+          },
+          {
+            "name": "西岳林間雪道 (Tree Run)",
+            "rating": "★★★★★",
+            "distance": "📍 滑雪場中上部",
+            "highlights": "奧中山最受單板雪友推崇之天然疏林粉雪雪道，地形起伏豐富趣味性十足",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nishidake+Tree+Run"
+          },
+          {
+            "name": "奧中山天文台 冬季觀測館",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場山頂旁",
+            "highlights": "週末夜間開放之高倍率星空觀測，飽覽冬季大三角與獵戶座星雲",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Observatory"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 13,
+      "date": "2027-02-21",
+      "day_title": "奧中山高原滑雪終日・刻滑技巧驗收・雪具打包直寄成田機場",
+      "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Hotel",
+      "ski_resort": {
+        "name": "奧中山高原滑雪場 (Okunakayamakogen Ski Area)",
+        "elevation": "580m - 1,018m",
+        "highlights": "最後半日滑行，走刃刻滑 (Carving) 技巧驗收與攝影；午後雪具徹底風乾打包交寄「黑貓空港便」，直寄成田機場！",
+        "course_map_url": "https://www.okunakayama.jp/gelande/",
+        "official_website": "https://www.okunakayama.jp/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
+        "map_image_url": "https://www.okunakayama.jp/wp-content/themes/okunakayama/images/gelande_map.png"
+      },
+      "transit": {
+        "summary": "飯店門口 Ski-in / Ski-out；下午 14:30 辦理黑貓宅急便直寄成田機場 (全日交通費 ¥0)",
+        "details": [
+          "【時程規劃 A（上午最後暢滑）】：08:30-13:30 進行最後半日暢滑與高速走刃刻滑攝影驗收（交通花費：¥0）。",
+          "【雪具減負關鍵物流】：下午 14:30 徹底擦拭風乾雪板與重裝備，於奧中山高原飯店櫃檯辦理「黑貓空港宅急便」，直寄 2/24 成田機場第 1 航廈 GPA 櫃台領取（每件約 ¥2,800-3,200）。明天起東京輕裝無負擔！",
+          "16:00 享受最後一晚奧中山高原天然琥珀溫泉與岩手短角牛料理，18:00 前進餐休息。"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "奧中山高原 感謝祭晚宴",
+            "rating": "★★★★★",
+            "distance": "📍 飯店朝陽館",
+            "highlights": "滑雪圓滿結業晚宴！岩手短角牛厚煎牛排、奧中山生乳起司焗烤與在地時蔬",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Dinner+Special"
+          },
+          {
+            "name": "雪あかり 鍋燒野菜烏龍",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 1F",
+            "highlights": "砂鍋現煮甘醇柴魚高湯，盛滿香菇、山菜、油豆腐與半熟蛋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Yukiakari+Udon"
+          },
+          {
+            "name": "こもれび 特製佐助黑豚丼",
+            "rating": "★★★★☆",
+            "distance": "📍 朝陽館內",
+            "highlights": "醬烤厚片佐助黑豚覆蓋熱騰騰一戶產特 A 白米飯，香氣撲鼻",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Pork+Bowl"
+          },
+          {
+            "name": "一戶町 麵房 旭 (Asahi)",
+            "rating": "★★★★☆",
+            "distance": "📍 奧中山站前步行 4 分",
+            "highlights": "手打清爽醬油中華拉麵，搭配手作煎餃定食",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Menbo+Asahi+Ichinohe"
+          },
+          {
+            "name": "炭火居酒屋 一休 (二戶站前)",
+            "rating": "★★★★☆",
+            "distance": "📍 二戶站前車程 20 分",
+            "highlights": "炭火直烤地雞串燒、三陸鮮烤牡蠣與南部美人酒藏直送生酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Izakaya+Ikkyu+Ninohe"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "雪あかり 生乳 Gelato 三球組",
+            "rating": "★★★★★",
+            "distance": "📍 雪場 Center House",
+            "highlights": "經典必點！一次品嚐極上生乳、宇治抹茶與黑芝麻三種極品口味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Gelato"
+          },
+          {
+            "name": "奧中山 窯烤蘋果起司塔",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "高原乳酪搭配蜜漬岩手產蘋果薄片，酥脆香甜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Apple+Tart"
+          },
+          {
+            "name": "一戶町 手作胡麻麻糬餅",
+            "rating": "★★★★☆",
+            "distance": "📍 賣店展示處",
+            "highlights": "外皮裹滿香炒黑芝麻碎，內餡甜度適中，古樸美味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+Sesame+Mochi"
+          },
+          {
+            "name": "高原手作香草生布丁",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店餐廳",
+            "highlights": "使用馬達加斯加天然香草籽與牧場鮮乳，滑嫩無比",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Vanilla+Pudding"
+          },
+          {
+            "name": "南部仙貝 黑胡椒薄燒",
+            "rating": "★★★★☆",
+            "distance": "📍 伴手禮櫃台",
+            "highlights": "微辛黑胡椒提味之下酒仙貝，香脆過癮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Black+Pepper+Nanbu+Senbei"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "南部美人 大吟釀 純米仕込",
+            "rating": "★★★★★",
+            "distance": "📍 飯店地酒專櫃",
+            "highlights": "極致華麗花果香與輕盈酒體，結業慶祝乾杯第一首選",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Bijin+Daiginjo"
+          },
+          {
+            "name": "奧中山高原 牧場低溫鮮乳",
+            "rating": "★★★★★",
+            "distance": "📍 自動販賣機",
+            "highlights": "告別奧中山雪場前必喝！純天然生乳冰涼甘醇",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Farm+Milk"
+          },
+          {
+            "name": "二戶產 蘋果黑醋栗氣泡飲",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店特產店",
+            "highlights": "無酒精天然果汁氣泡飲，酸甜爽口解膩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ninohe+Apple+Cassis"
+          },
+          {
+            "name": "高原手沖烘焙深煎咖啡",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店 Komorebi 咖啡座",
+            "highlights": "滑雪打包整裝後的溫暖享受，咖啡油脂豐厚香濃",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Coffee"
+          },
+          {
+            "name": "岩手精釀小麥白啤酒",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店晚餐吧",
+            "highlights": "香蕉與丁香酯類香氣濃郁，苦度低泡沫綿密",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Iwate+Weizen+Beer"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "奧中山高原 乳酪綜合禮盒",
+            "rating": "★★★★★",
+            "distance": "📍 飯店賣店",
+            "highlights": "包含高達、莫札瑞拉與煙燻三種得獎起司，真空保冷包裝",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Cheese+Box"
+          },
+          {
+            "name": "黑貓宅急便 空港便寄件憑證",
+            "rating": "★★★★★",
+            "distance": "📍 飯店櫃台",
+            "highlights": "減負關鍵憑證！將沉重雪板直寄成田第 1 航廈 GPA 櫃台，一身輕前往東京",
+            "map_url": "https://www.kuronekoyamato.co.jp/ytc/customer/send/services/ski/"
+          },
+          {
+            "name": "奧中山滑雪場 結業認證防水貼紙",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場服務台",
+            "highlights": "紀念攻克 1,018m 西岳黑線賽道之金屬質感認證貼紙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen+Sticker"
+          },
+          {
+            "name": "南部美人 大吟釀迷你紀念瓶",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店地酒賣店",
+            "highlights": "精緻木盒單瓶裝 300ml，便於隨身行李攜帶送禮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nanbu+Bijin+Mini+Gift"
+          },
+          {
+            "name": "一戶町 手作木雕雪人",
+            "rating": "★★★★☆",
+            "distance": "📍 賣店藝品部",
+            "highlights": "使用奧中山疏伐白樺木手工雕琢，質樸溫馨",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+Wood+Craft"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "西岳雪峰 日落餘暉觀景點",
+            "rating": "★★★★★",
+            "distance": "📍 滑雪場山頂",
+            "highlights": "午後斜陽將整座西岳雪原染成金粉色，東北內陸壯闊雪景盡收眼底",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Nishidake+Sunset+Okunakayama"
+          },
+          {
+            "name": "奧中山高原 琥珀泉露天星空湯",
+            "rating": "★★★★★",
+            "distance": "📍 煌星館露天風呂",
+            "highlights": "最後一晚在 0°C 冷冽空氣中浸泡 41°C 琥珀名湯，仰望璀璨獵戶座星空",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kiraboshi+no+Yu+Okunakayama"
+          },
+          {
+            "name": "一戶町 鳥越觀音 (巨岩窟古剎)",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 25 分",
+            "highlights": "天然岩窟中開鑿的大同年間千年古寺，懸崖棧道積雪莊嚴神秘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Torigoe+Kannon+Ichinohe"
+          },
+          {
+            "name": "奧中山雪之花林道",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店外圍散策道",
+            "highlights": "樹枝上積滿霧淞如同綻放白花，平緩寧靜的晨間散步路線",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Okunakayama+Snow+Walk"
+          },
+          {
+            "name": "一戶町 歷史民俗資料館",
+            "rating": "★★★★☆",
+            "distance": "📍 一戶站旁車程 15 分",
+            "highlights": "展示南部九戶氏戰國歷史、奧州街道古驛站與傳統農家織布工藝",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ichinohe+History+Museum"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 14,
+      "date": "2027-02-22",
+      "day_title": "奧中山退房 ➔ 盛岡 ➔ 東北新幹線直攻東京 ➔ 進駐新宿角屋飯店（17:35 抵達）",
+      "stay": "新宿角屋飯店 (Kadoya Hotel 新宿)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Kadoya+Hotel+Shinjuku",
+      "ski_resort": null,
+      "transit": {
+        "summary": "奧中山高原接駁 ➔ IGR 銀河鐵道至盛岡 ➔ 東北新幹線直達東京 ➔ JR 中央線快速至新宿 (提供 2 組下午位移時程，嚴格確保 18:00 前進駐)",
+        "details": [
+          "【位移選項 A（首選從容・17:35 抵飯店）】：12:45 飯店免費接駁巴士出發 ➔ 13:00 抵奧中山高原站（轉乘緩衝 18 分） ➔ 13:18 IGR 銀河鐵道 ➔ 14:06 抵盛岡站（轉乘緩衝 44 分，盛岡站品嚐冷麵與採買） ➔ 14:50 盛岡站搭乘東北新幹線 Hayabusa 28 號 ➔ 17:04 直達東京站（每人精算花費：¥15,410，轉乘緩衝 11 分） ➔ 17:15 東京站搭乘 JR 中央線快速 ➔ 17:28 抵新宿站（每人精算花費：¥210）。出新宿站西口步行 3 分鐘，17:35 順利入住角屋飯店！距離 18:00 截止提早 25 分鐘！",
+          "【位移選項 B（次班彈性・18:20 抵飯店）】：13:45 飯店出發 ➔ 14:18 IGR ➔ 15:06 抵盛岡 ➔ 15:50 Hayabusa 30 號 ➔ 18:04 抵東京站 ➔ 18:20 抵新宿（每人精算花費：¥15,410 + ¥210）。",
+          "【計程車精算對比】：奧中山飯店至車站計程車約 ¥2,200（1 人搭乘每人花費：¥2,200；2 人共乘每人花費：¥1,100）。",
+          "入住新宿角屋飯店，雪具已直寄機場，一身輕便展開東京夜間美食與購物！"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "風雲兒 (Fuunji 新宿頂級沾麵)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店步行 5 分",
+            "highlights": "新宿排隊傳奇沾麵！濃厚魚介雞白湯慢熬八小時，特粗彈牙自製麵條沾上厚重魚粉，鮮美至極",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Fuunji+Tsukemen+Shinjuku"
+          },
+          {
+            "name": "新宿割烹 中島 (米其林一星)",
+            "rating": "★★★★★",
+            "distance": "📍 新宿東口步行 8 分",
+            "highlights": "新宿米其林一星老牌割烹！午間沙丁魚柳川鍋與刺身定食僅需千餘日圓，性價比傳奇",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Kappo+Nakajima"
+          },
+          {
+            "name": "豚珍行 (Tonchinko 深夜拉麵餃子)",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿西口步行 4 分",
+            "highlights": "角屋飯店旁步行即達之昭和五十年老店！薄皮多汁現煎餃子配醬油清湯拉麵",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tonchinko+Ramen+Shinjuku"
+          },
+          {
+            "name": "鳥茂 (Torishige 新宿燒鳥名門)",
+            "rating": "★★★★★",
+            "distance": "📍 新宿南口步行 6 分",
+            "highlights": "創業七十載頂級肉類串燒老店！炭火直烤特選和牛、黑豚內臟與極上肉丸串",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Torishige+Yakitori+Shinjuku"
+          },
+          {
+            "name": "つな八 本店 (新宿天婦羅老舖)",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿東口步行 7 分",
+            "highlights": "大正十三年創始天婦羅老舖，胡麻油現炸活蝦、穴子魚與季節旬菜，酥脆清爽",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsunahachi+Tempura+Shinjuku"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "HARBS 新宿 Lumine Est 店",
+            "rating": "★★★★★",
+            "distance": "📍 新宿站東口 Lumine B2",
+            "highlights": "日本千層蛋糕代表！六層新鮮當季草莓、奇異果、香蕉與輕盈鮮奶油交疊，入口化開",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=HARBS+Lumine+Est+Shinjuku"
+          },
+          {
+            "name": "追分だんご本舗 (新宿本店)",
+            "rating": "★★★★★",
+            "distance": "📍 新宿三丁目步行 8 分",
+            "highlights": "江戶時期創立三百年老舖！招牌生醬油烤糰子、濃抹茶紅豆白玉與黑蜜葛切",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Oiwake+Dango+Shinjuku"
+          },
+          {
+            "name": "Cafe AALIYA (傳奇法式吐司)",
+            "rating": "★★★★★",
+            "distance": "📍 新宿三丁目步行 7 分",
+            "highlights": "被譽為東京最好吃的法式吐司！特厚切吐司浸透香草蛋奶液慢煎，如舒芙蕾般鬆軟爆汁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Cafe+AALIYA+Shinjuku"
+          },
+          {
+            "name": "Pierre Hermé Paris (伊勢丹新宿)",
+            "rating": "★★★★★",
+            "distance": "📍 伊勢丹新宿 B1",
+            "highlights": "糕點界畢卡索！經典 Ispahan（玫瑰、覆盆子、荔枝）馬卡龍與千層酥派",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Pierre+Herme+Isetan+Shinjuku"
+          },
+          {
+            "name": "新宿高野 (Takano 水果甜點本店)",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿東口步行 6 分",
+            "highlights": "明治時期創立百年水果名門！嚴選靜岡哈密瓜水果聖代與草莓鮮奶油蛋糕",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Takano+Fruit+Parlour+Shinjuku"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "Bar Ben Fiddich (世界頂級調酒)",
+            "rating": "★★★★★",
+            "distance": "📍 新宿西口步行 4 分",
+            "highlights": "World's 50 Best Bars 世界前列！鹿山博康先生以自種天然藥草、香料現場搗碎調配魔幻調酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar+BenFiddich+Shinjuku"
+          },
+          {
+            "name": "新宿 回憶橫丁 居酒屋街",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿西口步行 3 分",
+            "highlights": "角屋飯店旁！戰後昭和風情窄巷，沿街串燒熱氣蒸騰，立飲生啤酒與高球威士忌",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Omoide+Yokocho+Shinjuku"
+          },
+          {
+            "name": "YONA YONA BEER WORKS 新宿店",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿東口步行 6 分",
+            "highlights": "輕井澤 Yo-Ho Brewery 直營酒吧，提供最新鮮生桶裝 Yona Yona Ale 與印度青鬼 IPA",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Yona+Yona+Beer+Works+Shinjuku"
+          },
+          {
+            "name": "Blue Bottle Coffee (新宿店)",
+            "rating": "★★★★☆",
+            "distance": "📍 NEWoMan 新宿 1F",
+            "highlights": "木質明亮極簡空間，現點手沖單一產區微批次精品熱咖啡",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Blue+Bottle+Coffee+NEWoMan+Shinjuku"
+          },
+          {
+            "name": "Bar Trench (經典草本調酒)",
+            "rating": "★★★★☆",
+            "distance": "📍 地鐵車程 8 分",
+            "highlights": "國際冠軍古典調酒沙龍，以草本苦精與艾碧斯 (Absinthe) 著稱",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar+Trench+Tokyo"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "NEWYORK PERFECT CHEESE (京王新宿)",
+            "rating": "★★★★★",
+            "distance": "📍 新宿站西口直結",
+            "highlights": "東京超級排隊名物！香脆貓舌餅包裹白巧克力與丹麥切達起司棒，香濃酥脆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=NewYork+Perfect+Cheese+Shinjuku+Keio"
+          },
+          {
+            "name": "Butter Butler (發酵黃油酥餅)",
+            "rating": "★★★★★",
+            "distance": "📍 NEWoMan 新宿 2F",
+            "highlights": "JR 東日本伴手禮金賞！使用瑞士發酵黃油與法國蓋朗德海鹽烘烤之厚金黃費南雪",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Butter+Butler+NEWoMan+Shinjuku"
+          },
+          {
+            "name": "新宿中村屋 咖哩煎餅禮盒",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿東口直結",
+            "highlights": "百年老舖印度咖哩名店自製咖哩米果與月餅禮盒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Nakamuraya"
+          },
+          {
+            "name": "伊勢丹新宿 B1 精品甜點選品",
+            "rating": "★★★★★",
+            "distance": "📍 伊勢丹 B1",
+            "highlights": "集結日本與巴黎頂級洋菓子甜點、巧克力與馬卡龍之美食殿堂",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Isetan+Shinjuku+B1+Sweets"
+          },
+          {
+            "name": "東京香蕉 (Tokyo Banana 經典海綿蛋糕)",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿站內各大特產店",
+            "highlights": "東京永恆不敗經典伴手禮，香蕉卡士達餡軟綿可口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tokyo+Banana+Shinjuku"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "東京都廳展望室 (高空觀景台)",
+            "rating": "★★★★★",
+            "distance": "📍 飯店步行 8 分",
+            "highlights": "免費登上 45 樓 202 公尺高空展望台！360 度俯瞰東京璀璨萬家燈火與富士山夕照",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tokyo+Metropolitan+Government+Building+Observatory"
+          },
+          {
+            "name": "新宿御苑 (國民公園)",
+            "rating": "★★★★★",
+            "distance": "📍 步行 15 分",
+            "highlights": "融合日式庭園、英式風景庭園與法式幾何庭園之大都會綠洲，冬日草坪寬闊寧靜",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Gyoen+National+Garden"
+          },
+          {
+            "name": "新宿 回憶橫丁",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店步行 3 分",
+            "highlights": "新宿西口最具代表性的昭和老居酒屋街，狹窄巷道內串燒香氣四溢，滿滿人文風情",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Omoide+Yokocho+Shinjuku"
+          },
+          {
+            "name": "L-Breath 新宿店 旗艦裝備館",
+            "rating": "★★★★★",
+            "distance": "📍 新宿南口步行 5 分",
+            "highlights": "整棟 9 層樓戶外登山滑雪露營旗艦店！各大國際戶外品牌與雪地防寒機能服飾齊全",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=L-Breath+Shinjuku"
+          },
+          {
+            "name": "歌舞伎町 哥吉拉巨頭",
+            "rating": "★★★★☆",
+            "distance": "📍 步行 10 分",
+            "highlights": "矗立於大樓高空的巨大實物比例哥吉拉頭像，為新宿繁華夜景著名地標",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Godzilla+Head+Shinjuku"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 15,
+      "date": "2027-02-23",
+      "day_title": "東京都會陸遊・新宿涉谷潮流探訪・雪具戶外服飾採買・名店巡禮",
+      "stay": "新宿角屋飯店 (Kadoya Hotel 新宿)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Kadoya+Hotel+Shinjuku",
+      "ski_resort": null,
+      "transit": {
+        "summary": "東京市區 JR 山手線 ＆ 東京地鐵一日券漫遊 (新宿 ➔ 澀谷/表參道 ➔ 銀座/神田雪具街 ➔ 新宿)",
+        "details": [
+          "【路線選項 A（神田雪具街 ＆ 銀座採買路線）】：09:30 新宿站搭乘 JR 中央線快速至神田站（每人精算花費：¥180），探訪御茶之水/神田小川町世界最大雪具街（Victoria Surf&Snow、Murasaki Sports），午後搭地鐵銀座線至銀座（每人精算花費：¥180），傍晚返回新宿。",
+          "【路線選項 B（新宿 ＆ 澀谷潮流採買路線）】：上午於新宿（Alpen TOKYO 旗艦館、Bic Camera、伊勢丹），午後搭乘 JR 山手線至澀谷（每人精算花費：¥170）逛宮下公園 (Miyashita Park)、Shibuya Sky 觀景台與表參道。",
+          "【全日交通費用精算】：使用 Suica/IC 卡搭乘，每人整日交通預算約 ¥800 - ¥1,000。17:30 前返回新宿角屋飯店整理戰利品，18:00 前進駐享用晚餐！"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "敘敘苑 新宿 Opera City 53F",
+            "rating": "★★★★★",
+            "distance": "📍 初台站直結車程 5 分",
+            "highlights": "53 樓 200 米高空雲端燒肉！招牌特選和牛牛五花、薄切牛舌與秘傳麻油生菜沙拉",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Jojoen+Tokyo+Opera+City+53F"
+          },
+          {
+            "name": "銀座 篝 本店 (雞白湯拉麵)",
+            "rating": "★★★★★",
+            "distance": "📍 銀座站步行 3 分",
+            "highlights": "米其林推薦！金黃色濃醇如法式濃湯般濃厚純雞白湯拉麵，搭配低溫舒肥雞肉叉燒與季節旬蔬",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ginza+Kagari+Main+Shop"
+          },
+          {
+            "name": "挽肉と米 澀谷店 (Hikiniku to Kome)",
+            "rating": "★★★★★",
+            "distance": "📍 澀谷道玄坂步行 5 分",
+            "highlights": "炭火現烤純黑毛和牛漢堡排！搭配羽釜鍋現煮熱騰騰白米飯與生食級蛋黃，極致銷魂",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Hikiniku+to+Kome+Shibuya"
+          },
+          {
+            "name": "とんかつ まい泉 青山本店",
+            "rating": "★★★★☆",
+            "distance": "📍 表參道站步行 4 分",
+            "highlights": "昭和舊大浴場改裝旗艦店！號稱「用筷子就能切斷」之極致軟嫩黑豚里肌炸豬排定食",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tonkatsu+Maisen+Aoyama+Honten"
+          },
+          {
+            "name": "六厘舍 (東京站一番街店)",
+            "rating": "★★★★☆",
+            "distance": "📍 東京站 B1 拉麵街",
+            "highlights": "超濃厚豚骨魚介濃湯沾麵始祖！海苔上盛滿特製鰹魚粉，粗麵富嚼勁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Rokurinsha+Tokyo+Station"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "HARBS 澀谷 Hikarie 店",
+            "rating": "★★★★★",
+            "distance": "📍 澀谷 Hikarie 4F",
+            "highlights": "新鮮蜜瓜與草莓層層爆漿！大份量手工切片蛋糕佐熱大吉嶺紅茶",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=HARBS+Shibuya+Hikarie"
+          },
+          {
+            "name": "NUMBER SUGAR 表參道本店",
+            "rating": "★★★★★",
+            "distance": "📍 表參道步行 6 分",
+            "highlights": "純手工天然原料慢熬焦糖牛奶糖，以數字 1-12 標註香草、海鹽、肉桂、覆盆子等經典風味",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=NUMBER+SUGAR+Omotesando"
+          },
+          {
+            "name": "GARIGUETTE 表參道 (千層酥派)",
+            "rating": "★★★★★",
+            "distance": "📍 表參道站步行 2 分",
+            "highlights": "巴黎傳統法式 Mille-pressé！現烤極薄香脆千層派皮夾入草莓特調卡士達醬",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=GARIGUETTE+Tokyo+Omotesando"
+          },
+          {
+            "name": "資生堂 Parlour 銀座本店",
+            "rating": "★★★★☆",
+            "distance": "📍 銀座 8 丁目步行 5 分",
+            "highlights": "明治三十五年創立之銀座洋食甜點地標，招牌草莓冰淇淋聖代與花椿餅乾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shiseido+Parlour+Ginza+Tokyo"
+          },
+          {
+            "name": "木村屋總本店 銀座本店",
+            "rating": "★★★★☆",
+            "distance": "📍 銀座 4 丁目步行 1 分",
+            "highlights": "明治天皇御用點心！日本第一代以清酒米麴天然發酵麵糰現烤之酒種櫻花紅豆麵包",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kimuraya+Sohonten+Ginza"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "Bar High Five (銀座頂級調酒)",
+            "rating": "★★★★★",
+            "distance": "📍 銀座 5 丁目步行 4 分",
+            "highlights": "調酒教父上野秀嗣先生主持！鑽石純手工鑿切冰球與極致細膩 White Lady 調酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar+High+Five+Ginza"
+          },
+          {
+            "name": "Starbucks Reserve Roastery Tokyo",
+            "rating": "★★★★★",
+            "distance": "📍 中目黑步行 10 分",
+            "highlights": "隈研吾大師設計 4 層樓烘焙工坊！巨大銅製櫻花烘豆機、特調咖啡雞尾酒與現烤 Princi 麵包",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Starbucks+Reserve+Roastery+Tokyo"
+          },
+          {
+            "name": "FUGLEN TOKYO (挪威精品咖啡)",
+            "rating": "★★★★★",
+            "distance": "📍 澀谷代代木步行 7 分",
+            "highlights": "來自奧斯陸的世界級淺焙咖啡館！北歐復古家具氛圍，手沖肯亞明亮果酸迷人",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Fuglen+Tokyo+Shibuya"
+          },
+          {
+            "name": "KATE Rose Bar (神田雪具街酒吧)",
+            "rating": "★★★★☆",
+            "distance": "📍 神田小川町步行 3 分",
+            "highlights": "雪友逛街交流必訪！提供各國精釀生啤酒與溫熱波本威士忌",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Bar+Kanda+Ogawamachi"
+          },
+          {
+            "name": "The SG Club (澀谷世界級調酒)",
+            "rating": "★★★★★",
+            "distance": "📍 澀谷神南步行 8 分",
+            "highlights": "世界頂尖調酒大師後藤後治力作，融合江戶時期黑幫與現代紐約風格調酒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=The+SG+Club+Shibuya"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "Echire Maison du Beurre (艾許黃油)",
+            "rating": "★★★★★",
+            "distance": "📍 丸之內 Brick Square 1F",
+            "highlights": "法國頂級 Echire 奶油專賣店！香氣爆發之藍罐 Sablé 餅乾與特厚焦糖可麗露",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Echire+Maison+du+Beurre+Marunouchi"
+          },
+          {
+            "name": "AUDREY (草莓花束餅乾)",
+            "rating": "★★★★★",
+            "distance": "📍 澀谷站 / 銀座三越 B2",
+            "highlights": "超級人氣排隊名產！甜筒造型薄餅包覆濃醇鮮奶油與凍乾草莓，如同一束小花",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=AUDREY+Sweets+Tokyo"
+          },
+          {
+            "name": "銀座松崎煎餅 (彩繪三味胴)",
+            "rating": "★★★★☆",
+            "distance": "📍 銀座 4 丁目",
+            "highlights": "江戶創業二百年！純手工以糖霜彩繪四季雪景花鳥之瓦煎餅禮盒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Matsuzaki+Senbei+Ginza"
+          },
+          {
+            "name": "Alpen TOKYO 原創滑雪配件",
+            "rating": "★★★★★",
+            "distance": "📍 新宿東口步行 2 分",
+            "highlights": "全日本最大級運動用品旗艦館！最新款雪鏡防霧噴霧、雪板蠟與機能發熱襪",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Alpen+TOKYO+Shinjuku"
+          },
+          {
+            "name": "銀座篝 濃厚雞白湯生拉麵禮盒",
+            "rating": "★★★★☆",
+            "distance": "📍 銀座篝店內",
+            "highlights": "常溫保存濃縮純雞白湯高湯包與特製小麥麵條，送禮極受歡迎",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ginza+Kagari+Ramen+Gift"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "神田小川町雪具街 (Snowboard Street)",
+            "rating": "★★★★★",
+            "distance": "📍 神田小川町站步行 2 分",
+            "highlights": "全球最密集單板與雙板滑雪裝備專賣街！聚集數十家雪具老店、Victoria、Murasaki，雪具採買挖寶殿堂",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Kanda+Snowboard+Shop+Street"
+          },
+          {
+            "name": "SHIBUYA SKY (高空露天展望台)",
+            "rating": "★★★★★",
+            "distance": "📍 澀谷 Scramble Square 46F",
+            "highlights": "高達 229 公尺露天全景平台！俯瞰世界最繁忙的澀谷十字路口與東京鐵塔/富士山無遮蔽全景",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=SHIBUYA+SKY"
+          },
+          {
+            "name": "宮下公園 (MIYASHITA PARK)",
+            "rating": "★★★★☆",
+            "distance": "📍 澀谷站步行 3 分",
+            "highlights": "結合屋頂綠地滑板場、流行潮流旗艦店、特色橫丁餐廳街的新世代澀谷地標",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Miyashita+Park+Shibuya"
+          },
+          {
+            "name": "銀座中央通 (Ginza Chuo-dori)",
+            "rating": "★★★★☆",
+            "distance": "📍 銀座站出站即達",
+            "highlights": "世界頂級名店與百年文具老舖伊東屋 (Itoya)、Ginza Six 林立的奢華漫步大道",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Ginza+Chuo+Dori"
+          },
+          {
+            "name": "Alpen TOKYO 新宿旗艦館",
+            "rating": "★★★★★",
+            "distance": "📍 新宿東口步行 2 分",
+            "highlights": "B2 到 8F 整棟超巨型運動旗艦店！全日本最齊全滑雪器材、露營戶外用品集中展示",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Alpen+TOKYO+Shinjuku"
+          }
+        ]
+      }
+    },
+    {
+      "day_number": 16,
+      "date": "2027-02-24",
+      "day_title": "新宿最後巡禮 ➔ JR N'EX 直達機場 ➔ 成田 T1 領雪具 ➔ UA837 滿載平安返台",
+      "stay": "溫暖的家 (平安返抵高雄/台灣)",
+      "stay_map": "https://www.google.com/maps/search/?api=1&query=Kaohsiung+International+Airport",
+      "ski_resort": null,
+      "transit": {
+        "summary": "JR 新宿站 ➔ JR 特急成田特快 (N'EX) 直達空港第 1 航廈站 (車程約 75 分，提供 2 組班次選項)",
+        "details": [
+          "17:30 UA837 起飛，國際線櫃台 15:00 開櫃、16:30 截止報到關櫃。",
+          "【選項 A（首選黃金從容・14:57 抵機場）】：新宿站 5/6 號月台搭乘 13:39 發車之「JR 成田特快 N'EX 29 號」➔ 14:57 免換車直達「空港第 1 航廈站」（每人精算花費：¥3,250）。出站步行 5 分於 15:05 抵達 T1 南翼，先至 GPA 櫃台領取 2/21 寄出之雪板，15:20 於 UA 櫃台開櫃時第一時間託運通關！距離 16:30 關櫃底線足足保留 1 小時 30 分超充裕緩衝！",
+          "【選項 B（次班彈性・15:27 抵機場）】：新宿站搭乘 14:09 發車之「JR 成田特快 N'EX 31 號」➔ 15:27 抵達空港第 1 航廈（每人精算花費：¥3,250）。領取雪具後 15:50 前往報到，距關櫃依然有 40 分鐘安全餘裕。",
+          "【利木津巴士對比】：新宿西口利木津巴士站搭乘 13:20 巴士 ➔ 15:00 抵達 T1（每人花費：¥3,600，但若遇首都高塞車有延誤風險，首選仍推薦 N'EX 鐵道直達）。",
+          "17:30 UA837 起飛 ➔ 21:00 平安降落高雄小港機場 (KHH)，圓滿完成 16 天東北極致粉雪秘境之旅！"
+        ]
+      },
+      "recommendations": {
+        "restaurant": [
+          {
+            "name": "成田機場 T1 唐朝刀削麵",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 5F 餐廳街",
+            "highlights": "出境前暖胃熱湯！手工現削黑芝麻擔擔刀削麵、鮮蝦蒸餃與香脆春捲",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Narita+Airport+T1+Ramen"
+          },
+          {
+            "name": "成田機場 T1 京辰壽司 (Kyotatsu)",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 3F 管制區內",
+            "highlights": "成田機場最高評價江戶前壽司！近海直送藍鰭黑鮪魚大腹、活海膽與鮭魚卵握壽司",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sushi+Kyotatsu+Narita+Airport+T1"
+          },
+          {
+            "name": "新宿西口 さぼてん 炸豬排本店",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿站西口步行 2 分",
+            "highlights": "搭車前午餐首選！現炸厚切黑豚里肌豬排便當，配高麗菜絲與秘傳甜香醬汁",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Saboten+Tonkatsu+Shinjuku"
+          },
+          {
+            "name": "新宿麵屋 武藏 (新宿總店)",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿西口步行 4 分",
+            "highlights": "角屋飯店旁！炙燒厚切塊狀角煮叉燒搭配濃郁雙湯頭拉麵",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Menya+Musashi+Shinjuku"
+          },
+          {
+            "name": "成田機場 T1 Gihey 八代目儀兵衛",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 4F 飲食區",
+            "highlights": "京都二百年老米行！以砂鍋現煮頂級白米飯搭配炭烤鮭魚定食",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Gihey+Narita+Airport+T1"
+          }
+        ],
+        "dessert_pastry": [
+          {
+            "name": "ROYCE' 生巧克力 (Nama Chocolate)",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 免稅店",
+            "highlights": "北海道鮮奶油製作！「原味牛奶」與「白巧克力」入口即化，附專用保冷袋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Royce+Chocolate+Narita+Airport"
+          },
+          {
+            "name": "LeTAO 雙層乳酪蛋糕 (Double Fromage)",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 免稅店",
+            "highlights": "小樽傳奇起司蛋糕！上層生乳酪慕斯搭配下層烤乳酪，濃郁細膩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=LeTAO+Narita+Airport"
+          },
+          {
+            "name": "成田機場 T1 辻利 抹茶冰淇淋",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 4F 商場",
+            "highlights": "京都宇治京都老舖特濃抹茶霜淇淋，淋上黑蜜與白玉糰子",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tsujiri+Narita+Airport+T1"
+          },
+          {
+            "name": "千疋屋 (Sembikiya 水果夾心酥)",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 伴手禮店",
+            "highlights": "高級水果名店精製！葡萄乾與鮮奶油夾心厚餅，送禮大氣優雅",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Sembikiya+Narita+Airport"
+          },
+          {
+            "name": "東京晴空戀人 巧克力薄餅",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 候機區",
+            "highlights": "三層可可法式波浪薄餅夾入特濃巧克力，香脆可口",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tokyo+Campanella+Narita"
+          }
+        ],
+        "beverage": [
+          {
+            "name": "獺祭 二割三分 純米大吟釀 免稅版",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 免稅店",
+            "highlights": "全日本免稅店人氣冠軍！精米步合 23%，如絲綢般精緻哈密瓜香氣，免稅價格超值",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Dassai+Sake+Narita+Airport"
+          },
+          {
+            "name": "山崎 / 白州 單一麥芽威士忌",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 免稅洋酒區",
+            "highlights": "三得利代表名作，若遇上架必搶之日本威士忌夢幻逸品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Yamazaki+Whisky+Narita+Airport"
+          },
+          {
+            "name": "成田特快 N'EX 車內特調綠茶",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿站月台自動販賣機",
+            "highlights": "伊藤園深蒸綠茶，平穩搭乘 N'EX 欣賞沿途東京與千葉郊區雪景的最佳良伴",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Itoen+Green+Tea"
+          },
+          {
+            "name": "成田機場 T1 精釀生啤 Bar",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 管制區內",
+            "highlights": "登機前最後一杯冰涼生啤酒，搭配現炸洋蔥圈",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Narita+T1+Craft+Beer"
+          },
+          {
+            "name": "伊藤園 抹茶玄米茶茶包禮盒",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 伴手禮店",
+            "highlights": "炒玄米與京都宇治抹茶調和，香氣濃郁溫潤",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Itoen+Matcha+Genmaicha"
+          }
+        ],
+        "souvenir": [
+          {
+            "name": "白色戀人 (Shiroi Koibito 白色鐵盒)",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 各大免稅店",
+            "highlights": "北海道百年不敗名產！貓舌餅包裹白巧克力，滑雪返國經典首選伴手禮",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Shiroi+Koibito+Narita+Airport"
+          },
+          {
+            "name": "東京牛奶起司工房 夾心餅禮盒",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 免稅店",
+            "highlights": "海鹽卡門貝爾起司與蜂蜜高達起司雙口味綜合禮盒，酥脆鹹甜香濃",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Tokyo+Milk+Cheese+Factory+Narita"
+          },
+          {
+            "name": "PRESS BUTTER SAND (雙拼禮盒)",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 伴手禮店",
+            "highlights": "熱壓酥脆餅皮內夾牽絲白巧克力焦糖醬與滑順奶油，口感極致酥脆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Press+Butter+Sand+Narita+Airport"
+          },
+          {
+            "name": "YOKU MOKU 原味雪茄蛋捲",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 免稅店",
+            "highlights": "大量優質發酵黃油捲成金黃雪茄狀，入口酥脆化開，送禮尊貴體面",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Yoku+Moku+Cigare+Narita"
+          },
+          {
+            "name": "福砂屋 傳統長崎蜂蜜蛋糕",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 免稅店",
+            "highlights": "寬永元年創立四百年老舖！純手工攪拌，底層鋪滿爽脆砂糖顆粒，蛋香純厚",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Fukusaya+Castella+Narita"
+          }
+        ],
+        "attractions": [
+          {
+            "name": "成田機場第 1 航廈 展望台",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 5F",
+            "highlights": "長達數百公尺的戶外露天展望台，超近距離觀賞波音 787 與空巴 A350 起降，跑道全景壯觀震撼",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Narita+Airport+T1+Observation+Deck"
+          },
+          {
+            "name": "GPA 機場提領處 (成田 T1 南翼)",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 1F",
+            "highlights": "順利領取 2/21 由奧中山高原寄出之黑貓宅急便雪板重裝備，從容託運通關",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Narita+Airport+T1+GPA"
+          },
+          {
+            "name": "成田機場 T1 歌舞伎體驗空間",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 出境大廳",
+            "highlights": "展示松竹歌舞伎傳統服飾、臉譜彩繪與拍照互動裝置，感受日本傳統戲劇文化",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Narita+Airport+Kabuki+Experience"
+          },
+          {
+            "name": "Fa-So-La 免稅購物大道",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 出境管制區內",
+            "highlights": "登機前最後免稅採買專區，各大日本菸酒、頂級伴手禮與化妝品齊全",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Fa-So-La+Duty+Free+Narita+T1"
+          },
+          {
+            "name": "聯合航空貴賓室 (UA Lounge T1)",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 3F 登機門旁",
+            "highlights": "舒適座位、淋浴設施、生啤酒機與和風餐點，悠閒候機準備登機返台",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=United+Club+Lounge+Narita+T1"
+          }
+        ]
+      }
+    }
+  ]
+}
