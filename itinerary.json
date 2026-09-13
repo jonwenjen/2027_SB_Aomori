@@ -74,7 +74,8 @@
       "official_website": "https://www.okunakayamakogen.jp/",
       "course_map_url": "https://www.okunakayamakogen.jp/winter-season/course-guide/",
       "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-      "map_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
+      "map_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg",
+      "fallback_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg"
     }
   ],
   "contingency_plans": [
