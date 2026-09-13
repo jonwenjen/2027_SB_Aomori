@@ -42,7 +42,7 @@
       "official_website": "http://moyahills.jp/",
       "course_map_url": "https://surfsnow.jp/guide/htm/r0280s.htm",
       "snow_forecast_url": "https://www.snow-forecast.com/resorts/Moya-Hills/6day/mid",
-      "map_image_url": "https://travel.rakuten.co.jp/share/ski/map/43_s.jpg"
+      "map_image_url": "https://moyahills.jp/_src/93046306/20231214130801-0001.webp?v=1769512766246"
     },
     {
       "name": "八甲田纜車 ＆ 滑雪場 (Hakkoda Ropeway)",
@@ -74,7 +74,7 @@
       "official_website": "https://www.okunakayama.jp/",
       "course_map_url": "https://www.okunakayama.jp/winter-season/course-guide/",
       "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-      "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg"
+      "map_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
     }
   ],
   "contingency_plans": [
@@ -513,7 +513,7 @@
         "course_map_url": "https://surfsnow.jp/guide/htm/r0280s.htm",
         "official_website": "http://moyahills.jp/",
         "snow_forecast_url": "https://www.snow-forecast.com/resorts/Moya-Hills/6day/mid",
-        "map_image_url": "https://travel.rakuten.co.jp/share/ski/map/43_s.jpg"
+        "map_image_url": "https://moyahills.jp/_src/93046306/20231214130801-0001.webp?v=1769512766246"
       },
       "transit": {
         "summary": "JR 青森站東口 ➔ 青森市營巴士直達モヤヒルズ (車程約 40 分，冬季雪地平穩運轉，提供 2 組往返選項)",
@@ -1279,18 +1279,18 @@
     {
       "day_number": 4,
       "date": "2027-02-12",
-      "day_title": "青森退房 ➔ 移動至八戶 ➔ 八食中心七輪村炭烤海鮮",
+      "day_title": "青森晨滑雪 (Moya Hills/八甲田) ➔ 青森站購買鐵路通票 ➔ 青之森鐵道至八戶 ➔ 八食中心",
+      "ski_resort": null,
       "stay": "Comfort Hotel Hachinohe (コンフォートホテル八戸)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Comfort%20Hotel%20Hachinohe",
-      "ski_resort": null,
       "transit": {
-        "summary": "青森站 ➔ 新幹線/鐵路至八戶站 ➔ 八食 100 圓巴士 (冬季全天候平穩移動，提供 2 組移動方案)",
+        "summary": "青森晨滑 ➔ 青森站購買青之森鐵路通票 ➔ 青之森鐵道直達八戶站 ➔ 入住 Comfort Hotel ➔ 八食中心 (提供 2 組午後銜接班次)",
         "details": [
-          "青森飯店退房，攜帶行李出發至青森站。",
-          "【選項 A（新幹線極速首選・11:57 抵八食中心）】：10:40 青森站搭 JR 奧羽本線 ➔ 10:46 抵新青森（轉乘緩衝 20 分） ➔ 11:06 東北新幹線 Hayabusa 18 號 ➔ 11:34 抵八戶站（每人精算花費：¥3,560）。八戶站東口 4 號站牌搭乘 11:45 八食 100 圓巴士 ➔ 11:57 抵達八食中心（每人精算花費：¥100）。",
-          "【選項 B（青之森鐵道景觀次班・12:27 抵八食中心）】：10:18 青森站搭乘青之森鐵道快速列車 ➔ 11:48 直達八戶站（每人精算花費：¥2,320）。轉乘 12:15 八食 100 圓巴士 ➔ 12:27 抵達八食中心（每人精算花費：¥100）。",
-          "【八食中心返回飯店】：八食中心搭乘 16:30 巴士 ➔ 16:42 返抵八戶站東口（每人精算花費：¥100）。步行 2 分入住 Comfort Hotel Hachinohe，17:00 前從容進房（距 18:00 截止提早 1 小時）！",
-          "【八食中心計程車精算】：八戶站至八食中心約 3.5 公里，單程約 ¥1,400（1 人搭乘每人花費：¥1,400；2 人共乘每人花費：¥700）。"
+          "上午 08:30 - 13:00 於 Moya Hills 或八甲田進行上午晨滑雪道巡航，充分利用青森雪季時光。",
+          "13:30 收板搭乘公車返抵青森站（約 14:15），於青森站售票處/窗口購買「青之森鐵路一日通票 (青い森ワンデーパス)」（每人精算花費：¥2,100，相較單程票 ¥2,320 現省 ¥220，當日全線無限自由搭乘！）。",
+          "【交通選項 A（首選從容・17:05 抵八戶飯店）】：15:20 青森站搭乘青之森鐵道列車 ➔ 16:51 直達八戶站（每人通票花費：¥2,100，轉乘緩衝 14 分）。出站步行 2 分鐘，17:05 順利入住 Comfort Hotel Hachinohe！距離 18:00 截止提早近 1 小時！隨後可至八食中心炭烤海鮮。",
+          "【交通選項 B（彈性次班・17:50 抵八戶飯店）】：若滑雪延至 14:00 收板，搭乘 16:03 青之森鐵道 ➔ 17:42 抵達八戶站（每人通票花費：¥2,100）。出站步行 2 分，17:50 辦理入住，依然嚴格確保在 18:00 前進駐！",
+          "【八食中心交通精算】：八戶站至八食中心搭 100 圓巴士每人 ¥100；若搭計程車單程約 ¥1,400（1 人搭乘每人 ¥1,400；2 人共乘每人 ¥700）。"
         ]
       },
       "recommendations": {
@@ -3578,7 +3578,7 @@
     {
       "day_number": 10,
       "date": "2027-02-18",
-      "day_title": "網張退房 ➔ 盛岡 ➔ IGR銀河鐵道至奧中山高原 ➔ 進駐高原飯店開滑",
+      "day_title": "網張溫泉晨滑 ➔ 下午退房出發 ➔ 盛岡轉乘 IGR 銀河鐵道 ➔ 進駐奧中山高原飯店",
       "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen%20Hotel",
       "ski_resort": {
@@ -3588,15 +3588,16 @@
         "course_map_url": "https://www.okunakayama.jp/winter-season/course-guide/",
         "official_website": "https://www.okunakayama.jp/",
         "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg"
+        "map_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
       },
       "transit": {
-        "summary": "休暇村接駁車至盛岡站 ➔ IGR 銀河鐵道至奧中山高原站 ➔ 飯店接駁車至雪場 (冬季北上鐵路平穩銜接，提供 2 組車次選項)",
+        "summary": "網張溫泉晨滑 ➔ 下午退房出發 ➔ 盛岡轉乘 IGR 銀河鐵道 ➔ 奧中山高原飯店 (提供 2 組午後銜接車次，嚴格確保 18:00 前進駐)",
         "details": [
-          "網張溫泉退房，攜帶雪具行李展開東北北部內陸滑雪行程。",
-          "【選項 A（晨間移動首選・12:12 抵飯店開滑）】：09:30 搭乘休暇村免費預約接駁巴士 ➔ 10:20 抵盛岡站西口（轉乘緩衝 35 分於盛岡站買土產午餐） ➔ 盛岡站搭乘 10:55 發車之 IGR いわて銀河鉄道（往八戶方向）➔ 11:43 抵「奧中山高原站」（每人精算花費：¥1,080，轉乘緩衝 17 分） ➔ 站前搭乘 12:00 飯店免費預約接駁巴士（或一戶町營巴士）➔ 12:12 直達奧中山高原飯店大廳（每人精算花費：¥0~¥200）。登記入住後 13:00 即可開滑！",
-          "【選項 B（午後從容次班・14:52 抵飯店）】：盛岡站享用午餐後搭乘 13:38 發車之 IGR 銀河鐵道 ➔ 14:26 抵奧中山高原站 ➔ 14:40 飯店接駁車 ➔ 14:52 抵達飯店（每人精算花費：¥1,080），完全在 18:00 前進駐！",
-          "【冬季計程車精算對比】：奧中山高原站至雪場約 7 公里，冬季 4WD 計程車單程約 ¥2,200（1 人搭乘每人花費：¥2,200；2 人共乘每人花費：¥1,100）。"
+          "08:30 - 13:00 於網張溫泉門口 Ski-in / Ski-out 暢滑岩手山深粉雪，滑好滑滿後再離開。",
+          "13:30 回房更衣並於休暇村大廳退房領取行李，午後啟程前往奧中山高原。",
+          "【交通選項 A（首選順暢銜接・16:40 抵奧中山飯店）】：14:00 預約搭乘 4WD 雪地計程車離開網張溫泉 ➔ 14:50 抵盛岡站西口（計程車車資約 ¥9,500：1 人搭乘每人 ¥9,500；2 人共乘每人 ¥4,750，轉乘緩衝 25 分於盛岡站小憩） ➔ 15:15 盛岡站搭乘 IGR いわて銀河鉄道（往八戶方向）➔ 16:03 抵達「奧中山高原站」（每人精算花費：¥1,080，轉乘緩衝 17 分） ➔ 站前搭乘 16:20 飯店預約接駁巴士（或一戶町營巴士）➔ 16:32 直達奧中山高原飯店大廳（每人花費：¥0~¥200）。16:40 順利完成入住，距離 18:00 截止提早近 1.5 小時！",
+          "【交通選項 B（巴士接駁次班・17:15 抵奧中山飯店）】：14:30 搭乘岩手縣交通巴士自網張出發 ➔ 15:35 抵盛岡站（轉乘緩衝 25 分） ➔ 16:00 搭乘 IGR 銀河鐵道 ➔ 16:48 抵奧中山高原站 ➔ 17:00 飯店接駁車 ➔ 17:12 抵達飯店大廳（每人精算花費：¥1,180 + ¥1,080 = ¥2,260），完全在 18:00 前進駐！",
+          "【奧中山高原站計程車精算】：車站至飯店約 7 公里，車資約 ¥2,200（1 人搭乘每人花費：¥2,200；2 人共乘每人花費：¥1,100）。"
         ]
       },
       "recommendations": {
@@ -3975,7 +3976,7 @@
         "course_map_url": "https://www.okunakayama.jp/winter-season/course-guide/",
         "official_website": "https://www.okunakayama.jp/",
         "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg"
+        "map_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
       },
       "transit": {
         "summary": "飯店門口 Ski-in / Ski-out，第 1、第 2 高速吊椅直連 (全日交通費 ¥0)",
@@ -4361,7 +4362,7 @@
         "course_map_url": "https://www.okunakayama.jp/winter-season/course-guide/",
         "official_website": "https://www.okunakayama.jp/",
         "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg"
+        "map_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
       },
       "transit": {
         "summary": "飯店門口 Ski-in / Ski-out (全日交通費 ¥0)",
@@ -4747,7 +4748,7 @@
         "course_map_url": "https://www.okunakayama.jp/winter-season/course-guide/",
         "official_website": "https://www.okunakayama.jp/",
         "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg"
+        "map_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
       },
       "transit": {
         "summary": "飯店門口 Ski-in / Ski-out；下午 14:30 辦理黑貓宅急便直寄成田機場 (全日交通費 ¥0)",
@@ -5123,10 +5124,18 @@
     {
       "day_number": 14,
       "date": "2027-02-22",
-      "day_title": "奧中山退房 ➔ 盛岡 ➔ 東北新幹線直攻東京 ➔ 進駐新宿角屋飯店（17:35 抵達）",
+      "day_title": "奧中山高原晨滑 ➔ 下午退房出發 ➔ 盛岡新幹線直達東京 ➔ 進駐新宿角屋飯店（20:00前抵達）",
       "stay": "新宿角屋飯店 (Kadoya Hotel 新宿)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Kadoya%20Hotel%20Shinjuku",
-      "ski_resort": null,
+      "ski_resort": {
+        "name": "奧中山高原滑雪場 (最後晨滑巡航)",
+        "elevation": "580m - 1,018m",
+        "highlights": "退房前上午享受奧中山最後半日絲綢粉雪與 Carving 刻滑，中午收板更衣；下午啟程搭乘新幹線南下進駐東京新宿（20:00前抵達）",
+        "course_map_url": "https://www.okunakayama.jp/winter-season/course-guide/",
+        "official_website": "https://www.okunakayama.jp/",
+        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
+        "map_image_url": "https://www.okunakayama.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
+      },
       "transit": {
         "summary": "奧中山高原接駁 ➔ IGR 銀河鐵道至盛岡 ➔ 東北新幹線直達東京 ➔ JR 中央線快速至新宿 (提供 2 組下午位移時程，嚴格確保 18:00 前進駐)",
         "details": [
