@@ -21,7 +21,7 @@
       --tag-dessert: #ec4899;
       --tag-beverage: #8b5cf6;
       --tag-souvenir: #10b981;
-      --tag-attraction: #06b6d4;
+      --tag-attractions: #06b6d4;
       --warning: #f59e0b;
     }
 
@@ -41,7 +41,7 @@
       border-bottom: 1px solid var(--border);
     }
     .container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
-    h1 { font-size: 1.85rem; font-weight: 800; margin-bottom: 12px; color: #fff; letter-spacing: -0.01em; }
+    h1 { font-size: 1.85rem; font-weight: 800; margin-bottom: 8px; color: #fff; letter-spacing: -0.01em; }
     .subtitle { font-size: 0.95rem; color: var(--accent); margin-bottom: 16px; }
 
     /* 快捷導覽列 */
@@ -71,7 +71,7 @@
     .flight-details h4 { font-size: 0.92rem; color: #fff; margin-bottom: 4px; }
     .flight-details p { font-size: 0.8rem; color: var(--text-muted); }
 
-    /* 雪場速覽按鈕 */
+    /* 雪場速覽區塊 */
     .resorts-bar {
       background: var(--card-bg); border: 1px solid var(--border);
       border-radius: 12px; padding: 16px; margin: 20px 0 24px;
@@ -81,21 +81,23 @@
       display: flex; align-items: center; gap: 6px;
     }
     .resorts-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;
     }
     .resort-btn-card {
-      background: var(--card-sub); border-radius: 8px; padding: 10px 12px;
-      display: flex; flex-direction: column; gap: 6px; border: 1px solid rgba(255,255,255,0.05);
+      background: var(--card-sub); border-radius: 10px; padding: 12px 14px;
+      display: flex; flex-direction: column; gap: 8px; border: 1px solid rgba(255,255,255,0.08);
     }
-    .resort-name { font-size: 0.85rem; font-weight: 700; color: #fff; }
-    .resort-elev { font-size: 0.75rem; color: var(--accent); }
-    .resort-links { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
+    .resort-name { font-size: 0.9rem; font-weight: 700; color: #fff; }
+    .resort-elev { font-size: 0.78rem; color: var(--accent); }
+    .resort-links { display: flex; gap: 6px; flex-wrap: wrap; }
     .resort-link {
-      font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; text-decoration: none;
-      font-weight: 600; display: inline-block;
+      font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; text-decoration: none;
+      font-weight: 600; display: inline-block; transition: background 0.2s;
     }
-    .link-map { background: rgba(2, 132, 199, 0.25); color: var(--accent); border: 1px solid var(--primary); }
+    .link-forecast { background: rgba(56, 189, 248, 0.25); color: #38bdf8; border: 1px solid var(--primary); }
+    .link-map { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; }
     .link-web { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid var(--border); }
+    .link-forecast:hover, .link-map:hover, .link-web:hover { background: var(--primary); color: #fff; }
 
     /* 每日行程卡片 */
     .day-card {
@@ -141,17 +143,23 @@
     
     .ski-toggle-map-btn {
       background: rgba(14, 165, 233, 0.25); color: #38bdf8; border: 1px solid var(--primary);
-      padding: 5px 12px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer;
-      display: inline-flex; align-items: center; gap: 4px;
+      padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s;
     }
     .ski-toggle-map-btn:hover { background: var(--primary); color: #fff; }
 
     .ski-map-preview-box {
-      display: none; margin-top: 10px; padding: 10px;
-      background: rgba(15, 23, 42, 0.8); border: 1px solid var(--border);
+      display: none; margin-top: 12px; padding: 12px;
+      background: rgba(15, 23, 42, 0.9); border: 1px solid var(--border);
       border-radius: 8px; text-align: center;
     }
-    .ski-map-img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+    .ski-map-img {
+      max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      display: block; margin: 0 auto;
+    }
+    .ski-map-caption {
+      font-size: 0.76rem; color: var(--text-muted); margin-top: 6px;
+    }
 
     /* 交通動線 */
     .transit-box { background: var(--card-sub); border-radius: 10px; padding: 14px 16px; margin-bottom: 16px; }
@@ -166,7 +174,7 @@
       content: ''; position: absolute; left: -16px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
     }
 
-    /* Accordion 折疊規範 */
+    /* Accordion 折疊規範 (5大子類別，每類滿額10項) */
     .recs-container { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 14px; }
     .recs-header-toggle { font-size: 0.92rem; font-weight: 700; color: #e2e8f0; margin-bottom: 10px; }
     .recs-sub-group { margin-bottom: 8px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: rgba(15, 23, 42, 0.4); }
@@ -221,7 +229,7 @@
   <header>
     <div class="container">
       <h1 id="trip-title">❄️ 2027 東北滑雪・極致粉雪與冬奧入瀨秘境行</h1>
-      <p class="subtitle">16 日青森・八甲田・八戶・十和田湖・網張溫泉・奧中山高原・東京極致規劃</p>
+      <p class="subtitle">16 日青森・八甲田・八戶・十和田湖・網張溫泉・奧中山高原・東京全方位規劃</p>
       <div class="flight-grid" id="flight-container"></div>
     </div>
   </header>
@@ -230,9 +238,9 @@
 
   <main class="container" style="margin-top: 20px;">
     
-    <!-- 雪場速覽區塊 -->
+    <!-- 雪場速覽區塊 (含官方雪道圖截圖展開) -->
     <section class="resorts-bar" id="resorts-bar">
-      <h3>⛷️ 本次行程 5 大滑雪場速覽直連</h3>
+      <h3>⛷️ 本次行程 5 大滑雪場速覽與雪道地圖</h3>
       <div class="resorts-grid" id="resorts-grid"></div>
     </section>
 
@@ -311,10 +319,17 @@
             <div class="resort-name">⛷️ ${r.name}</div>
             <div class="resort-elev">📍 標高：${r.elevation}</div>
             <div class="resort-links">
-              <a href="${r.snow_forecast_url}" target="_blank" rel="noopener" class="resort-link link-map">❄️ Snow-Forecast</a>
-              <a href="${r.course_map_url}" target="_blank" rel="noopener" class="resort-link link-web">🗺️ 官方雪道圖</a>
-              <a href="${r.official_website}" target="_blank" rel="noopener" class="resort-link link-web">🌐 官網</a>
+              <a href="${r.snow_forecast_url}" target="_blank" rel="noopener" class="resort-link link-forecast">❄️ 即時雪報</a>
+              <a href="${r.official_website}" target="_blank" rel="noopener" class="resort-link link-web">🌐 官方網站</a>
+              <a href="${r.course_map_url}" target="_blank" rel="noopener" class="resort-link link-map">🗺️ 官方雪道圖</a>
             </div>
+            ${r.map_image_url ? `
+              <button class="ski-toggle-map-btn" style="margin-top: 4px;" onclick="toggleMapPreview(this)">🗺️ 檢視雪道地圖截圖 [▼ 點擊展開]</button>
+              <div class="ski-map-preview-box">
+                <img src="${r.map_image_url}" alt="${r.name} 雪道全圖" class="ski-map-img" loading="lazy" referrerpolicy="no-referrer" />
+                <div class="ski-map-caption"><a href="${r.course_map_url}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">🔍 點此在新分頁檢視官方原圖</a></div>
+              </div>
+            ` : ''}
           </div>
         `).join('');
       }
@@ -348,13 +363,14 @@
               <div class="ski-banner-desc">${day.ski_resort.highlights}</div>
               <div class="ski-banner-actions">
                 ${day.ski_resort.snow_forecast_url ? `<a href="${day.ski_resort.snow_forecast_url}" target="_blank" rel="noopener" class="map-btn" style="background: rgba(56, 189, 248, 0.25); border-color: var(--accent); color: #fff;">❄️ Snow-Forecast 即時雪報</a>` : ''}
-                ${day.ski_resort.course_map_url ? `<a href="${day.ski_resort.course_map_url}" target="_blank" rel="noopener" class="map-btn">🌐 官方全景雪道圖</a>` : ''}
                 ${day.ski_resort.official_website ? `<a href="${day.ski_resort.official_website}" target="_blank" rel="noopener" class="map-btn" style="border-color: var(--border); color: #cbd5e1;">🌐 雪場官網</a>` : ''}
+                ${day.ski_resort.course_map_url ? `<a href="${day.ski_resort.course_map_url}" target="_blank" rel="noopener" class="map-btn">🗺️ 官方全景雪道圖</a>` : ''}
               </div>
               ${day.ski_resort.map_image_url ? `
                 <button class="ski-toggle-map-btn" onclick="toggleMapPreview(this)">🗺️ 檢視雪道地圖截圖 [▼ 點擊展開]</button>
                 <div class="ski-map-preview-box">
                   <img src="${day.ski_resort.map_image_url}" alt="${day.ski_resort.name} 官方雪道圖" class="ski-map-img" loading="lazy" referrerpolicy="no-referrer" />
+                  <div class="ski-map-caption"><a href="${day.ski_resort.course_map_url}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">🔍 點此在新分頁檢視官方原圖</a></div>
                 </div>
               ` : ''}
             </div>
@@ -410,7 +426,7 @@
           if (subGroups) {
             recsHtml = `
               <div class="recs-container">
-                <div class="recs-header-toggle">🍽️ 在地推薦名單（5 大類別・預設折疊點選展開）</div>
+                <div class="recs-header-toggle">🍽️ 在地推薦名單（5 大子類別・每類 10 項滿額推薦・點選展開）</div>
                 ${subGroups}
               </div>
             `;
