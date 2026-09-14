@@ -499,6 +499,78 @@
             "highlights": "鐵道迷私房雪景眺望點，可居高臨下拍攝奧羽本線除雪列車與雪地鐵軌交錯景色",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8F%A4%E5%B7%9D%E8%B7%A8%E7%B7%9A%E6%A9%8B%20%E9%9D%92%E6%A3%AE"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "A-FACTORY 生活雜貨選品館",
+            "rating": "★★★★★",
+            "distance": "📍 青森站東口步行 2 分",
+            "highlights": "海灣畔現代紅磚倉庫！齊聚青森設計生活雜貨、青森絲柏木香氛、原木餐具與在地文創選物",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=A-FACTORY%20%E9%9D%92%E6%A3%AE%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "LOVINA 青森車站生活美學館",
+            "rating": "★★★★☆",
+            "distance": "📍 青森車站共構 1-3F",
+            "highlights": "車站直結商場！匯集日系生活小物、精緻文具手帳、防寒機能雜貨與居家收納配件",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%A9%E3%83%93%E3%83%8A%20%E9%9D%92%E6%A3%AE%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "睡魔之家 WA RASSE 工藝藝品部",
+            "rating": "★★★★★",
+            "distance": "📍 步行 1 分",
+            "highlights": "展示與販售睡魔祭職人手工和紙彩繪燈飾、睡魔明信片與東北特色金屬鈴鐺飾品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AF%E3%83%A9%E3%83%83%E3%82%BB%20%E5%B7%A5%E8%8A%B8%E5%93%81%20%E9%9D%92%E6%A3%AE"
+          },
+          {
+            "name": "三之月舍 (Sannotsukisha 生活器物)",
+            "rating": "★★★★★",
+            "distance": "📍 青森市新町步行 8 分",
+            "highlights": "青森極具品味的選物小店！精選日本各地作家手作陶器、亞麻家飾布品與北歐極簡生活器具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E3%83%8E%E6%9C%88%E8%88%8E%20%E9%9D%92%E6%A3%AE"
+          },
+          {
+            "name": "津輕琉璃 北洋硝子 Aomori 展示區",
+            "rating": "★★★★★",
+            "distance": "📍 A-FACTORY 內",
+            "highlights": "青森代表玻璃工藝！七彩手工吹製玻璃清酒杯、小花瓶、醬油瓶與浮球造型生活擺飾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%B4%A5%E8%BB%BD%E3%81%B3%E3%81%84%E3%81%A9%E3%82%8D%20%E9%9D%92%E6%A3%AE"
+          },
+          {
+            "name": "ASPAM 青森地場セレクト 工藝選品",
+            "rating": "★★★★☆",
+            "distance": "📍 三角形大樓 1F",
+            "highlights": "由專業買手精選全青森縣工藝！包含津輕刺子繡束口袋、八戶菱刺杯墊與下北半島檜木筷",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E6%A3%AE%E5%9C%B0%E5%A0%B4%E3%82%BB%E3%83%AC%E3%82%AF%E3%83%88%20%E3%82%A2%E3%82%B9%E3%83%91%E3%83%A0"
+          },
+          {
+            "name": "青森工藝館 (津輕漆器專門)",
+            "rating": "★★★★☆",
+            "distance": "📍 新町步行 6 分",
+            "highlights": "日本國家傳統工藝品「津輕塗」！繁複數十道塗層打磨之漆筷、茶匙與漆器文具盒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%B4%A5%E8%BB%BD%E5%A1%97%20%E9%9D%92%E6%A3%AE%20%E5%B7%A5%E8%8A%B8%E9%A4%A8"
+          },
+          {
+            "name": "鳴海釀造店 酒器雜貨專門",
+            "rating": "★★★★☆",
+            "distance": "📍 市區特產街",
+            "highlights": "百年酒藏直營！展示傳統杉木酒桶木料手作木桝、錫製酒器與和風酒袋布提袋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%B3%B4%E6%B5%B7%E9%86%B8%E9%80%A0%E5%BA%97%20%E9%85%92%E5%99%A8"
+          },
+          {
+            "name": "古川生活館 (昭和生活工藝道具)",
+            "rating": "★★★★☆",
+            "distance": "📍 古川市場旁步行 3 分",
+            "highlights": "在地職人手作竹編買菜籃、日式銅洗臉盆、天然鬃毛刷與昭和復古生活雜貨",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8F%A4%E5%B7%9D%20%E9%9B%91%E8%B2%A8%20%E9%9D%92%E6%A3%AE"
+          },
+          {
+            "name": "三之丸文房具雜貨舖",
+            "rating": "★★★★☆",
+            "distance": "📍 善知鳥神社旁",
+            "highlights": "精選日本手作印章、津輕和紙信箋、傳統墨水與復古黃銅書籤",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E6%A3%AE%20%E6%96%87%E6%88%BF%E5%85%B7%20%E9%9B%91%E8%B2%A8"
+          }
         ]
       }
     },
@@ -888,6 +960,78 @@
             "highlights": "遠眺陸奧灣八甲田丸與海灣大橋，感受純淨北國海港冬日氣息",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E6%A3%AE%E6%B8%AF%20%E6%B5%B7%E5%B2%B8%E6%95%A3%E7%AD%96"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "Boy Meets Girl LOVINA (生活美學美髮沙龍)",
+            "rating": "★★★★★",
+            "distance": "📍 青森站共構 LOVINA 2F",
+            "highlights": "18:00 預約行程！日系沙龍專用有機洗護髮品、天然草本頭皮護理油與美髮生活周邊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Boy%20Meets%20Girl%20LOVINA%20%E9%9D%92%E6%A3%AE"
+          },
+          {
+            "name": "青森縣立美術館 紀念選品館",
+            "rating": "★★★★★",
+            "distance": "📍 美術館 1F",
+            "highlights": "藝術迷必訪！奈良美智「青森犬」正版明信片、雕塑模型、托特包與夏卡爾藝術文創商品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E6%A3%AE%E7%9C%8C%E7%AB%8B%E7%BE%8E%E8%A1%93%E9%A4%A8%20%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "津輕琉璃 北洋硝子 本社工坊",
+            "rating": "★★★★★",
+            "distance": "📍 富田車程 10 分",
+            "highlights": "津輕琉璃原創發祥地！可參觀工匠吹製現場，陳列最齊全之四季色彩玻璃器皿與花器",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E6%B4%8B%E7%A1%9D%E5%AD%90%20%E6%B4%A5%E8%BB%BD%E3%81%B3%E3%81%84%E3%81%A9%E3%82%8D"
+          },
+          {
+            "name": "三內丸山遺跡 繩文文創工房",
+            "rating": "★★★★☆",
+            "distance": "📍 遺跡展示館內",
+            "highlights": "五千年前繩文古風！鼻曲土偶文創陶偶、骨角器造型鑰匙圈與繩紋印花環保帆布包",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E5%86%85%E4%B8%B8%E5%B1%B1%E9%81%BA%E8%B7%A1%20%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "善知鳥神社 神札授與所",
+            "rating": "★★★★☆",
+            "distance": "📍 東口步行 10 分",
+            "highlights": "青森發祥守護神社！精緻水滴造型琉璃開運御守、神鳥造型開運陶偶與朱印帳",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%96%84%E7%9F%A5%E9%B3%A5%E7%A5%9E%E7%A4%BE%20%E3%81%8A%E5%AE%88%E3%82%8A"
+          },
+          {
+            "name": "青森珈琲雜貨店 (自家焙煎豆與器具)",
+            "rating": "★★★★☆",
+            "distance": "📍 新町步行 5 分",
+            "highlights": "精品咖啡器具選物！波佐見燒濾杯、HARIO 手沖壺與青森限定深焙咖啡豆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E6%A3%AE%20%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%20%E7%8F%88%E7%90%B2%E5%99%A8%E5%85%B7"
+          },
+          {
+            "name": "棟方志功紀念選品閣",
+            "rating": "★★★★☆",
+            "distance": "📍 松原車程 10 分",
+            "highlights": "世界級版畫巨匠官方文創！代表作《二菩薩釋迦十大弟子》印花手帕、明信片與和紙書衣",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%A3%9F%E6%96%B9%E5%BF%97%E5%8A%9F%E8%A8%98%E5%BF%B5%E9%A4%A8%20%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "八甲田山麓 木工坊 (Beech Craft)",
+            "rating": "★★★★☆",
+            "distance": "📍 Moya 附近",
+            "highlights": "天然山毛櫸原木打造之手工木碗、木盤與黃銅奶油刀，溫潤木紋耐用極美",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E7%94%B2%E7%94%B0%20%E6%9C%A8%E5%B7%A5%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "柳町 文房具老舖 (傳統鋼筆書道)",
+            "rating": "★★★★☆",
+            "distance": "📍 柳町步行 8 分",
+            "highlights": "創業八十年老字號！青森限定津輕四季彩墨水、寫樂鋼筆與手工楮皮和紙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E6%A3%AE%20%E4%B8%87%E5%B9%B4%E7%AD%86%20%E6%96%87%E6%88%BF%E5%85%B7"
+          },
+          {
+            "name": "青森帆布 (Aomori Canvas 帆布工坊)",
+            "rating": "★★★★☆",
+            "distance": "📍 本町步行 12 分",
+            "highlights": "高磅數厚帆布手工縫製提袋、單板雪具配件收納包與耐磨工具袋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E6%A3%AE%E5%B8%86%E5%B8%83%20%E3%83%90%E3%83%83%E3%82%B0"
+          }
         ]
       }
     },
@@ -1276,6 +1420,78 @@
             "highlights": "純櫸木打造露天浴池，四周垂掛天然冰柱，享受頂級雪見名湯",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%9F%8E%E3%83%B6%E5%80%89%E6%B8%A9%E6%B3%89%20%E9%9C%B2%E5%A4%A9%E9%A2%A8%E5%91%82"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "八甲田山頂纜車站 紀念山木屋",
+            "rating": "★★★★☆",
+            "distance": "📍 纜車山頂站 1F",
+            "highlights": "八甲田 1,324m 頂峰限定！雪怪樹冰金屬紀念徽章、高山植物乾燥花卡片與登山保暖配件",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E7%94%B2%E7%94%B0%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%83%BC%20%E5%B1%B1%E9%A0%82%E5%A3%B2%E5%BA%97"
+          },
+          {
+            "name": "酸湯溫泉 療癒雜貨專區",
+            "rating": "★★★★★",
+            "distance": "📍 車程 15 分",
+            "highlights": "三百年名湯生活道具！青森天然檜木洗面盆、木製湯杓與天然硫磺入浴粉、草本手工香皂",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%85%B8%E3%83%B6%E6%B9%AF%E6%B8%A9%E6%B3%89%20%E5%A3%B2%E5%BA%97"
+          },
+          {
+            "name": "城之倉溫泉 森林藝廊",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 10 分",
+            "highlights": "北歐木屋風情！展示八甲田四季大景攝影明信片、山毛櫸手工原木筷與天然精油蠟燭",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E5%9F%8E%E3%83%B6%E5%80%89%20%E5%A3%B2%E5%BA%97"
+          },
+          {
+            "name": "萱野高原 長壽茶屋 生活陶器",
+            "rating": "★★★★☆",
+            "distance": "📍 巴士停靠站",
+            "highlights": "品嚐三杯茶長生不老！販售傳統手作七味粉陶罐、南部鐵瓶蓋置與粗陶茶碗",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E8%90%B1%E9%87%8E%E8%8C%B6%E5%B1%8B%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "八甲田纜車山麓 戶外機能用品店",
+            "rating": "★★★★☆",
+            "distance": "📍 山麓站內",
+            "highlights": "專業雪地戶外配件！雪鏡防霧擦拭布、加厚羊毛滑雪襪、防風保暖頭巾與雪板護板貼",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E7%94%B2%E7%94%B0%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%83%BC%20%E5%B1%B1%E9%BA%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "青森港 A-FACTORY 青森藍染選品",
+            "rating": "★★★★★",
+            "distance": "📍 青森站東口",
+            "highlights": "日本傳統天然蓼藍發酵染色！藍染純棉杯墊、麻質餐墊、手染圍巾與日式風呂敷",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%8A%E3%82%82%E3%82%8A%E8%97%8D%20A-FACTORY"
+          },
+          {
+            "name": "青森物產館 津輕刺子繡專賣 (Kogin)",
+            "rating": "★★★★☆",
+            "distance": "📍 ASPAM 1F",
+            "highlights": "津輕傳統菱形幾何刺繡！純手工縫製束口袋、零錢包、杯墊與隔熱墊，工藝極致細膩",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%93%E3%81%8E%E3%82%93%E5%88%BA%E3%81%97%20%E3%82%A2%E3%82%B9%E3%83%91%E3%83%A0"
+          },
+          {
+            "name": "睡魔和紙工作坊 (Ne-buta Craft)",
+            "rating": "★★★★☆",
+            "distance": "📍 善知鳥周邊",
+            "highlights": "睡魔祭彩色和紙剪裁製作之手工筆記本封面、和風摺扇與立體雪景賀卡",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%AD%E3%81%B6%E3%81%9F%E5%92%8C%E7%B4%99%20%E9%9B%91%E8%B2%A8%20%E9%9D%92%E6%A3%AE"
+          },
+          {
+            "name": "淺蟲 溫泉生活道具舖",
+            "rating": "★★★★☆",
+            "distance": "📍 淺蟲溫泉站前",
+            "highlights": "昭和溫泉鄉老街懷舊雜貨！溫泉煮蛋專用竹編網袋、復古陶瓷小碟與和風木屐",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%85%E8%99%AB%E6%B8%A9%E6%B3%89%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "青函連絡船 八甲田丸 航海紀念選品",
+            "rating": "★★★★☆",
+            "distance": "📍 港邊步行 5 分",
+            "highlights": "退役巨型連絡船內賣店！黃銅船鐘模型、航海羅盤吊飾、海圖印花明信片與船員帆布帽",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E7%94%B2%E7%94%B0%E4%B8%B8%20%E3%82%B0%E3%83%83%E3%82%BA"
+          }
         ]
       }
     },
@@ -1655,6 +1871,78 @@
             "distance": "📍 港町車程 15 分",
             "highlights": "太平洋防波堤海景，冬日浪花拍岸氣勢磅礡",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E6%88%B8%E6%B8%AF%20%E7%99%BD%E7%81%AF%E5%8F%B0"
+          }
+        ],
+        "specialty_shops": [
+          {
+            "name": "八戶 八食中心 南部工藝街",
+            "rating": "★★★★★",
+            "distance": "📍 八食中心市場內",
+            "highlights": "市場內工藝寶庫！展示南部傳統「菱刺 (Hishizashi)」刺繡杯墊、竹編飯巾與手工廚房刀具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E9%A3%9F%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E5%B7%A5%E8%8A%B8%E5%93%81"
+          },
+          {
+            "name": "八戶市美術館 藝文選品店 (Shop C)",
+            "rating": "★★★★★",
+            "distance": "📍 八戶市中心",
+            "highlights": "新世代美術館設計選物！八戶在地藝術家文創手作、極簡生活器皿、手織麻布袋與設計文具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E6%88%B8%E5%B8%82%E7%BE%8E%E8%A1%93%E9%A4%A8%20%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "晨榮堂 八戶站前民藝店",
+            "rating": "★★★★☆",
+            "distance": "📍 八戶站東口步行 2 分",
+            "highlights": "傳統南部鐵器風鈴、生鐵開瓶器、八戶名物「八幡馬 (Yawata-uma)」彩繪吉祥木馬",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%B9%A1%E9%A6%AC%20%E5%85%AB%E6%88%B8%20%E6%B0%91%E8%8A%B8%E5%93%81"
+          },
+          {
+            "name": "八戶 Machiniwa (マチニワ 選物市集)",
+            "rating": "★★★★☆",
+            "distance": "📍 市中心三日町",
+            "highlights": "玻璃採光挑高中庭！週末常設在地創作者市集，販售手工皮革鑰匙圈、陶藝咖啡杯與芳香蠟燭",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E6%88%B8%20%E3%83%9E%E3%83%81%E3%83%8B%E3%83%AF%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "青之森鐵路 八戶站官方選品店",
+            "rating": "★★★★☆",
+            "distance": "📍 八戶站剪票口旁",
+            "highlights": "鐵道迷必訪！青之森吉祥物「Mori-kun 綠樹君」刺繡手帕、列車造型木尺與帆布托特包",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E3%81%84%E6%A3%AE%E9%89%84%E9%81%93%20%E3%82%B0%E3%83%83%E3%82%BA%20%E5%85%AB%E6%88%B8"
+          },
+          {
+            "name": "三八五觀光 南部道具選櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 站前巴士中心",
+            "highlights": "南部煎餅專用鑄鐵烤夾、瓦斯爐專用烤網與日式傳統家庭廚房器具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E9%83%A8%E3%81%9B%E3%82%93%E3%81%B9%E3%81%84%20%E7%84%BC%E3%81%8D%E5%99%A8%20%E5%85%AB%E6%88%B8"
+          },
+          {
+            "name": "八戶酒造 陸奧八仙 藏元生活選品",
+            "rating": "★★★★★",
+            "distance": "📍 湊町八戶酒造",
+            "highlights": "日本酒造生活美學！厚磅清酒壓榨過濾布縫製之托特包、純米酒粕保濕皂與品酒蛇目杯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%99%B8%E5%A5%A5%E5%85%AB%E4%BB%99%20%E3%82%B0%E3%83%83%E3%82%BA%20%E5%85%AB%E6%88%B8%E9%85%92%E9%80%A0"
+          },
+          {
+            "name": "八戶 港町海洋生活雜貨",
+            "rating": "★★★★☆",
+            "distance": "📍 蕪嶋周邊",
+            "highlights": "蕪島海貓 (Umineko) 造型陶瓷筷架、天然海鹽蠟燭與海岸浮木手作掛勾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E6%88%B8%20%E3%81%86%E3%81%BF%E3%81%AD%E3%81%93%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "Comfort Hotel 八戶 旅人手札選品",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店大廳直結",
+            "highlights": "北東北鐵道漫遊手記手帳本、青森水彩風景明信片與金屬書籤",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%20%E5%85%AB%E6%88%B8%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "みろく橫丁 昭和復古柑仔店",
+            "rating": "★★★★☆",
+            "distance": "📍 橫丁入口步行 1 分",
+            "highlights": "走進昭和四十年代！復古鐵皮玩具、懷舊彈珠汽水玻璃瓶、搪瓷招牌模型與日式糖果盒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%BF%E3%82%8D%E3%81%8F%E6%A8%AA%E4%B8%81%20%E3%83%AC%E3%83%88%E3%83%AD%20%E9%9B%91%E8%B2%A8"
           }
         ]
       }
@@ -2036,6 +2324,78 @@
             "highlights": "奧入瀨自然生態與地質展示中心，提供苔蘚球手作與雪地裝備租借",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E5%85%A5%E7%80%AC%E6%B8%93%E6%B5%81%E9%A4%A8"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "奧入瀨溪流館 森林苔蘚工坊",
+            "rating": "★★★★★",
+            "distance": "📍 溪流館 1F",
+            "highlights": "奧入瀨自然縮影！手工水苔苔蘚球 (Kokedama)、微景觀生態玻璃瓶與奧入瀨自然觀察放大鏡",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E5%85%A5%E7%80%AC%20%E8%8B%94%E7%8E%89%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "十和田湖 冬物語限定紀念品館",
+            "rating": "★★★★☆",
+            "distance": "📍 慶典會場旁",
+            "highlights": "雪祭專屬！LED 冰晶發光雪花徽章、雪雕主題明信片與十和田冬夜發光手環",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%81%E5%92%8C%E7%94%B0%E6%B9%96%E5%86%AC%E7%89%A9%E8%AA%9E%20%E3%82%B0%E3%83%83%E3%82%BA"
+          },
+          {
+            "name": "十和田神社 神札授與所",
+            "rating": "★★★★☆",
+            "distance": "📍 神社境內",
+            "highlights": "湖神水神開運靈場！水滴造型占卜靈籤紙、開運除厄木雕御守與朱印帳",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%81%E5%92%8C%E7%94%B0%E7%A5%9E%E7%A4%BE%20%E3%81%8A%E5%AE%88%E3%82%8A"
+          },
+          {
+            "name": "奧入瀨森林手作木坊",
+            "rating": "★★★★☆",
+            "distance": "📍 燒山步行 3 分",
+            "highlights": "冷杉與扁柏手工削製原木茶托、木製奶油刀、天然木紋杯墊，散發森林芬多精香氣",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E5%85%A5%E7%80%AC%20%E6%9C%A8%E5%B7%A5%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "十和田湖畔 乙女之像藝品館",
+            "rating": "★★★★☆",
+            "distance": "📍 湖畔休屋",
+            "highlights": "雕刻巨匠高村光太郎官方文創！縮小版雙女銅雕擺飾、藝術明信片與青銅紀念鑰匙圈",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B9%99%E5%A5%B3%E3%81%AE%E5%83%8F%20%E9%9B%91%E8%B2%A8%20%E5%8D%81%E5%92%8C%E7%94%B0%E6%B9%96"
+          },
+          {
+            "name": "信濃屋 湖畔生活道具閣",
+            "rating": "★★★★☆",
+            "distance": "📍 休屋商店街",
+            "highlights": "湖畔傳統雜貨！柴燒粗陶茶碗、手工竹編茶過濾網與日式純棉手巾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%BF%A1%E6%BF%83%E5%B1%8B%20%E5%8D%81%E5%92%8C%E7%94%B0%E6%B9%96%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "Hotel Towadaso 藝品長廊",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店 1F 走廊",
+            "highlights": "在地職人漂流木手工雕刻藝品、天然火山岩小花器與秋田杉木製品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%81%E5%92%8C%E7%94%B0%E8%8D%98%20%E5%B7%A5%E8%8A%B8%E5%93%81"
+          },
+          {
+            "name": "奧入瀨純天然香氛工坊",
+            "rating": "★★★★★",
+            "distance": "📍 溪流館",
+            "highlights": "萃取奧入瀨黑松與冷杉之純天然植物精油、森林沐浴鹽與手工精油噴霧",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E5%85%A5%E7%80%AC%20%E3%82%A2%E3%83%AD%E3%83%9E"
+          },
+          {
+            "name": "十和田湖 木雕姬鱒魚工藝坊",
+            "rating": "★★★★☆",
+            "distance": "📍 休屋碼頭旁",
+            "highlights": "胡桃木手工雕刻冷水姬鱒魚造型鑰匙圈、手機吊飾與原木掛飾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%81%E5%92%8C%E7%94%B0%E6%B9%96%20%E6%9C%A8%E5%BD%AB%E3%82%8A"
+          },
+          {
+            "name": "燒山 戶外防寒生活雜貨店",
+            "rating": "★★★★☆",
+            "distance": "📍 燒山巴士站旁",
+            "highlights": "冬季雪地漫步必備！加厚羊毛防寒手套、防滑冰爪套與防水皮革保養油",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E5%85%A5%E7%80%AC%20%E7%84%BC%E5%B1%B1%20%E3%82%A2%E3%82%A6%E3%83%88%E3%83%89%E3%82%A2%20%E9%9B%91%E8%B2%A8"
+          }
         ]
       }
     },
@@ -2414,6 +2774,78 @@
             "distance": "📍 名須川町車程 10 分",
             "highlights": "曹洞宗古剎，羅漢堂內供奉 499 尊神態各異木雕羅漢像，包含馬可波羅雕像傳說",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A0%B1%E6%81%A9%E5%AF%BA%20%E4%BA%94%E7%99%BE%E7%BE%85%E6%BC%A2%20%E7%9B%9B%E5%B2%A1"
+          }
+        ],
+        "specialty_shops": [
+          {
+            "name": "盛岡手づくり村 工藝專門街",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡西郊車程 15 分",
+            "highlights": "岩手工藝殿堂！聚集 15 家工坊直營，南部鐵器、藍染手帕、竹編籃、木芥子娃娃與陶藝生活品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%9B%9B%E5%B2%A1%E6%89%8B%E3%81%A5%E3%81%8F%E3%82%8A%E6%9D%91%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "盛岡 光原社 本店 (民藝選品發祥地)",
+            "rating": "★★★★★",
+            "distance": "📍 材木町步行 10 分",
+            "highlights": "宮澤賢治童話發祥聖地！精選全日本民藝大師手作陶器、漆器、漆刷、玻璃器與南部鐵器生活道具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%85%89%E5%8E%9F%E7%A4%BE%20%E7%9B%9B%E5%B2%A1"
+          },
+          {
+            "name": "FESAN おでんせ館 工藝專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡站直結",
+            "highlights": "盛岡站內一站式工藝選物！岩谷堂木質小木盒、南部鐵器迷你風鈴與盛岡刺繡生活手帕",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%82%A7%E3%82%B6%E3%83%B3%20%E5%B7%A5%E8%8A%B8%E5%93%81%20%E7%9B%9B%E5%B2%A1"
+          },
+          {
+            "name": "紺屋町 ござ九 (森九商店)",
+            "rating": "★★★★★",
+            "distance": "📍 紺屋町中之橋步行 5 分",
+            "highlights": "江戶文化十三年創業！石板街旁百年土藏建築，陳列傳統天然竹編菜籃、稻草鍋墊與棕櫚清潔刷",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%81%94%E3%81%96%E4%B9%9D%20%E6%A3%AE%E4%B9%9D%E5%95%86%E5%BA%97%20%E7%9B%9B%E5%B2%A1"
+          },
+          {
+            "name": "盛岡 釜定 (Kamasada 現代鐵器工坊)",
+            "rating": "★★★★★",
+            "distance": "📍 紺屋町步行 6 分",
+            "highlights": "北歐極簡與南部鐵器融合！名匠宮伸穗操刀設計之鑄鐵平底煎鍋、極簡線條鐵壺與幾何隔熱墊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%87%9C%E5%AE%9A%20%E7%9B%9B%E5%B2%A1"
+          },
+          {
+            "name": "白澤煎餅店 手作生活器具",
+            "rating": "★★★★☆",
+            "distance": "📍 材木町",
+            "highlights": "老牌煎餅工坊附設生活角落！純銅煎餅烤模、復古鐵皮茶葉儲存罐與日式茶道竹筅",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E6%B2%A2%E3%81%9B%E3%82%93%E3%81%B9%E3%81%84%E5%BA%97%20%E7%9B%9B%E5%B2%A1"
+          },
+          {
+            "name": "啄木・賢治青春館 藝文選品店",
+            "rating": "★★★★☆",
+            "distance": "📍 中之橋通步行 3 分",
+            "highlights": "文藝青年朝聖！宮澤賢治《銀河鐵道之夜》星空手帳、石川啄木短歌書籤與復古黃銅沾水筆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%82%82%E3%82%8A%E3%81%8A%E3%81%8B%E5%95%84%E6%9C%A8%E8%B3%A2%E6%B2%BB%E9%9D%92%E6%98%A5%E9%A4%A8"
+          },
+          {
+            "name": "材木町 木偶街道選物店 (Kokeshi)",
+            "rating": "★★★★☆",
+            "distance": "📍 北上川畔",
+            "highlights": "南部系傳統木芥子娃娃！手繪表情生動可愛，搭配岩手原木切片茶托與手工羊毛氈杯墊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%90%E6%9C%A8%E7%94%BA%20%E3%81%93%E3%81%91%E3%81%97%20%E7%9B%9B%E5%B2%A1"
+          },
+          {
+            "name": "休暇村網張溫泉 森林雜貨閣",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店 1F 大廳",
+            "highlights": "天然秋田杉打造之露天溫泉專用小木桶、岩手山野鳥圖鑑手帕與天然火山石擴香石",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%BC%91%E6%9A%87%E6%9D%91%20%E5%B2%A9%E6%89%8B%E7%B6%B2%E5%BC%B5%E6%B8%A9%E6%B3%89%20%E5%A3%B2%E5%BA%97"
+          },
+          {
+            "name": "盛岡 南昌莊 庭園茶房選品",
+            "rating": "★★★★☆",
+            "distance": "📍 清水町車程 8 分",
+            "highlights": "明治庭園美學！傳統日式和風風呂敷包巾、天然線香香皿與純棉和風杯墊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E6%98%8C%E8%8D%98%20%E7%9B%9B%E5%B2%A1%20%E9%9B%91%E8%B2%A8"
           }
         ]
       }
@@ -2802,6 +3234,78 @@
             "highlights": "戶外原木足湯亭，一邊泡著暖腳硫磺泉一邊看著落雪",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%B6%B2%E5%BC%B5%E6%B8%A9%E6%B3%89%20%E8%B6%B3%E6%B9%AF"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "網張溫泉 滑雪售票處 Pro Shop",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 Center House",
+            "highlights": "單板滑雪必備生活小物！網張原創反光雪板貼紙、防霧拭鏡布、加厚羊毛保暖手套內膽",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%B6%B2%E5%BC%B5%E6%B8%A9%E6%B3%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%20%E3%83%97%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "休暇村網張 溫泉生活選物",
+            "rating": "★★★★★",
+            "distance": "📍 飯店大浴場入口",
+            "highlights": "100% 天然白濁硫磺溫泉礦物保濕噴霧、天然植物油檜木精華洗顏皂與去角質絲瓜布",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%B6%B2%E5%BC%B5%E6%B8%A9%E6%B3%89%20%E6%B9%AF%E3%81%AE%E7%B4%A0%20%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B1%E3%82%A2"
+          },
+          {
+            "name": "小岩井農場 牧場雜貨工坊",
+            "rating": "★★★★★",
+            "distance": "📍 小岩井農場內",
+            "highlights": "自家純羊毛純手工針氈立體小羊玩偶、羊毛氈隔熱杯墊與農場復古復刻厚玻璃牛奶瓶",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E5%B2%A9%E4%BA%95%E8%BE%B2%E5%A0%B4%20%E7%BE%8A%E6%AF%9B%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "雫石 道之驛 Anekko 工藝館",
+            "rating": "★★★★☆",
+            "distance": "📍 國道旁車程 18 分",
+            "highlights": "雫石地方手工藝！純亞麻手作便當袋、原木拼接點心托盤與南部生鐵鑄造小鑰匙勾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%81%93%E3%81%AE%E9%A7%85%20%E9%9B%AB%E7%9F%B3%E3%81%82%E3%81%AD%E3%81%A3%E3%81%93%20%E5%B7%A5%E8%8A%B8%E5%93%81"
+          },
+          {
+            "name": "玄武洞 茶屋 民藝選品角",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 8 分",
+            "highlights": "天然柱狀節理意象陶藝筷架、手作天然山茶花木梳與草編雪地防滑草鞋吊飾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%8E%84%E6%AD%A6%E6%B4%9E%20%E9%9B%AB%E7%9F%B3%20%E6%B0%91%E8%8A%B8%E5%93%81"
+          },
+          {
+            "name": "網張 仙女之湯 紀念工坊",
+            "rating": "★★★★☆",
+            "distance": "📍 野溪溫泉步道旁",
+            "highlights": "秋田杉薄片烙印露天野湯雪景銘木牌、天然火山石磨腳石與純棉毛巾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%B6%B2%E5%BC%B5%E6%B8%A9%E6%B3%89%20%E4%BB%99%E5%A5%B3%E3%81%AE%E6%B9%AF%20%E8%A8%98%E5%BF%B5%E5%93%81"
+          },
+          {
+            "name": "雫石 自然農園手工選物",
+            "rating": "★★★★☆",
+            "distance": "📍 雫石町內",
+            "highlights": "在地養蜂場純天然蜂蠟護唇膏、乾花薰衣草防蟲香囊與手工大豆蠟燭",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9B%AB%E7%9F%B3%20%E8%9C%9C%E8%9D%8B%20%E3%82%A2%E3%83%AD%E3%83%9E"
+          },
+          {
+            "name": "南部紫根染・茜染 研究選品處",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡工藝展示區",
+            "highlights": "珍稀國寶級植物染！紫草根天然染製純絲圍巾、茜草染手帕與和風手縫杯墊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E9%83%A8%E7%B4%AB%E6%A0%B9%E6%9F%93%20%E7%9B%9B%E5%B2%A1%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "岩手山麓 野鳥木雕生活館",
+            "rating": "★★★★☆",
+            "distance": "📍 長山山道旁",
+            "highlights": "在地雕刻職人手雕金雕、啄木鳥立體木偶、原木筆筒與山毛櫸磁鐵小擺飾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A9%E6%89%8B%E5%B1%B1%20%E6%9C%A8%E5%BD%AB%E3%82%8A%20%E9%87%8E%E9%B3%A5"
+          },
+          {
+            "name": "休暇村 旅人書房與手帳選品",
+            "rating": "★★★★☆",
+            "distance": "📍 大廳閱覽閣",
+            "highlights": "東北百名山雪地地圖手帳、岩手山水彩明信片套組與特製真皮書籤",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%BC%91%E6%9A%87%E6%9D%91%20%E5%B2%A9%E6%89%8B%20%E6%97%85%E3%81%AE%E3%81%97%E3%81%8A%E3%82%8A"
+          }
         ]
       }
     },
@@ -3189,6 +3693,78 @@
             "highlights": "供奉岩手山神之古神社，雪中古杉森森氣場神聖",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A9%E6%89%8B%E5%B1%B1%E7%A5%9E%E7%A4%BE%20%E9%9B%AB%E7%9F%B3"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "岩手高原 Gondola 山麓 Pro Shop",
+            "rating": "★★★★☆",
+            "distance": "📍 Gondola 乘車處旁",
+            "highlights": "2000m 箱型纜車紀念金屬鑰匙圈、單板專用防磨護板套、耐低溫防水貼紙與雪板刮蠟板",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A9%E6%89%8B%E9%AB%98%E5%8E%9F%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%91%E3%83%BC%E3%82%AF%20%E3%83%97%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "岩手高原 雪山生活選物店",
+            "rating": "★★★★☆",
+            "distance": "📍 Center House 1F",
+            "highlights": "防風透氣魔術頭巾、滑雪分段加壓吸濕排汗發熱襪與雪地專用潤唇膏",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A9%E6%89%8B%E9%AB%98%E5%8E%9F%20%E3%82%B9%E3%82%AD%E3%83%BC%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "小岩井農場 百年紀念選物館",
+            "rating": "★★★★★",
+            "distance": "📍 小岩井車程 15 分",
+            "highlights": "發酵黃油專用櫻桃木抹刀、百年農場復刻金屬金屬乳罐模型與帆布圍裙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E5%B2%A9%E4%BA%95%E8%BE%B2%E5%A0%B4%20%E3%82%B0%E3%83%83%E3%82%BA"
+          },
+          {
+            "name": "鶯宿溫泉街 民藝生活小舖",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 20 分",
+            "highlights": "溫泉鄉懷舊生活器物！純手工桐木溫泉木屐、日式印花純棉浴衣與手工和風小提包",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%B6%AF%E5%AE%BF%E6%B8%A9%E6%B3%89%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "雫石 長山木工坊 (Nagayama Craft)",
+            "rating": "★★★★☆",
+            "distance": "📍 長山車程 8 分",
+            "highlights": "岩手產山櫻木手工砧板、原木咖啡濾杯架、原木甜點盤，每件紋理獨一無二",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9B%AB%E7%9F%B3%20%E6%9C%A8%E5%B7%A5%E6%89%80"
+          },
+          {
+            "name": "雫石 窯元 陶房紫雲 (Shigumo)",
+            "rating": "★★★★☆",
+            "distance": "📍 雫石町內",
+            "highlights": "調和岩手火山灰釉藥柴燒粗陶！火山灰陶杯、咖啡壺與天然石花器",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%99%B6%E6%88%BF%E7%B4%AB%E9%9B%B2%20%E9%9B%AB%E7%9F%B3"
+          },
+          {
+            "name": "御所湖畔 湖鳥木刻藝文館",
+            "rating": "★★★★☆",
+            "distance": "📍 御所湖畔",
+            "highlights": "西伯利亞大天鵝木刻水鳥口哨、湖畔鵝卵石彩繪紙鎮與手繪天鵝明信片",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E6%89%80%E6%B9%96%20%E5%B7%A5%E8%8A%B8%E5%93%81"
+          },
+          {
+            "name": "小岩井 一本櫻 紀念選品亭",
+            "rating": "★★★★☆",
+            "distance": "📍 一本櫻觀景處",
+            "highlights": "冬雪一本櫻明信片木質相框套組、四季壓花金屬書籤與櫻木手工原子筆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E5%B2%A9%E4%BA%95%E8%BE%B2%E5%A0%B4%20%E4%B8%80%E6%9C%AC%E6%A1%9C%20%E3%82%B0%E3%83%83%E3%82%BA"
+          },
+          {
+            "name": "岩手南部鐵器 現代設計工房",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店展售區",
+            "highlights": "輕量化生鐵線香爐、幾何雪花圖騰鑄鐵杯墊與單板滑雪者鑄鐵小擺飾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E9%83%A8%E9%89%84%E5%99%A8%20%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "網張 藥師岳 登山雜貨鋪",
+            "rating": "★★★★☆",
+            "distance": "📍 步道入口",
+            "highlights": "雪鞋健行專業綁帶配件、登山金屬隨身保溫壺與熊鈴黃銅鈴鐺鑰匙圈",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%B6%B2%E5%BC%B5%20%E7%99%BB%E5%B1%B1%20%E9%9B%91%E8%B2%A8"
+          }
         ]
       }
     },
@@ -3574,6 +4150,78 @@
             "distance": "📍 長山山道旁",
             "highlights": "近距離仰望岩手山巍峨火山岩壁與雪崩防護森林",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A9%E6%89%8B%E5%B1%B1%20%E5%B1%95%E6%9C%9B%E5%9C%B0%20%E9%9B%AB%E7%9F%B3"
+          }
+        ],
+        "specialty_shops": [
+          {
+            "name": "網張溫泉 仙女之湯 露天銘木店",
+            "rating": "★★★★☆",
+            "distance": "📍 網張溫泉步道口",
+            "highlights": "天然秋田杉手工打磨露天浴場專用洗面木盆、純天然扁柏木塊芳香擴香包",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%B6%B2%E5%BC%B5%E6%B8%A9%E6%B3%89%20%E6%9C%A8%E6%A1%B6"
+          },
+          {
+            "name": "岩手高原 頂級單板蠟保養工坊",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場服務處",
+            "highlights": "極乾低溫深粉雪專用氟素蠟塊、全天候水蠟、雪板修復砂紙與邊刃專用除鏽橡皮擦",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A9%E6%89%8B%E9%AB%98%E5%8E%9F%20%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3%E3%83%8A%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "盛岡 道具屋 (Morioka Doguya)",
+            "rating": "★★★★★",
+            "distance": "📍 盛岡大通車程 15 分",
+            "highlights": "盛岡極具人氣之古董與生活美學雜貨！歐洲復古玻璃器皿、日本職人手工陶器與質感文房具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%81%93%E5%85%B7%E5%B1%8B%20%E7%9B%9B%E5%B2%A1"
+          },
+          {
+            "name": "盛岡 喫茶直摘 咖啡生活館",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡市區",
+            "highlights": "自家直火烘焙單品咖啡豆、法蘭絨濾布手沖器具組與復古銅製磨豆機",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%9B%9B%E5%B2%A1%20%E7%8F%88%E7%90%B2%E5%99%A8%E5%85%B7%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "雫石 森林木作工藝社",
+            "rating": "★★★★☆",
+            "distance": "📍 雫石町內",
+            "highlights": "天然山毛櫸手作木湯匙、蜂蜜專用木攪拌棒與原木手作隔熱鍋墊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%9B%AB%E7%9F%B3%20%E6%9C%A8%E5%B7%A5%E8%8A%B8"
+          },
+          {
+            "name": "休暇村 本館溫泉生活選物專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店 1F 賣店",
+            "highlights": "岩手高山純淨伏流水保濕面膜、天然馬油護手霜與硫磺溫泉精華洗髮皂",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%BC%91%E6%9A%87%E6%9D%91%20%E7%B6%B2%E5%BC%B5%E6%B8%A9%E6%B3%89%20%E3%82%B3%E3%82%B9%E3%83%A1"
+          },
+          {
+            "name": "小岩井農場 羊毛紡織工房",
+            "rating": "★★★★★",
+            "distance": "📍 小岩井車程 15 分",
+            "highlights": "100% 純農場羊毛手織圍巾、羊毛氈室內拖鞋與純毛編織防寒毛帽",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E5%B2%A9%E4%BA%95%E8%BE%B2%E5%A0%B4%20%E7%BE%8A%E6%AF%9B%20%E5%B7%A5%E6%88%BF"
+          },
+          {
+            "name": "玄武溫泉 鄉土布藝選品部",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 10 分",
+            "highlights": "純手工和風和柄小零錢包、手縫保溫杯套與古布拼貼手提袋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%8E%84%E6%AD%A6%E6%B8%A9%E6%B3%89%20%E6%B0%91%E8%8A%B8%E5%93%81"
+          },
+          {
+            "name": "盛岡 藍染 川德專櫃 (Aizome)",
+            "rating": "★★★★☆",
+            "distance": "📍 盛岡市內百貨",
+            "highlights": "南部傳統蓼藍染！天然植物染棉麻桌旗、藍染杯墊與手染防塵布",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%9B%9B%E5%B2%A1%20%E8%97%8D%E6%9F%93%20%E5%B7%9D%E5%BE%B3"
+          },
+          {
+            "name": "網張 五湯巡禮 集章手帳閣",
+            "rating": "★★★★☆",
+            "distance": "📍 休暇村大廳",
+            "highlights": "網張千三百年專屬集章本、原木削製鉛筆與溫泉巡禮皮革封套",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%B6%B2%E5%BC%B5%E6%B8%A9%E6%B3%89%20%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%97%E5%B8%B3"
           }
         ]
       }
@@ -3964,6 +4612,78 @@
             "highlights": "展示南部九戶氏戰國歷史、奧州街道古驛站與傳統農家織布工藝",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E6%88%B8%E7%94%BA%20%E6%AD%B4%E5%8F%B2%E6%B0%91%E4%BF%97%E8%B3%87%E6%96%99%E9%A4%A8"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "奧中山高原 飯店朝陽館 藝品專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 朝陽館 1F",
+            "highlights": "一戶町傳統鳥越竹細工！純篠竹手工編織小茶盤、竹編隔熱墊與手工竹筷",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%20%E6%9C%9D%E9%99%BD%E9%A4%A8%20%E5%A3%B2%E5%BA%97"
+          },
+          {
+            "name": "御所野繩文 世界遺產文創店",
+            "rating": "★★★★★",
+            "distance": "📍 御所野公園車程 18 分",
+            "highlights": "世界遺產官方文創！鼻曲土偶立體模型、繩文陶紋馬克杯、土偶金屬別針與考古帆布袋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E6%89%80%E9%87%8E%E7%B8%84%E6%96%87%E5%85%AC%E5%9C%92%20%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "IGR 奧中山高原站 鐵道物產館",
+            "rating": "★★★★☆",
+            "distance": "📍 奧中山高原站內",
+            "highlights": "舊東北本線最高海拔 444m 紀念木牌、IGR 銀河鐵道限定皮質車票夾與鐵道明信片",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%E9%A7%85%20%E9%89%84%E9%81%93%E3%82%B0%E3%83%83%E3%82%BA"
+          },
+          {
+            "name": "奧中山高原滑雪場 官方 Pro Shop",
+            "rating": "★★★★★",
+            "distance": "📍 雪場 Center House 1F",
+            "highlights": "Silk Powder 原創金屬刺繡雪板徽章、防風防雪面罩、雪板防撞包角貼",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%20%E3%83%97%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "奧中山 琥珀溫泉美肌生活閣",
+            "rating": "★★★★☆",
+            "distance": "📍 煌星館大浴場前",
+            "highlights": "天然琥珀色植物性弱鹼泉精華提煉之保濕洗顏皂、溫泉礦物保濕噴霧與純棉刺繡毛巾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%E6%B8%A9%E6%B3%89%20%E3%82%B3%E3%82%B9%E3%83%A1"
+          },
+          {
+            "name": "一戶町 手工白樺木藝坊",
+            "rating": "★★★★☆",
+            "distance": "📍 奧中山站前",
+            "highlights": "使用高原疏伐白樺木手工雕刻之雪人擺飾、原木杯墊與白樺樹皮編織胸針",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E6%88%B8%20%E7%99%BD%E6%A8%BA%20%E6%9C%A8%E5%B7%A5"
+          },
+          {
+            "name": "奧中山高原 牧場雜貨生活角",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店內",
+            "highlights": "乳酪料理必備！天然木柄起司刀、莫札瑞拉手撕起司保冷專用袋與密封玻璃罐",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%20%E3%83%81%E3%83%BC%E3%82%BA%20%E3%83%8A%E3%82%A4%E3%83%95%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "二戶市 滴生舍 (淨法寺塗漆器)",
+            "rating": "★★★★★",
+            "distance": "📍 二戶市車程 20 分",
+            "highlights": "日本最高峰天然生漆產地！極致溫潤手感之淨法寺生漆天然木碗、朱紅漆湯匙與漆器茶托",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%BB%B4%E7%94%9F%E8%88%8E%20%E6%B5%84%E6%B3%95%E5%AF%BA%E5%A1%97"
+          },
+          {
+            "name": "一戶 根反天然桂木香工坊",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 15 分",
+            "highlights": "國家天然紀念物千本桂之純桂木天然防蟲木珠、原木精油薰香條",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E6%88%B8%20%E3%82%AB%E3%83%84%E3%83%A9%20%E6%9C%A8%E5%B7%A5"
+          },
+          {
+            "name": "奧中山高原 天文台星空選品",
+            "rating": "★★★★☆",
+            "distance": "📍 天文台旁",
+            "highlights": "銀河聯邦夜光星盤、冬季大三角星座手繪明信片與星空觀測微型手電筒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E5%A4%A9%E6%96%87%E5%8F%B0%20%E3%82%B0%E3%83%83%E3%82%BA"
+          }
         ]
       }
     },
@@ -4350,6 +5070,78 @@
             "distance": "📍 雪場山頂旁",
             "highlights": "清澈寒夜用高倍率望遠鏡欣賞冬季大三角與仙女座星系",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E5%A4%A9%E6%96%87%E5%8F%B0%20%E6%98%9F%E7%A9%BA"
+          }
+        ],
+        "specialty_shops": [
+          {
+            "name": "奧中山高原 Center House 裝備館",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 1F",
+            "highlights": "雪具保養生活道具！滑雪手套除濕乾燥袋、雪鏡防霧刮板、低溫雪板蠟與魔鬼氈雪板帶",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%E3%82%B9%E3%82%AD%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "奧中山 琥珀之湯 沐浴生活選物",
+            "rating": "★★★★☆",
+            "distance": "📍 朝陽之湯入口",
+            "highlights": "天然植物性溫泉礦物結晶入浴鹽（3入盒裝）、去角質天然絲瓜絡與木製洗臉盆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E6%B8%A9%E6%B3%89%20%E6%B9%AF%E3%81%AE%E7%B4%A0"
+          },
+          {
+            "name": "一戶町 鳥越竹細工 傳承館",
+            "rating": "★★★★★",
+            "distance": "📍 車程 22 分",
+            "highlights": "百年天然篠竹手工編織！經典鳥越雙層便當盒、竹編茶葉罐、手工竹茶筅與洗菜竹漏斗",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E8%B6%8A%E7%AB%B9%E7%B4%B0%E5%B7%A5%20%E4%B8%80%E6%88%B8%E7%94%BA"
+          },
+          {
+            "name": "御所野考古 文創陶瓷店",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 18 分",
+            "highlights": "仿古繩文陶藝家手拉胚！繩紋粗陶馬克杯、土偶造型筷架與遠古火山石造型杯墊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E6%89%80%E9%87%8E%E7%B8%84%E6%96%87%20%E9%99%B6%E5%99%A8"
+          },
+          {
+            "name": "奧中山 西岳雪山 紀念品專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 第 3 纜車站旁",
+            "highlights": "1,018m 西岳登頂紀念金屬卡片、雪花刺繡防水束口袋與防寒羊毛頭巾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E8%A5%BF%E5%B2%B3%20%E8%A8%98%E5%BF%B5%E5%93%81"
+          },
+          {
+            "name": "二戶 佐助豚 精緻熟成雜貨",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店特產專區",
+            "highlights": "折爪岳名豚周邊！真空保冷手提托特包、香腸專用黃芥末調味匙與木質砧板",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%BD%90%E5%8A%A9%E8%B1%9A%20%E4%BA%8C%E6%88%B8%20%E3%82%B0%E3%83%83%E3%82%BA"
+          },
+          {
+            "name": "奧中山高原 牧場復古生活器皿",
+            "rating": "★★★★☆",
+            "distance": "📍 雪あかり旁",
+            "highlights": "復古玻璃生乳瓶附專用矽膠瓶蓋、日式純白陶瓷量杯與鮮乳造型磁鐵",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%20%E3%83%9F%E3%83%AB%E3%82%AF%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "一戶町 傳統裂織工坊 (Sakiori)",
+            "rating": "★★★★☆",
+            "distance": "📍 車站前步行 5 分",
+            "highlights": "南部藩民間傳統廢舊和服布撕條重織之裂織杯墊、筆袋、手提手作包，質樸耐用",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E9%83%A8%E8%A3%82%E7%B9%94%20%E4%B8%80%E6%88%B8"
+          },
+          {
+            "name": "奧中山高原 白樺樹皮工藝社",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店後方",
+            "highlights": "天然白樺樹皮編織之小飾品盒、樹皮書籤與松果雪人吊飾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E6%A8%BA%E5%B7%A5%E8%8A%B8%20%E5%A5%A5%E4%B8%AD%E5%B1%B1"
+          },
+          {
+            "name": "奧中山 星空生活選品閣",
+            "rating": "★★★★☆",
+            "distance": "📍 煌星館大廳",
+            "highlights": "星座夜光鑰匙圈、冬季獵戶座刺繡保暖雪帽與微型星圖觀測手冊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E6%98%9F%E7%A9%BA%20%E9%9B%91%E8%B2%A8"
           }
         ]
       }
@@ -4738,6 +5530,78 @@
             "highlights": "被白雪覆蓋的鄉鎮古守護神社，肅穆祥和",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E7%A5%9E%E7%A4%BE"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "奧中山滑雪場 官方 Pro Shop",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場 Center House",
+            "highlights": "單板高階配件！雪鏡替換增光鏡片、專業雪板刮蠟壓克力板、雪板鋼邊除鏽拋光棉",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%20%E3%82%B9%E3%82%AD%E3%83%BC%20%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9"
+          },
+          {
+            "name": "奧中山高原 煌星之湯 精油芳療館",
+            "rating": "★★★★☆",
+            "distance": "📍 煌星館 1F",
+            "highlights": "高山冷杉純露保濕水、岩手薰衣草舒緩精油、純天然大豆按摩蠟燭與草本泡澡球",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%20%E3%82%A2%E3%83%AD%E3%83%9E"
+          },
+          {
+            "name": "一戶町 站前竹編工藝社",
+            "rating": "★★★★★",
+            "distance": "📍 奧中山站前步行 2 分",
+            "highlights": "鳥越竹細工正統篠竹提籃、精緻竹編名片盒、手工編織茶托（雙入禮盒包裝）",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E8%B6%8A%E7%AB%B9%E7%B4%B0%E5%B7%A5%20%E9%A7%85%E5%89%8D%20%E4%B8%80%E6%88%B8"
+          },
+          {
+            "name": "奧中山高原 牧場起司刀具選櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 賣店冷藏區旁",
+            "highlights": "專業高達起司刨片刀、不銹鋼手撕起司叉與天然合板木起司盤",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%81%E3%83%BC%E3%82%BA%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC%20%E5%A5%A5%E4%B8%AD%E5%B1%B1"
+          },
+          {
+            "name": "二戶市 淨法寺漆器選物閣",
+            "rating": "★★★★★",
+            "distance": "📍 車程 20 分",
+            "highlights": "天然無毒生漆塗裝！朱紅漆咖啡杯、木胎漆器點心皿與隨身便攜天然漆筷",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%84%E6%B3%95%E5%AF%BA%E6%BC%86%E5%99%A8%20%E4%BA%8C%E6%88%B8"
+          },
+          {
+            "name": "御所野 繩文土器復刻工坊",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 18 分",
+            "highlights": "繩文陶藝家手工拉胚！迷你繩文深缽、土偶造型筷架與印花帆布環保提袋",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E6%89%80%E9%87%8E%E7%B8%84%E6%96%87%20%E9%99%B6%E8%8A%B8"
+          },
+          {
+            "name": "奧中山高原 雪嶺攝影藝廊",
+            "rating": "★★★★☆",
+            "distance": "📍 朝陽館長廊",
+            "highlights": "岩手北部雪原全景木框照片、純白雪松明信片套裝組與原木磁鐵相框",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E5%86%99%E7%9C%9F%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "一戶 鄉土手作草木染",
+            "rating": "★★★★☆",
+            "distance": "📍 一戶町內",
+            "highlights": "天然胡桃樹皮染色之厚磅亞麻手提袋、日式便當包布巾與手工棉線杯墊",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E6%88%B8%20%E8%8D%89%E6%9C%A8%E6%9F%93%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "奧中山滑雪場 原創針織冷帽",
+            "rating": "★★★★☆",
+            "distance": "📍 售票處旁",
+            "highlights": "雙層保暖加厚羊毛混紡針織帽，刺繡奧中山 1,018m 西岳雪山標記",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E3%83%8B%E3%83%83%E3%83%88%E5%B8%BD%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "奧中山 琥珀溫泉隨身噴霧",
+            "rating": "★★★★☆",
+            "distance": "📍 大浴場櫃台",
+            "highlights": "真空防氧化金屬噴霧罐，隨時為乾燥肌膚補充電解質與保濕矽酸溫泉水",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E6%B8%A9%E6%B3%89%20%E3%83%9F%E3%82%B9%E3%83%88%20%E9%9B%91%E8%B2%A8"
+          }
         ]
       }
     },
@@ -5124,6 +5988,78 @@
             "distance": "📍 二戶車程 25 分",
             "highlights": "遠眺兩側百米白色巨石與結冰河川，東北大自然鬼斧神工",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%A6%AC%E4%BB%99%E5%B3%A1%20%E5%B1%95%E6%9C%9B%E5%8F%B0"
+          }
+        ],
+        "specialty_shops": [
+          {
+            "name": "黑貓宅急便 空港便特設服務處",
+            "rating": "★★★★★",
+            "distance": "📍 飯店朝陽館櫃台",
+            "highlights": "減負關鍵道具！加厚防磨雪板托運防塵袋、行李箱專用加固打包束帶與黑貓行李吊牌",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E7%A9%BA%E6%B8%AF%E5%AE%85%E6%80%A5%E4%BE%BF%20%E4%BC%9D%E7%A5%A8"
+          },
+          {
+            "name": "奧中山滑雪場 結業認證紀念專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 雪場服務處",
+            "highlights": "攻克西岳 33° 燕澤陡坡結業金屬徽章、雪道巡航紀念金屬鑰匙扣與原創貼紙組",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%20%E5%AE%8C%E8%B5%B0%E8%A8%98%E5%BF%B5"
+          },
+          {
+            "name": "奧中山高原 起司生活禮品館",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店賣店",
+            "highlights": "特大容量保冷旅行袋、高密度保冷冰袋與天然山毛櫸原木起司砧板",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%20%E3%83%81%E3%83%BC%E3%82%BA%20%E4%BF%9D%E5%86%B7%E3%83%90%E3%83%83%E3%82%B0"
+          },
+          {
+            "name": "一戶町 鳥越竹細工 珍藏小品",
+            "rating": "★★★★★",
+            "distance": "📍 車站前工藝店",
+            "highlights": "精緻篠竹手工名片夾、攜帶型竹編牙籤筒與溫潤竹製小茶匙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E8%B6%8A%E7%AB%B9%E7%B4%B0%E5%B7%A5%20%E5%B0%8F%E7%89%A9%20%E4%B8%80%E6%88%B8"
+          },
+          {
+            "name": "二戶市 漆藝工坊 滴生舍 隨行選品",
+            "rating": "★★★★★",
+            "distance": "📍 車程 20 分",
+            "highlights": "隨行天然生漆原木環保餐具組（附和風棉麻布套）、淨法寺漆塗便攜茶筒",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%BB%B4%E7%94%9F%E8%88%8E%20%E6%90%BA%E5%B8%AF%E7%AE%B8"
+          },
+          {
+            "name": "奧中山高原 雙泉舒緩浴鹽禮盒",
+            "rating": "★★★★☆",
+            "distance": "📍 朝陽館 1F",
+            "highlights": "朝陽之湯與煌星之湯兩大泉眼結晶浴鹽禮盒，附天然杉木溫泉入浴小木杓",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%E9%AB%98%E5%8E%9F%20%E6%B8%A9%E6%B3%89%E3%82%BB%E3%83%83%E3%83%88"
+          },
+          {
+            "name": "御所野世界遺產 文創紀念館",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 18 分",
+            "highlights": "世界遺產官方認證金屬別針、繩文圖騰真絲方巾與純天然陶土擴香石",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E6%89%80%E9%87%8E%E7%B8%84%E6%96%87%20%E3%83%94%E3%83%B3%E3%83%90%E3%83%83%E3%82%B8"
+          },
+          {
+            "name": "一戶 戰國九戶氏文創小物",
+            "rating": "★★★★☆",
+            "distance": "📍 車站周邊",
+            "highlights": "戰國南部藩九戶政實家紋金屬鑰匙圈、武將印章明信片與仿古摺扇",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E6%88%B8%E6%94%BF%E5%AE%9F%20%E3%82%B0%E3%83%83%E3%82%BA%20%E4%B8%80%E6%88%B8"
+          },
+          {
+            "name": "奧中山 白樺木雕刻藝品社",
+            "rating": "★★★★☆",
+            "distance": "📍 飯店後方",
+            "highlights": "純手工一刀雕雪兔、飛鼠與日本小狐狸原木小雕像，手感質樸溫馨",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E6%9C%A8%E5%BD%AB%E3%82%8A%20%E7%8B%90"
+          },
+          {
+            "name": "奧中山高原 旅人足跡手帳閣",
+            "rating": "★★★★☆",
+            "distance": "📍 大廳閱覽區",
+            "highlights": "真皮皮革封面旅行手帳、黃銅原子筆與全行程集章空白筆記本",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E4%B8%AD%E5%B1%B1%20%E6%97%85%E8%A1%8C%E3%83%8E%E3%83%BC%E3%83%88%20%E9%9B%91%E8%B2%A8"
           }
         ]
       }
@@ -5513,6 +6449,78 @@
             "highlights": "集結精緻生活選品店、精品咖啡與現代建築設計的潮流商場",
             "map_url": "https://www.google.com/maps/search/?api=1&query=NEWoMan%20%E6%96%B0%E5%AE%BF"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "Alpen TOKYO 新宿旗艦館",
+            "rating": "★★★★★",
+            "distance": "📍 新宿東口步行 2 分",
+            "highlights": "B2-8F 整棟超巨型運動生活館！各大國際戶外滑雪品牌、機能防寒服飾、雪鏡配件與生活選品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Alpen%20TOKYO%20%E6%96%B0%E5%AE%BF"
+          },
+          {
+            "name": "L-Breath 新宿店 旗艦裝備館",
+            "rating": "★★★★★",
+            "distance": "📍 新宿南口步行 4 分",
+            "highlights": "整棟 9 層樓戶外美學殿堂！露營生活道具、Snow Peak 專區、機能背包與潮流戶外服飾",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=L-Breath%20%E6%96%B0%E5%AE%BF%E5%BA%97"
+          },
+          {
+            "name": "NEWoMan 新宿 生活風格選品店",
+            "rating": "★★★★★",
+            "distance": "📍 新宿站南口直結",
+            "highlights": "高質感生活美學！精選日系香氛、天然手工皂、設計生活器皿、極簡托特包與文創禮品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=NEWoMan%20%E6%96%B0%E5%AE%BF%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "伊東屋 (Itoya 新宿店 百年文具)",
+            "rating": "★★★★★",
+            "distance": "📍 京王百貨內",
+            "highlights": "日本頂級文具殿堂！TRAVELER'S notebook、高階鋼筆、特色和紙膠帶與設計手帳",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%BC%8A%E6%9D%B1%E5%B1%8B%20%E6%96%B0%E5%AE%BF%E5%BA%97"
+          },
+          {
+            "name": "Hands 新宿店 (東急手創館)",
+            "rating": "★★★★☆",
+            "distance": "📍 Times Square 2-8F",
+            "highlights": "7 層樓生活創意百貨！日本旅行收納道具、居家廚房實用器具、日本各地傳統工藝專區",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8F%E3%83%B3%E3%82%BA%20%E6%96%B0%E5%AE%BF%E5%BA%97"
+          },
+          {
+            "name": "中川政七商店 新宿店",
+            "rating": "★★★★★",
+            "distance": "📍 新宿小田急/NEWoMan",
+            "highlights": "奈良三百年工藝！日式麻布抹布、花布風呂敷、日本地方吉祥物達摩陶偶與廚房生活道具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E5%B7%9D%E6%94%BF%E4%B8%83%E5%95%86%E5%BA%97%20%E6%96%B0%E5%AE%BF"
+          },
+          {
+            "name": "無印良品 新宿靖國通旗艦店",
+            "rating": "★★★★☆",
+            "distance": "📍 靖國通步行 5 分",
+            "highlights": "大型旗艦館！完整展示 MUJI to GO 旅行生活系列、旅行分裝瓶、生活收納與極簡文具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%84%A1%E5%8D%B0%E8%89%AF%E5%93%81%20%E6%96%B0%E5%AE%BF%E9%9D%96%E5%9B%BD%E9%80%9A%E3%82%8A"
+          },
+          {
+            "name": "Bic Camera 新宿東口店 3C生活館",
+            "rating": "★★★★☆",
+            "distance": "📍 東口直結",
+            "highlights": "免稅生活科技！最新型旅行保溫瓶、降噪耳機、便攜式筋膜槍與相機旅行配件",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%93%E3%83%83%E3%82%AF%E3%82%AB%E3%83%A1%E3%83%A9%20%E6%96%B0%E5%AE%BF%E6%9D%B1%E5%8F%A3"
+          },
+          {
+            "name": "鳩居堂 新宿京王專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 京王百貨 1F",
+            "highlights": "京都三百年香老鋪！傳統沉香線香、和風彩繪信箋、天然香包與書道文具",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A9%E5%B1%85%E5%A0%82%20%E6%96%B0%E5%AE%BF"
+          },
+          {
+            "name": "Flying Tiger Copenhagen 新宿店",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿東口",
+            "highlights": "北歐幽默生活雜貨！北歐設計平價小物、派對玩具、彩色文具與居家趣味小飾品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%A4%E3%82%AC%E3%83%BC%20%E6%96%B0%E5%AE%BF"
+          }
         ]
       }
     },
@@ -5895,6 +6903,78 @@
             "highlights": "22:00 專屬夜生活行程！新宿最大級奢華夜店俱樂部，世界級聲光特效、頂尖 DJ 音樂演出與潮流調酒社交派對",
             "map_url": "https://www.google.com/maps/search/?api=1&query=T2%20SHINJUKU%20Nightclub"
           }
+        ],
+        "specialty_shops": [
+          {
+            "name": "麗莎與卡斯柏小鎮 巴黎繪本專賣店",
+            "rating": "★★★★★",
+            "distance": "📍 富士急樂園第一入口旁",
+            "highlights": "免門票歐風小鎮！官方授權限定布偶、法式復古馬克杯、插畫手帕與巴黎鐵塔造型鑰匙圈",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AA%E3%82%B5%E3%81%A8%E3%82%AC%E3%82%B9%E3%83%91%E3%83%BC%E3%83%AB%20%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
+          },
+          {
+            "name": "富士急樂園 官方旗艦紀念品店",
+            "rating": "★★★★★",
+            "distance": "📍 樂園核心廣場",
+            "highlights": "4大過山車官方金屬徽章套組、FUJIYAMA 絕叫防寒毛巾、紀念連帽T恤與夜光貼紙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E6%80%A5%E3%83%8F%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%20%E3%81%8A%E5%9C%9F%E7%94%A3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+          },
+          {
+            "name": "戰慄迷宮 專屬惡搞雜貨店",
+            "rating": "★★★★☆",
+            "distance": "📍 慈急綜合病院出口",
+            "highlights": "鬼屋限定惡搞文創！醫院病歷夾筆記本、符咒和紙膠帶、點滴袋造型鑰匙圈與搞怪小物",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%88%A6%E6%85%84%E8%BF%B7%E5%AE%AE%20%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
+          },
+          {
+            "name": "富士吉田 甲州印傳 傳統工藝館",
+            "rating": "★★★★★",
+            "distance": "📍 富士吉田市內車程 6 分",
+            "highlights": "山梨四百年國家級傳統工藝！天然鹿皮點綴黑生漆富士山紋樣長夾、名片夾與零錢包",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%94%B2%E5%B7%9E%E5%8D%B0%E4%BC%9D%20%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0"
+          },
+          {
+            "name": "富士山樹海 木工藝生活館",
+            "rating": "★★★★☆",
+            "distance": "📍 樂園周邊車程 5 分",
+            "highlights": "天然富士檜木原木精油、原木擴香木塊、手工切削富士山造型筷架與茶托",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%20%E6%9C%A8%E5%B7%A5%20%E9%9B%91%E8%B2%A8"
+          },
+          {
+            "name": "桔梗屋 東治郎 富士吉田生活館",
+            "rating": "★★★★☆",
+            "distance": "📍 車程 6 分",
+            "highlights": "信玄餅和風美學！傳統日式花布包袱巾、信玄餅造型文具與和菓子甜點叉匙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%A1%94%E6%A2%97%E5%B1%8B%20%E6%9D%B1%E6%B2%BB%E9%83%8E%20%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0"
+          },
+          {
+            "name": "富士山 玻璃生活工坊",
+            "rating": "★★★★★",
+            "distance": "📍 樂園商場內",
+            "highlights": "手工吹製富士山雪頂玻璃威士忌杯（倒入酒液呈現不同山色）、玻璃清酒杯與富士山風鈴",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%E3%82%B0%E3%83%A9%E3%82%B9%20%E5%AF%8C%E5%A3%AB%E6%80%A5"
+          },
+          {
+            "name": "T2 SHINJUKU 官方潮流周邊專櫃",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿 T2 夜店內",
+            "highlights": "22:00 夜生活體驗！T2 專屬 LED 聲控夜光手環、潮流雷射貼紙、夜店聯名調酒隨行杯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=T2%20SHINJUKU%20%E3%82%B0%E3%83%83%E3%82%BA"
+          },
+          {
+            "name": "新宿 BEAMS JAPAN 旗艦店",
+            "rating": "★★★★★",
+            "distance": "📍 新宿東南口步行 4 分",
+            "highlights": "整棟 5 層日本潮流與民藝選物！日本各地特色傳統工藝、限定聯名衣物、文創道具與潮流選品",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%93%E3%83%BC%E3%83%A0%E3%82%B9%20%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%20%E6%96%B0%E5%AE%BF"
+          },
+          {
+            "name": "Alpen TOKYO 新宿店 (雪具配件館)",
+            "rating": "★★★★☆",
+            "distance": "📍 新宿東口步行 2 分",
+            "highlights": "回程補貨！滑雪手套防水噴霧、單板保養水蠟、雪鏡防霧噴霧與運動筋膜放鬆球",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Alpen%20TOKYO%20%E6%96%B0%E5%AE%BF%20%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9"
+          }
         ]
       }
     },
@@ -6274,6 +7354,78 @@
             "distance": "📍 T1 5F",
             "highlights": "安靜隔音無干擾空間，登機前整理思緒與行李",
             "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A0"
+          }
+        ],
+        "specialty_shops": [
+          {
+            "name": "Traveler's Factory 成田機場 T1 限定店",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 4F 中央商場",
+            "highlights": "文具手帳迷聖殿！成田機場限定皮革 TRAVELER'S notebook、富士山航海印章與黃銅原子筆",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E3%83%88%E3%83%A9%E3%83%99%E3%83%A9%E3%83%BC%E3%82%BA%E3%83%95%E3%82%A1%E3%82%AF%E3%83%88%E3%83%AA%E3%83%BC%20%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF"
+          },
+          {
+            "name": "成田機場 T1 NAAC 傳統工藝館",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 4F",
+            "highlights": "日本傳統工藝精華！南部鐵器迷你風鈴、京都西陣織長夾、江戶切子手工刻花玻璃杯",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E4%BC%9D%E7%B5%B1%E5%B7%A5%E8%8A%B8%20NAAC"
+          },
+          {
+            "name": "無印良品 to GO 成田機場 T1 店",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 4F",
+            "highlights": "旅行生活便利道具！微粒貼身舒壓頸枕、雙層旅行收納袋、護照夾與便攜式折疊傘",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E7%84%A1%E5%8D%B0%E8%89%AF%E5%93%81%20%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB"
+          },
+          {
+            "name": "松竹歌舞伎屋本鋪 (成田 T1 店)",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 4F 出境前商場",
+            "highlights": "歌舞伎傳統藝術選品！隈取臉譜印花純棉手帕、和風摺扇、歌舞伎帆布托特包與文創貼紙",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E7%AB%B9%E6%AD%8C%E8%88%9E%E4%BC%8E%E5%B1%8B%E6%9C%AC%E8%88%97%20%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF"
+          },
+          {
+            "name": "Fa-So-La GIFT SHOP (生活選品)",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 3F 出境管制區",
+            "highlights": "免稅生活精品！日本頂級象印保溫瓶、今治純棉毛巾、旅行洗漱套裝與美容美髮小家電",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=Fa-So-La%20%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB"
+          },
+          {
+            "name": "伊東屋 (Itoya 成田機場免稅店)",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 出境區內",
+            "highlights": "登機前文具選物！日本特色和紙膠帶、PILOT 鋼筆、櫻花立體賀卡與皮質行李吊牌",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E4%BC%8A%E6%9D%B1%E5%B1%8B%20%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF"
+          },
+          {
+            "name": "成田 T1 航空文化專門店 (Mini Museum)",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 5F 觀景台旁",
+            "highlights": "航空迷收藏！波音 787 飛機合金模型、各國航空刺繡飄帶鑰匙圈、飛行跑道地墊與航圖海報",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E8%88%AA%E7%A9%BA%E3%82%B0%E3%83%83%E3%82%BA%20T1"
+          },
+          {
+            "name": "吉田包 PORTER 成田 T1 專櫃",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 4F",
+            "highlights": "日本製造經典工藝！TANKER 尼龍防潑水斜背包、旅行護照皮夾與隨行收納包",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=PORTER%20%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB"
+          },
+          {
+            "name": "日本大關 富士山陶瓷工藝館",
+            "rating": "★★★★☆",
+            "distance": "📍 成田 T1 免稅店",
+            "highlights": "日本傳統陶瓷！立體雪白富士山造型清酒壺與雙入陶瓷小酒杯禮盒組",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%20%E9%85%92%E5%99%A8%20%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF"
+          },
+          {
+            "name": "成田第 1 航廈 GPA 服務處",
+            "rating": "★★★★★",
+            "distance": "📍 成田 T1 1F 南翼",
+            "highlights": "提領 2/21 由奧中山寄出之黑貓雪具，提供行李箱保護膜加固、行李打包膠帶與行李束帶",
+            "map_url": "https://www.google.com/maps/search/?api=1&query=GPA%20%E6%88%90%E7%94%B0%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB"
           }
         ]
       }
