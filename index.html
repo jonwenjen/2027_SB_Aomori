@@ -17,6 +17,7 @@
       --accent: #38bdf8;
       --border: #334155;
       --gold: #fbbf24;
+      --tabelog: #ff6b00;
       --tag-restaurant: #f97316;
       --tag-dessert: #ec4899;
       --tag-beverage: #8b5cf6;
@@ -43,7 +44,6 @@
     }
     .container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
     h1 { font-size: 1.85rem; font-weight: 800; margin-bottom: 8px; color: #fff; letter-spacing: -0.01em; }
-    .subtitle { font-size: 0.95rem; color: var(--accent); margin-bottom: 16px; }
 
     /* 快捷導覽列 */
     .day-nav {
@@ -132,6 +132,21 @@
     }
     .map-btn:hover { background: var(--primary); color: #fff; }
 
+    /* Tabelog 專屬樣式 */
+    .tabelog-badge {
+      background: linear-gradient(135deg, #ff6b00 0%, #e65100 100%);
+      color: #fff; font-size: 0.72rem; font-weight: 800;
+      padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;
+      box-shadow: 0 1px 4px rgba(230, 81, 0, 0.35); display: inline-flex; align-items: center; gap: 3px;
+    }
+    .tabelog-btn {
+      background: rgba(255, 107, 0, 0.2) !important; color: #ff9800 !important;
+      border-color: #ff6b00 !important;
+    }
+    .tabelog-btn:hover {
+      background: #ff6b00 !important; color: #fff !important;
+    }
+
     /* 滑雪場區塊 */
     .ski-banner {
       background: linear-gradient(135deg, rgba(2, 132, 199, 0.18) 0%, rgba(56, 189, 248, 0.06) 100%);
@@ -175,7 +190,7 @@
       content: ''; position: absolute; left: -16px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
     }
 
-    /* Accordion 折疊規範 (5大子類別，每類滿額10項) */
+    /* Accordion 折疊規範 (6大子類別，每類滿額10項) */
     .recs-container { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 14px; }
     .recs-header-toggle { font-size: 0.92rem; font-weight: 700; color: #e2e8f0; margin-bottom: 10px; }
     .recs-sub-group { margin-bottom: 8px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: rgba(15, 23, 42, 0.4); }
@@ -231,7 +246,6 @@
   <header>
     <div class="container">
       <h1 id="trip-title">❄️ 2027 東北滑雪・極致粉雪與冬奧入瀨秘境行</h1>
-      
       <div class="flight-grid" id="flight-container"></div>
     </div>
   </header>
@@ -329,14 +343,10 @@
               <button class="ski-toggle-map-btn" style="margin-top: 4px;" onclick="toggleMapPreview(this)">🗺️ 檢視雪道地圖截圖 [▼ 點擊展開]</button>
               <div class="ski-map-preview-box">
                 <img src="${r.map_image_url}" alt="${r.name} 雪道全圖" class="ski-map-img" loading="eager" referrerpolicy="no-referrer" onerror="if(this.src!='https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg'){this.src='https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg';}" />
-              <div class="ski-map-error-box" style="display:none !important; padding:10px; margin:8px 0; background:rgba(239,68,68,0.15); border:1px dashed #ef4444; border-radius:8px; text-align:center;">
-                <p style="font-size:0.8rem; color:#fca5a5; margin-bottom:6px;">⚠️ 官方伺服器限制跨站圖片載入，請直接點擊下方連結：</p>
-                <a href="${r.map_image_url}" target="_blank" rel="noopener" class="map-btn" style="background:#0284c7; color:#fff; font-weight:700;">🌐 在新分頁直接開啟官方原圖</a>
-              </div>
-              <div class="ski-map-caption" style="margin-top:6px; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
-                <a href="${r.map_image_url}" target="_blank" rel="noopener" class="map-btn" style="background:rgba(2,132,199,0.25); border-color:var(--accent); color:#38bdf8;">🖼️ 開啟官方原圖連結</a>
-                <a href="${r.course_map_url}" target="_blank" rel="noopener" class="map-btn" style="background:rgba(148,163,184,0.15); border-color:var(--border); color:#cbd5e1;">🌐 官方雪道導覽頁</a>
-              </div>
+                <div class="ski-map-caption" style="margin-top:6px; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                  <a href="${r.map_image_url}" target="_blank" rel="noopener" class="map-btn" style="background:rgba(2,132,199,0.25); border-color:var(--accent); color:#38bdf8;">🖼️ 開啟官方原圖連結</a>
+                  <a href="${r.course_map_url}" target="_blank" rel="noopener" class="map-btn" style="background:rgba(148,163,184,0.15); border-color:var(--border); color:#cbd5e1;">🌐 官方雪道導覽頁</a>
+                </div>
               </div>
             ` : ''}
           </div>
@@ -380,14 +390,10 @@
                 <button class="ski-toggle-map-btn" onclick="toggleMapPreview(this)">🗺️ 檢視雪道地圖截圖 [▼ 點擊展開]</button>
                 <div class="ski-map-preview-box">
                   <img src="${day.ski_resort.map_image_url}" alt="${day.ski_resort.name} 官方雪道圖" class="ski-map-img" loading="eager" referrerpolicy="no-referrer" onerror="if(this.src!='https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg'){this.src='https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg';}" />
-                <div class="ski-map-error-box" style="display:none !important; padding:10px; margin:8px 0; background:rgba(239,68,68,0.15); border:1px dashed #ef4444; border-radius:8px; text-align:center;">
-                  <p style="font-size:0.8rem; color:#fca5a5; margin-bottom:6px;">⚠️ 官方伺服器限制跨站圖片載入，請直接點擊下方連結：</p>
-                  <a href="${day.ski_resort.map_image_url}" target="_blank" rel="noopener" class="map-btn" style="background:#0284c7; color:#fff; font-weight:700;">🌐 在新分頁直接開啟官方原圖</a>
-                </div>
-                <div class="ski-map-caption" style="margin-top:6px; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
-                  <a href="${day.ski_resort.map_image_url}" target="_blank" rel="noopener" class="map-btn" style="background:rgba(2,132,199,0.25); border-color:var(--accent); color:#38bdf8;">🖼️ 開啟官方原圖連結</a>
-                  <a href="${day.ski_resort.course_map_url}" target="_blank" rel="noopener" class="map-btn" style="background:rgba(148,163,184,0.15); border-color:var(--border); color:#cbd5e1;">🌐 官方雪道導覽頁</a>
-                </div>
+                  <div class="ski-map-caption" style="margin-top:6px; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                    <a href="${day.ski_resort.map_image_url}" target="_blank" rel="noopener" class="map-btn" style="background:rgba(2,132,199,0.25); border-color:var(--accent); color:#38bdf8;">🖼️ 開啟官方原圖連結</a>
+                    <a href="${day.ski_resort.course_map_url}" target="_blank" rel="noopener" class="map-btn" style="background:rgba(148,163,184,0.15); border-color:var(--border); color:#cbd5e1;">🌐 官方雪道導覽頁</a>
+                  </div>
                 </div>
               ` : ''}
             </div>
@@ -399,7 +405,7 @@
           const stepsHtml = (day.transit.details || []).map(step => `<li class="transit-step">${step}</li>`).join('');
           transitHtml = `
             <div class="transit-box">
-              <div class="transit-summary">🚊 交通動線：${day.transit.summary}</div>
+              <div class="transit-summary">🚆 交通動線：${day.transit.summary}</div>
               <ul class="transit-timeline">${stepsHtml}</ul>
             </div>
           `;
@@ -416,10 +422,14 @@
                   <div class="rec-item-header">
                     <div class="rec-title-wrap">
                       <span class="rec-name">${item.name}</span>
+                      ${item.tabelog_badge ? `<span class="tabelog-badge">${item.tabelog_badge}</span>` : ''}
                       ${item.rating ? `<span class="rating-stars">${item.rating}</span>` : ''}
                       ${item.distance ? `<span class="dist-badge">${item.distance}</span>` : ''}
                     </div>
-                    <a href="${item.map_url}" target="_blank" rel="noopener" class="map-btn">📍 Google 搜尋</a>
+                    <div style="display:flex; gap:6px; flex-wrap:wrap;">
+                      ${item.tabelog_url ? `<a href="${item.tabelog_url}" target="_blank" rel="noopener" class="map-btn tabelog-btn">🟠 Tabelog</a>` : ''}
+                      <a href="${item.map_url}" target="_blank" rel="noopener" class="map-btn">📍 地圖</a>
+                    </div>
                   </div>
                   <div class="rec-desc">${item.highlights}</div>
                 </div>
@@ -443,7 +453,7 @@
           if (subGroups) {
             recsHtml = `
               <div class="recs-container">
-                <div class="recs-header-toggle">🍽️ 在地推薦名單（6 大子類別・每類 10 項滿額推薦・點選展開）</div>
+                <div class="recs-header-toggle">🍽️ 在地推薦名單（全面以 食べログ Tabelog 高分榜・百名店為主・6 大子類別・每類 10 項滿額推薦）</div>
                 ${subGroups}
               </div>
             `;
