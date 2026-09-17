@@ -390,6 +390,59 @@
     border-top: 1px solid var(--line); line-height: 1.7; letter-spacing: 0.02em;
   }
 
+  /* ── today panel ────────────────────────────────────────────── */
+  .today-wrap { padding-top: 34px; }
+  .today {
+    background: var(--surface-1);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
+    position: relative; overflow: hidden;
+  }
+  .today::before {
+    content: ''; position: absolute; inset: 0 auto 0 0; width: 2px; background: var(--gold);
+  }
+  .today-head {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    padding: 16px 22px 12px;
+  }
+  .today-tag {
+    font-size: 0.6rem; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--ink); background: var(--gold); padding: 3px 10px;
+  }
+  .today-date { font-size: 0.73rem; letter-spacing: 0.16em; color: var(--muted); }
+  .today-body { padding: 0 22px 20px; }
+  .today-n {
+    font-family: var(--serif); font-size: clamp(2.2rem, 7vw, 3.2rem);
+    line-height: 1; color: var(--gold); display: block; margin-bottom: 6px;
+  }
+  .today-title {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(1.14rem, 3.4vw, 1.62rem); line-height: 1.38; margin-bottom: 12px;
+  }
+  .today-line { font-size: 0.82rem; color: var(--muted); line-height: 1.8; margin-bottom: 6px; }
+  .today-line b { color: var(--text); font-weight: 600; }
+  .today-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .today-cta {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em;
+    padding: 9px 16px; border: 1px solid var(--gold); color: var(--gold);
+    background: var(--gold-wash); transition: background 0.3s var(--ease), color 0.3s var(--ease);
+  }
+  .today-cta:hover { background: var(--gold); color: var(--ink); }
+  .today-meter {
+    display: flex; gap: 22px; flex-wrap: wrap; margin-top: 16px;
+    padding-top: 15px; border-top: 1px solid var(--line-2);
+  }
+  .today-stat .n {
+    display: block; font-family: var(--serif); font-size: 1.6rem; color: var(--gold); line-height: 1.1;
+  }
+  .today-stat .l {
+    display: block; font-size: 0.62rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--dim); margin-top: 5px;
+  }
+  .nav-btn.is-today { color: var(--gold); }
+  .nav-btn.is-today::after { transform: scaleX(1); }
+
   /* ── emergency ──────────────────────────────────────────────── */
   .nav-btn.is-sos { color: var(--danger); }
   .nav-btn.is-sos::after { background: var(--danger); }
@@ -835,6 +888,10 @@
 </nav>
 
 <main class="wrap">
+
+  <div class="today-wrap" id="today-wrap" hidden>
+    <div class="today" id="today"></div>
+  </div>
 
   <section class="block" id="checklist">
     <div class="section-head rise">
@@ -1474,6 +1531,127 @@
     }).join('');
   }
 
+  // ── today panel ─────────────────────────────────────────────────
+  // Uses the device's local date. During the trip the device will be on JST;
+  // before it, Taipei is one hour behind, which never changes the date here
+  // because the comparison is day-level. `?today=YYYY-MM-DD` overrides it,
+  // which is how the view is tested and how you can preview any day.
+  function localISO(d) {
+    return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate());
+  }
+
+  function todayISO() {
+    var m = /[?&]today=(\d{4}-\d{2}-\d{2})/.exec(location.search);
+    return m ? m[1] : localISO(new Date());
+  }
+
+  function daysBetween(aISO, bISO) {
+    var a = aISO.split('-'), b = bISO.split('-');
+    var ms = Date.UTC(+b[0], +b[1] - 1, +b[2]) - Date.UTC(+a[0], +a[1] - 1, +a[2]);
+    return Math.round(ms / 86400000);
+  }
+
+  function countChecked(key, groups) {
+    if (!groups || !groups.length) return { done: 0, total: 0 };
+    var s = makeStore(key).read();
+    var total = 0, done = 0;
+    groups.forEach(function (g) {
+      total += g.items.length;
+      done += g.items.filter(function (it) { return s[it.id]; }).length;
+    });
+    return { done: done, total: total };
+  }
+
+  function renderToday(data) {
+    var days = data.days || [];
+    if (!days.length) return;
+
+    var iso = todayISO();
+    var first = days[0].date;
+    var last = days[days.length - 1].date;
+    var current = null;
+    days.forEach(function (d) { if (d.date === iso) current = d; });
+
+    var wrap = el('today-wrap');
+    var box = el('today');
+    var html = '';
+
+    if (current) {
+      var venuesById = {};
+      (data.venues || []).forEach(function (v) { venuesById[v.id] = v; });
+      var chips = (current.venue_ids || []).map(function (id) {
+        var v = venuesById[id];
+        return v ? '<button class="venue-chip" type="button" data-goto-venue="' + esc(id) + '">' +
+          esc(v.name) + '</button>' : '';
+      }).join('');
+
+      html =
+        '<div class="today-head">' +
+          '<span class="today-tag">Today</span>' +
+          '<span class="today-date">' + esc(current.date) + ' ・ ' + esc(weekday(current.date)) +
+            ' ・ 第 ' + current.day_number + ' / ' + days.length + ' 天</span>' +
+        '</div>' +
+        '<div class="today-body">' +
+          '<span class="today-n num">' + pad2(current.day_number) + '</span>' +
+          '<h2 class="today-title">' + esc(current.day_title) + '</h2>' +
+          (current.stay ? '<p class="today-line">🏨 <b>' + esc(current.stay) + '</b></p>' : '') +
+          (current.transit ? '<p class="today-line">🚆 ' + esc(current.transit.summary) + '</p>' : '') +
+          (chips ? '<div class="venue-chips" style="margin-top:14px;margin-bottom:0">' + chips + '</div>' : '') +
+          '<div class="today-actions">' +
+            '<a class="today-cta" href="#day-' + current.day_number + '">看今日完整行程 ↓</a>' +
+            '<a class="today-cta" href="#emergency">緊急聯絡</a>' +
+          '</div>' +
+        '</div>';
+
+    } else if (daysBetween(iso, first) > 0) {
+      var away = daysBetween(iso, first);
+      var cl = countChecked(CL_KEY, data.predeparture_checklist);
+      var pk = countChecked(PACK_KEY, data.packing_list);
+      html =
+        '<div class="today-head">' +
+          '<span class="today-tag">Countdown</span>' +
+          '<span class="today-date">出發日 ' + esc(first) + '</span>' +
+        '</div>' +
+        '<div class="today-body">' +
+          '<span class="today-n num">' + away + '</span>' +
+          '<h2 class="today-title">天後出發</h2>' +
+          '<div class="today-meter">' +
+            '<span class="today-stat"><span class="n num">' + (cl.total - cl.done) + '</span>' +
+              '<span class="l">覆核未完成</span></span>' +
+            '<span class="today-stat"><span class="n num">' + (pk.total - pk.done) + '</span>' +
+              '<span class="l">尚未打包</span></span>' +
+          '</div>' +
+          '<div class="today-actions">' +
+            '<a class="today-cta" href="#checklist">出發前覆核</a>' +
+            '<a class="today-cta" href="#packing">裝備打包</a>' +
+          '</div>' +
+        '</div>';
+
+    } else {
+      html =
+        '<div class="today-head"><span class="today-tag">Done</span>' +
+          '<span class="today-date">' + esc(first) + ' — ' + esc(last) + '</span></div>' +
+        '<div class="today-body">' +
+          '<h2 class="today-title">旅程已結束 —— 這頁留著當紀錄</h2>' +
+          '<div class="today-actions"><a class="today-cta" href="#days">回顧 16 天行程</a></div>' +
+        '</div>';
+    }
+
+    box.innerHTML = html;
+    wrap.hidden = false;
+
+    box.addEventListener('click', function (ev) {
+      var chip = ev.target.closest('[data-goto-venue]');
+      if (chip) focusVenue(chip.getAttribute('data-goto-venue'));
+    });
+
+    // mark today in the day strip
+    if (current) {
+      var btn = document.querySelector('#day-nav a[href="#day-' + current.day_number + '"]');
+      if (btn) btn.classList.add('is-today');
+    }
+  }
+
   // ── emergency ───────────────────────────────────────────────────
   function telRowHtml(e) {
     var urgent = e.urgent ? ' is-urgent' : '';
@@ -1673,6 +1851,7 @@
 
     renderVenues(data.venues);
     renderDays(data);
+    renderToday(data);   // after renderDays: it marks today in the day strip
     renderContingency(data.contingency_plans);
     renderEmergency(data.emergency);
     initScrollEffects();
