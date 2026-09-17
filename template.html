@@ -367,8 +367,24 @@
     border-width: 0 1.5px 1.5px 0; transform: rotate(42deg);
   }
   .cl-item input[type="checkbox"]:focus-visible { outline: 1px solid var(--gold); outline-offset: 3px; }
-  .cl-item label { font-size: 0.85rem; color: var(--text); cursor: pointer; line-height: 1.66; }
-  .cl-item input:checked + label { color: var(--dim); text-decoration: line-through; text-decoration-color: var(--gold-dim); }
+  .cl-item-body { flex: 1 1 auto; min-width: 0; }
+  .cl-item label { display: block; font-size: 0.85rem; color: var(--text); cursor: pointer; line-height: 1.66; }
+  .cl-item input:checked + .cl-item-body label {
+    color: var(--dim); text-decoration: line-through; text-decoration-color: var(--gold-dim);
+  }
+  .cl-item input:checked + .cl-item-body .cl-meta { opacity: 0.45; }
+  .cl-meta { margin-top: 6px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+  .cl-when {
+    font-size: 0.73rem; color: var(--muted); line-height: 1.6;
+    padding-left: 11px; border-left: 1px solid var(--gold-dim);
+  }
+  .cl-link {
+    font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em;
+    color: var(--gold); border-bottom: 1px solid var(--gold-dim); padding-bottom: 1px;
+    transition: border-color 0.3s var(--ease);
+  }
+  .cl-link::after { content: ' ↗'; opacity: 0.6; }
+  .cl-link:hover { border-color: var(--gold); }
   .cl-saved-note {
     font-size: 0.72rem; color: var(--dim); padding: 18px 30px 22px;
     border-top: 1px solid var(--line); line-height: 1.7; letter-spacing: 0.02em;
@@ -942,9 +958,18 @@
 
     html += groups.map(function (g) {
       var items = g.items.map(function (it) {
+        var meta = '';
+        if (it.when) meta += '<span class="cl-when">' + esc(it.when) + '</span>';
+        if (it.link && it.link.url) {
+          meta += '<a class="cl-link" href="' + esc(it.link.url) +
+            '" target="_blank" rel="noopener noreferrer">' + esc(it.link.label || '前往預約') + '</a>';
+        }
         return '<div class="cl-item">' +
           '<input type="checkbox" id="' + esc(it.id) + '" data-cl-item="1"' + (state[it.id] ? ' checked' : '') + '>' +
-          '<label for="' + esc(it.id) + '">' + esc(it.text) + '</label></div>';
+          '<div class="cl-item-body">' +
+            '<label for="' + esc(it.id) + '">' + esc(it.text) + '</label>' +
+            (meta ? '<div class="cl-meta">' + meta + '</div>' : '') +
+          '</div></div>';
       }).join('');
 
       return '<div class="cl-group" data-group="' + esc(g.id) + '" open-state="0">' +
