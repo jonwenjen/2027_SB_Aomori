@@ -10921,5 +10921,481 @@
     "stats_source": "雪場數據取自各雪場官方冬季頁與日本滑雪資料庫（SURF&SNOW／楽天トラベル／スノーパラダイス東北）；場館數據取自各館官方網站。",
     "season_caveat": "開幕日與營業期間為最近一個已公布雪季的日期。2026/27 雪季行事曆尚未公布，請以「出發前覆核清單」逐項重新確認。",
     "last_reviewed": "2026-09-17"
-  }
+  },
+  "emergency": {
+    "intro": "這一段完全離線可用。山上沒訊號時頁面照樣開得起來，號碼點了就撥。",
+    "groups": [
+      {
+        "id": "jp-emergency",
+        "icon": "🚨",
+        "title": "日本境內緊急電話",
+        "hint": "手機請開啟 GPS —— 撥 110／119 時位置會自動傳給受理單位",
+        "entries": [
+          {
+            "label": "警察",
+            "value": "110",
+            "tel": "110",
+            "note": "事故、犯罪、山岳遭難與雪崩求救",
+            "urgent": true
+          },
+          {
+            "label": "消防・救護車",
+            "value": "119",
+            "tel": "119",
+            "note": "火災、急病、外傷",
+            "urgent": true
+          },
+          {
+            "label": "Japan Visitor Hotline",
+            "value": "050-3816-2787",
+            "tel": "+815038162787",
+            "note": "JNTO 營運・24 小時 365 天・中文／英文／韓文"
+          }
+        ]
+      },
+      {
+        "id": "taiwan",
+        "icon": "🇹🇼",
+        "title": "台灣駐外與急難救助",
+        "hint": "青森縣與岩手縣皆由東京的代表處本部管轄（非札幌分處）",
+        "entries": [
+          {
+            "label": "台北駐日經濟文化代表處 24 小時專線",
+            "value": "+81-3-3280-7917",
+            "tel": "+81332807917",
+            "note": "東京都港區白金台 5-20-2"
+          },
+          {
+            "label": "代表處急難救助行動電話 ①",
+            "value": "080-1009-7179",
+            "tel": "+818010097179",
+            "note": "限緊急事件（車禍、搶劫、有生命危險）"
+          },
+          {
+            "label": "代表處急難救助行動電話 ②",
+            "value": "080-1009-7436",
+            "tel": "+818010097436",
+            "note": "同上，①打不通時改撥"
+          },
+          {
+            "label": "旅外國人急難救助全球免付費專線",
+            "value": "001-010-800-0885-0885",
+            "tel": "00101080008850885",
+            "note": "此為「從日本用 KDDI 撥」的完整撥法。NTT 改撥 0033-010-800-0885-0885、SoftBank 改撥 0061-010-800-0885-0885。用日本當地門號或市話免費；用台灣門號漫遊撥仍要自付漫遊費"
+          },
+          {
+            "label": "外交部緊急聯絡中心",
+            "value": "0800-085-095",
+            "note": "⚠️ 台灣境內免付費號碼，從日本撥不通 —— 請國內親友代撥"
+          }
+        ]
+      },
+      {
+        "id": "hotels",
+        "icon": "🏨",
+        "title": "住宿聯絡電話",
+        "hint": "誤點、雪具寄放、接駁變更都先打這裡",
+        "entries": [
+          {
+            "label": "Route-Inn 青森站前（Day 1–4）",
+            "value": "017-731-3611",
+            "tel": "+81177313611"
+          },
+          {
+            "label": "Comfort Hotel 八戶（Day 4–5）",
+            "value": "0178-70-4811",
+            "tel": "+81178704811"
+          },
+          {
+            "label": "Hotel 十和田荘（Day 5–6）",
+            "value": "0176-75-2221",
+            "tel": "+81176752221"
+          },
+          {
+            "label": "休暇村岩手網張溫泉（Day 6–10）",
+            "value": "019-693-2211",
+            "tel": "+81196932211",
+            "note": "盛岡站免費接駁巴士也是打這支預約"
+          },
+          {
+            "label": "Hotel 奧中山高原（Day 10–14）",
+            "value": "0195-35-3131",
+            "tel": "+81195353131"
+          },
+          {
+            "label": "Hotel Gracery 新宿（Day 14–16）",
+            "value": "03-3343-3111",
+            "tel": "+81333433111"
+          }
+        ]
+      }
+    ],
+    "procedures": [
+      {
+        "id": "avalanche",
+        "icon": "🏔️",
+        "title": "雪崩夥伴救援程序",
+        "lede": "埋沒 15 分鐘內挖出存活率約 92%，35 分鐘降到約 34%。救援靠同行者，不是靠救難隊 —— 等人來就來不及了。",
+        "steps": [
+          "確認二次雪崩風險再進入，救援者自己先活著",
+          "目視記住失蹤者的「最後可見點」，在雪面做標記",
+          "全隊雪崩信標切到「接收」，確認沒有人還在發射",
+          "沿訊號搜索到最小距離點，改用探針垂直插雪、以 25 cm 間隔向外螺旋探測",
+          "探到人後探針留在原地不要拔，從下坡側開挖，挖出口鼻優先",
+          "同時撥 110 通報，說明「○○山 ××登山口往上約 ×× 分鐘處」與 GPS 座標",
+          "挖出後確認呼吸道、保暖、防止再度失溫，不要讓傷者自行走動"
+        ]
+      },
+      {
+        "id": "lost",
+        "icon": "🧭",
+        "title": "迷途或受困時",
+        "lede": "八甲田山頂無壓雪、無明確路標，天候一變能見度會瞬間歸零。",
+        "steps": [
+          "停下來，不要繼續移動 —— 走動很容易走進無訊號區，救援也更難定位",
+          "撥 110 或 119，開啟 GPS，把座標唸出來",
+          "通報後保持手機電量：關閉背景 App、開省電模式，不要一直查地圖",
+          "找避風處挖雪坑，與同伴靠在一起保溫，墊隔熱層避免直接接觸雪面",
+          "若在雪場範圍內，找最近的纜車站或巡邏隊小屋（Ski Patrol）"
+        ]
+      }
+    ],
+    "phrases": [
+      {
+        "zh": "請叫救護車",
+        "ja": "救急車を呼んでください",
+        "romaji": "Kyūkyūsha o yonde kudasai"
+      },
+      {
+        "zh": "請幫幫我",
+        "ja": "助けてください",
+        "romaji": "Tasukete kudasai"
+      },
+      {
+        "zh": "我受傷了",
+        "ja": "怪我をしました",
+        "romaji": "Kega o shimashita"
+      },
+      {
+        "zh": "可能骨折了",
+        "ja": "骨が折れたかもしれません",
+        "romaji": "Hone ga oreta kamo shiremasen"
+      },
+      {
+        "zh": "這裡很痛",
+        "ja": "ここが痛いです",
+        "romaji": "Koko ga itai desu"
+      },
+      {
+        "zh": "有人被雪崩埋住了",
+        "ja": "雪崩に人が埋まっています",
+        "romaji": "Nadare ni hito ga umatte imasu"
+      },
+      {
+        "zh": "我迷路了",
+        "ja": "道に迷いました",
+        "romaji": "Michi ni mayoimashita"
+      },
+      {
+        "zh": "我從台灣來，不會說日文",
+        "ja": "台湾から来ました。日本語が話せません",
+        "romaji": "Taiwan kara kimashita. Nihongo ga hanasemasen"
+      },
+      {
+        "zh": "請帶我去醫院",
+        "ja": "病院に連れて行ってください",
+        "romaji": "Byōin ni tsurete itte kudasai"
+      },
+      {
+        "zh": "我有過敏",
+        "ja": "アレルギーがあります",
+        "romaji": "Arerugī ga arimasu"
+      },
+      {
+        "zh": "有會說中文或英文的人嗎？",
+        "ja": "中国語か英語が話せる方はいますか",
+        "romaji": "Chūgokugo ka eigo ga hanaseru kata wa imasu ka"
+      }
+    ],
+    "personal_fields": [
+      {
+        "id": "ins-company",
+        "label": "保險公司",
+        "placeholder": "例：國泰 / 富邦"
+      },
+      {
+        "id": "ins-policy",
+        "label": "保單號碼",
+        "placeholder": "保單上的號碼"
+      },
+      {
+        "id": "ins-hotline",
+        "label": "保險 24 小時海外救援專線",
+        "placeholder": "+886-…",
+        "tel": true
+      },
+      {
+        "id": "contact-name",
+        "label": "緊急聯絡人",
+        "placeholder": "姓名與關係"
+      },
+      {
+        "id": "contact-tel",
+        "label": "緊急聯絡人電話",
+        "placeholder": "+886-…",
+        "tel": true
+      },
+      {
+        "id": "medical",
+        "label": "血型・過敏・慢性病",
+        "placeholder": "給救護人員看的資訊"
+      }
+    ]
+  },
+  "packing_list": [
+    {
+      "id": "pk-snow",
+      "icon": "🏂",
+      "title": "雪具與安全裝備",
+      "hint": "八甲田是非壓雪野雪區，雪崩三寶不是選配",
+      "items": [
+        {
+          "id": "pk-board",
+          "text": "雪板／雪板袋（Day 13 要用黑貓直寄成田，袋子要耐操）"
+        },
+        {
+          "id": "pk-boots",
+          "text": "雪鞋＋雪鞋袋"
+        },
+        {
+          "id": "pk-binding",
+          "text": "Binding 與備用螺絲、起子"
+        },
+        {
+          "id": "pk-helmet",
+          "text": "安全帽"
+        },
+        {
+          "id": "pk-goggle",
+          "text": "雪鏡 ＋ 備用鏡片（八甲田常起霧，需要增光／黃片）"
+        },
+        {
+          "id": "pk-gloves",
+          "text": "雪手套 ＋ 備用手套（濕掉就毀了一天）"
+        },
+        {
+          "id": "pk-liner",
+          "text": "手套內襯"
+        },
+        {
+          "id": "pk-armor",
+          "text": "護臀、護膝、護腕"
+        },
+        {
+          "id": "pk-beacon",
+          "text": "⚠️ 雪崩信標（Day 3 八甲田）—— 出發前換新電池並測試收發"
+        },
+        {
+          "id": "pk-probe",
+          "text": "⚠️ 探針（Probe）"
+        },
+        {
+          "id": "pk-shovel",
+          "text": "⚠️ 雪鏟（Shovel）"
+        },
+        {
+          "id": "pk-wax",
+          "text": "滑雪蠟、刮刀、邊刃銼刀"
+        },
+        {
+          "id": "pk-crampon",
+          "text": "防滑冰爪 —— Day 5／6 奧入瀨冰瀑步道結冰"
+        }
+      ]
+    },
+    {
+      "id": "pk-cloth",
+      "icon": "🧥",
+      "title": "雪地服裝",
+      "hint": "青森二月均溫在冰點以下，洋蔥式是唯一解",
+      "items": [
+        {
+          "id": "pk-shell",
+          "text": "防水外層 Shell（外套＋雪褲）"
+        },
+        {
+          "id": "pk-mid",
+          "text": "中層保暖（羽絨或刷毛）×2"
+        },
+        {
+          "id": "pk-base",
+          "text": "排汗底層上下 ×4 組（連滑 9 天，棉質完全不能用）"
+        },
+        {
+          "id": "pk-socks",
+          "text": "滑雪襪 ×5"
+        },
+        {
+          "id": "pk-neck",
+          "text": "脖圍／面罩"
+        },
+        {
+          "id": "pk-beanie",
+          "text": "毛帽"
+        },
+        {
+          "id": "pk-casual",
+          "text": "市區與東京兩夜的一般衣物"
+        },
+        {
+          "id": "pk-shoes",
+          "text": "防滑雪地靴（非滑雪用，走路用）"
+        }
+      ]
+    },
+    {
+      "id": "pk-onsen",
+      "icon": "♨️",
+      "title": "溫泉與住宿",
+      "hint": "網張連泡 4 晚白濁硫磺湯、奧中山再 4 晚",
+      "items": [
+        {
+          "id": "pk-towel",
+          "text": "快乾毛巾 ×2"
+        },
+        {
+          "id": "pk-toiletry",
+          "text": "盥洗與保養品（雪地乾燥，乳液要帶夠）"
+        },
+        {
+          "id": "pk-slipper",
+          "text": "室內拖鞋"
+        },
+        {
+          "id": "pk-silver",
+          "text": "⚠️ 銀飾留在家 —— 硫磺泉會讓銀變黑"
+        },
+        {
+          "id": "pk-laundry",
+          "text": "洗衣精分裝、晾衣繩（連住時自己洗最省）"
+        },
+        {
+          "id": "pk-wetbag",
+          "text": "防水袋／大塑膠袋裝濕雪具"
+        }
+      ]
+    },
+    {
+      "id": "pk-tech",
+      "icon": "🔌",
+      "title": "電子與拍攝",
+      "hint": "台灣與日本同為 Type A 插頭，不需要轉接頭",
+      "items": [
+        {
+          "id": "pk-powerbank",
+          "text": "行動電源（隨身，不可託運）"
+        },
+        {
+          "id": "pk-cable",
+          "text": "充電線與快充頭"
+        },
+        {
+          "id": "pk-gopro",
+          "text": "GoPro／相機＋備用電池（低溫掉電極快，貼身放）"
+        },
+        {
+          "id": "pk-sdcard",
+          "text": "記憶卡 ×2"
+        },
+        {
+          "id": "pk-headlamp",
+          "text": "頭燈（夜滑與停電用）"
+        },
+        {
+          "id": "pk-esim",
+          "text": "日本上網 eSIM／網卡已開通"
+        },
+        {
+          "id": "pk-offline",
+          "text": "離線地圖與本行程頁面已在手機上開過一次"
+        }
+      ]
+    },
+    {
+      "id": "pk-docs",
+      "icon": "🛂",
+      "title": "證件・金錢・文件",
+      "hint": "紙本備份放在與正本不同的行李",
+      "items": [
+        {
+          "id": "pk-passport",
+          "text": "護照（效期 6 個月以上）＋ 影本"
+        },
+        {
+          "id": "pk-ticket",
+          "text": "電子機票、訂房確認信（已離線存檔）"
+        },
+        {
+          "id": "pk-insurance",
+          "text": "旅平險保單與 24 小時救援電話"
+        },
+        {
+          "id": "pk-cash",
+          "text": "日幣現金（山區與小店常不收卡）"
+        },
+        {
+          "id": "pk-ic",
+          "text": "Suica／PASMO 或已設定 Apple Pay 交通卡"
+        },
+        {
+          "id": "pk-card",
+          "text": "信用卡 ×2（不同發卡行，避免被鎖卡）"
+        },
+        {
+          "id": "pk-license",
+          "text": "國際駕照（若有租車或包車需求）"
+        }
+      ]
+    },
+    {
+      "id": "pk-med",
+      "icon": "💊",
+      "title": "藥品與身體",
+      "hint": "雪地反射的紫外線比平地強，防曬與護唇是必需品",
+      "items": [
+        {
+          "id": "pk-personal-med",
+          "text": "個人常用藥（含英文或日文藥名）"
+        },
+        {
+          "id": "pk-cold",
+          "text": "感冒藥、退燒藥"
+        },
+        {
+          "id": "pk-stomach",
+          "text": "腸胃藥（連吃海鮮與生食）"
+        },
+        {
+          "id": "pk-painkiller",
+          "text": "止痛藥、痠痛貼布（連滑 9 天必用）"
+        },
+        {
+          "id": "pk-heatpack",
+          "text": "暖暖包（貼式與手握式）"
+        },
+        {
+          "id": "pk-lipbalm",
+          "text": "護唇膏"
+        },
+        {
+          "id": "pk-sunscreen",
+          "text": "高係數防曬 —— 雪地反射，脖子下緣與鼻孔下方最常曬傷"
+        },
+        {
+          "id": "pk-eyedrop",
+          "text": "眼藥水（乾燥與雪鏡悶熱）"
+        }
+      ]
+    }
+  ]
 }

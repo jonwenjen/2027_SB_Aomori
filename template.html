@@ -390,6 +390,103 @@
     border-top: 1px solid var(--line); line-height: 1.7; letter-spacing: 0.02em;
   }
 
+  /* ── emergency ──────────────────────────────────────────────── */
+  .nav-btn.is-sos { color: var(--danger); }
+  .nav-btn.is-sos::after { background: var(--danger); }
+  .nav-btn.is-sos:hover { color: var(--danger); }
+  .section-head.is-sos { border-bottom-color: color-mix(in srgb, var(--danger) 45%, transparent); }
+  .section-head.is-sos .section-index { color: var(--danger); }
+  @supports not (color: color-mix(in srgb, red 50%, blue)) {
+    .section-head.is-sos { border-bottom-color: var(--danger); }
+  }
+
+  .sos-grid { display: grid; gap: 14px; }
+  .sos-block { background: var(--surface-1); border: 1px solid var(--line-2); }
+  .sos-block.is-urgent { border-color: color-mix(in srgb, var(--danger) 40%, transparent); }
+  .sos-head {
+    display: flex; align-items: baseline; gap: 11px; flex-wrap: wrap;
+    padding: 18px 20px 14px; border-bottom: 1px solid var(--line-2);
+  }
+  .sos-head h3 { font-family: var(--serif); font-weight: 400; font-size: 1.16rem; }
+  .sos-head .sos-hint { font-size: 0.74rem; color: var(--dim); width: 100%; line-height: 1.65; }
+
+  /* a phone row is one big tap target — you use this with cold hands */
+  .tel-row {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    padding: 14px 20px; border-top: 1px solid var(--line-2);
+    text-decoration: none; transition: background 0.25s var(--ease);
+  }
+  .sos-block .tel-row:first-of-type { border-top: none; }
+  a.tel-row:hover { background: var(--gold-wash); }
+  .tel-main { flex: 1 1 210px; min-width: 0; }
+  .tel-label { display: block; font-size: 0.8rem; color: var(--muted); }
+  .tel-note { display: block; font-size: 0.72rem; color: var(--dim); margin-top: 4px; line-height: 1.6; }
+  .tel-number {
+    flex: 0 0 auto; font-family: var(--serif);
+    font-variant-numeric: tabular-nums lining-nums;
+    font-size: 1.28rem; color: var(--gold); letter-spacing: 0.01em;
+  }
+  a.tel-row .tel-number::after { content: ' ↗'; font-size: 0.68rem; opacity: 0.6; }
+  .tel-row.is-urgent .tel-number { font-size: 1.85rem; color: var(--danger); }
+  .tel-row.no-dial .tel-number { color: var(--muted); }
+
+  .proc { padding: 18px 20px 20px; }
+  .proc-lede {
+    font-size: 0.82rem; color: var(--text); line-height: 1.8; margin-bottom: 16px;
+    padding-left: 15px; border-left: 2px solid var(--danger);
+  }
+  .proc-steps { list-style: none; counter-reset: s; }
+  .proc-steps li {
+    counter-increment: s; position: relative; padding-left: 38px;
+    font-size: 0.82rem; color: var(--muted); line-height: 1.8; margin-bottom: 13px;
+  }
+  .proc-steps li:last-child { margin-bottom: 0; }
+  .proc-steps li::before {
+    content: counter(s, decimal-leading-zero);
+    position: absolute; left: 0; top: 0;
+    font-family: var(--serif); font-size: 0.95rem; color: var(--gold);
+  }
+
+  .phrase-list { }
+  .phrase {
+    display: grid; grid-template-columns: 1fr 1.25fr; gap: 6px 18px;
+    padding: 13px 20px; border-top: 1px solid var(--line-2); align-items: baseline;
+  }
+  .sos-block .phrase:first-of-type { border-top: none; }
+  .phrase-zh { font-size: 0.8rem; color: var(--muted); }
+  .phrase-ja {
+    font-family: var(--serif); font-size: 1.1rem; color: var(--text); line-height: 1.5;
+    -webkit-user-select: all; user-select: all;
+  }
+  .phrase-romaji { grid-column: 2; font-size: 0.71rem; color: var(--dim); font-style: italic; }
+  @media (max-width: 560px) {
+    .phrase { grid-template-columns: 1fr; }
+    .phrase-romaji { grid-column: 1; }
+  }
+
+  .personal { padding: 18px 20px 20px; }
+  .personal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .field label {
+    display: block; font-size: 0.66rem; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--dim); margin-bottom: 6px;
+  }
+  .field input {
+    width: 100%; background: var(--surface-3); color: var(--text);
+    border: 1px solid var(--line-2); border-radius: 0;
+    padding: 10px 12px; font-family: var(--sans); font-size: 0.85rem;
+    transition: border-color 0.25s var(--ease);
+  }
+  .field input:focus { outline: none; border-color: var(--gold); }
+  .field input::placeholder { color: var(--dim); opacity: 0.7; }
+  .personal-note {
+    margin-top: 14px; font-size: 0.73rem; color: var(--dim); line-height: 1.75;
+    padding-left: 13px; border-left: 1px solid var(--ok);
+  }
+  .field-call {
+    display: inline-block; margin-top: 7px; font-size: 0.72rem;
+    font-weight: 600; color: var(--gold); border-bottom: 1px solid var(--gold-dim);
+  }
+
   /* ── venue filters ──────────────────────────────────────────── */
   .filters { display: flex; flex-wrap: wrap; gap: 0; margin-bottom: 26px; border-bottom: 1px solid var(--line-2); }
   .filter-btn {
@@ -728,9 +825,11 @@
 <nav class="navbar">
   <div class="nav-scroll">
     <a class="nav-btn is-section" href="#checklist">覆核清單</a>
+    <a class="nav-btn is-section" href="#packing">裝備打包</a>
     <a class="nav-btn is-section" href="#venues">場地資訊</a>
     <a class="nav-btn is-section" href="#days">每日行程</a>
     <a class="nav-btn is-section" href="#contingency">應急備案</a>
+    <a class="nav-btn is-section is-sos" href="#emergency">緊急求救</a>
   </div>
   <div class="nav-scroll" id="day-nav"></div>
 </nav>
@@ -748,9 +847,20 @@
     <div class="panel rise" id="checklist-shell"></div>
   </section>
 
-  <section class="block" id="venues">
+  <section class="block" id="packing">
     <div class="section-head rise">
       <span class="section-index num">02</span>
+      <div>
+        <h2>裝備打包清單</h2>
+        <p>雪具 ・ 服裝 ・ 溫泉 ・ 電子 ・ 證件 ・ 藥品 — 與覆核清單分開記錄</p>
+      </div>
+    </div>
+    <div class="panel rise" id="packing-shell"></div>
+  </section>
+
+  <section class="block" id="venues">
+    <div class="section-head rise">
+      <span class="section-index num">03</span>
       <div>
         <h2>場地資訊卡</h2>
         <p>雪場 ・ 景點 ・ 場館 — 點標題展開，地圖於展開時才載入</p>
@@ -762,7 +872,7 @@
 
   <section class="block" id="days">
     <div class="section-head rise">
-      <span class="section-index num">03</span>
+      <span class="section-index num">04</span>
       <div>
         <h2>每日行程</h2>
         <p id="days-sub"></p>
@@ -773,13 +883,24 @@
 
   <section class="block" id="contingency">
     <div class="section-head rise">
-      <span class="section-index num">04</span>
+      <span class="section-index num">05</span>
       <div>
         <h2>天候與交通應急備案</h2>
         <p>暴風雪 ・ 降雪不足 ・ 交通延誤 ・ 航班異動</p>
       </div>
     </div>
     <div class="contingency-grid rise" id="contingency-grid"></div>
+  </section>
+
+  <section class="block" id="emergency">
+    <div class="section-head is-sos">
+      <span class="section-index num">06</span>
+      <div>
+        <h2>緊急聯絡與求救</h2>
+        <p id="emergency-intro"></p>
+      </div>
+    </div>
+    <div id="emergency-body"></div>
   </section>
 
   <footer>
@@ -801,7 +922,9 @@
 
   var DOW = ['一', '二', '三', '四', '五', '六', '日'];
   var CL_KEY = 'sb2027.checklist.v1';
+  var PACK_KEY = 'sb2027.packing.v1';
   var THEME_KEY = 'sb2027.theme.v1';
+  var PERSONAL_KEY = 'sb2027.personal.v1';
 
   var CATEGORIES = [
     ['restaurant', '正餐名物', '🍱'],
@@ -841,18 +964,20 @@
     try { window.localStorage.removeItem(key); } catch (e) { /* ignore */ }
   }
 
-  var store = {
-    read: function () {
-      var raw = safeGet(CL_KEY);
-      if (!raw) return {};
-      try {
-        var parsed = JSON.parse(raw);
-        return (parsed && typeof parsed === 'object') ? parsed : {};
-      } catch (e) { return {}; }
-    },
-    write: function (obj) { return safeSet(CL_KEY, JSON.stringify(obj)); },
-    clear: function () { safeRemove(CL_KEY); }
-  };
+  function makeStore(key) {
+    return {
+      read: function () {
+        var raw = safeGet(key);
+        if (!raw) return {};
+        try {
+          var parsed = JSON.parse(raw);
+          return (parsed && typeof parsed === 'object') ? parsed : {};
+        } catch (e) { return {}; }
+      },
+      write: function (obj) { return safeSet(key, JSON.stringify(obj)); },
+      clear: function () { safeRemove(key); }
+    };
+  }
 
   // ── theme ───────────────────────────────────────────────────────
   function applyTheme(theme) {
@@ -931,29 +1056,68 @@
       n.last_reviewed ? '資料覆核日：' + n.last_reviewed : ''].filter(Boolean).join(' ');
   }
 
-  // ── checklist ───────────────────────────────────────────────────
-  function renderChecklist(groups) {
-    var shell = el('checklist-shell');
-    if (!groups || !groups.length) { el('checklist').style.display = 'none'; return; }
+  // ── checklist / packing list (one component, two instances) ─────
+  // Both keep their own storage key and their own element ids, so ticking a
+  // packing item never touches the pre-departure state and vice versa.
+  function renderCheckGroups(cfg) {
+    var shell = el(cfg.shellId);
+    var groups = cfg.groups;
+    if (!groups || !groups.length) { el(cfg.sectionId).style.display = 'none'; return; }
 
+    var store = makeStore(cfg.storageKey);
+    var p = cfg.prefix;
     var state = store.read();
     var total = groups.reduce(function (n, g) { return n + g.items.length; }, 0);
+
+    function update(storageOk) {
+      var s = store.read();
+      var tot = 0, done = 0;
+
+      groups.forEach(function (g) {
+        var d = g.items.filter(function (it) { return s[it.id]; }).length;
+        tot += g.items.length; done += d;
+        var c = document.querySelector('[data-count-for="' + g.id + '"]');
+        if (c) {
+          c.textContent = d + '/' + g.items.length;
+          c.style.color = (d === g.items.length) ? 'var(--ok)' : '';
+        }
+      });
+
+      var pct = tot ? Math.round(done / tot * 100) : 0;
+      var circ = 2 * Math.PI * 35;
+      var bar = el(p + '-bar');
+      if (bar) {
+        bar.setAttribute('stroke-dasharray', circ.toFixed(1));
+        bar.setAttribute('stroke-dashoffset', (circ * (1 - pct / 100)).toFixed(1));
+        bar.style.stroke = (pct === 100) ? 'var(--ok)' : 'var(--gold)';
+      }
+      if (el(p + '-pct')) el(p + '-pct').textContent = pct + '%';
+      if (el(p + '-headline')) {
+        el(p + '-headline').textContent = (tot - done === 0)
+          ? cfg.doneText : cfg.remainingText(tot - done);
+      }
+      if (el(p + '-subline')) el(p + '-subline').textContent = '已完成 ' + done + ' / ' + tot + ' 項';
+      if (el(p + '-note')) {
+        el(p + '-note').textContent = storageOk
+          ? cfg.savedNote : '這個瀏覽器停用了本機儲存，勾選狀態只在本頁停留期間有效，重新整理後會消失。';
+      }
+    }
 
     var html =
       '<div class="cl-top">' +
         '<div class="ring">' +
           '<svg width="78" height="78" viewBox="0 0 78 78" aria-hidden="true">' +
             '<circle class="track" cx="39" cy="39" r="35" fill="none" stroke-width="1"></circle>' +
-            '<circle class="bar" id="cl-bar" cx="39" cy="39" r="35" fill="none" stroke-width="2" ' +
+            '<circle class="bar" id="' + p + '-bar" cx="39" cy="39" r="35" fill="none" stroke-width="2" ' +
               'stroke-dasharray="219.9" stroke-dashoffset="219.9"></circle>' +
           '</svg>' +
-          '<span class="pct num" id="cl-pct">0%</span>' +
+          '<span class="pct num" id="' + p + '-pct">0%</span>' +
         '</div>' +
         '<div class="cl-top-text">' +
-          '<strong id="cl-headline">出發前還有 ' + total + ' 項要確認</strong>' +
-          '<span id="cl-subline">已完成 0 / ' + total + ' 項</span>' +
+          '<strong id="' + p + '-headline">' + esc(cfg.remainingText(total)) + '</strong>' +
+          '<span id="' + p + '-subline">已完成 0 / ' + total + ' 項</span>' +
         '</div>' +
-        '<button class="btn-ghost" id="cl-reset" type="button">Reset</button>' +
+        '<button class="btn-ghost" id="' + p + '-reset" type="button">Reset</button>' +
       '</div>';
 
     html += groups.map(function (g) {
@@ -984,7 +1148,7 @@
       '</div>';
     }).join('');
 
-    html += '<div class="cl-saved-note" id="cl-note"></div>';
+    html += '<div class="cl-saved-note" id="' + p + '-note"></div>';
     shell.innerHTML = html;
 
     shell.addEventListener('click', function (ev) {
@@ -999,53 +1163,17 @@
       var next = store.read();
       if (ev.target.checked) next[ev.target.id] = true;
       else delete next[ev.target.id];
-      updateProgress(groups, store.write(next));
+      update(store.write(next));
     });
 
-    el('cl-reset').addEventListener('click', function () {
-      if (!window.confirm('確定要清除全部勾選紀錄嗎？')) return;
+    el(p + '-reset').addEventListener('click', function () {
+      if (!window.confirm(cfg.resetPrompt)) return;
       store.clear();
       Array.prototype.forEach.call(shell.querySelectorAll('[data-cl-item]'), function (b) { b.checked = false; });
-      updateProgress(groups, true);
+      update(true);
     });
 
-    updateProgress(groups, store.write(state));
-  }
-
-  function updateProgress(groups, storageOk) {
-    var state = store.read();
-    var total = 0, done = 0;
-
-    groups.forEach(function (g) {
-      var d = g.items.filter(function (it) { return state[it.id]; }).length;
-      total += g.items.length; done += d;
-      var c = document.querySelector('[data-count-for="' + g.id + '"]');
-      if (c) {
-        c.textContent = d + '/' + g.items.length;
-        c.style.color = (d === g.items.length) ? 'var(--ok)' : '';
-      }
-    });
-
-    var pct = total ? Math.round(done / total * 100) : 0;
-    var circ = 2 * Math.PI * 35;
-    var bar = el('cl-bar');
-    if (bar) {
-      bar.setAttribute('stroke-dasharray', circ.toFixed(1));
-      bar.setAttribute('stroke-dashoffset', (circ * (1 - pct / 100)).toFixed(1));
-      bar.style.stroke = (pct === 100) ? 'var(--ok)' : 'var(--gold)';
-    }
-    if (el('cl-pct')) el('cl-pct').textContent = pct + '%';
-    if (el('cl-headline')) {
-      el('cl-headline').textContent = (total - done === 0)
-        ? '全部確認完畢，可以出發了'
-        : '出發前還有 ' + (total - done) + ' 項要確認';
-    }
-    if (el('cl-subline')) el('cl-subline').textContent = '已完成 ' + done + ' / ' + total + ' 項';
-    if (el('cl-note')) {
-      el('cl-note').textContent = storageOk
-        ? '勾選狀態已存在這台裝置的瀏覽器（localStorage）。換裝置或清除瀏覽資料後需重新勾選。'
-        : '這個瀏覽器停用了本機儲存，勾選狀態只在本頁停留期間有效，重新整理後會消失。';
-    }
+    update(store.write(state));
   }
 
   // ── venues ──────────────────────────────────────────────────────
@@ -1346,9 +1474,139 @@
     }).join('');
   }
 
+  // ── emergency ───────────────────────────────────────────────────
+  function telRowHtml(e) {
+    var urgent = e.urgent ? ' is-urgent' : '';
+    var inner =
+      '<span class="tel-main">' +
+        '<span class="tel-label">' + esc(e.label) + '</span>' +
+        (e.note ? '<span class="tel-note">' + esc(e.note) + '</span>' : '') +
+      '</span>' +
+      '<span class="tel-number num">' + esc(e.value) + '</span>';
+
+    // A number that cannot be dialled as-is from Japan is rendered as plain
+    // text, so nobody taps it in an emergency and gets a dead line.
+    if (!e.tel) return '<div class="tel-row no-dial' + urgent + '">' + inner + '</div>';
+    return '<a class="tel-row' + urgent + '" href="tel:' + esc(e.tel) + '">' + inner + '</a>';
+  }
+
+  function renderEmergency(em) {
+    if (!em) { el('emergency').style.display = 'none'; return; }
+    if (em.intro) el('emergency-intro').textContent = em.intro;
+
+    var html = '<div class="sos-grid">';
+
+    // No `rise` class anywhere in this section: emergency content must be
+    // readable the instant the page paints, never gated on a scroll animation
+    // firing. Everything else on the page can fade in; this cannot.
+    (em.groups || []).forEach(function (g) {
+      var urgent = (g.entries || []).some(function (e) { return e.urgent; });
+      html += '<div class="sos-block' + (urgent ? ' is-urgent' : '') + '">' +
+        '<div class="sos-head"><h3>' + esc(g.icon || '') + ' ' + esc(g.title) + '</h3>' +
+        (g.hint ? '<span class="sos-hint">' + esc(g.hint) + '</span>' : '') + '</div>' +
+        (g.entries || []).map(telRowHtml).join('') +
+      '</div>';
+    });
+
+    (em.procedures || []).forEach(function (pr) {
+      html += '<div class="sos-block">' +
+        '<div class="sos-head"><h3>' + esc(pr.icon || '') + ' ' + esc(pr.title) + '</h3></div>' +
+        '<div class="proc">' +
+          (pr.lede ? '<p class="proc-lede">' + esc(pr.lede) + '</p>' : '') +
+          '<ol class="proc-steps">' +
+            (pr.steps || []).map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') +
+          '</ol>' +
+        '</div></div>';
+    });
+
+    if (em.phrases && em.phrases.length) {
+      html += '<div class="sos-block">' +
+        '<div class="sos-head"><h3>🗣️ 日文急救短句</h3>' +
+        '<span class="sos-hint">日文欄點一下會整句選取，直接把手機拿給對方看</span></div>' +
+        '<div class="phrase-list">' +
+        em.phrases.map(function (ph) {
+          return '<div class="phrase">' +
+            '<span class="phrase-zh">' + esc(ph.zh) + '</span>' +
+            '<span class="phrase-ja">' + esc(ph.ja) + '</span>' +
+            '<span class="phrase-romaji">' + esc(ph.romaji) + '</span>' +
+          '</div>';
+        }).join('') + '</div></div>';
+    }
+
+    if (em.personal_fields && em.personal_fields.length) {
+      html += '<div class="sos-block">' +
+        '<div class="sos-head"><h3>🔒 個人緊急資料</h3>' +
+        '<span class="sos-hint">自己填，只存在這台裝置</span></div>' +
+        '<div class="personal"><div class="personal-grid">' +
+        em.personal_fields.map(function (f) {
+          return '<div class="field">' +
+            '<label for="pf-' + esc(f.id) + '">' + esc(f.label) + '</label>' +
+            '<input type="' + (f.tel ? 'tel' : 'text') + '" id="pf-' + esc(f.id) +
+              '" data-personal="' + esc(f.id) + '" placeholder="' + esc(f.placeholder || '') + '"' +
+              (f.tel ? ' data-callable="1"' : '') + ' autocomplete="off">' +
+            (f.tel ? '<a class="field-call" data-call-for="' + esc(f.id) + '" href="#" hidden>撥打 ↗</a>' : '') +
+          '</div>';
+        }).join('') +
+        '</div>' +
+        '<p class="personal-note" id="personal-note"></p>' +
+        '</div></div>';
+    }
+
+    html += '</div>';
+    el('emergency-body').innerHTML = html;
+
+    // personal fields: device-local only, never sent anywhere
+    var pstore = makeStore(PERSONAL_KEY);
+    var saved = pstore.read();
+    var inputs = el('emergency-body').querySelectorAll('[data-personal]');
+
+    function syncCall(input) {
+      var link = document.querySelector('[data-call-for="' + input.getAttribute('data-personal') + '"]');
+      if (!link) return;
+      var digits = String(input.value || '').replace(/[^0-9+]/g, '');
+      if (digits.length >= 5) {
+        link.href = 'tel:' + digits;
+        link.hidden = false;
+      } else {
+        link.removeAttribute('href');
+        link.hidden = true;
+      }
+    }
+
+    Array.prototype.forEach.call(inputs, function (input) {
+      var key = input.getAttribute('data-personal');
+      if (saved[key]) input.value = saved[key];
+      syncCall(input);
+      input.addEventListener('input', function () {
+        var next = pstore.read();
+        if (input.value) next[key] = input.value;
+        else delete next[key];
+        var ok = pstore.write(next);
+        syncCall(input);
+        var note = el('personal-note');
+        if (note) {
+          note.textContent = ok
+            ? '這幾欄只寫進這台裝置的瀏覽器，不會上傳、不會進入 GitHub，換裝置要重填。'
+            : '⚠️ 這個瀏覽器停用了本機儲存，關掉頁面就會消失。';
+        }
+      });
+    });
+
+    var note = el('personal-note');
+    if (note) {
+      note.textContent = '這幾欄只寫進這台裝置的瀏覽器，不會上傳、不會進入 GitHub，換裝置要重填。';
+    }
+  }
+
   // ── scroll behaviour ────────────────────────────────────────────
   function initScrollEffects() {
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function revealAll() {
+      Array.prototype.forEach.call(document.querySelectorAll('.rise'), function (n) {
+        n.classList.add('in');
+      });
+    }
 
     if (!reduce && 'IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) {
@@ -1357,8 +1615,14 @@
         });
       }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
       Array.prototype.forEach.call(document.querySelectorAll('.rise'), function (n) { io.observe(n); });
+
+      // Failsafe: a reveal animation must never be the reason content is
+      // missing. If anything is still hidden after a few seconds -- observer
+      // wedged, odd browser, fast programmatic scroll past an element --
+      // show everything and stop pretending this is decoration.
+      window.setTimeout(revealAll, 4000);
     } else {
-      Array.prototype.forEach.call(document.querySelectorAll('.rise'), function (n) { n.classList.add('in'); });
+      revealAll();
     }
 
     var bar = el('progress-bar');
@@ -1388,10 +1652,29 @@
   // ── boot ────────────────────────────────────────────────────────
   function render(data) {
     renderHero(data);
-    renderChecklist(data.predeparture_checklist);
+
+    renderCheckGroups({
+      sectionId: 'checklist', shellId: 'checklist-shell', prefix: 'cl',
+      storageKey: CL_KEY, groups: data.predeparture_checklist,
+      remainingText: function (n) { return '出發前還有 ' + n + ' 項要確認'; },
+      doneText: '全部確認完畢，可以出發了',
+      resetPrompt: '確定要清除全部覆核勾選紀錄嗎？',
+      savedNote: '勾選狀態已存在這台裝置的瀏覽器（localStorage）。換裝置或清除瀏覽資料後需重新勾選。'
+    });
+
+    renderCheckGroups({
+      sectionId: 'packing', shellId: 'packing-shell', prefix: 'pk',
+      storageKey: PACK_KEY, groups: data.packing_list,
+      remainingText: function (n) { return '還有 ' + n + ' 樣沒裝進行李'; },
+      doneText: '行李打包完成',
+      resetPrompt: '確定要清除全部打包勾選紀錄嗎？',
+      savedNote: '打包進度與覆核清單分開存放，互不影響。'
+    });
+
     renderVenues(data.venues);
     renderDays(data);
     renderContingency(data.contingency_plans);
+    renderEmergency(data.emergency);
     initScrollEffects();
 
     if (location.hash.indexOf('#venue-') === 0) {
