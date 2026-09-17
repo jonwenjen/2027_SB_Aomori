@@ -1,0 +1,27 @@
+name: build-site
+
+# index.html is a build artefact of template.html + itinerary.json.
+# This fails the build when someone edits the data or the template without
+# re-running `python3 build.py`, so the published page never drifts.
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: itinerary.json is valid JSON
+        run: python3 -c "import json; json.load(open('itinerary.json', encoding='utf-8'))"
+
+      - name: index.html matches the current data and template
+        run: python3 build.py --check
