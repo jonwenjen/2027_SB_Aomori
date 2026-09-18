@@ -660,6 +660,64 @@
     .lnk-tabelog { border-color: var(--tabelog); color: var(--tabelog); }
   }
 
+  /* forecast */
+  .fc-block { margin-top: 26px; }
+  .fc-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap; margin-bottom: 10px;
+  }
+  .fc-title { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); }
+  .fc-src { font-size: 0.68rem; color: var(--dim); }
+  .fc-src a { color: var(--gold); border-bottom: 1px solid var(--gold-dim); }
+
+  .fc-frame {
+    border: 1px solid var(--line); background: var(--surface-2);
+    min-height: 92px; display: flex; align-items: center; justify-content: center;
+    gap: 10px; padding: 14px; flex-wrap: wrap;
+  }
+  .fc-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    width: 100%; border-top: 1px solid var(--line); border-left: 1px solid var(--line);
+  }
+  .fc-day {
+    border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    padding: 13px 12px 14px; background: var(--surface-2);
+  }
+  .fc-day.is-windy { background: color-mix(in srgb, var(--danger) 12%, var(--surface-2)); }
+  @supports not (color: color-mix(in srgb, red 50%, blue)) {
+    .fc-day.is-windy { background: var(--surface-3); }
+  }
+  .fc-date { font-size: 0.64rem; letter-spacing: 0.14em; color: var(--dim); }
+  .fc-snow {
+    font-family: var(--serif); font-variant-numeric: tabular-nums lining-nums;
+    font-size: 1.5rem; color: var(--text); line-height: 1.15; margin-top: 7px;
+  }
+  .fc-snow.has-snow { color: var(--gold); }
+  .fc-snow small { font-size: 0.6rem; font-family: var(--sans); color: var(--dim); margin-left: 3px; letter-spacing: 0.1em; }
+  .fc-row { font-size: 0.72rem; color: var(--muted); margin-top: 7px; line-height: 1.55; }
+  .fc-row .k { color: var(--dim); }
+  .fc-gust.is-windy { color: var(--danger); font-weight: 600; }
+  .fc-flag {
+    display: inline-block; margin-top: 8px; font-size: 0.62rem; font-weight: 700;
+    letter-spacing: 0.06em; color: var(--danger);
+    border: 1px solid color-mix(in srgb, var(--danger) 50%, transparent);
+    padding: 2px 7px; line-height: 1.5;
+  }
+  @supports not (color: color-mix(in srgb, red 50%, blue)) {
+    .fc-flag { border-color: var(--danger); }
+  }
+  .fc-foot {
+    margin-top: 9px; font-size: 0.66rem; color: var(--dim); line-height: 1.7;
+    display: flex; flex-wrap: wrap; gap: 4px 14px;
+  }
+  .fc-foot a { color: var(--gold); border-bottom: 1px solid var(--gold-dim); }
+  .fc-foot .est { color: var(--warn); }
+  .fc-state { font-size: 0.79rem; color: var(--muted); text-align: center; line-height: 1.7; }
+  .fc-state.is-error { color: var(--danger); }
+  @media (max-width: 480px) {
+    .fc-grid { grid-template-columns: 1fr; }
+  }
+
   /* map */
   .map-block { margin-top: 26px; }
   .map-frame {
@@ -1256,6 +1314,20 @@
       return '<p class="note' + (n.indexOf('✅') === 0 ? ' is-ok' : '') + '">' + esc(n) + '</p>';
     }).join('');
 
+    var fcBlock = '';
+    if (v.forecast && v.forecast.lat != null && v.forecast.lon != null) {
+      fcBlock = '<div class="fc-block" data-fc-id="' + esc(v.id) + '" data-fc="' +
+          esc(JSON.stringify(v.forecast)) + '">' +
+        '<div class="fc-head">' +
+          '<span class="fc-title">未來 ' + (FC_META.days || 3) + ' 天雪況</span>' +
+          '<span class="fc-src">資料：<a href="' + esc(FC_META.provider_url || 'https://open-meteo.com/') +
+            '" target="_blank" rel="noopener noreferrer">' + esc(FC_META.provider || 'Open-Meteo') + '</a></span>' +
+        '</div>' +
+        '<div class="fc-frame" data-fc-frame="1"><span class="fc-state">展開後讀取雪況</span></div>' +
+        '<div class="fc-foot" data-fc-foot="1"></div>' +
+      '</div>';
+    }
+
     var mapBlock = '';
     if (v.map_image && v.map_image.url) {
       mapBlock = '<div class="map-block" data-map-url="' + esc(v.map_image.url) + '"' +
@@ -1282,10 +1354,146 @@
         (v.summary ? '<p class="venue-summary">' + esc(v.summary) + '</p>' : '') +
         '<div class="stat-row">' + (v.stats || []).map(statHtml).join('') + '</div>' +
         '<div class="link-row">' + (v.links || []).map(linkHtml).join('') + '</div>' +
+        fcBlock +
         mapBlock +
         (notes ? '<div class="venue-notes">' + notes + '</div>' : '') +
       '</div>' +
     '</article>';
+  }
+
+  // ── forecast (Open-Meteo, fetched on first expand) ──────────────
+  var FC_CACHE = {};
+  var FC_META = {};
+
+  function fcUrl(f) {
+    return 'https://api.open-meteo.com/v1/forecast' +
+      '?latitude=' + encodeURIComponent(f.lat) +
+      '&longitude=' + encodeURIComponent(f.lon) +
+      '&daily=snowfall_sum,temperature_2m_max,temperature_2m_min,wind_gusts_10m_max' +
+      '&timezone=' + encodeURIComponent('Asia/Tokyo') +
+      '&forecast_days=' + (FC_META.days || 3) +
+      (f.elevation ? '&elevation=' + encodeURIComponent(f.elevation) : '') +
+      '&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm';
+  }
+
+  function num(v, digits) {
+    if (v === null || v === undefined || isNaN(v)) return null;
+    return digits === 0 ? Math.round(v) : Math.round(v * 10) / 10;
+  }
+
+  function fcDayHtml(d, units, warnAt) {
+    var gust = num(d.gust, 0);
+    var windy = gust !== null && gust >= warnAt;
+    var snow = num(d.snow, 0);
+    var tmax = num(d.tmax, 0);
+    var tmin = num(d.tmin, 0);
+
+    return '<div class="fc-day' + (windy ? ' is-windy' : '') + '">' +
+      '<span class="fc-date">' + esc(String(d.date).slice(5)) + ' ' + esc(weekday(d.date)) + '</span>' +
+      '<div class="fc-snow' + (snow ? ' has-snow' : '') + '">' +
+        (snow === null
+          ? '—<small>新雪不明</small>'
+          : esc(snow) + '<small>' + esc(units.snow || 'cm') + ' 新雪</small>') +
+      '</div>' +
+      '<div class="fc-row"><span class="k">氣溫</span> ' +
+        (tmax === null ? '—' : esc(tmax) + '°') + ' / ' +
+        (tmin === null ? '—' : esc(tmin) + '°') + '</div>' +
+      '<div class="fc-row"><span class="k">陣風</span> ' +
+        '<span class="fc-gust' + (windy ? ' is-windy' : '') + '">' +
+          (gust === null ? '—' : esc(gust) + ' ' + esc(units.gust || 'km/h')) + '</span></div>' +
+      (windy ? '<span class="fc-flag">⚠ 高空吊椅易停駛</span>' : '') +
+      '</div>';
+  }
+
+  function renderForecast(block, payload, f) {
+    var frame = block.querySelector('[data-fc-frame]');
+    var warnAt = FC_META.gust_warn_kmh || 40;
+
+    frame.innerHTML = '<div class="fc-grid">' +
+      payload.days.map(function (d) { return fcDayHtml(d, payload.units, warnAt); }).join('') +
+      '</div>';
+
+    var foot = block.querySelector('[data-fc-foot]');
+    if (foot) {
+      foot.innerHTML =
+        '<span>預報高度 ' + esc(f.elevation) + ' m</span>' +
+        '<span><a href="' + esc(f.map_url) + '" target="_blank" rel="noopener noreferrer">座標 ' +
+          esc(f.lat) + ', ' + esc(f.lon) + ' ↗</a></span>' +
+        (f.confidence === 'estimated'
+          ? '<span class="est">座標為估算值 —— 請點開確認圖釘位置</span>'
+          : '<span>座標已查證</span>') +
+        '<span>陣風 ≥ ' + warnAt + ' km/h 標為易停駛</span>';
+    }
+  }
+
+  // Parses defensively: this is the one panel fed by a live third party, so
+  // a changed field, a null value or a short array degrades to "—" rather
+  // than throwing and taking the whole card down.
+  function parseForecast(json) {
+    var d = json && json.daily;
+    if (!d || !Array.isArray(d.time) || !d.time.length) return null;
+    var u = json.daily_units || {};
+    var days = d.time.map(function (t, i) {
+      return {
+        date: t,
+        snow: (d.snowfall_sum || [])[i],
+        tmax: (d.temperature_2m_max || [])[i],
+        tmin: (d.temperature_2m_min || [])[i],
+        gust: (d.wind_gusts_10m_max || [])[i]
+      };
+    });
+    return {
+      days: days,
+      units: { snow: u.snowfall_sum, gust: u.wind_gusts_10m_max }
+    };
+  }
+
+  function loadForecast(block, force) {
+    var id = block.getAttribute('data-fc-id');
+    if (!force && block.getAttribute('data-loaded') === '1') return;
+    block.setAttribute('data-loaded', '1');
+
+    var f;
+    try { f = JSON.parse(block.getAttribute('data-fc')); } catch (e) { f = null; }
+    if (!f) return;
+
+    var frame = block.querySelector('[data-fc-frame]');
+
+    if (!force && FC_CACHE[id]) { renderForecast(block, FC_CACHE[id], f); return; }
+
+    frame.innerHTML = '<span class="spinner"></span><span class="fc-state">讀取未來 ' +
+      (FC_META.days || 3) + ' 天雪況…</span>';
+
+    function fail(why) {
+      frame.innerHTML = '<p class="fc-state is-error">雪況讀取失敗（' + esc(why) + '）。<br>' +
+        '可能是目前沒有網路，或預報服務暫時無回應。<br>' +
+        '請改用上方「Snow-Forecast 雪況」連結。</p>' +
+        '<button class="map-retry" type="button" data-fc-retry="1">重新載入</button>';
+    }
+
+    var done = false;
+    var timer = window.setTimeout(function () {
+      if (!done) { done = true; fail('逾時'); }
+    }, 9000);
+
+    fetch(fcUrl(f), { mode: 'cors' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function (json) {
+        if (done) return;
+        done = true; window.clearTimeout(timer);
+        var payload = parseForecast(json);
+        if (!payload) { fail('資料格式非預期'); return; }
+        FC_CACHE[id] = payload;
+        renderForecast(block, payload, f);
+      })
+      .catch(function (err) {
+        if (done) return;
+        done = true; window.clearTimeout(timer);
+        fail(err && err.message ? err.message : '連線錯誤');
+      });
   }
 
   // The map image is fetched only when the card is first opened, and a failed
@@ -1337,7 +1545,9 @@
     card.setAttribute('data-open', open ? '1' : '0');
     var head = card.querySelector('[data-venue-toggle]');
     if (head) head.setAttribute('aria-expanded', open ? 'true' : 'false');
-    if (open) Array.prototype.forEach.call(card.querySelectorAll('.map-block'), loadVenueMap);
+    if (!open) return;
+    Array.prototype.forEach.call(card.querySelectorAll('.fc-block'), function (b) { loadForecast(b, false); });
+    Array.prototype.forEach.call(card.querySelectorAll('.map-block'), loadVenueMap);
   }
 
   function focusVenue(id) {
@@ -1354,7 +1564,8 @@
     card.classList.add('is-target');
   }
 
-  function renderVenues(venues) {
+  function renderVenues(venues, forecastMeta) {
+    FC_META = forecastMeta || {};
     if (!venues || !venues.length) { el('venues').style.display = 'none'; return; }
 
     var grid = el('venue-grid');
@@ -1390,6 +1601,11 @@
     });
 
     grid.addEventListener('click', function (ev) {
+      var fcRetry = ev.target.closest('[data-fc-retry]');
+      if (fcRetry) {
+        loadForecast(fcRetry.closest('.fc-block'), true);
+        return;
+      }
       var retry = ev.target.closest('[data-map-retry]');
       if (retry) {
         var block = retry.closest('.map-block');
@@ -1849,7 +2065,7 @@
       savedNote: '打包進度與覆核清單分開存放，互不影響。'
     });
 
-    renderVenues(data.venues);
+    renderVenues(data.venues, data.forecast_meta);
     renderDays(data);
     renderToday(data);   // after renderDays: it marks today in the day strip
     renderContingency(data.contingency_plans);

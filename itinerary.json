@@ -9796,7 +9796,15 @@
       },
       "notes": [
         "低海拔避風雪場 —— 八甲田因強風停駛時的第一備案（車程約 40 分）。"
-      ]
+      ],
+      "forecast": {
+        "lat": 40.744,
+        "lon": 140.788,
+        "elevation": 520,
+        "confidence": "estimated",
+        "note": "雲谷峠北斜面・青森市雲谷",
+        "map_url": "https://www.google.com/maps?q=40.744,140.788"
+      }
     },
     {
       "id": "hakkoda",
@@ -9877,7 +9885,15 @@
         "纜車首班 9:00、20 分一班（每小時 00 / 20 / 40 分），下行末班 16:00（3 月起 16:40）。",
         "風速 25 m/s 以上即停駛 —— 出發當日務必先看運行狀態，備妥 Moya Hills 替代方案。",
         "山頂無壓雪、無明確標示，強烈建議聘請當地嚮導並攜帶雪崩三寶。"
-      ]
+      ],
+      "forecast": {
+        "lat": 40.68093,
+        "lon": 140.83166,
+        "elevation": 1324,
+        "confidence": "verified",
+        "note": "八甲田纜車山麓站一帶",
+        "map_url": "https://www.google.com/maps?q=40.68093,140.83166"
+      }
     },
     {
       "id": "amihari",
@@ -9957,7 +9973,15 @@
       },
       "notes": [
         "高空吊椅位處岩手山迎風面，強風停駛機率高於下部纜車；停駛時改往岩手高原（箱型纜車抗風）。"
-      ]
+      ],
+      "forecast": {
+        "lat": 39.777,
+        "lon": 140.986,
+        "elevation": 1350,
+        "confidence": "estimated",
+        "note": "岩手山西南麓・雫石町長山小松倉",
+        "map_url": "https://www.google.com/maps?q=39.777,140.986"
+      }
     },
     {
       "id": "iwate-kogen",
@@ -10036,7 +10060,15 @@
       },
       "notes": [
         "全罩式箱型纜車抗風性佳 —— 網張溫泉高空吊椅停駛時的第一備案。"
-      ]
+      ],
+      "forecast": {
+        "lat": 39.769,
+        "lon": 141.009,
+        "elevation": 1213,
+        "confidence": "estimated",
+        "note": "岩手山南麓・雫石町長山岩手山",
+        "map_url": "https://www.google.com/maps?q=39.769,141.009"
+      }
     },
     {
       "id": "okunakayama",
@@ -10119,7 +10151,15 @@
       "notes": [
         "官方設有即時纜車運行狀態頁，是本行程 5 座雪場中回報最即時的一座。",
         "夜間滑雪場次每季公告不同，Day 11 夜滑行程請於入住時向櫃台確認當日開放。"
-      ]
+      ],
+      "forecast": {
+        "lat": 40.07,
+        "lon": 141.227,
+        "elevation": 1018,
+        "confidence": "estimated",
+        "note": "西岳・一戶町奧中山西田子",
+        "map_url": "https://www.google.com/maps?q=40.07,141.227"
+      }
     },
     {
       "id": "warasse",
@@ -10871,6 +10911,11 @@
         {
           "id": "op-salon-wed",
           "text": "Boy Meets Girl 公休為每月第 3 個週三 —— 2027-02-10 是第 2 個週三，正常營業"
+        },
+        {
+          "id": "op-forecast-coords",
+          "text": "已點開 5 張雪場卡的「座標」連結，確認地圖圖釘確實落在雪場上（八甲田為查證座標，其餘 4 座為估算，誤差約數公里）",
+          "when": "一次確認即可；若圖釘偏掉，改 itinerary.json 裡 venues[].forecast 的 lat/lon"
         }
       ]
     },
@@ -11403,5 +11448,12 @@
         }
       ]
     }
-  ]
+  ],
+  "forecast_meta": {
+    "provider": "Open-Meteo",
+    "provider_url": "https://open-meteo.com/",
+    "gust_warn_kmh": 40,
+    "days": 3,
+    "note": "未來 3 天預報於展開雪場卡時即時抓取，不隨頁面一起發佈，因此永遠是最新的。陣風達 40 km/h 以上標為「高空吊椅易停駛」；八甲田纜車本身的停駛門檻為 25 m/s（90 km/h），見該卡注意事項。"
+  }
 }
