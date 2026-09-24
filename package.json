@@ -1,0 +1,13 @@
+{
+  "name": "2027-sb-aomori",
+  "private": true,
+  "description": "2027 Tohoku ski itinerary -- single-file site built from src/ and itinerary.json",
+  "scripts": {
+    "build": "python3 build.py",
+    "check": "python3 build.py --check",
+    "test": "node tests/run.js"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

@@ -1,10 +1,5 @@
 {
   "trip_title": "2027 東北滑雪・極致粉雪與冬奧入瀨秘境行",
-  "github_meta": {
-    "owner": "jonwenjen",
-    "repo": "2027_SB_Aomori",
-    "branch": "main"
-  },
   "flights": [
     {
       "type": "arrival",
@@ -33,55 +28,6 @@
         "airport": "KHH (高雄小港)",
         "time": "21:00"
       }
-    }
-  ],
-  "ski_resorts_overview": [
-    {
-      "name": "Moya Hills モヤヒルズ",
-      "elevation": "520 m（基部 240 m ・ 落差 280 m）",
-      "official_website": "http://moyahills.jp/",
-      "course_map_url": "https://surfsnow.jp/guide/htm/r0280s.htm",
-      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Moya-Hills/6day/mid",
-      "map_image_url": "https://moyahills.jp/_src/93046306/20231214130801-0001.webp?v=1769512766246",
-      "venue_id": "moya-hills"
-    },
-    {
-      "name": "八甲田纜車 ＆ 滑雪場 (Hakkoda Ropeway)",
-      "elevation": "1,324 m（基部 658 m ・ 落差 666 m）",
-      "official_website": "https://hakkoda-ropeway.jp/",
-      "course_map_url": "https://hakkoda-ropeway.jp/nature/ski/",
-      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Hakkoda/6day/mid",
-      "map_image_url": "https://surfsnow.jp/real_img/r0126/course_pic_r0126.jpg",
-      "venue_id": "hakkoda"
-    },
-    {
-      "name": "網張溫泉滑雪場 (Amihari Onsen)",
-      "elevation": "1,350 m（基部 760 m ・ 落差 590 m）",
-      "official_website": "https://www.qkamura.or.jp/iwate/ski/",
-      "course_map_url": "https://surfsnow.jp/guide/htm/r0199s.htm",
-      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Amihari-Onsen/6day/mid",
-      "map_image_url": "https://surfsnow.jp/real_img/r0199/course_pic_r0199.jpg",
-      "venue_id": "amihari"
-    },
-    {
-      "name": "岩手高原戲雪公園 (Iwate Kogen Snow Park)",
-      "elevation": "1,213 m（岩手山南麓）",
-      "official_website": "https://iwatekogen.jp/",
-      "course_map_url": "https://surfsnow.jp/guide/htm/r0251s.htm",
-      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Iwate-Kogen-Snow-Park/6day/mid",
-      "map_image_url": "https://surfsnow.jp/real_img/r0251/course_pic_r0251.jpg",
-      "venue_id": "iwate-kogen"
-    },
-    {
-      "name": "奧中山高原滑雪場 (Okunakayamakogen)",
-      "elevation": "1,018 m（基部 650 m ・ 落差 368 m）",
-      "official_website": "https://www.okunakayamakogen.jp/",
-      "course_map_url": "https://www.okunakayamakogen.jp/winter-season/course-guide/",
-      "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-      "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg",
-      "official_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg",
-      "fallback_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg",
-      "venue_id": "okunakayama"
     }
   ],
   "contingency_plans": [
@@ -130,20 +76,20 @@
     {
       "day_number": 1,
       "date": "2027-02-09",
-      "day_title": "抵達青森・進駐青森站前・裝備檢查與在地旬味",
+      "day_title": "抵達青森 ➔ 16:30 LOVINA 剪染 ➔ 站前晚餐",
       "stay": "Hotel Route-Inn Aomori Ekimae (ホテルルートイン青森駅前)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel%20Route-Inn%20Aomori%20Ekimae",
-      "ski_resort": null,
       "transit": {
-        "summary": "青森機場 (AOJ) ➔ JR 巴士東北・青森機場線直達青森站前 (車程約 35 分，提供 2 組班次選項)；採剪染方案 B 者今晚 16:30 進 LOVINA",
+        "summary": "青森機場 (AOJ) ➔ JR 巴士東北・青森機場線直達青森站前 (約 35 分) ➔ 16:30 Boy Meets Girl LOVINA 剪染",
         "details": [
-          "14:30 BR122 降落青森機場 (AOJ)，預留 45 分鐘入境查驗、提領行李與雪具裝備。",
-          "【交通選項 A（配合航班首選・15:45 抵達）】：青森機場 2 號站牌搭乘 15:10 發車之 JR 巴士東北（青森機場線）➔ 15:45 直達青森站前 9 號站牌（每人精算花費：¥860）。距離 18:00 飯店 Check-in 截止時間足足有 2 小時 15 分超充裕餘裕！",
-          "【交通選項 B（彈性次班・16:35 抵達）】：若出關領取雪具耗時，改搭 16:00 發車之 JR 巴士東北 ➔ 16:35 抵達青森站前（每人精算花費：¥860）。距 18:00 仍有近 1.5 小時充足時間。",
-          "【計程車精算對比】：青森機場至飯店約 14 公里，車程 25 分。小型計程車單程約 ¥5,000（1 人搭乘每人花費：¥5,000；2 人共乘每人花費：¥2,500）。",
-          "下車步行 1 分鐘即達 Hotel Route-Inn Aomori Ekimae 入住，大廳設有雪具放置空間與頂樓天然人工溫泉大浴場。",
-          "【★ 剪染方案 B 專用｜16:30 進場】：若採用「剪染方案 B」，今日 15:45 抵站前後先到飯店寄放行李（步行 1 分），15:50 出發，16:30 進 LOVINA 4F 開始剪＋染，約 2.5–3 小時於 19:00–19:30 完成（沙龍 20:00 打烊，尾端留 30 分緩衝）。採用此方案則 Day 2 完全不受影響，可滑滿含夜滑約 8 小時。",
-          "【方案 B 的班機延誤保險】：訂位時務必告知航班 BR122 與預計 16:30 到店。延誤 45 分內改搭 16:00 巴士（16:35 抵達）仍可 17:00 開始；延誤超過 1 小時即放棄今日，改用 Day 2 的「剪染方案 A」。"
+          "14:30 BR122 降落青森機場 (AOJ)，預留 45 分鐘入境查驗、提領行李與雪具。",
+          "【交通主線・15:45 抵達】青森機場 2 號站牌 15:10 JR 巴士東北（青森機場線）➔ 15:45 青森站前 9 號站牌（每人 ¥860）。",
+          "15:50 先到 Hotel Route-Inn Aomori Ekimae 寄放行李與雪具（下車步行 1 分；大廳設雪具放置區）。",
+          "【★ 剪染・16:30 進場】LOVINA 4F「Boy Meets Girl」（與青森站共構，步行 1 分）剪＋染約 2.5–3 小時，19:00–19:30 完成。沙龍 10:00–20:00 營業、最後剪髮受理 19:00，尾端留約 30 分緩衝。",
+          "【延誤應變・45 分內】BR122 延誤 45 分以內：改搭 16:00 JR 巴士 ➔ 16:35 抵站前，17:00 開始剪染（到 20:00 打烊剛好做完，訂位時就先跟店家講好這個可能）。",
+          "【延誤應變・超過 1 小時】今天放棄，改約 Day 2 16:00：Day 2 滑到 14:45，預約 4WD 雪地計程車下山（¥4,600／車）。雪場下山最早巴士是 16:40（17:20 才到站前），趕不上，這個備案一定要搭計程車。",
+          "【計程車對比】青森機場至飯店約 14 公里、25 分，小型計程車約 ¥5,000（2 人共乘每人 ¥2,500）；班機小延誤時搭計程車可把 16:30 救回來。",
+          "19:30 後入住、青森站前晚餐（見下方在地推薦）。"
         ]
       },
       "recommendations": {
@@ -729,31 +675,19 @@
     {
       "day_number": 2,
       "date": "2027-02-10",
-      "day_title": "Moya Hills モヤヒルズ 滑雪暖身 ➔ 剪染 2 案擇一 ➔ 青森灣夜景",
+      "day_title": "Moya Hills モヤヒルズ 全日滑雪＋夜滑 ➔ 青森灣夜景",
       "stay": "Hotel Route-Inn Aomori Ekimae",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel%20Route-Inn%20Aomori%20Ekimae",
-      "ski_resort": {
-        "name": "Moya Hills モヤヒルズ (Moya Hills Ski Area)",
-        "elevation": "120m - 550m (落差 430m)",
-        "highlights": "青森市區近郊景觀雪場，可遠眺陸奧灣與青森市街！雪道寬廣平緩，配備夜間照明與完整單板 Park 設施，為東北雪季暖身適應首選",
-        "course_map_url": "https://surfsnow.jp/guide/htm/r0280s.htm",
-        "official_website": "http://moyahills.jp/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Moya-Hills/6day/mid",
-        "map_image_url": "https://moyahills.jp/_src/93046306/20231214130801-0001.webp?v=1769512766246"
-      },
       "transit": {
-        "summary": "JR 青森站東口 ➔ 青森市營巴士直達モヤヒルズ (車程約 40 分)；剪染時段 2 案擇一，方案 A 需搭計程車下山",
+        "summary": "JR 青森站東口 ➔ 青森市營巴士直達モヤヒルズ (約 40 分)；剪染已於 Day 1 完成，今天滑滿含夜滑",
         "details": [
-          "【去程選項 A（晨間早班首選・09:12 抵雪場）】：青森站東口 3 號站牌搭乘 08:30 青森市營巴士（雲谷線）➔ 09:12 直達モヤヒルズ雪場門口（每人精算花費：¥680）。購票租借整裝後 09:30 準時開滑！",
-          "【去程選項 B（上午彈性次班・10:22 抵雪場）】：09:40 青森站東口搭乘市營巴士 ➔ 10:22 抵達雪場門口（每人精算花費：¥680）。",
-          "【⚠️ 為什麼原訂 18:00 剪＋染做不完】：沙龍 10:00–20:00 營業、最後剪髮受理 19:00，而剪＋染需 2.5–3 小時。18:00 進場最快也要 20:30 才結束，會超過打烊時間。以下兩案擇一。",
-          "【★ 剪染方案 A（推薦）｜Day 2 提早收板・16:00 進場・剪＋染一次做完】：09:30 開滑 ➔ 14:45 收板整裝 ➔ 15:00 搭預約之 4WD 雪地計程車下山（13 公里、車程約 25–30 分）➔ 15:30 抵青森站前 ➔ 15:40 回飯店放雪具梳洗 ➔ 16:00 進 LOVINA 4F。剪＋染 18:30–19:00 完成，尾端留 1–1.5 小時緩衝。滑雪時數約 5.25 小時。",
-          "【方案 A 的交通關鍵】：⚠️ 已知冬季班表中，雪場下山最早班次為 16:40（17:20 才抵站前），趕不上 16:00 進場 —— 所以方案 A 必須搭計程車，巴士做不到。4WD 雪地計程車單程約 ¥4,600（1 人搭乘每人 ¥4,600；2 人共乘每人 ¥2,300）。務必前一日先電話預約。",
-          "【方案 A 的代價評估】：少滑約 2.75 小時，但 Day 2 本就是最平緩的暖身適應日，且 Day 4 上午還會再訪 Moya Hills，不會損失獨有雪道。這是全行程代價最低的取捨。",
-          "【★ 剪染方案 B｜移到 Day 1 抵達當晚 16:30・Day 2 完全不動】：Day 2 恢復成純滑雪日 ➔ 09:30 開滑，滑到 17:30 含夜滑 ➔ 搭 17:50 市營巴士 ➔ 18:30 返抵青森站前（每人精算花費：¥680）。滑雪時數約 8 小時，比方案 A 多近 3 小時。詳細做法見 Day 1 交通欄。",
-          "【方案 B 的風險】：整段押在 BR122 準點。班機一延誤就壓縮到底，且抵達當天剛下飛機。若不想把美髮預約綁在班機上，選方案 A。",
-          "【回程選項（不做美髮時的原定班次）】：16:30 雪場收板整裝，搭 16:40 市營巴士 ➔ 17:20 返抵青森站前（每人精算花費：¥680）。",
-          "【冬季計程車精算對比】：青森站至雪場約 13 公里，冬季 4WD 雪地計程車單程約 ¥4,600（1 人搭乘每人花費：¥4,600；2 人共乘每人花費：¥2,300）。"
+          "【去程主線・09:12 抵雪場】青森站東口 3 號站牌 08:30 青森市營巴士（雲谷線）➔ 09:12 モヤヒルズ（每人 ¥680），09:30 開滑。",
+          "【去程備案・10:22 抵雪場】09:40 青森站東口市營巴士 ➔ 10:22 抵達（每人 ¥680）。",
+          "【回程主線・夜滑到 17:30】17:50 市營巴士 ➔ 18:30 返抵青森站前（每人 ¥680）。全日約 8 小時。",
+          "【回程備案・不夜滑】16:30 收板，16:40 市營巴士 ➔ 17:20 返抵青森站前（每人 ¥680）。",
+          "【冬季計程車對比】青森站至雪場約 13 公里，4WD 雪地計程車單程約 ¥4,600（2 人共乘每人 ¥2,300）。",
+          "【僅限 Day 1 剪染延誤時】改成 14:45 收板、15:00 預約計程車下山、16:00 進 LOVINA 4F（見 Day 1）。",
+          "晚間 19:30 後 青森ベイブリッジ與 A-FACTORY 一帶看青森灣夜景。"
         ]
       },
       "recommendations": {
@@ -1343,15 +1277,6 @@
       "day_title": "八甲田山頂纜車・壯闊樹冰群與極致深粉雪挑戰",
       "stay": "Hotel Route-Inn Aomori Ekimae",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel%20Route-Inn%20Aomori%20Ekimae",
-      "ski_resort": {
-        "name": "八甲田滑雪場 ＆ 八甲田纜車 (Hakkoda Ropeway)",
-        "elevation": "670m - 1,324m (田茂萢岳頂)",
-        "highlights": "世界級豪雪極致深粉雪與壯麗天然「雪怪」樹冰群 (Juhyo)！101人座大型纜車直攻 1,324m，擁有 5km 超長未壓雪天然野雪道，單板粉雪探險殿堂",
-        "course_map_url": "https://hakkoda-ropeway.jp/nature/ski/",
-        "official_website": "https://hakkoda-ropeway.jp/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Hakkoda/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0126/course_pic_r0126.jpg"
-      },
       "transit": {
         "summary": "青森站東口 ➔ JR 巴士東北（冬季八甲田纜車線）直達八甲田纜車站前 (車程約 60 分，冬季配備雪鏈安全行駛)",
         "details": [
@@ -1359,6 +1284,7 @@
           "【去程選項 B（悠閒上午次班・10:30 抵纜車站）】：09:30 青森站東口搭乘 JR 巴士東北 ➔ 10:30 抵達八甲田纜車站（每人精算花費：¥1,200）。",
           "【回程選項 A（標準下山首選・16:45 抵飯店）】：15:30 收板整裝，搭乘 15:45 發車之回程 JR 巴士 ➔ 16:45 返抵青森站前（每人精算花費：¥1,200）。距離 18:00 餘裕充足 1 小時 15 分！",
           "【回程選項 B（最後班次底線・17:45 抵飯店）】：16:30 纜車站搭乘 16:45 末班 JR 巴士 ➔ 17:45 返抵青森站前（每人精算花費：¥1,200），準時於 18:00 前返回房間！",
+          "【💡 順路建議・酸ヶ湯溫泉千人風呂】同一條 JR 巴士路線再往前 15 分（纜車站 ➔ 酸ヶ湯，每人 ¥460）。14:30 收板 ➔ 泡日本最有名的混浴檜木大浴場「千人風呂」（日歸 ¥1,000；7:00–18:00，8:00–9:00 女性專用）➔ 搭回青森的巴士（約 60 分，會經過纜車站）。〔酸ヶ湯發車的回程末班須確認，趕不上就只剩計程車〕",
           "【計程車精算對比】：青森站至八甲田纜車站約 23 公里雪路，冬季 4WD 雪地計程車單程車資約 ¥8,500（1 人搭乘每人花費：¥8,500；2 人共乘每人花費：¥4,250）。"
         ]
       },
@@ -1946,18 +1872,21 @@
     {
       "day_number": 4,
       "date": "2027-02-12",
-      "day_title": "青森晨滑雪 (Moya Hills/八甲田) ➔ 青森站購買鐵路通票 ➔ 青之森鐵道至八戶 ➔ 八食中心",
-      "ski_resort": null,
+      "day_title": "青森全日滑雪（八甲田／Moya Hills）➔ 18:15 青之森鐵道 ➔ 約 19:55 入住八戶 ➔ みろく橫丁屋台",
       "stay": "Comfort Hotel Hachinohe (コンフォートホテル八戸)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Comfort%20Hotel%20Hachinohe",
       "transit": {
-        "summary": "青森晨滑 ➔ 青森站購買青之森鐵路通票 ➔ 青之森鐵道直達八戶站 ➔ 入住 Comfort Hotel ➔ 八食中心 (提供 2 組午後銜接班次)",
+        "summary": "早上退房寄放行李 ➔ 滑到 16:30 ➔ 18:15 青之森鐵道 ➔ 八戶約 19:50 ➔ みろく橫丁晚餐",
         "details": [
-          "上午 08:30 - 13:00 於 Moya Hills 或八甲田進行上午晨滑雪道巡航，充分利用青森雪季時光。",
-          "13:30 收板搭乘公車返抵青森站（約 14:15），於青森站售票處/窗口購買「青之森鐵路一日通票 (青い森ワンデーパス)」（每人精算花費：¥2,100，相較單程票 ¥2,320 現省 ¥220，當日全線無限自由搭乘！）。",
-          "【交通選項 A（首選從容・17:05 抵八戶飯店）】：15:20 青森站搭乘青之森鐵道列車 ➔ 16:51 直達八戶站（每人通票花費：¥2,100，轉乘緩衝 14 分）。出站步行 2 分鐘，17:05 順利入住 Comfort Hotel Hachinohe！距離 18:00 截止提早近 1 小時！隨後可至八食中心炭烤海鮮。",
-          "【交通選項 B（彈性次班・17:50 抵八戶飯店）】：若滑雪延至 14:00 收板，搭乘 16:03 青之森鐵道 ➔ 17:42 抵達八戶站（每人通票花費：¥2,100）。出站步行 2 分，17:50 辦理入住，依然嚴格確保在 18:00 前進駐！",
-          "【八食中心交通精算】：八戶站至八食中心搭 100 圓巴士每人 ¥100；若搭計程車單程約 ¥1,400（1 人搭乘每人 ¥1,400；2 人共乘每人 ¥700）。"
+          "早上 Route-Inn 退房，大件行李寄放飯店櫃台（傍晚回站前取），只帶雪具出門。",
+          "【滑雪地點 A・八甲田（推薦，粉雪最佳）】08:10 JR 巴士東北 ➔ 09:10 纜車站；滑到 16:30，搭 16:45 末班 JR 巴士 ➔ 17:45 青森站前（每人 ¥1,200）。",
+          "【滑雪地點 B・Moya Hills】08:30 市營巴士 ➔ 09:12；滑到 16:30，16:40 市營巴士 ➔ 17:20 青森站前（每人 ¥680）。",
+          "17:45–18:05 回 Route-Inn 取行李（步行 1 分），到青之森鐵道窗口買票。",
+          "【★ 主線・18:15 青之森鐵道】青森 18:15 ➔ 八戶 約 19:50（普通車約 95 分；傍晚無快速）。單程每人 ¥2,320；若當天可使用「青い森ワンデーパス」（¥2,100）更便宜，但該券適用日請先確認，2/12 是週五。出站步行 2 分，約 19:55 入住 Comfort Hotel 八戶。",
+          "⚠️ 這比原本「18:00 前進駐」晚了近 2 小時 —— 訂房時或當天務必通知飯店預計 20:00 抵達，避免被當成未到取消。",
+          "【備案・想 19:05 入住】滑到 15:45，預約 4WD 計程車下山（Moya ¥4,600／八甲田 ¥8,500，2 人均分）➔ 16:30 抵站前取行李 ➔ 17:23 青之森鐵道 ➔ 18:57 八戶 ➔ 約 19:05 入住。",
+          "【★ 晚餐・八戶屋台村 みろく橫丁】26 家屋台、營業到深夜，せんべい汁、八戶前沖鯖、イカ一次吃遍。在本八戶站步行 10 分的中心街；從八戶站前飯店搭計程車約 15 分（約 ¥1,500–2,000）。各店營業時間不一。",
+          "八食中心（18:00 打烊）今晚趕不上，已移到 Day 6 午餐。"
         ]
       },
       "recommendations": {
@@ -2539,8 +2468,7 @@
         "hakkoda",
         "warasse",
         "aomori-museum",
-        "sannai-maruyama",
-        "hasshoku-center"
+        "sannai-maruyama"
       ]
     },
     {
@@ -2549,7 +2477,6 @@
       "day_title": "搭乘冬奧入瀨號巴士 ➔ 奧入瀨冰瀑奇景 ➔ 十和田湖冬物語夜間慶典",
       "stay": "Hotel Towadaso (ホテル十和田荘)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel%20Towadaso",
-      "ski_resort": null,
       "transit": {
         "summary": "八戶站西口 ➔ JR 巴士東北「冬のおいらせ号」經奧入瀨溪流直達十和田湖休屋 (車程約 2.5 小時，冬季冰雪路況專用車隊)",
         "details": [
@@ -3135,7 +3062,6 @@
         ]
       },
       "venue_ids": [
-        "hasshoku-center",
         "oirase",
         "towadako-winter",
         "towada-art-center"
@@ -3144,17 +3070,19 @@
     {
       "day_number": 6,
       "date": "2027-02-14",
-      "day_title": "十和田湖退房 ➔ 冬奧入瀨號回八戶 ➔ 東北新幹線至盛岡 ➔ 接駁進駐網張溫泉",
+      "day_title": "十和田湖退房 ➔ 冬のおいらせ号回八戶 ➔ 八食中心午餐 ➔ 新幹線至盛岡 ➔ 進駐網張溫泉",
       "stay": "休暇村岩手網張温泉 (Kyukamura Iwate Amihari Onsen, 連住 4 晚)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Kyukamura%20Iwate%20Amihari%20Onsen",
-      "ski_resort": null,
       "transit": {
-        "summary": "十和田湖 ➔ 冬奧入瀨號至八戶 ➔ 東北新幹線至盛岡 ➔ 盛岡站搭乘休暇村免費預約接駁巴士 (冬季跨縣位移，提供 2 組轉乘銜接)",
+        "summary": "十和田湖 ➔ 冬のおいらせ号 ➔ 八戶（八食中心午餐）➔ 東北新幹線 ➔ 盛岡 ➔ 休暇村接駁至網張溫泉",
         "details": [
-          "十和田莊退房，搭乘冬季專車跨縣位移至岩手縣盛岡與網張溫泉。",
-          "【轉乘選項 A（首選無縫銜接・15:30 抵飯店）】：十和田湖（休屋）搭乘 09:30「冬のおいらせ号」 ➔ 11:55 返抵八戶站西口（每人精算花費：¥3,150，轉乘緩衝 40 分午餐） ➔ 12:35 八戶站搭東北新幹線 Hayabusa 22 號 ➔ 13:03 抵盛岡站（每人精算花費：¥3,560，轉乘緩衝 1 小時 25 分於盛岡站前採買） ➔ 盛岡站西口 28 號搭乘 14:30 休暇村網張溫泉預約接駁巴士 ➔ 15:30 直達飯店大廳（免費接駁！每人花費：¥0）。15:30 順利入住，距 18:00 大幅提早 2.5 小時！",
-          "【轉乘選項 B（次班彈性銜接・16:35 抵飯店）】：若在盛岡市區停留，搭乘 15:30 岩手縣交通公車（網張溫泉線）自盛岡站東口出發 ➔ 16:35 抵達飯店大廳（每人精算花費：¥1,180），依然確保 18:00 前進駐！",
-          "【冬季計程車精算對比】：盛岡站至網張溫泉約 28 公里雪路，冬季 4WD 計程車單程約 ¥9,500（1 人搭乘每人花費：¥9,500；2 人共乘每人花費：¥4,750）。"
+          "十和田荘退房，搭冬季專車跨縣移動至岩手縣盛岡與網張溫泉。",
+          "【巴士】十和田湖（休屋）09:30「冬のおいらせ号」➔ 11:55 八戶站西口（每人 ¥3,150）。",
+          "【★ 午餐・八食中心】八戶站西口搭八食 100 圓巴士（約 10–15 分）➔ 八食中心，七厘村炭火烤海鮮。今天週日照常營業（每週三公休）。約 13:15 回八戶站；計程車單程約 ¥1,400（2 人每人 ¥700）。",
+          "【新幹線】八戶 13 時台下行 はやぶさ（約 30 分）➔ 盛岡 約 14:00（每人 ¥3,560）。〔班次待確認：已知 12:16 發一班，13 時台確切班次出發前查時刻表〕",
+          "【接駁】盛岡站西口 28 號 14:30 休暇村網張溫泉免費預約接駁巴士 ➔ 15:30 抵飯店。",
+          "【保險】若趕不上 14:30 接駁：15:30 岩手縣交通巴士（網張溫泉線）盛岡站東口 ➔ 16:35 抵飯店（每人 ¥1,180）。",
+          "【冬季計程車對比】盛岡站至網張溫泉約 28 公里，4WD 計程車單程約 ¥9,500（2 人共乘每人 ¥4,750）。"
         ]
       },
       "recommendations": {
@@ -3732,6 +3660,7 @@
         ]
       },
       "venue_ids": [
+        "hasshoku-center",
         "oirase",
         "towadako-winter",
         "towada-art-center"
@@ -3743,15 +3672,6 @@
       "day_title": "網張溫泉滑雪場首日・千三百年秘湯 ＆ 岩手山深粉雪",
       "stay": "休暇村岩手網張温泉",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Kyukamura%20Iwate%20Amihari%20Onsen",
-      "ski_resort": {
-        "name": "網張溫泉滑雪場 (Amihari Onsen Ski Area)",
-        "elevation": "770m - 1,350m (落差 580m)",
-        "highlights": "門口直接 Ski-in / Ski-out！岩手山南麓極乾深粉雪，非壓雪黑線林間道刺激過癮。滑雪後直奔開湯 1,300 年白濁硫磺天然野湯「仙女之湯」，極致舒壓",
-        "course_map_url": "https://surfsnow.jp/guide/htm/r0199s.htm",
-        "official_website": "https://www.qkamura.or.jp/iwate/ski/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Amihari-Onsen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0199/course_pic_r0199.jpg"
-      },
       "transit": {
         "summary": "飯店門口 Ski-in / Ski-out，零交通耗時！出房門步行 1 分即達第 1 雙人纜車站",
         "details": [
@@ -4345,15 +4265,6 @@
       "day_title": "岩手高原戲雪公園・全山長型箱型纜車高速巡航",
       "stay": "休暇村岩手網張温泉",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Kyukamura%20Iwate%20Amihari%20Onsen",
-      "ski_resort": {
-        "name": "岩手高原戲雪公園 (Iwate Kogen Snow Park)",
-        "elevation": "630m - 1,213m (落差 583m)",
-        "highlights": "配備全長 2,000m 大型箱型纜車 (Gondola) 直攻山頂，無須吹寒風換吊椅！雪道寬達 100m，最長滑行距離 3,000m，極致單板高速 Carving 走刃刻滑首選",
-        "course_map_url": "https://surfsnow.jp/guide/htm/r0251s.htm",
-        "official_website": "https://iwatekogen.jp/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Iwate-Kogen-Snow-Park/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0251/course_pic_r0251.jpg"
-      },
       "transit": {
         "summary": "休暇村網張溫泉 ➔ 岩手高原戲雪公園 (車程僅 6-8 分，冬季預約 4WD 雪地計程車/飯店接駁，提供 2 組接駁選項)",
         "details": [
@@ -4947,15 +4858,6 @@
       "day_title": "網張溫泉/岩手高原 二擇自由滑行・秘境白濁溫泉深層修復",
       "stay": "休暇村岩手網張温泉",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Kyukamura%20Iwate%20Amihari%20Onsen",
-      "ski_resort": {
-        "name": "網張溫泉滑雪場 / 岩手高原戲雪公園 雙星自由選",
-        "elevation": "630m - 1,350m",
-        "highlights": "依當日天候風向動態選擇：無風深雪首選網張溫泉樹林野雪；若山頂風勢較大則前往岩手高原搭乘全封閉箱型纜車舒適刷道",
-        "course_map_url": "https://surfsnow.jp/guide/htm/r0199s.htm",
-        "official_website": "https://www.qkamura.or.jp/iwate/ski/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Amihari-Onsen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0199/course_pic_r0199.jpg"
-      },
       "transit": {
         "summary": "網張溫泉門口 Ski-in / Ski-out 或預約 7 分鐘短程計程車至岩手高原 (雪況動態二擇一)",
         "details": [
@@ -5546,27 +5448,18 @@
     {
       "day_number": 10,
       "date": "2027-02-18",
-      "day_title": "網張溫泉晨滑 ➔ 下午退房出發 ➔ 盛岡轉乘 IGR 銀河鐵道 ➔ 進駐奧中山高原飯店",
+      "day_title": "網張溫泉滑到 14:00 ➔ 計程車至盛岡 ➔ IGR 銀河鐵道 ➔ 約 17:10 進駐奧中山高原",
       "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen%20Hotel",
-      "ski_resort": {
-        "name": "奧中山高原滑雪場 (Okunakayamakogen Ski Area)",
-        "elevation": "580m - 1,018m (落差 438m)",
-        "highlights": "岩手北部內陸極低溫所淬鍊之「絲綢粉雪 (Silk Powder)」！11 條多樣雪道、5 座纜車，夜間滑雪開放至 20:00，滑雪場直結溫泉飯店",
-        "course_map_url": "https://www.okunakayamakogen.jp/winter-season/course-guide/",
-        "official_website": "https://www.okunakayamakogen.jp/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg",
-        "official_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
-      },
       "transit": {
-        "summary": "網張溫泉晨滑 ➔ 下午退房出發 ➔ 盛岡轉乘 IGR 銀河鐵道 ➔ 奧中山高原飯店 (提供 2 組午後銜接車次，嚴格確保 18:00 前進駐)",
+        "summary": "網張溫泉滑到 14:00 ➔ 14:45 計程車 ➔ 盛岡 16:00 IGR ➔ 奧中山高原站 16:48 ➔ 約 17:10 入住",
         "details": [
-          "08:30 - 13:00 於網張溫泉門口 Ski-in / Ski-out 暢滑岩手山深粉雪，滑好滑滿後再離開。",
-          "13:30 回房更衣並於休暇村大廳退房領取行李，午後啟程前往奧中山高原。",
-          "【交通選項 A（首選順暢銜接・16:40 抵奧中山飯店）】：14:00 預約搭乘 4WD 雪地計程車離開網張溫泉 ➔ 14:50 抵盛岡站西口（計程車車資約 ¥9,500：1 人搭乘每人 ¥9,500；2 人共乘每人 ¥4,750，轉乘緩衝 25 分於盛岡站小憩） ➔ 15:15 盛岡站搭乘 IGR いわて銀河鉄道（往八戶方向）➔ 16:03 抵達「奧中山高原站」（每人精算花費：¥1,080，轉乘緩衝 17 分） ➔ 站前搭乘 16:20 飯店預約接駁巴士（或一戶町營巴士）➔ 16:32 直達奧中山高原飯店大廳（每人花費：¥0~¥200）。16:40 順利完成入住，距離 18:00 截止提早近 1.5 小時！",
-          "【交通選項 B（巴士接駁次班・17:15 抵奧中山飯店）】：14:30 搭乘岩手縣交通巴士自網張出發 ➔ 15:35 抵盛岡站（轉乘緩衝 25 分） ➔ 16:00 搭乘 IGR 銀河鐵道 ➔ 16:48 抵奧中山高原站 ➔ 17:00 飯店接駁車 ➔ 17:12 抵達飯店大廳（每人精算花費：¥1,180 + ¥1,080 = ¥2,260），完全在 18:00 前進駐！",
-          "【奧中山高原站計程車精算】：車站至飯店約 7 公里，車資約 ¥2,200（1 人搭乘每人花費：¥2,200；2 人共乘每人花費：¥1,100）。"
+          "【滑雪】08:30–14:00 網張溫泉 Ski-in / Ski-out（比原計畫多滑約 1 小時）。行李前一晚先打包好。",
+          "14:00 回房更衣，14:30 退房。",
+          "【★ 主線・計程車】14:45 預約 4WD 雪地計程車 ➔ 15:35 盛岡站西口（約 ¥9,500；2 人共乘每人 ¥4,750），留 25 分轉乘緩衝。",
+          "【IGR】盛岡 16:00 IGR いわて銀河鉄道（往八戶方向）➔ 16:48 奧中山高原站（每人 ¥1,080）。〔IGR 班次沿用原行程資料，出發前以 igr.jp 時刻表確認〕",
+          "【接駁】奧中山高原站 17:00 飯店接駁（需事先預約）➔ 約 17:10 入住。沒約到就搭計程車：約 7 公里 ¥2,200（2 人每人 ¥1,100）。",
+          "【備案・省車資】14:30 岩手縣交通巴士 網張 ➔ 15:35 盛岡（每人 ¥1,180），同樣接 16:00 IGR。代價是 13:45 就要收板。"
         ]
       },
       "recommendations": {
@@ -6154,16 +6047,6 @@
       "day_title": "奧中山高原滑雪首日・絲綢粉雪衝刺・夜間滑雪巡航",
       "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen%20Hotel",
-      "ski_resort": {
-        "name": "奧中山高原滑雪場 (Okunakayamakogen Ski Area)",
-        "elevation": "580m - 1,018m",
-        "highlights": "內陸超乾燥超細微顆粒「絲綢粉雪」！11 條滑道全開，西岳山麓黑線刻滑走刃極致流暢",
-        "course_map_url": "https://www.okunakayamakogen.jp/winter-season/course-guide/",
-        "official_website": "https://www.okunakayamakogen.jp/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg",
-        "official_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
-      },
       "transit": {
         "summary": "飯店門口 Ski-in / Ski-out，第 1、第 2 高速吊椅直連 (全日交通費 ¥0)",
         "details": [
@@ -6756,16 +6639,6 @@
       "day_title": "奧中山高原滑雪次日・林間非壓雪探險・高原手作義式冰淇淋",
       "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen%20Hotel",
-      "ski_resort": {
-        "name": "奧中山高原滑雪場 (Okunakayamakogen Ski Area)",
-        "elevation": "580m - 1,018m",
-        "highlights": "進攻燕澤未壓雪黑線、森林粉雪蘑菇道！天然鬆雪回彈力絕佳，單板 Carving 刻滑與粉雪暢行無阻",
-        "course_map_url": "https://www.okunakayamakogen.jp/winter-season/course-guide/",
-        "official_website": "https://www.okunakayamakogen.jp/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg",
-        "official_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
-      },
       "transit": {
         "summary": "飯店門口 Ski-in / Ski-out (全日交通費 ¥0)",
         "details": [
@@ -7355,25 +7228,18 @@
     {
       "day_number": 13,
       "date": "2027-02-21",
-      "day_title": "奧中山高原滑雪終日・刻滑技巧驗收・雪具打包直寄成田機場",
+      "day_title": "奧中山高原最後全日滑雪・刻滑驗收 ➔ 傍晚寄出雪具",
       "stay": "Okunakayamakogen Ski Area 住宿 (奧中山高原 朝陽館/煌星館)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Okunakayamakogen%20Hotel",
-      "ski_resort": {
-        "name": "奧中山高原滑雪場 (Okunakayamakogen Ski Area)",
-        "elevation": "580m - 1,018m",
-        "highlights": "最後半日滑行，走刃刻滑 (Carving) 技巧驗收與攝影；午後雪具徹底風乾打包交寄「黑貓空港便」，直寄成田機場！",
-        "course_map_url": "https://www.okunakayamakogen.jp/winter-season/course-guide/",
-        "official_website": "https://www.okunakayamakogen.jp/",
-        "snow_forecast_url": "https://www.snow-forecast.com/resorts/Okunakayama-Kogen/6day/mid",
-        "map_image_url": "https://surfsnow.jp/real_img/r0699/course_pic_r0699.jpg",
-        "official_image_url": "https://www.okunakayamakogen.jp/wp/wp-content/uploads/2020/07/course_guide-1.jpg"
-      },
       "transit": {
-        "summary": "飯店門口 Ski-in / Ski-out；下午 14:30 辦理黑貓宅急便直寄成田機場 (全日交通費 ¥0)",
+        "summary": "飯店門口 Ski-in / Ski-out 滑一整天；17:00 前在櫃台寄出黑貓空港宅急便（全日交通費 ¥0）",
         "details": [
-          "【時程規劃 A（上午最後暢滑）】：08:30-13:30 進行最後半日暢滑與高速走刃刻滑攝影驗收（交通花費：¥0）。",
-          "【雪具減負關鍵物流】：下午 14:30 徹底擦拭風乾雪板與重裝備，於奧中山高原飯店櫃檯辦理「黑貓空港宅急便」，直寄 2/24 成田機場第 1 航廈 GPA 櫃台領取（每件約 ¥2,800-3,200）。明天起東京輕裝無負擔！",
-          "16:00 享受最後一晚奧中山高原天然琥珀溫泉與岩手短角牛料理，18:00 前進餐休息。"
+          "【滑雪】08:30–15:30 最後一個全日，高速走刃刻滑攝影驗收。",
+          "【★ 雪具物流・今天寄】16:00 擦拭風乾雪板與雪鞋，17:00 前在飯店櫃台辦理黑貓「空港宅急便」，2/24 成田機場第 1 航廈領取（每件約 ¥2,800–3,200）。今天寄是出發前 3 天，穩穩落在黑貓「出發前 2 天（部分地區 3 天）」的規定內。",
+          "⚠️ 先問櫃台當天黑貓集貨時間 —— 若已過，實際發送日會變成隔天。領取時間為登機前 3 小時到 1 小時。",
+          "【為什麼不是明天寄】Day 14 下午才寄只剩 2 天，剛好卡在期限上，而且飯店集貨可能已過；所以明天早上改用租借雪具。",
+          "【若不想租】不寄，改走 Day 14 的「自帶雪具」備案。",
+          "傍晚最後一晚奧中山高原琥珀色溫泉與岩手短角牛。"
         ]
       },
       "recommendations": {
@@ -7957,19 +7823,20 @@
     {
       "day_number": 14,
       "date": "2027-02-22",
-      "day_title": "奧中山高原晨滑 ➔ 二戶新幹線 ➔ 20:00 前進駐東京新宿 ➔ 歌舞伎町夜生活",
+      "day_title": "奧中山高原滑到 14:00 ➔ 二戶はやぶさ ➔ 約 19:30 入住新宿 ➔ 歌舞伎町夜生活",
       "stay": "Hotel Gracery Shinjuku (新宿格拉斯麗飯店 / 哥吉拉飯店)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel+Gracery+Shinjuku",
-      "ski_resort": null,
       "transit": {
-        "summary": "奧中山高原 ➔ 二戶站 ➔ 東北新幹線直達東京 ➔ JR 山手線至新宿進駐飯店 (車程約 3.5 小時)",
+        "summary": "租借雪具滑到 14:00 ➔ 二戶 ➔ 16 時台はやぶさ ➔ 東京約 19:00 ➔ 新宿約 19:30",
         "details": [
-          "08:30 - 11:30 奧中山高原晨滑，11:30 回飯店退房梳洗並將主力大件雪具辦理空港宅急便直送成田 T1",
-          "【去程接駁與鐵路】：12:30 奧中山飯店接駁車至「IGR 奧中山高原站」 ➔ 13:02 搭乘 IGR 銀河鐵道 ➔ 13:28 抵達「二戶站」",
-          "【新幹線最速達方案】：13:58 二戶站搭乘「JR 東北新幹線 Hayabusa 24 號」 ➔ 16:48 免換車直達「東京站」（每人精算花費：¥16,840）",
-          "【東京轉乘新宿】：16:56 東京站中央線快速（14 分） ➔ 17:10 順利抵達「JR 新宿站東口」",
-          "步行 5 分鐘進入歌舞伎町「Hotel Gracery Shinjuku」完成辦理入住（距離 20:00 截止前有近 3 小時超充裕餘裕！）",
-          "晚間漫步新宿歌舞伎町、思出橫丁與伊勢丹商圈，享受東京都會繁華夜景"
+          "早上先退房、行李寄放櫃台。08:30–14:00 用租借雪具滑（自己的雪具昨天已寄出；租借需事先預約）。",
+          "14:00–14:40 還租具、取行李、更衣。",
+          "【往二戶】飯店預約接駁或計程車到奧中山高原站 ➔ 15 時台 IGR ➔ 二戶（約 26 分）；或計程車直達二戶。〔IGR 班次出發前確認〕",
+          "【★ 新幹線】二戶 16 時台上行 はやぶさ ➔ 東京 約 19:00（約 2 小時 45 分，每人 ¥16,840）。〔二戶每天約 10 班上行はやぶさ；16 時台確切班次請查時刻表並劃位。若沒有，15 時台約 18:15 到東京、17 時台約 20:30 到〕",
+          "【新宿】東京站中央線快速約 14 分 ➔ 新宿東口，步行 5 分 ➔ 約 19:30 入住 Hotel Gracery Shinjuku。比原本晚，記得通知飯店抵達時間。",
+          "【備案・用自己的雪具滑】Day 13 不寄 ➔ 今天用自己的板滑到 14:00 ➔ 雪具隨身上はやぶさ（東北新幹線沒有東海道那種大件行李預約規定，但車上行李空間有限）➔ 東京站改搭計程車到新宿（約 ¥4,000–5,000，避開尖峰電車）➔ 2/24 帶雪具搭 N'EX 到成田。",
+          "⚠️ 不建議今天下午才寄空港宅急便：離 2/24 只剩 2 天，正好卡在期限，且飯店集貨可能已過。",
+          "晚間新宿歌舞伎町、思出橫丁與伊勢丹商圈。"
         ]
       },
       "recommendations": {
@@ -8550,7 +8417,6 @@
       "day_title": "富士急樂園全日極限過山車・富士山絕景 ➔ 新宿歌舞伎町 T2 SHINJUKU 音樂夜生活",
       "stay": "Hotel Gracery Shinjuku (新宿格拉斯麗飯店 / 哥吉拉飯店)",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Hotel+Gracery+Shinjuku",
-      "ski_resort": null,
       "transit": {
         "summary": "新宿高速巴士總站 (Busta Shinjuku) ➔ 富士急行直達巴士往返富士急樂園 (約 100 分) ➔ 深夜新宿 T2 派對",
         "details": [
@@ -9135,7 +9001,6 @@
       "day_title": "新宿最後採買 ➔ JR 成田特快 N'EX ➔ 成田機場 T1 GPA 取雪具 ➔ UA837 飛返高雄 (21:00 抵小港)",
       "stay": "返抵高雄溫暖的家",
       "stay_map": "https://www.google.com/maps/search/?api=1&query=Kaohsiung+International+Airport",
-      "ski_resort": null,
       "transit": {
         "summary": "新宿出發 ➔ JR 成田特快 N'EX 直達「成田機場第 1 航廈站」 (車程 78 分) ➔ T1 GPA 取雪具 ➔ UA837 飛返高雄",
         "details": [
@@ -10367,8 +10232,7 @@
       "name": "八食中心",
       "name_sub": "八食センター",
       "days": [
-        4,
-        5
+        6
       ],
       "summary": "約 60 間店舖的巨大海鮮市場，可在「七厘村」把現買的干貝、牡丹蝦、鮪魚直接炭火現烤，是八戶一夜最值得的一餐。",
       "stats": [
@@ -10426,8 +10290,9 @@
         }
       ],
       "notes": [
-        "✅ Day 4（2027-02-12）為週五，避開每週三公休 —— 行程安排正確。",
-        "100 圓巴士不停靠新幹線的「八戶站」東口，請從西口搭乘；部分班次已調整為 150 圓。"
+        "✅ Day 6（2027-02-14）為週日，避開每週三公休 —— 冬のおいらせ号 11:55 回八戶後直接去吃午餐。",
+        "100 圓巴士在八戶站西口搭；部分班次已調整為 150 圓。",
+        "約 13:15 前回到八戶站，才接得上銜接 14:30 休暇村接駁的はやぶさ。"
       ]
     },
     {
@@ -10799,8 +10664,8 @@
         },
         {
           "id": "bk-salon",
-          "text": "Boy Meets Girl（LOVINA 4F）剪染已預約，並已把選定的方案（A 或 B）與預計到店時間告知店家",
-          "when": "電話 017-734-3245 或 HotPepper Beauty 線上 24 小時可訂；營業 10:00–20:00、公休為每月第 3 個週三（2/10 是第 2 個週三，正常營業）",
+          "text": "Day 1（2/9）16:30 Boy Meets Girl（LOVINA 4F）剪染已預約，並已告知航班 BR122 與預計到店時間",
+          "when": "電話 017-734-3245 或 HotPepper Beauty 線上 24 小時；公休為每月第 3 個週三（2/9 是週二，正常營業）",
           "link": {
             "label": "HotPepper Beauty 線上預約",
             "url": "https://beauty.hotpepper.jp/slnH000505190/"
@@ -10808,8 +10673,8 @@
         },
         {
           "id": "bk-salon-time",
-          "text": "已決定剪染時段：方案 A（Day 2 16:00 進場，需預約 4WD 計程車下山）或方案 B（Day 1 抵達當晚 16:30 進場，Day 2 不受影響）—— 並已據此訂位",
-          "when": "兩案都要在 20:00 打烊前留緩衝；方案 A 另需前一日預約計程車"
+          "text": "已跟沙龍講好延誤應變：延誤 45 分內 17:00 開始（做到 20:00）；超過 1 小時改約 Day 2 16:00",
+          "when": "訂位時一次談好，當天不用再臨時協調"
         },
         {
           "id": "bk-kyukamura",
@@ -10825,7 +10690,45 @@
         },
         {
           "id": "bk-takkyubin",
-          "text": "Day 13 黑貓宅急便雪具直寄成田機場 GPA 已預約，並確認 T1 領取櫃檯營業時間"
+          "text": "Day 13（2/21）傍晚在奧中山飯店櫃台寄出黑貓空港宅急便 → 2/24 成田 T1 領取；已確認飯店黑貓集貨時間與岩手→成田所需天數",
+          "when": "黑貓規定出發前 2 天（部分地區 3 天）寄出；2/21 是 3 天前，安全"
+        },
+        {
+          "id": "bk-late-checkin",
+          "text": "已通知晚到：Comfort Hotel 八戶（Day 4 約 20:00）、Hotel Gracery 新宿（Day 14 約 19:30）",
+          "when": "日本飯店對未告知的晚到可能視為未到取消，訂房備註或前一天電話都可以"
+        },
+        {
+          "id": "bk-taxi-day10",
+          "text": "Day 10（2/18）14:45 網張溫泉 → 盛岡站 4WD 雪地計程車已預約",
+          "when": "前一天請休暇村櫃台代叫最保險"
+        },
+        {
+          "id": "bk-okunakayama-shuttle",
+          "text": "Day 10 奧中山高原站 17:00 飯店接駁已預約（沒約到就改搭計程車 ¥2,200）",
+          "link": {
+            "label": "奧中山高原住宿",
+            "url": "https://www.okunakayamakogen.jp/stay/"
+          }
+        },
+        {
+          "id": "bk-rental-day14",
+          "text": "Day 14（2/22）奧中山高原租借雪具（08:30–14:00）已預約 —— 或決定改走「自帶雪具到東京」備案",
+          "when": "自己的雪具 Day 13 已寄出，Day 14 要滑就得租"
+        },
+        {
+          "id": "bk-hakkoda-guide",
+          "text": "八甲田野雪嚮導已預約（Day 3，必要時 Day 4）",
+          "when": "八甲田山頂全域非壓雪、無明確標示，嚮導與雪崩三寶是一組的"
+        },
+        {
+          "id": "bk-no-jr-pass",
+          "text": "💡 已決定「不買」JR EAST PASS，改買單程票 —— 新版 5 日券 ¥35,000，這趟鐵路段合計約 ¥27,760，買了反而多花約 ¥7,000",
+          "when": "舊的東北地區版已於 2026-03-13 停售；除非行程改成要多坐新幹線，否則單程較省",
+          "link": {
+            "label": "JR EAST PASS 官方說明",
+            "url": "https://www.jreast.co.jp/multi/pass/eastpass.html"
+          }
         }
       ]
     },
@@ -10853,7 +10756,8 @@
         },
         {
           "id": "tt-aoimori",
-          "text": "青之森鐵道（Day 4）與 IGR 岩手銀河鐵道（Day 10、14）時刻表已確認"
+          "text": "青之森鐵道 Day 4 青森 18:15（或 17:23）→ 八戶 到站時刻已確認；「青い森ワンデーパス」2/12（週五）能否使用已確認",
+          "when": "傍晚只有普通車，約 95 分"
         },
         {
           "id": "tt-towadako-event",
@@ -10862,6 +10766,29 @@
         {
           "id": "tt-nex",
           "text": "Day 16 JR 成田特快 N'EX 班次已確認，並預留 GPA 取雪具緩衝時間"
+        },
+        {
+          "id": "tt-hachinohe-hayabusa",
+          "text": "Day 6 八戶 13 時台下行 はやぶさ 確切班次已確認（要銜接盛岡 14:30 休暇村接駁）",
+          "when": "已知 12:16 發一班；13 時台請以時刻表確認"
+        },
+        {
+          "id": "tt-igr",
+          "text": "IGR いわて銀河鉄道 班次已確認：Day 10 盛岡 16:00、Day 14 奧中山高原 → 二戶 15 時台",
+          "link": {
+            "label": "IGR 時刻表",
+            "url": "https://igr.jp/timetable/"
+          }
+        },
+        {
+          "id": "tt-ninohe-hayabusa",
+          "text": "Day 14 二戶 16 時台上行 はやぶさ 確切班次已確認並劃位（約 2 小時 45 分到東京）",
+          "when": "二戶每天約 10 班上行；若 16 時台沒有，15 時台約 18:15 到東京、17 時台約 20:30"
+        },
+        {
+          "id": "tt-sukayu-bus",
+          "text": "Day 3 酸ヶ湯溫泉順路方案：JR 巴士「纜車站 ⇄ 酸ヶ湯」冬季班次與回青森末班已確認",
+          "when": "纜車站到酸ヶ湯約 15 分（¥460），酸ヶ湯回青森約 60 分"
         }
       ]
     },
@@ -10898,7 +10825,7 @@
         },
         {
           "id": "op-hasshoku",
-          "text": "八食中心 2027-02-12 正常營業（每週三公休，該日為週五）"
+          "text": "八食中心 2027-02-14（週日）Day 6 午餐照常營業（每週三公休）"
         },
         {
           "id": "op-towada-art",
@@ -10910,7 +10837,7 @@
         },
         {
           "id": "op-salon-wed",
-          "text": "Boy Meets Girl 公休為每月第 3 個週三 —— 2027-02-10 是第 2 個週三，正常營業"
+          "text": "Boy Meets Girl 公休為每月第 3 個週三 —— 剪染改在 2027-02-09（週二），正常營業"
         },
         {
           "id": "op-forecast-coords",
@@ -10971,7 +10898,7 @@
   "data_notes": {
     "stats_source": "雪場數據取自各雪場官方冬季頁與日本滑雪資料庫（SURF&SNOW／楽天トラベル／スノーパラダイス東北）；場館數據取自各館官方網站。",
     "season_caveat": "開幕日與營業期間為最近一個已公布雪季的日期。2026/27 雪季行事曆尚未公布，請以「出發前覆核清單」逐項重新確認。",
-    "last_reviewed": "2026-09-17"
+    "last_reviewed": "2026-09-24"
   },
   "emergency": {
     "intro": "這一段完全離線可用。山上沒訊號時頁面照樣開得起來，號碼點了就撥。",

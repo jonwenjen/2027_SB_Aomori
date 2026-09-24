@@ -1,0 +1,15 @@
+{
+  "name": "2027 東北滑雪・極致粉雪與冬奧入瀨秘境行",
+  "short_name": "東北滑雪 2027",
+  "description": "16 天青森・岩手滑雪行程：今日視圖、覆核清單、雪況、緊急聯絡，山上沒訊號也能開。",
+  "lang": "zh-TW",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0B0B0D",
+  "theme_color": "#0B0B0D",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

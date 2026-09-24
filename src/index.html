@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0B0B0D">
+<meta name="description" content="2027 東北滑雪：5 座雪場、16 天完整動線、場地資訊卡與出發前覆核清單。">
+<title>2027 東北滑雪・極致粉雪與冬奧入瀨秘境行</title>
+
+<!-- installable, and opens offline once visited (see sw.js) -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="東北滑雪 2027">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Latin display face only. CJK falls back to the OS mincho/serif, which keeps
+     the page light on mobile data and still elegant with no network. -->
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&display=swap" rel="stylesheet">
+
+<style>
+/*@@STYLES@@*/
+</style>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress-top" aria-hidden="true"><i id="progress-bar"></i></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <span class="brand-mark">❅</span>
+        <span class="brand-text">Tohoku MMXXVII</span>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切換晝夜主題">
+        <span class="ico" id="theme-ico">☾</span><span id="theme-label">Midnight</span>
+      </button>
+    </div>
+
+    <div class="hero-inner">
+      <span class="eyebrow">Aomori · Iwate · Japan</span>
+      <h1 class="display hero-title" id="trip-title">2027 東北滑雪</h1>
+      <p class="hero-lede" id="hero-lede"></p>
+      <div class="hero-rule"></div>
+      <div class="hero-figures" id="hero-figures"></div>
+      <div class="flights" id="flight-container"></div>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="nav-scroll">
+    <a class="nav-btn is-section" href="#checklist">覆核清單</a>
+    <a class="nav-btn is-section" href="#packing">裝備打包</a>
+    <a class="nav-btn is-section" href="#venues">場地資訊</a>
+    <a class="nav-btn is-section" href="#days">每日行程</a>
+    <a class="nav-btn is-section" href="#contingency">應急備案</a>
+    <a class="nav-btn is-section is-sos" href="#emergency">緊急求救</a>
+  </div>
+  <div class="nav-scroll" id="day-nav"></div>
+</nav>
+
+<main class="wrap">
+
+  <div class="today-wrap" id="today-wrap" hidden>
+    <div class="today" id="today"></div>
+  </div>
+
+  <section class="block" id="checklist">
+    <div class="section-head rise">
+      <span class="section-index num">01</span>
+      <div>
+        <h2>出發前覆核清單</h2>
+        <p>訂位 ・ 時刻表公布 ・ 營業狀況 ・ 行李規定 — 勾選狀態記在這台裝置的瀏覽器</p>
+      </div>
+    </div>
+    <div class="panel rise" id="checklist-shell"></div>
+  </section>
+
+  <section class="block" id="packing">
+    <div class="section-head rise">
+      <span class="section-index num">02</span>
+      <div>
+        <h2>裝備打包清單</h2>
+        <p>雪具 ・ 服裝 ・ 溫泉 ・ 電子 ・ 證件 ・ 藥品 — 與覆核清單分開記錄</p>
+      </div>
+    </div>
+    <div class="panel rise" id="packing-shell"></div>
+  </section>
+
+  <section class="block" id="venues">
+    <div class="section-head rise">
+      <span class="section-index num">03</span>
+      <div>
+        <h2>場地資訊卡</h2>
+        <p>雪場 ・ 景點 ・ 場館 — 點標題展開，地圖於展開時才載入</p>
+      </div>
+    </div>
+    <div class="filters rise" id="venue-filters"></div>
+    <div class="venue-grid rise" id="venue-grid"></div>
+  </section>
+
+  <section class="block" id="days">
+    <div class="section-head rise">
+      <span class="section-index num">04</span>
+      <div>
+        <h2>每日行程</h2>
+        <p id="days-sub"></p>
+      </div>
+    </div>
+    <div id="days-container"><div class="loading">Loading itinerary</div></div>
+  </section>
+
+  <section class="block" id="contingency">
+    <div class="section-head rise">
+      <span class="section-index num">05</span>
+      <div>
+        <h2>天候與交通應急備案</h2>
+        <p>暴風雪 ・ 降雪不足 ・ 交通延誤 ・ 航班異動</p>
+      </div>
+    </div>
+    <div class="contingency-grid rise" id="contingency-grid"></div>
+  </section>
+
+  <section class="block" id="emergency">
+    <div class="section-head is-sos">
+      <span class="section-index num">06</span>
+      <div>
+        <h2>緊急聯絡與求救</h2>
+        <p id="emergency-intro"></p>
+      </div>
+    </div>
+    <div id="emergency-body"></div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <span class="footer-title">Midnight &amp; Champagne</span>
+      <span class="footer-mark">2027 Tohoku Ski Itinerary</span>
+    </div>
+    <p class="footer-src" id="footer-src"></p>
+  </footer>
+
+</main>
+
+<button class="to-top" id="to-top" type="button" aria-label="回到頂端">↑</button>
+
+<div class="offline-bar" id="offline-bar" role="status" hidden>
+  離線中 —— 行程、清單與緊急聯絡照常可用；雪況與地圖需要網路
+</div>
+
+<script id="itinerary-data" type="application/json">__ITINERARY_JSON__</script>
+<script>
+//@@APP@@
+</script>
+</body>
+</html>

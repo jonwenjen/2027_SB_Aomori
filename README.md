@@ -1,18 +1,23 @@
 # 2027 東北滑雪・極致粉雪與冬奧入瀨秘境行
 
-16 天青森・岩手滑雪行程的單頁網站。`index.html` 是**自帶資料的完整單檔 HTML** ——
-直接用瀏覽器開啟就能看，不需要伺服器、不需要網路（雪道圖除外）。
+16 天青森・岩手滑雪行程的單頁網站。`index.html` 是**自帶樣式、程式與資料的完整單檔 HTML** ——
+直接用瀏覽器開啟就能看；在 GitHub Pages 上開過一次後，**山上沒訊號也能開**（見「離線使用」）。
 
 ---
 
 ## 檔案結構
 
-| 檔案 | 角色 | 該不該手動改 |
+| 路徑 | 角色 | 該不該手動改 |
 | --- | --- | --- |
-| `itinerary.json` | **唯一資料來源**：行程、場地、清單、備案 | ✅ 這裡改 |
-| `template.html` | 版面與互動邏輯（不含資料） | ✅ 這裡改 |
-| `build.py` | 把上面兩者打包成單檔 | — |
-| `index.html` | **建置產物**，由 `build.py` 產生 | ❌ 不要手改，會被覆蓋 |
+| `itinerary.json` | **唯一資料來源**：行程、場地、清單、緊急聯絡 | ✅ 這裡改 |
+| `src/index.html` | 頁面骨架（三個佔位字串） | ✅ |
+| `src/styles.css` | 設計系統與版面 | ✅ |
+| `src/app.js` | 所有互動邏輯 | ✅ |
+| `src/sw.js` | Service worker 範本（離線） | ✅ |
+| `build.py` | 驗證資料 → 內嵌成單檔 → 產生 sw.js | — |
+| `index.html`、`sw.js` | **建置產物** | ❌ 不要手改，會被覆蓋 |
+| `manifest.webmanifest`、`icons/` | 加到主畫面用 | 圖示由 `scripts/make-icons.js` 產生 |
+| `tests/` | 8 組、205 項瀏覽器測試 | ✅ 改功能時一起改 |
 
 ---
 
@@ -129,37 +134,74 @@
 ## 發佈與同步流程（全雲端）
 
 ```
-在 Claude Code 修改 itinerary.json / template.html
+在 Claude Code 修改 itinerary.json 或 src/
         ↓
-python3 build.py                 ← 打包成完整單檔 index.html
+python3 build.py        ← 驗證資料 → 打包單檔 index.html → 產生 sw.js
         ↓
-git commit && git push           ← 推上 GitHub repo: 2027_SB_Aomori
+npm test                ← 205 項瀏覽器測試
         ↓
-GitHub Actions 驗證 index.html 與資料一致
+git push                ← GitHub repo: 2027_SB_Aomori
+        ↓
+GitHub Actions          ← check（資料＋產物一致）→ test（205 項）
+        ↓
+GitHub Pages 自動更新
 ```
 
 ### 日常操作
 
 ```bash
-# 1. 改資料或版面之後重新打包
-python3 build.py
-
-# 2. 確認 index.html 沒有跟資料脫節（CI 也跑這一行）
-python3 build.py --check
-
-# 3. 本機預覽（或直接用瀏覽器開 index.html）
-python3 -m http.server 8000
+python3 build.py            # 改完資料或 src/ 之後
+python3 build.py --check    # 資料有效、產物與來源一致（CI 第一關）
+npm install                 # 第一次
+npm test                    # 全部 8 組
+npm test -- itinerary       # 只跑名稱含 itinerary 的那組
 ```
 
-`build.py` 會檢查 `itinerary.json` 必要欄位是否齊全，並把 JSON 內嵌進
-`<script type="application/json">`（`<`、`>`、U+2028/9 皆已轉義）。
-若打包步驟被跳過、佔位字串仍在，頁面會自動退回 `fetch('./itinerary.json')`，
-所以 `template.html` 單獨放在同目錄也能運作。
+### 資料驗證
 
-### GitHub Actions
+`build.py` 在寫出任何檔案之前會先驗證 `itinerary.json`，有錯就**直接失敗、不產出頁面**：
 
-`.github/workflows/build-site.yml` 在每次 push 與 PR 時執行 `build.py --check`。
-**忘記重新打包就會讓 CI 變紅**，避免 `index.html` 與 `itinerary.json` 不同步。
+- 天數 1..N 連號、日期逐日連續
+- 場地 id 唯一、類型合法、連結是 http(s)
+- 每天引用的場地都存在
+- 覆核清單與打包清單的 id **跨兩份清單**唯一（它們共用同一個頁面）
+- 緊急電話的 `tel:` 只能是數字（寫錯一個字母就是空號）
+- 雪場預報座標必須落在日本境內，且每座雪場都要有
+
+### 測試
+
+| 組 | 項 | 守的是什麼 |
+| --- | --- | --- |
+| behaviour | 43 | 場地卡、地圖懶載入、篩選、勾選保存 |
+| design | 22 | 雙主題、字體、兩套主題實測對比、手機版面 |
+| forecast | 32 | 雪況請求格式、40 km/h 門檻邊界、所有失敗路徑 |
+| itinerary | 35 | **行程決策本身**：剪染在 Day 1、雪具只寄一次、八食中心不排在打烊後… |
+| offline | 15 | 離線可開、快取版本、Open-Meteo 絕不快取、file:// 仍可用 |
+| sections | 25 | 緊急聯絡（撥號格式、不可撥號碼）、打包清單 |
+| structure | 20 | 推薦名單延遲渲染、DOM 上限、無障礙、交通步驟排版 |
+| today | 13 | 今日視圖三種狀態與首尾日邊界 |
+
+`itinerary` 那組值得特別一提：它守的不是程式，而是**行程上已經做過的決定**。
+之後有人（或 Drive 同步）把剪染改回 Day 2、或讓雪具寄兩次，測試會直接變紅。
+
+環境變數：`CHROMIUM_PATH`（指定瀏覽器）、`FONT_FIXTURE_DIR`（字體本機副本）、
+`SCREENSHOT_DIR`（順便截圖）、`TARGET`（改測線上頁面的下載副本）。
+
+---
+
+## 離線使用
+
+在 GitHub Pages 上**開過一次**之後：
+
+- 手機瀏覽器選「加入主畫面」，就像 App 一樣全螢幕開啟
+- **沒訊號也能開**：行程、清單、打包、緊急電話、今日視圖全部可用，勾選照常保存
+- 有訊號但只有一格時，4 秒內等不到新版就先顯示上次的版本
+- 畫面底部會出現「離線中」提示；雪況與未開過的雪道圖需要網路
+- 開過的雪道圖會留在手機裡（最多 12 張），山上也看得到
+- **雪況預報永遠不快取** —— 過期的預報假裝成最新，比顯示「讀取失敗」更危險
+
+每次重新建置，`sw.js` 的快取版本會換成新頁面的雜湊值，舊的離線副本自動汰換。
+直接開 `index.html` 檔案（file://）一樣能用，只是沒有離線快取。
 
 ---
 

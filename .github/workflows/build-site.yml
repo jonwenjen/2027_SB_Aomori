@@ -1,8 +1,10 @@
 name: build-site
 
-# index.html is a build artefact of template.html + itinerary.json.
-# This fails the build when someone edits the data or the template without
-# re-running `python3 build.py`, so the published page never drifts.
+# index.html is a build artefact of src/ + itinerary.json. Two gates:
+#   check -- the data is valid and index.html matches its sources
+#   test  -- the built page actually behaves (170 browser checks)
+# If someone edits the data or sources without rebuilding, or pushes an
+# index.html from somewhere else, `check` goes red.
 
 on:
   push:
@@ -20,8 +22,24 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: itinerary.json is valid JSON
-        run: python3 -c "import json; json.load(open('itinerary.json', encoding='utf-8'))"
-
-      - name: index.html matches the current data and template
+      - name: data is valid and index.html is up to date
         run: python3 build.py --check
+
+  test:
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: install Chromium for Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: browser suites
+        run: npm test
