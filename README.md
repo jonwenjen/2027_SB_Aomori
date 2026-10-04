@@ -16,8 +16,9 @@
 | `src/sw.js` | Service worker 範本（離線） | ✅ |
 | `build.py` | 驗證資料 → 內嵌成單檔 → 產生 sw.js | — |
 | `index.html`、`sw.js` | **建置產物** | ❌ 不要手改，會被覆蓋 |
+| `maps/*.csv` | **建置產物**：Google My Maps 匯入檔（住宿＋6 大類，各一個圖層） | ❌ 由 `itinerary.json` 產生 |
 | `manifest.webmanifest`、`icons/` | 加到主畫面用 | 圖示由 `scripts/make-icons.js` 產生 |
-| `tests/` | 8 組、205 項瀏覽器測試 | ✅ 改功能時一起改 |
+| `tests/` | 9 組、241 項瀏覽器測試 | ✅ 改功能時一起改 |
 
 ---
 
@@ -103,6 +104,32 @@
 [`?today=2027-02-13`](https://jonwenjen.github.io/2027_SB_Aomori/?today=2027-02-13)。
 測試也是靠這個參數跑的。
 
+### 🗺️ 住宿周邊地圖
+
+7 個停留點（青森、八戶、十和田湖、雫石・盛岡、奧中山、新宿、成田）各一張卡。點開後：
+
+- **Google 地圖**（點開才載入，離線時改顯示提示與重新載入鈕）
+- 該停留點所有天數的在地推薦，**去重後**依 6 大類分組，可用分類頁籤篩選；
+  同一家店被排在兩天會標「Day 1・2」
+- 「在 Google 地圖開啟」直接跳 App
+
+每張 Day 卡的 Stay 欄與今日視圖都有「周邊地圖」捷徑，網址 `#stay-aomori` 這類也會直接展開。
+
+**分類圖釘地圖要做一次 Google My Maps 匯入**（約 10 分鐘，免費、不需金鑰）。
+Google 不允許網頁不用 API 金鑰就把幾百個地點畫在同一張地圖上，My Maps 是唯一免費、
+又是真正 Google 地圖的做法，而且會出現在手機 Google 地圖 App 的「已儲存 › 地圖」裡。
+
+1. 開 [google.com/maps/d](https://www.google.com/maps/d/) →「建立新地圖」
+2. 第一個圖層「匯入」`maps/00-住宿與停留點.csv`；再「新增圖層」→「匯入」其餘 6 個 CSV（一類一層）
+3. 匯入時：位置欄選 **地點**、標題欄選 **名稱**（My Maps 用 Google 搜尋定位，和網站上的「地圖」連結搜的是同一串文字）
+4. 每層「統一樣式」換顏色／圖示
+5. 分享 → 知道連結的任何人可檢視 → 複製網址中 `mid=` 後面那串
+6. 填進 `itinerary.json` 的 `stay_maps.my_maps_mid` → `python3 build.py` → push
+
+填好之後，每張卡的地圖會換成這張 My Maps，並以各停留點的 `center`／`zoom` 為視野；
+未填之前顯示住宿位置的一般 Google 地圖。CSV 每次建置都會從 `itinerary.json` 重新產生，
+名單有改，重新匯入對應圖層即可。
+
 ### 🎒 裝備打包清單
 
 與覆核清單同一個元件、**不同的儲存 key**（`sb2027.packing.v1`），兩份進度互不影響。
@@ -138,11 +165,11 @@
         ↓
 python3 build.py        ← 驗證資料 → 打包單檔 index.html → 產生 sw.js
         ↓
-npm test                ← 205 項瀏覽器測試
+npm test                ← 241 項瀏覽器測試
         ↓
 git push                ← GitHub repo: 2027_SB_Aomori
         ↓
-GitHub Actions          ← check（資料＋產物一致）→ test（205 項）
+GitHub Actions          ← check（資料＋產物一致）→ test（241 項）
         ↓
 GitHub Pages 自動更新
 ```
@@ -153,7 +180,7 @@ GitHub Pages 自動更新
 python3 build.py            # 改完資料或 src/ 之後
 python3 build.py --check    # 資料有效、產物與來源一致（CI 第一關）
 npm install                 # 第一次
-npm test                    # 全部 8 組
+npm test                    # 全部 9 組
 npm test -- itinerary       # 只跑名稱含 itinerary 的那組
 ```
 
@@ -167,6 +194,9 @@ npm test -- itinerary       # 只跑名稱含 itinerary 的那組
 - 覆核清單與打包清單的 id **跨兩份清單**唯一（它們共用同一個頁面）
 - 緊急電話的 `tel:` 只能是數字（寫錯一個字母就是空號）
 - 雪場預報座標必須落在日本境內，且每座雪場都要有
+- 推薦名單的類別合法、每筆都有名稱與可定位的 Google 地圖搜尋連結
+- 每個有推薦名單的日子**恰好屬於一個**停留點，停留點天數連續、地圖中心在日本境內
+- `my_maps_mid` 若有填，格式必須像 My Maps 的 id
 
 ### 測試
 
@@ -176,6 +206,7 @@ npm test -- itinerary       # 只跑名稱含 itinerary 的那組
 | design | 22 | 雙主題、字體、兩套主題實測對比、手機版面 |
 | forecast | 32 | 雪況請求格式、40 km/h 門檻邊界、所有失敗路徑 |
 | itinerary | 35 | **行程決策本身**：剪染在 Day 1、雪具只寄一次、八食中心不排在打烊後… |
+| maps | 36 | 住宿地圖卡、去重計數、分類頁籤、懶載入與離線、My Maps 嵌入網址、CSV 匯入檔 |
 | offline | 15 | 離線可開、快取版本、Open-Meteo 絕不快取、file:// 仍可用 |
 | sections | 25 | 緊急聯絡（撥號格式、不可撥號碼）、打包清單 |
 | structure | 20 | 推薦名單延遲渲染、DOM 上限、無障礙、交通步驟排版 |

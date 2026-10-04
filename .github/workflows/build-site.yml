@@ -2,7 +2,7 @@ name: build-site
 
 # index.html is a build artefact of src/ + itinerary.json. Two gates:
 #   check -- the data is valid and index.html matches its sources
-#   test  -- the built page actually behaves (170 browser checks)
+#   test  -- the built page actually behaves (browser suites in tests/)
 # If someone edits the data or sources without rebuilding, or pushes an
 # index.html from somewhere else, `check` goes red.
 

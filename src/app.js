@@ -7,14 +7,16 @@
   var THEME_KEY = 'sb2027.theme.v1';
   var PERSONAL_KEY = 'sb2027.personal.v1';
 
+  // key, label, icon, My Maps layer file (keep in step with CATEGORIES in build.py)
   var CATEGORIES = [
-    ['restaurant', '正餐名物', '🍱'],
-    ['dessert_pastry', '甜點糕點', '🍰'],
-    ['beverage', '特色飲品・地酒', '🍶'],
-    ['souvenir', '必買伴手禮', '🎁'],
-    ['specialty_shops', '必逛店家・生活選物', '🛍️'],
-    ['attractions', '必訪景點推薦', '📍']
+    ['restaurant', '正餐名物', '🍱', '01-正餐名物.csv'],
+    ['dessert_pastry', '甜點糕點', '🍰', '02-甜點糕點.csv'],
+    ['beverage', '特色飲品・地酒', '🍶', '03-特色飲品地酒.csv'],
+    ['souvenir', '必買伴手禮', '🎁', '04-必買伴手禮.csv'],
+    ['specialty_shops', '必逛店家・生活選物', '🛍️', '05-必逛店家選物.csv'],
+    ['attractions', '必訪景點推薦', '📍', '06-必訪景點.csv']
   ];
+  var STAYS_CSV = '00-住宿與停留點.csv';
 
   function esc(v) {
     if (v === null || v === undefined) return '';
@@ -592,6 +594,248 @@
     });
   }
 
+  // ── stay maps ───────────────────────────────────────────────────
+  // One card per place we sleep. Each gathers the recommendations of all its
+  // days, de-duplicated (the same shop is often picked on two days), grouped
+  // by category, plus a Google map:
+  //   - with stay_maps.my_maps_mid set: the shared My Maps, one layer per
+  //     category, centred on this stay -- every listed place is a pin
+  //   - without it: a plain Google embed of the hotel, so the card is useful
+  //     before the one-time My Maps import has been done
+  // Neither needs an API key. The iframe is created on first open only.
+  var STAYS = {};
+  var STAY_OF_DAY = {};
+  var STAY_MID = '';
+
+  function stayPlaces(st, days) {
+    var byKey = {};
+    var out = [];
+    st.days.forEach(function (n) {
+      var day = days[n - 1];
+      var recs = (day && day.recommendations) || {};
+      CATEGORIES.forEach(function (cat) {
+        (recs[cat[0]] || []).forEach(function (it) {
+          var key = cat[0] + '|' + (it.map_url || it.name);
+          if (byKey[key]) {
+            if (byKey[key].days.indexOf(n) < 0) byKey[key].days.push(n);
+            return;
+          }
+          byKey[key] = { cat: cat[0], it: it, days: [n] };
+          out.push(byKey[key]);
+        });
+      });
+    });
+    return out;
+  }
+
+  function daysRange(nums) {
+    return nums.length > 1 ? 'Day ' + nums[0] + '–' + nums[nums.length - 1] : 'Day ' + nums[0];
+  }
+
+  function stayEmbedUrl(st) {
+    var c = st.center;
+    if (STAY_MID) {
+      return 'https://www.google.com/maps/d/embed?mid=' + encodeURIComponent(STAY_MID) +
+        '&ll=' + c.lat + ',' + c.lon + '&z=' + st.zoom;
+    }
+    return 'https://maps.google.com/maps?q=' + encodeURIComponent(st.map_query) +
+      '&z=' + Math.max(st.zoom, 13) + '&hl=zh-TW&output=embed';
+  }
+
+  function stayOpenUrl(st) {
+    var c = st.center;
+    if (STAY_MID) {
+      return 'https://www.google.com/maps/d/viewer?mid=' + encodeURIComponent(STAY_MID) +
+        '&ll=' + c.lat + ',' + c.lon + '&z=' + st.zoom;
+    }
+    return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(st.map_query);
+  }
+
+  function stayCardHtml(st) {
+    var places = st.places;
+    var counts = {};
+    places.forEach(function (p) { counts[p.cat] = (counts[p.cat] || 0) + 1; });
+    var cats = CATEGORIES.filter(function (c) { return counts[c[0]]; });
+    var bodyId = 'stay-body-' + st.id;
+
+    var tabs = '<button class="filter-btn" type="button" data-stay-cat="all" aria-pressed="true">全部' +
+        '<span class="fc">' + places.length + '</span></button>' +
+      cats.map(function (c) {
+        return '<button class="filter-btn" type="button" data-stay-cat="' + c[0] + '" aria-pressed="false">' +
+          c[2] + ' ' + esc(c[1]) + '<span class="fc">' + counts[c[0]] + '</span></button>';
+      }).join('');
+
+    return '<article class="stay-card" id="stay-' + esc(st.id) + '" data-stay="' + esc(st.id) + '" data-open="0">' +
+      '<button class="venue-head" type="button" data-stay-toggle="1" aria-expanded="false" ' +
+          'aria-controls="' + bodyId + '">' +
+        '<span class="venue-head-main">' +
+          '<span class="venue-kind">' + (st.kind === 'stop' ? '停留點' : '住宿') + ' · ' +
+            esc(daysRange(st.days)) + '</span>' +
+          '<span class="venue-name">' + esc(st.area) + '</span>' +
+          '<span class="venue-name-sub">' + esc(st.name || '') + '</span>' +
+          '<span class="venue-days">' + places.length + ' 個在地推薦 · ' + cats.length + ' 類</span>' +
+        '</span>' +
+        '<span class="venue-chev">▼</span>' +
+      '</button>' +
+      '<div class="venue-body" id="' + bodyId + '">' +
+        '<div class="stay-map" data-stay-map="1"><span class="map-state">展開後載入地圖</span></div>' +
+        '<p class="stay-map-note">' + (STAY_MID
+          ? '每個推薦地點都是一根圖釘，依類別分圖層 —— 點地圖左上角 ⧉ 開圖例可切換類別。'
+          : '目前顯示住宿位置。完整分類圖釘地圖需先做一次 My Maps 匯入（見本區最下方），完成前請用下方名單的「地圖」連結。') +
+        '</p>' +
+        '<div class="link-row">' +
+          '<a class="lnk lnk-forecast" href="' + esc(stayOpenUrl(st)) +
+            '" target="_blank" rel="noopener noreferrer">在 Google 地圖開啟</a>' +
+          '<a class="lnk lnk-map" href="https://www.google.com/maps/search/?api=1&query=' +
+            esc(encodeURIComponent(st.map_query)) + '" target="_blank" rel="noopener noreferrer">' +
+            (st.kind === 'stop' ? '停留點位置' : '住宿位置') + '</a>' +
+        '</div>' +
+        '<div class="filters stay-filters" data-stay-tabs="1">' + tabs + '</div>' +
+        '<div class="stay-list" data-stay-list="1" data-rendered="0"></div>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function stayListHtml(st) {
+    return CATEGORIES.map(function (c) {
+      var items = st.places.filter(function (p) { return p.cat === c[0]; });
+      if (!items.length) return '';
+      return '<div class="stay-cat" data-cat="' + c[0] + '">' +
+        '<div class="stay-cat-head"><span class="rec-cat-ico">' + c[2] + '</span>' +
+          '<span class="rec-cat-name">' + esc(c[1]) + '</span>' +
+          '<span class="rec-count num">' + items.length + '</span></div>' +
+        items.map(function (p) {
+          return recItemHtml(p.it, 'Day ' + p.days.sort(function (a, b) { return a - b; }).join('・'));
+        }).join('') +
+      '</div>';
+    }).join('');
+  }
+
+  function loadStayMap(card) {
+    var st = STAYS[card.getAttribute('data-stay')];
+    var frame = card.querySelector('[data-stay-map]');
+    if (!st || !frame || frame.getAttribute('data-loaded') === '1') return;
+
+    // An iframe cannot report a failed load, so offline is checked up front
+    // rather than leaving the browser's own error page inside the card.
+    if (navigator.onLine === false) {
+      frame.innerHTML = '<p class="map-state is-error">目前沒有網路，地圖無法載入。<br>' +
+        '下方名單仍可瀏覽；有訊號後再按重新載入。</p>' +
+        '<button class="map-retry" type="button" data-stay-map-retry="1">重新載入</button>';
+      return;
+    }
+    frame.setAttribute('data-loaded', '1');
+    var iframe = document.createElement('iframe');
+    iframe.src = stayEmbedUrl(st);
+    iframe.title = st.area + ' 周邊地圖';
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    iframe.setAttribute('allowfullscreen', '');
+    frame.innerHTML = '';
+    frame.appendChild(iframe);
+  }
+
+  function setStayOpen(card, open) {
+    card.setAttribute('data-open', open ? '1' : '0');
+    var head = card.querySelector('[data-stay-toggle]');
+    if (head) head.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (!open) return;
+    var list = card.querySelector('[data-stay-list]');
+    if (list && list.getAttribute('data-rendered') === '0') {
+      list.innerHTML = stayListHtml(STAYS[card.getAttribute('data-stay')]);
+      list.setAttribute('data-rendered', '1');
+    }
+    loadStayMap(card);
+  }
+
+  function focusStay(id) {
+    var card = document.getElementById('stay-' + id);
+    if (!card) return;
+    setStayOpen(card, true);
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    card.classList.remove('is-target');
+    void card.offsetWidth;
+    card.classList.add('is-target');
+  }
+
+  function stayKitHtml() {
+    var files = [STAYS_CSV].concat(CATEGORIES.map(function (c) { return c[3]; }));
+    return '<div class="cl-group stay-kit-box" data-open="0">' +
+      '<button class="cl-group-head" type="button" data-cl-toggle="1" aria-expanded="false" ' +
+          'aria-controls="stay-kit-body">' +
+        '<span class="cl-g-ico">🗺️</span>' +
+        '<span class="cl-g-name">建立完整分類地圖（一次性，約 10 分鐘）</span>' +
+        '<span class="chev">▼</span>' +
+      '</button>' +
+      '<div class="cl-body stay-kit-body" id="stay-kit-body">' +
+        '<p>Google 不允許網頁不用金鑰就把幾百個地點畫在同一張地圖上，唯一免費又是真正 Google 地圖的做法是 ' +
+          '<b>Google My Maps</b>。做一次，7 個停留點都能用，而且會出現在手機 Google 地圖 App 的「已儲存 › 地圖」裡，可直接導航。</p>' +
+        '<ol>' +
+          '<li>用電腦開 <a href="https://www.google.com/maps/d/" target="_blank" rel="noopener noreferrer">google.com/maps/d</a> → 「建立新地圖」，命名例如「2027 東北滑雪」。</li>' +
+          '<li>下載下面 7 個 CSV。第一個圖層按「匯入」選 <b>00-住宿與停留點.csv</b>；之後每次按「新增圖層」→「匯入」，依序匯入其餘 6 個（一個類別一個圖層）。</li>' +
+          '<li>每次匯入時：放置地標的欄位選 <b>地點</b>，標題欄位選 <b>名稱</b>。</li>' +
+          '<li>每個圖層點「統一樣式」換一個顏色／圖示（例如正餐紅、甜點粉、伴手禮紫），圖例就會依類別分色。</li>' +
+          '<li>右上「分享」→ 開啟「知道連結的任何人都能檢視」，複製網址裡 <code>mid=</code> 後面那一串。</li>' +
+          '<li>把那串貼給 Claude（或填進 itinerary.json 的 <code>stay_maps.my_maps_mid</code>）→ 重新建置，每張卡的地圖就會換成分類圖釘版本。</li>' +
+        '</ol>' +
+        '<p>匯入後 My Maps 若提示「有幾列無法顯示」，代表那幾個名稱 Google 找不到 —— 正好順便檢查名單。</p>' +
+        '<div class="link-row stay-files">' + files.map(function (f) {
+          return '<a class="lnk lnk-map" href="maps/' + encodeURIComponent(f) + '" download>' + esc(f) + '</a>';
+        }).join('') + '</div>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function renderStays(data) {
+    var stays = data.stays || [];
+    STAY_MID = (data.stay_maps && data.stay_maps.my_maps_mid) || '';
+    if (!stays.length) { el('stays').style.display = 'none'; return; }
+
+    stays.forEach(function (st) {
+      st.places = stayPlaces(st, data.days || []);
+      STAYS[st.id] = st;
+      st.days.forEach(function (n) { STAY_OF_DAY[n] = st; });
+    });
+
+    el('stays-sub').textContent = stays.length + ' 個停留點・在地推薦依 ' + CATEGORIES.length +
+      ' 大類標示' + (STAY_MID ? '・點地圖圖例切換類別' : '');
+
+    var grid = el('stay-grid');
+    grid.innerHTML = stays.map(stayCardHtml).join('');
+
+    grid.addEventListener('click', function (ev) {
+      var retry = ev.target.closest('[data-stay-map-retry]');
+      if (retry) { loadStayMap(retry.closest('.stay-card')); return; }
+
+      var tab = ev.target.closest('[data-stay-cat]');
+      if (tab) {
+        var card = tab.closest('.stay-card');
+        var want = tab.getAttribute('data-stay-cat');
+        Array.prototype.forEach.call(card.querySelectorAll('[data-stay-cat]'), function (b) {
+          b.setAttribute('aria-pressed', b === tab ? 'true' : 'false');
+        });
+        Array.prototype.forEach.call(card.querySelectorAll('.stay-cat'), function (g) {
+          g.hidden = !(want === 'all' || g.getAttribute('data-cat') === want);
+        });
+        return;
+      }
+
+      var head = ev.target.closest('[data-stay-toggle]');
+      if (head) {
+        var c = head.closest('.stay-card');
+        setStayOpen(c, c.getAttribute('data-open') !== '1');
+      }
+    });
+
+    var kit = el('stay-kit');
+    if (STAY_MID) { kit.hidden = true; return; }
+    kit.innerHTML = stayKitHtml();
+    kit.addEventListener('click', function (ev) {
+      var t = ev.target.closest('[data-cl-toggle]');
+      if (t) toggleGroup(t);
+    });
+  }
+
   // ── accordions ──────────────────────────────────────────────────
   // One toggle for every collapsible group (checklist, packing, recs), so
   // state and screen-reader state can never disagree.
@@ -613,7 +857,10 @@
   var RECS = {};
 
   function recItemsHtml(items) {
-    return items.map(function (it) {
+    return items.map(function (it) { return recItemHtml(it, ''); }).join('');
+  }
+
+  function recItemHtml(it, daysLabel) {
         var links = '';
         if (it.tabelog_url) {
           links += '<a class="lnk lnk-tabelog" href="' + esc(it.tabelog_url) +
@@ -629,10 +876,10 @@
             (it.tabelog_badge ? '<span class="tabelog-badge">' + esc(it.tabelog_badge) + '</span>' : '') +
             (it.rating ? '<span class="stars">' + esc(it.rating) + '</span>' : '') +
             (it.distance ? '<span class="dist">' + esc(it.distance) + '</span>' : '') +
+            (daysLabel ? '<span class="rec-days">' + esc(daysLabel) + '</span>' : '') +
           '</span><span class="link-row">' + links + '</span></div>' +
           (it.highlights ? '<p class="rec-desc">' + esc(it.highlights) + '</p>' : '') +
         '</div>';
-    }).join('');
   }
 
   function recsHtml(day) {
@@ -667,6 +914,7 @@
   }
 
   function dayCardHtml(day, venuesById) {
+    var stay = STAY_OF_DAY[day.day_number];
     var chips = (day.venue_ids || []).map(function (id) {
       var v = venuesById[id];
       if (!v) return '';
@@ -696,8 +944,10 @@
         '</div>' +
       '</div>' +
       (day.stay ? '<div class="stay-box"><span class="stay-name"><em>Stay</em>' + esc(day.stay) + '</span>' +
+        '<span class="stay-actions">' +
+        (stay ? '<button class="stay-jump" type="button" data-goto-stay="' + esc(stay.id) + '">周邊地圖</button>' : '') +
         (day.stay_map ? '<a class="lnk lnk-map" href="' + esc(day.stay_map) +
-          '" target="_blank" rel="noopener noreferrer">飯店地圖</a>' : '') + '</div>' : '') +
+          '" target="_blank" rel="noopener noreferrer">飯店地圖</a>' : '') + '</span></div>' : '') +
       (chips ? '<div class="venue-chips">' + chips + '</div>' : '') +
       transit +
       recsHtml(day) +
@@ -758,7 +1008,9 @@
         return;
       }
       var chip = ev.target.closest('[data-goto-venue]');
-      if (chip) focusVenue(chip.getAttribute('data-goto-venue'));
+      if (chip) { focusVenue(chip.getAttribute('data-goto-venue')); return; }
+      var jump = ev.target.closest('[data-goto-stay]');
+      if (jump) focusStay(jump.getAttribute('data-goto-stay'));
     });
   }
 
@@ -841,6 +1093,10 @@
           (chips ? '<div class="venue-chips" style="margin-top:14px;margin-bottom:0">' + chips + '</div>' : '') +
           '<div class="today-actions">' +
             '<a class="today-cta" href="#day-' + current.day_number + '">看今日完整行程 ↓</a>' +
+            (STAY_OF_DAY[current.day_number]
+              ? '<a class="today-cta" href="#stay-' + esc(STAY_OF_DAY[current.day_number].id) +
+                '" data-goto-stay="' + esc(STAY_OF_DAY[current.day_number].id) + '">周邊地圖</a>'
+              : '') +
             '<a class="today-cta" href="#emergency">緊急聯絡</a>' +
           '</div>' +
         '</div>';
@@ -884,7 +1140,9 @@
 
     box.addEventListener('click', function (ev) {
       var chip = ev.target.closest('[data-goto-venue]');
-      if (chip) focusVenue(chip.getAttribute('data-goto-venue'));
+      if (chip) { focusVenue(chip.getAttribute('data-goto-venue')); return; }
+      var jump = ev.target.closest('[data-goto-stay]');
+      if (jump) { ev.preventDefault(); focusStay(jump.getAttribute('data-goto-stay')); }
     });
 
     // mark today in the day strip
@@ -1092,15 +1350,22 @@
     });
 
     renderVenues(data.venues, data.forecast_meta);
+    renderStays(data);   // before renderDays: day cards link to their stay
     renderDays(data);
     renderToday(data);   // after renderDays: it marks today in the day strip
     renderContingency(data.contingency_plans);
     renderEmergency(data.emergency);
     initScrollEffects();
 
-    if (location.hash.indexOf('#venue-') === 0) {
-      focusVenue(location.hash.slice('#venue-'.length));
-    }
+    focusHash();
+    window.addEventListener('hashchange', focusHash);
+  }
+
+  // #venue-… and #stay-… open their card as well as scrolling to it
+  function focusHash() {
+    var h = location.hash;
+    if (h.indexOf('#venue-') === 0) focusVenue(decodeURIComponent(h.slice('#venue-'.length)));
+    else if (h.indexOf('#stay-') === 0) focusStay(decodeURIComponent(h.slice('#stay-'.length)));
   }
 
   function showError(message) {

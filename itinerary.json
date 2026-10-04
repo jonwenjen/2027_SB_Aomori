@@ -10561,6 +10561,134 @@
       ]
     }
   ],
+  "stays": [
+    {
+      "id": "aomori",
+      "kind": "hotel",
+      "area": "青森市・八甲田",
+      "name": "Hotel Route-Inn Aomori Ekimae",
+      "name_sub": "青森站前 ルートイン",
+      "days": [
+        1,
+        2,
+        3
+      ],
+      "map_query": "Hotel Route-Inn Aomori Ekimae",
+      "center": {
+        "lat": 40.775,
+        "lon": 140.79
+      },
+      "zoom": 11
+    },
+    {
+      "id": "hachinohe",
+      "kind": "hotel",
+      "area": "八戶",
+      "name": "Comfort Hotel Hachinohe",
+      "name_sub": "本八戶 コンフォートホテル",
+      "days": [
+        4
+      ],
+      "map_query": "Comfort Hotel Hachinohe",
+      "center": {
+        "lat": 40.52,
+        "lon": 141.53
+      },
+      "zoom": 12
+    },
+    {
+      "id": "towada",
+      "kind": "hotel",
+      "area": "十和田湖・奧入瀨",
+      "name": "Hotel Towadaso",
+      "name_sub": "十和田湖畔 ホテル十和田荘",
+      "days": [
+        5
+      ],
+      "map_query": "Hotel Towadaso",
+      "center": {
+        "lat": 40.5,
+        "lon": 140.91
+      },
+      "zoom": 11
+    },
+    {
+      "id": "amihari",
+      "kind": "hotel",
+      "area": "雫石・盛岡",
+      "name": "休暇村岩手網張温泉",
+      "name_sub": "Kyukamura Iwate Amihari Onsen",
+      "days": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "map_query": "Kyukamura Iwate Amihari Onsen",
+      "center": {
+        "lat": 39.75,
+        "lon": 141.05
+      },
+      "zoom": 11
+    },
+    {
+      "id": "okunakayama",
+      "kind": "hotel",
+      "area": "奧中山高原・一戶",
+      "name": "奧中山高原 住宿",
+      "name_sub": "Okunakayama Kogen",
+      "days": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "map_query": "Okunakayamakogen Hotel",
+      "center": {
+        "lat": 40.22,
+        "lon": 141.25
+      },
+      "zoom": 11
+    },
+    {
+      "id": "shinjuku",
+      "kind": "hotel",
+      "area": "東京・新宿",
+      "name": "Hotel Gracery Shinjuku",
+      "name_sub": "新宿格拉斯麗",
+      "days": [
+        14,
+        15
+      ],
+      "map_query": "Hotel Gracery Shinjuku",
+      "center": {
+        "lat": 35.69,
+        "lon": 139.701
+      },
+      "zoom": 14
+    },
+    {
+      "id": "narita",
+      "kind": "stop",
+      "area": "成田・歸途",
+      "name": "成田山表參道・成田機場",
+      "name_sub": "回程前的最後停留",
+      "days": [
+        16
+      ],
+      "map_query": "成田山新勝寺",
+      "center": {
+        "lat": 35.78,
+        "lon": 140.355
+      },
+      "zoom": 12
+    }
+  ],
+  "stay_maps": {
+    "my_maps_mid": "",
+    "note": "完整分類地圖是一張 Google My Maps：maps/ 底下 7 個 CSV（住宿＋6 大類）各匯入成一個圖層，公開分享後把地圖 ID（網址 mid= 後面那串）填進 my_maps_mid。未填之前，地圖框顯示住宿位置，名單照常可用。",
+    "center_note": "center／zoom 只決定地圖框打開時的視野，為估算值，可直接調整。"
+  },
   "predeparture_checklist": [
     {
       "id": "booking",
