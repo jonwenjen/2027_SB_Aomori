@@ -132,9 +132,19 @@ t.check('layers hold each recommended place exactly once', csvRows === uniqueAll
 
   // day card → stay card
   await p.locator('#day-12 .stay-jump').click();
-  await p.waitForTimeout(900);
   t.check('a day card opens its stay map', await p.locator('#stay-okunakayama').getAttribute('data-open') === '1');
-  const top = await p.locator('#stay-okunakayama').evaluate(n => n.getBoundingClientRect().top);
+  // a smooth scroll over ~5,000px takes longer on a slow CI runner, so wait
+  // for it to come to rest instead of sampling at a fixed moment
+  const top = await p.locator('#stay-okunakayama').evaluate(async n => {
+    let last = NaN;
+    for (let i = 0; i < 50; i++) {
+      await new Promise(r => setTimeout(r, 120));
+      const y = n.getBoundingClientRect().top;
+      if (y === last) return y;
+      last = y;
+    }
+    return last;
+  });
   t.check('…and scrolls to it', top >= -5 && top < 300, top);
   t.check('every day card with a stay links to it',
     await p.locator('.day-card .stay-jump').count() === data.stays.reduce((n, s) => n + s.days.length, 0));
