@@ -17,8 +17,9 @@
 | `build.py` | 驗證資料 → 內嵌成單檔 → 產生 sw.js | — |
 | `index.html`、`sw.js` | **建置產物** | ❌ 不要手改，會被覆蓋 |
 | `maps/*.csv` | **建置產物**：Google My Maps 匯入檔（住宿＋6 大類，各一個圖層） | ❌ 由 `itinerary.json` 產生 |
+| `maps/gemini-my-maps-task.md` | **建置產物**：把 My Maps 匯入寫成給 Gemini 的執行說明 | ❌ 同上 |
 | `manifest.webmanifest`、`icons/` | 加到主畫面用 | 圖示由 `scripts/make-icons.js` 產生 |
-| `tests/` | 9 組、241 項瀏覽器測試 | ✅ 改功能時一起改 |
+| `tests/` | 9 組、244 項瀏覽器測試 | ✅ 改功能時一起改 |
 
 ---
 
@@ -126,6 +127,11 @@ Google 不允許網頁不用 API 金鑰就把幾百個地點畫在同一張地�
 5. 分享 → 知道連結的任何人可檢視 → 複製網址中 `mid=` 後面那串
 6. 填進 `itinerary.json` 的 `stay_maps.my_maps_mid` → `python3 build.py` → push
 
+**交給 Gemini 代勞**：把 [`maps/gemini-my-maps-task.md`](maps/gemini-my-maps-task.md) 整份交給 Gemini。
+能控制瀏覽器的 Gemini 可以直接照做；只能聊天的 Gemini 會一步步帶你做。
+它最後會輸出固定格式的回報（`my_maps_mid`＋每層筆數＋定位失敗的地點），原樣貼回給 Claude 即可。
+這份說明由 `build.py` 產生，檔案連結和每層預期筆數永遠跟 CSV 一致。
+
 填好之後，每張卡的地圖會換成這張 My Maps，並以各停留點的 `center`／`zoom` 為視野；
 未填之前顯示住宿位置的一般 Google 地圖。CSV 每次建置都會從 `itinerary.json` 重新產生，
 名單有改，重新匯入對應圖層即可。
@@ -165,11 +171,11 @@ Google 不允許網頁不用 API 金鑰就把幾百個地點畫在同一張地�
         ↓
 python3 build.py        ← 驗證資料 → 打包單檔 index.html → 產生 sw.js
         ↓
-npm test                ← 241 項瀏覽器測試
+npm test                ← 244 項瀏覽器測試
         ↓
 git push                ← GitHub repo: 2027_SB_Aomori
         ↓
-GitHub Actions          ← check（資料＋產物一致）→ test（241 項）
+GitHub Actions          ← check（資料＋產物一致）→ test（244 項）
         ↓
 GitHub Pages 自動更新
 ```
@@ -206,7 +212,7 @@ npm test -- itinerary       # 只跑名稱含 itinerary 的那組
 | design | 22 | 雙主題、字體、兩套主題實測對比、手機版面 |
 | forecast | 32 | 雪況請求格式、40 km/h 門檻邊界、所有失敗路徑 |
 | itinerary | 35 | **行程決策本身**：剪染在 Day 1、雪具只寄一次、八食中心不排在打烊後… |
-| maps | 36 | 住宿地圖卡、去重計數、分類頁籤、懶載入與離線、My Maps 嵌入網址、CSV 匯入檔 |
+| maps | 39 | 住宿地圖卡、去重計數、分類頁籤、懶載入與離線、My Maps 嵌入網址、CSV 匯入檔 |
 | offline | 15 | 離線可開、快取版本、Open-Meteo 絕不快取、file:// 仍可用 |
 | sections | 25 | 緊急聯絡（撥號格式、不可撥號碼）、打包清單 |
 | structure | 20 | 推薦名單延遲渲染、DOM 上限、無障礙、交通步驟排版 |

@@ -61,6 +61,16 @@ const uniqueAll = new Set();
 data.days.forEach(d => CATS.forEach(c => (d.recommendations?.[c] || []).forEach(it => uniqueAll.add(c + '|' + it.map_url))));
 t.check('layers hold each recommended place exactly once', csvRows === uniqueAll.size, csvRows + ' vs ' + uniqueAll.size);
 
+// the agent brief is generated from the same CSVs, so its numbers match them
+const task = fs.readFileSync(path.join(lib.ROOT, 'maps', 'gemini-my-maps-task.md'), 'utf8');
+let taskOk = true;
+for (const f of files) {
+  const n = parseCsv(fs.readFileSync(path.join(lib.ROOT, 'maps', f), 'utf8')).length - 1;
+  if (!task.includes('](https://jonwenjen.github.io/2027_SB_Aomori/maps/' + encodeURIComponent(f) + ') | ' + n + ' |')) taskOk = false;
+}
+t.check('Gemini brief links every layer file with its row count', taskOk);
+t.check('Gemini brief asks for the map id back', /my_maps_mid: </.test(task));
+
 // ── page ──────────────────────────────────────────────────────────────
 (async () => {
   const b = await lib.launch();
@@ -153,6 +163,8 @@ t.check('layers hold each recommended place exactly once', csvRows === uniqueAll
   t.check('import guide is shown while no My Maps id is set', await p.locator('#stay-kit .stay-kit-box').count() === 1);
   const hrefs = await p.locator('#stay-kit a[download]').evaluateAll(as => as.map(a => a.getAttribute('href')));
   t.check('guide links all 7 layer files', hrefs.length === 7, hrefs.length);
+  t.check('guide links the Gemini brief',
+    /maps\/gemini-my-maps-task\.md$/.test(await p.locator('#stay-kit a.stay-task').getAttribute('href') || ''));
   t.check('every guide link points at a real file',
     hrefs.every(h => fs.existsSync(path.join(lib.ROOT, decodeURIComponent(h)))), hrefs.join(' '));
   await p.close();

@@ -1150,6 +1150,7 @@
     ['attractions', '必訪景點推薦', '📍', '06-必訪景點.csv']
   ];
   var STAYS_CSV = '00-住宿與停留點.csv';
+  var TASK_URL = 'https://github.com/jonwenjen/2027_SB_Aomori/blob/main/maps/gemini-my-maps-task.md';
 
   function esc(v) {
     if (v === null || v === undefined) return '';
@@ -1912,6 +1913,8 @@
           '<li>把那串貼給 Claude（或填進 itinerary.json 的 <code>stay_maps.my_maps_mid</code>）→ 重新建置，每張卡的地圖就會換成分類圖釘版本。</li>' +
         '</ol>' +
         '<p>匯入後 My Maps 若提示「有幾列無法顯示」，代表那幾個名稱 Google 找不到 —— 正好順便檢查名單。</p>' +
+        '<p>想交給 Gemini 代勞：把 <a class="stay-task" href="' + TASK_URL + '" target="_blank" rel="noopener noreferrer">' +
+          'gemini-my-maps-task.md</a> 整份貼給它，裡面有檔案連結、每層顏色圖示、預期筆數和回報格式。</p>' +
         '<div class="link-row stay-files">' + files.map(function (f) {
           return '<a class="lnk lnk-map" href="maps/' + encodeURIComponent(f) + '" download>' + esc(f) + '</a>';
         }).join('') + '</div>' +
