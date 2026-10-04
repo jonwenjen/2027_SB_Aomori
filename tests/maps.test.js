@@ -88,6 +88,22 @@ t.check('Gemini brief asks for the map id back', /my_maps_mid: </.test(task));
     return p;
   };
 
+  const MID = (data.stay_maps || {}).my_maps_mid || '';
+  const myMapsEmbed = (mid, s) => 'https://www.google.com/maps/d/embed?mid=' + mid +
+    '&ll=' + s.center.lat + ',' + s.center.lon + '&z=' + s.zoom;
+  const isHotelEmbed = src => /^https:\/\/maps\.google\.com\/maps\?q=Hotel%20Route-Inn/.test(src || '') &&
+    /output=embed/.test(src || '');
+  const shipped = fs.readFileSync(lib.SHIPPED, 'utf8');
+  t.check('the shipped page carries the My Maps id from the data',
+    shipped.includes('"my_maps_mid":"' + MID + '"'));
+  const variant = async (mid) => {
+    const vp = await ctx.newPage();
+    vp.on('pageerror', e => errs.push(e.message));
+    await vp.setContent(shipped.replace(/"my_maps_mid":"[^"]*"/, '"my_maps_mid":"' + mid + '"'), { waitUntil: 'load' });
+    await vp.waitForTimeout(500);
+    return vp;
+  };
+
   let p = await open(lib.TARGET);
   t.check('one card per stay', await p.locator('.stay-card').count() === data.stays.length,
     await p.locator('.stay-card').count());
@@ -116,8 +132,12 @@ t.check('Gemini brief asks for the map id back', /my_maps_mid: </.test(task));
   t.check('picks are grouped into 6 categories', await p.locator('#stay-aomori .stay-cat').count() === 6);
   const src = await p.locator('#stay-aomori .stay-map iframe').getAttribute('src');
   t.check('opening creates exactly one Google map', await p.locator('.stay-map iframe').count() === 1);
-  t.check('without a My Maps id the map shows the hotel',
-    /^https:\/\/maps\.google\.com\/maps\?q=Hotel%20Route-Inn/.test(src) && /output=embed/.test(src), src);
+  if (MID) {
+    t.check('the shipped page embeds the shared My Maps, centred on the stay',
+      src === myMapsEmbed(MID, aomori), src);
+  } else {
+    t.check('the shipped page (no My Maps id yet) shows the hotel', isHotelEmbed(src), src);
+  }
   t.check('other cards stay unbuilt', await p.locator('.stay-list .rec-item').count() === ap.length);
 
   const multi = ap.find(x => x.days.length > 1);
@@ -159,14 +179,8 @@ t.check('Gemini brief asks for the map id back', /my_maps_mid: </.test(task));
   t.check('every day card with a stay links to it',
     await p.locator('.day-card .stay-jump').count() === data.stays.reduce((n, s) => n + s.days.length, 0));
 
-  // setup kit
-  t.check('import guide is shown while no My Maps id is set', await p.locator('#stay-kit .stay-kit-box').count() === 1);
-  const hrefs = await p.locator('#stay-kit a[download]').evaluateAll(as => as.map(a => a.getAttribute('href')));
-  t.check('guide links all 7 layer files', hrefs.length === 7, hrefs.length);
-  t.check('guide links the Gemini brief',
-    /maps\/gemini-my-maps-task\.md$/.test(await p.locator('#stay-kit a.stay-task').getAttribute('href') || ''));
-  t.check('every guide link points at a real file',
-    hrefs.every(h => fs.existsSync(path.join(lib.ROOT, decodeURIComponent(h)))), hrefs.join(' '));
+  t.check('the import guide shows only while no My Maps id is set',
+    (await p.locator('#stay-kit').isHidden()) === !!MID);
   await p.close();
 
   // deep link + today view
@@ -196,22 +210,34 @@ t.check('Gemini brief asks for the map id back', /my_maps_mid: </.test(task));
   t.check('retry loads the map once back online', await p.locator('#stay-towada .stay-map iframe').count() === 1);
   await p.close();
 
-  // with a My Maps id: categorised pins, centred on the stay
-  const html = fs.readFileSync(lib.SHIPPED, 'utf8').replace('"my_maps_mid":""', '"my_maps_mid":"1AbCdEfGhIjKlMnOp"');
-  p = await ctx.newPage();
-  p.on('pageerror', e => errs.push(e.message));
-  await p.setContent(html, { waitUntil: 'load' });
-  await p.waitForTimeout(500);
+  // Both states are tested whatever the shipped data holds, by swapping the
+  // id inside a copy of the built page.
+  const st = data.stays.find(s => s.id === 'amihari');
+
+  // with an id: categorised pins, centred on the stay
+  p = await variant('1AbCdEfGhIjKlMnOp');
   await p.locator('#stay-amihari .venue-head').click();
   await p.waitForTimeout(200);
-  const st = data.stays.find(s => s.id === 'amihari');
   const mySrc = await p.locator('#stay-amihari .stay-map iframe').getAttribute('src');
-  t.check('with an id the map is the shared My Maps',
-    mySrc === 'https://www.google.com/maps/d/embed?mid=1AbCdEfGhIjKlMnOp&ll=' + st.center.lat + ',' +
-      st.center.lon + '&z=' + st.zoom, mySrc);
+  t.check('with an id the map is the shared My Maps', mySrc === myMapsEmbed('1AbCdEfGhIjKlMnOp', st), mySrc);
   t.check('…the open link goes to the My Maps viewer',
     /maps\/d\/viewer\?mid=1AbCdEfGhIjKlMnOp/.test(await p.locator('#stay-amihari .lnk-forecast').getAttribute('href')));
   t.check('…and the import guide is gone', await p.locator('#stay-kit').isHidden());
+  await p.close();
+
+  // without one: the hotel on a plain embed, plus the import guide
+  p = await variant('');
+  await p.locator('#stay-aomori .venue-head').click();
+  await p.waitForTimeout(200);
+  const hotelSrc = await p.locator('#stay-aomori .stay-map iframe').getAttribute('src');
+  t.check('without an id the map shows the hotel', isHotelEmbed(hotelSrc), hotelSrc);
+  t.check('…and the import guide is shown', await p.locator('#stay-kit .stay-kit-box').count() === 1);
+  const hrefs = await p.locator('#stay-kit a[download]').evaluateAll(as => as.map(a => a.getAttribute('href')));
+  t.check('guide links all 7 layer files', hrefs.length === 7, hrefs.length);
+  t.check('guide links the Gemini brief',
+    /maps\/gemini-my-maps-task\.md$/.test(await p.locator('#stay-kit a.stay-task').getAttribute('href') || ''));
+  t.check('every guide link points at a real file',
+    hrefs.every(h => fs.existsSync(path.join(lib.ROOT, decodeURIComponent(h)))), hrefs.join(' '));
   await p.close();
 
   t.check('no JS errors', errs.length === 0, errs.slice(0, 3).join(' | '));

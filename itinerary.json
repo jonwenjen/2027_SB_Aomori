@@ -10685,7 +10685,7 @@
     }
   ],
   "stay_maps": {
-    "my_maps_mid": "",
+    "my_maps_mid": "1t20uwa23T8sJCaSOnrfKDFwRc5E24_I",
     "note": "完整分類地圖是一張 Google My Maps：maps/ 底下 7 個 CSV（住宿＋6 大類）各匯入成一個圖層，公開分享後把地圖 ID（網址 mid= 後面那串）填進 my_maps_mid。未填之前，地圖框顯示住宿位置，名單照常可用。",
     "center_note": "center／zoom 只決定地圖框打開時的視野，為估算值，可直接調整。"
   },

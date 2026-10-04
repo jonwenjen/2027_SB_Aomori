@@ -19,7 +19,7 @@
 | `maps/*.csv` | **建置產物**：Google My Maps 匯入檔（住宿＋6 大類，各一個圖層） | ❌ 由 `itinerary.json` 產生 |
 | `maps/gemini-my-maps-task.md` | **建置產物**：把 My Maps 匯入寫成給 Gemini 的執行說明 | ❌ 同上 |
 | `manifest.webmanifest`、`icons/` | 加到主畫面用 | 圖示由 `scripts/make-icons.js` 產生 |
-| `tests/` | 9 組、244 項瀏覽器測試 | ✅ 改功能時一起改 |
+| `tests/` | 9 組、247 項瀏覽器測試 | ✅ 改功能時一起改 |
 
 ---
 
@@ -171,11 +171,11 @@ Google 不允許網頁不用 API 金鑰就把幾百個地點畫在同一張地�
         ↓
 python3 build.py        ← 驗證資料 → 打包單檔 index.html → 產生 sw.js
         ↓
-npm test                ← 244 項瀏覽器測試
+npm test                ← 247 項瀏覽器測試
         ↓
 git push                ← GitHub repo: 2027_SB_Aomori
         ↓
-GitHub Actions          ← check（資料＋產物一致）→ test（244 項）
+GitHub Actions          ← check（資料＋產物一致）→ test（247 項）
         ↓
 GitHub Pages 自動更新
 ```
@@ -212,7 +212,7 @@ npm test -- itinerary       # 只跑名稱含 itinerary 的那組
 | design | 22 | 雙主題、字體、兩套主題實測對比、手機版面 |
 | forecast | 32 | 雪況請求格式、40 km/h 門檻邊界、所有失敗路徑 |
 | itinerary | 35 | **行程決策本身**：剪染在 Day 1、雪具只寄一次、八食中心不排在打烊後… |
-| maps | 39 | 住宿地圖卡、去重計數、分類頁籤、懶載入與離線、My Maps 嵌入網址、CSV 匯入檔 |
+| maps | 42 | 住宿地圖卡、去重計數、分類頁籤、懶載入與離線、My Maps 嵌入網址、CSV 匯入檔 |
 | offline | 15 | 離線可開、快取版本、Open-Meteo 絕不快取、file:// 仍可用 |
 | sections | 25 | 緊急聯絡（撥號格式、不可撥號碼）、打包清單 |
 | structure | 20 | 推薦名單延遲渲染、DOM 上限、無障礙、交通步驟排版 |
