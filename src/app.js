@@ -142,7 +142,7 @@
     }).join('');
 
     var n = data.data_notes || {};
-    el('footer-src').textContent = [n.stats_source, n.season_caveat,
+    el('footer-src').textContent = [n.stats_source, n.season_caveat, n.transit_check,
       n.last_reviewed ? '資料覆核日：' + n.last_reviewed : ''].filter(Boolean).join(' ');
   }
 

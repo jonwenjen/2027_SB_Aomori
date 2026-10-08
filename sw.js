@@ -10,7 +10,7 @@
 //   Open-Meteo       never cached -- a stale forecast shown as current is
 //                    worse than the panel's own "offline" message
 
-const VERSION = '09d9073737a4';
+const VERSION = 'ded8ec5c9ded';
 const PAGE_CACHE = 'page-' + VERSION;
 const STATIC_CACHE = 'static-v1';
 const MAP_CACHE = 'maps-v1';
