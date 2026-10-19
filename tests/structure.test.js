@@ -60,7 +60,8 @@ const t = lib.suite('structure');
   t.check('Day 4 marks fallbacks separately', await p.locator('#day-4 .transit-step.is-alt').count() >= 1);
   const tips3 = await p.locator('#day-3 .transit-step.is-tip').allInnerTexts();
   t.check('Day 3 marks the 酸ヶ湯 suggestion as a tip', tips3.some(x => /酸ヶ湯/.test(x)), tips3.length);
-  t.check('Day 3 marks the 弘前 evening as a tip', tips3.some(x => /雪燈籠/.test(x)), tips3.length);
+  const main3 = await p.locator('#day-3 .transit-step.is-main').allInnerTexts();
+  t.check('Day 3 marks the 弘前 evening as part of the plan', main3.some(x => /雪燈籠/.test(x)), main3.length);
   const tipTags = await p.locator('.transit-step.is-tip .step-tag').allInnerTexts();
   t.check('tip tags drop the 💡 whole, leaving no half-emoji',
     tipTags.length > 0 && tipTags.every(x => !/[\uD800-\uDFFF]/.test(x)),

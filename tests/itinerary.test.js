@@ -78,7 +78,7 @@ t.check('Day 3 says the Hakkoda bus is booked on WILLER (return needs none)',
 t.check('Day 3 offers 弘前城雪燈籠まつり after the 15:03 bus', /雪燈籠/.test(text(3)) && /16:45/.test(text(3)));
 t.check('Day 5 names the 2027 Winter Story dates (2/6–2/14)', /2\/6–2\/14/.test(text(5)));
 t.check('Day 5 offers 陸奥湊 breakfast on a Saturday', /陸奥湊/.test(text(5)) && /週六有開/.test(text(5)));
-t.check('Day 9 offers a Morioka half day on the free shuttle', /盛岡市區半日/.test(text(9)) && /16:45/.test(text(9)));
+t.check('Day 9 is the Morioka half day on the free shuttle', /★ 盛岡城下町半日/.test(text(9)) && /16:45/.test(text(9)));
 t.check('Day 8 no longer promises an 8-minute ¥1,600 taxi', !/08:38/.test(text(8)) && !/¥1,600/.test(text(8)));
 t.check('Day 11 (Friday) no longer plans night skiing', !/18:00 再戰夜滑/.test(text(11)) && /週五沒有/.test(text(11)));
 t.check('Day 11 offers えんぶり on the 12:12 IGR', /えんぶり/.test(text(11)) && /12:12/.test(text(11)));
@@ -89,11 +89,23 @@ t.check('Day 14 starts at the weekday lift time 08:40', /08:40–12:45/.test(tex
 t.check('Day 15 puts T2 SHINJUKU in Nishi-Shinjuku', /西新宿 7-1-1/.test(text(15)) && !/歌舞伎町東寶大樓旁「T2/.test(text(15)));
 t.check('Day 16 explains the tax-free refund system', /免稅手續端末/.test(text(16)) && /2026-11-01/.test(text(16)));
 t.check('UA837 departs 17:50', data.flights[1].departure.time === '17:50' && /17:50 UA837/.test(text(16)));
+// suggestions adopted into the plan on 2026-10-19 (all but luggage forwarding)
+t.check('Day 3 evening is 弘前 as the plan, not a tip', /【★ 晚間・弘前城雪燈籠まつり/.test(text(3)));
+t.check('Day 2 no longer carries a second 弘前 option', !/雪燈籠/.test(text(2)) && !day(2).venue_ids.includes('hirosaki-snow-lantern'));
+t.check('Day 4 does not forward luggage', !/行李減量|宅急便把大行李/.test(text(4)));
+t.check('Day 5 breakfast at 陸奥湊 is the plan', /【★ 早餐・陸奥湊/.test(text(5)));
+t.check('Day 5 books the lakeshore ice-fall night tour', /【★ 冰瀑夜間導覽/.test(text(5)) && /frozen-oirase\.com/.test(text(5)) && /17:15/.test(text(5)));
+t.check('Day 5 moves Towadaso dinner after the tour', /19:30 以後/.test(text(5)));
+t.check('Day 5 reaches the festival in time for the 20:00 fireworks', /20:00 冬花火/.test(text(5)));
+t.check('Day 11 えんぶり is the plan', /【★ 八戶えんぶり/.test(text(11)) && /【★ 回奧中山】/.test(text(11)));
+t.check('Day 14 evening projection mapping is the plan', /【★ 晚間・東京都廳光雕投影】/.test(text(14)));
 const vById = Object.fromEntries(data.venues.map(v => [v.id, v]));
-for (const [id, n] of [['hirosaki-snow-lantern', 3], ['mutsuminato-market', 5], ['hachinohe-enburi', 11]]) {
+for (const [id, n] of [['hirosaki-snow-lantern', 3], ['mutsuminato-market', 5], ['hachinohe-enburi', 11], ['morioka-city', 9]]) {
   t.check('venue ' + id + ' exists and is on Day ' + n,
     !!vById[id] && vById[id].days.includes(n) && day(n).venue_ids.includes(id));
 }
+t.check('the Oirase card links the ice-fall booking site first',
+  vById['oirase'].links[0].url === 'https://frozen-oirase.com/');
 t.check('十和田湖冬物語 card shows the 2027 dates',
   vById['towadako-winter'].stats.some(s => s.value === '2027/2/6–2/14'));
 t.check('Okunakayama card says night skiing is weekends only',
@@ -104,10 +116,13 @@ const items = {};
 data.predeparture_checklist.forEach(g => g.items.forEach(i => { items[i.id] = i; }));
 for (const id of ['bk-late-checkin', 'bk-rental-day14', 'bk-taxi-day10', 'bk-okunakayama-shuttle',
                   'tt-ninohe-hayabusa', 'tt-hachinohe-hayabusa', 'tt-igr', 'tt-hakkoda-bus',
-                  'tt-hirosaki', 'tt-okunakayama-night', 'op-taxfree', 'bg-forward-day4',
-                  'bk-salon-verify', 'bk-enburi']) {
+                  'tt-hirosaki', 'tt-okunakayama-night', 'op-taxfree',
+                  'bk-salon-verify', 'bk-enburi', 'bk-towadaso-dinner']) {
   t.check('checklist has ' + id, !!items[id]);
 }
+t.check('the luggage-forwarding item is gone', !items['bg-forward-day4']);
+t.check('the ice-fall booking item links frozen-oirase.com',
+  ((items['bk-icefall'] || {}).link || {}).url === 'https://frozen-oirase.com/');
 t.check('salon checklist item names Day 1', /Day 1/.test((items['bk-salon'] || {}).text || ''));
 
 // ── unverified times are marked, never passed off as checked ─────────
