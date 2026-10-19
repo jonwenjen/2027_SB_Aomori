@@ -72,11 +72,40 @@ t.check('Day 1 airport bus fare is ¥980', /¥980/.test(text(1)) && !/¥860/.tes
 t.check('Day 15 bus leaves Busta at 07:05', /07:05/.test(text(15)));
 t.check('Day 16 N\'EX 13:08 reaches the airport at 14:31 for ¥3,330', /14:31/.test(text(16)) && /¥3,330/.test(text(16)));
 
+// ── 2026-10-19 review: newly published 2026-27 facts ─────────────────
+t.check('Day 3 says the Hakkoda bus is booked on WILLER (return needs none)',
+  /WILLER/.test(text(3)) && /回程從纜車站／酸ヶ湯上車不用預約/.test(text(3)));
+t.check('Day 3 offers 弘前城雪燈籠まつり after the 15:03 bus', /雪燈籠/.test(text(3)) && /16:45/.test(text(3)));
+t.check('Day 5 names the 2027 Winter Story dates (2/6–2/14)', /2\/6–2\/14/.test(text(5)));
+t.check('Day 5 offers 陸奥湊 breakfast on a Saturday', /陸奥湊/.test(text(5)) && /週六有開/.test(text(5)));
+t.check('Day 9 offers a Morioka half day on the free shuttle', /盛岡市區半日/.test(text(9)) && /16:45/.test(text(9)));
+t.check('Day 8 no longer promises an 8-minute ¥1,600 taxi', !/08:38/.test(text(8)) && !/¥1,600/.test(text(8)));
+t.check('Day 11 (Friday) no longer plans night skiing', !/18:00 再戰夜滑/.test(text(11)) && /週五沒有/.test(text(11)));
+t.check('Day 11 offers えんぶり on the 12:12 IGR', /えんぶり/.test(text(11)) && /12:12/.test(text(11)));
+t.check('Day 12 (Saturday) carries the night session', /夜滑/.test(text(12)));
+t.check('2027-02-19 is a Friday and 2027-02-20 a Saturday',
+  new Date(Date.UTC(2027, 1, 19)).getUTCDay() === 5 && new Date(Date.UTC(2027, 1, 20)).getUTCDay() === 6);
+t.check('Day 14 starts at the weekday lift time 08:40', /08:40–12:45/.test(text(14)));
+t.check('Day 15 puts T2 SHINJUKU in Nishi-Shinjuku', /西新宿 7-1-1/.test(text(15)) && !/歌舞伎町東寶大樓旁「T2/.test(text(15)));
+t.check('Day 16 explains the tax-free refund system', /免稅手續端末/.test(text(16)) && /2026-11-01/.test(text(16)));
+t.check('UA837 departs 17:50', data.flights[1].departure.time === '17:50' && /17:50 UA837/.test(text(16)));
+const vById = Object.fromEntries(data.venues.map(v => [v.id, v]));
+for (const [id, n] of [['hirosaki-snow-lantern', 3], ['mutsuminato-market', 5], ['hachinohe-enburi', 11]]) {
+  t.check('venue ' + id + ' exists and is on Day ' + n,
+    !!vById[id] && vById[id].days.includes(n) && day(n).venue_ids.includes(id));
+}
+t.check('十和田湖冬物語 card shows the 2027 dates',
+  vById['towadako-winter'].stats.some(s => s.value === '2027/2/6–2/14'));
+t.check('Okunakayama card says night skiing is weekends only',
+  vById['okunakayama'].notes.some(n => /週六日/.test(n)));
+
 // ── checklist follows the schedule ───────────────────────────────────
 const items = {};
 data.predeparture_checklist.forEach(g => g.items.forEach(i => { items[i.id] = i; }));
 for (const id of ['bk-late-checkin', 'bk-rental-day14', 'bk-taxi-day10', 'bk-okunakayama-shuttle',
-                  'tt-ninohe-hayabusa', 'tt-hachinohe-hayabusa', 'tt-igr', 'tt-hakkoda-bus']) {
+                  'tt-ninohe-hayabusa', 'tt-hachinohe-hayabusa', 'tt-igr', 'tt-hakkoda-bus',
+                  'tt-hirosaki', 'tt-okunakayama-night', 'op-taxfree', 'bg-forward-day4',
+                  'bk-salon-verify', 'bk-enburi']) {
   t.check('checklist has ' + id, !!items[id]);
 }
 t.check('salon checklist item names Day 1', /Day 1/.test((items['bk-salon'] || {}).text || ''));

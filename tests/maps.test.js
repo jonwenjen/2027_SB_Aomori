@@ -161,6 +161,10 @@ t.check('Gemini brief asks for the map id back', /my_maps_mid: </.test(task));
   t.check('全部 shows everything again', await p.locator('#stay-aomori .rec-item:visible').count() === ap.length);
 
   // day card → stay card
+  // the day card fades in when scrolled into view; clicking mid-animation can
+  // land beside the button on a slow runner, so let it settle first
+  await p.locator('#day-12 .stay-jump').scrollIntoViewIfNeeded();
+  await p.waitForTimeout(1500);
   await p.locator('#day-12 .stay-jump').click();
   t.check('a day card opens its stay map', await p.locator('#stay-okunakayama').getAttribute('data-open') === '1');
   // a smooth scroll over ~5,000px takes longer on a slow CI runner, so wait

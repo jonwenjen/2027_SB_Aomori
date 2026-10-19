@@ -58,8 +58,13 @@ const t = lib.suite('structure');
   const tag = await p.locator('#day-4 .transit-step.is-main .step-tag').first().innerText();
   t.check('main-line tag drops the ★ and the brackets', !/[★【】]/.test(tag), tag);
   t.check('Day 4 marks fallbacks separately', await p.locator('#day-4 .transit-step.is-alt').count() >= 1);
-  t.check('Day 3 marks the 酸ヶ湯 suggestion as a tip',
-    await p.locator('#day-3 .transit-step.is-tip').count() === 1);
+  const tips3 = await p.locator('#day-3 .transit-step.is-tip').allInnerTexts();
+  t.check('Day 3 marks the 酸ヶ湯 suggestion as a tip', tips3.some(x => /酸ヶ湯/.test(x)), tips3.length);
+  t.check('Day 3 marks the 弘前 evening as a tip', tips3.some(x => /雪燈籠/.test(x)), tips3.length);
+  const tipTags = await p.locator('.transit-step.is-tip .step-tag').allInnerTexts();
+  t.check('tip tags drop the 💡 whole, leaving no half-emoji',
+    tipTags.length > 0 && tipTags.every(x => !/[\uD800-\uDFFF]/.test(x)),
+    tipTags.map(x => JSON.stringify(x.slice(0, 2))).join(' '));
   t.check('unverified times are visually flagged',
     await p.locator('#day-6 .tbc, #day-10 .tbc, #day-14 .tbc').count() >= 3,
     await p.locator('#day-6 .tbc, #day-10 .tbc, #day-14 .tbc').count());

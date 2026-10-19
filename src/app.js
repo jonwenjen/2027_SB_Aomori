@@ -977,7 +977,9 @@
 
     // 〔待確認…〕 notes are about the data, not the plan -- set them apart
     var body = esc(s).replace(/〔([^〕]*)〕/g, '<span class="tbc">〔$1〕</span>');
-    var tag = label ? '<span class="step-tag">' + esc(label.replace(/^[★💡]\s*/, '')) + '</span>' : '';
+    // 💡 is two UTF-16 code units, so it has to be matched as a sequence: a
+    // character class would strip only its first half and leave a broken glyph
+    var tag = label ? '<span class="step-tag">' + esc(label.replace(/^(?:★|💡)\s*/, '')) + '</span>' : '';
     return '<li class="transit-step' + (kind ? ' ' + kind : '') + '">' + tag + body + '</li>';
   }
 

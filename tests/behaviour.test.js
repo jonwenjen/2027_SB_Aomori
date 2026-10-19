@@ -1,7 +1,13 @@
 // Core behaviour: rendering, venue cards, lazy maps, filters, checklist persistence.
+const fs = require('fs');
+const path = require('path');
 const lib = require('./lib');
 
 const FILE = lib.TARGET;
+// venue counts come from the data, so adding a venue card does not break the suite
+const DATA = JSON.parse(fs.readFileSync(path.join(lib.ROOT, 'itinerary.json'), 'utf8'));
+const NV = DATA.venues.length;
+const NSKI = DATA.venues.filter(v => v.kind === 'ski').length;
 const results = [];
 
 function check(name, pass, detail) {
@@ -29,7 +35,7 @@ function check(name, pass, detail) {
   // ---- structure
   check('day cards rendered = 16', await page.locator('.day-card').count() === 16,
         await page.locator('.day-card').count());
-  check('venue cards rendered = 13', await page.locator('.venue-card').count() === 13,
+  check('venue cards rendered = ' + NV, await page.locator('.venue-card').count() === NV,
         await page.locator('.venue-card').count());
   check('contingency cards = 4', await page.locator('.contingency-card').count() === 4);
   check('checklist groups = 4', await page.locator('#checklist .cl-group').count() === 4);
@@ -99,7 +105,7 @@ function check(name, pass, detail) {
   check('no error message shown on successful load', okNoError === 0);
   await okPage.close();
 
-  // ---- all 13 venue cards: every one has the map block + links
+  // ---- every venue card: stats, links, and a map block for ski venues
   const audit = await page.evaluate(() => {
     return Array.from(document.querySelectorAll('.venue-card')).map(c => ({
       id: c.dataset.venue,
@@ -127,10 +133,10 @@ function check(name, pass, detail) {
   await page.locator('[data-filter="ski"]').click();
   await page.waitForTimeout(200);
   const visibleAfterFilter = await page.locator('.venue-card:visible').count();
-  check('ski filter shows 5 cards', visibleAfterFilter === 5, visibleAfterFilter);
+  check('ski filter shows ' + NSKI + ' cards', visibleAfterFilter === NSKI, visibleAfterFilter);
   await page.locator('[data-filter="all"]').click();
   await page.waitForTimeout(200);
-  check('all filter restores 13', await page.locator('.venue-card:visible').count() === 13);
+  check('all filter restores ' + NV, await page.locator('.venue-card:visible').count() === NV);
 
   // ---- day chip jumps to venue and opens it
   await page.locator('#venue-hakkoda .venue-head').click(); // close it first
